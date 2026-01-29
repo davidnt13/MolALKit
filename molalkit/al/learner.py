@@ -19,7 +19,7 @@ from .forgetter import BaseForgetter, RandomForgetter, FirstForgetter
 
 
 def eval_metric_func(y, y_pred, metric: str) -> float:
-    if metric == 'roc-auc':
+    if metric == 'roc_auc':
         return roc_auc_score(y, y_pred)
     elif metric == 'accuracy':
         y_pred = [1 if i >= 0.5 else 0 for i in y_pred]

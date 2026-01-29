@@ -9,7 +9,7 @@ import json
 import math
 import pandas as pd
 import numpy as np
-from mgktools.features_mol import FeaturesGenerator
+from mgktools.features_mol.features_generators import FeaturesGenerator
 from mgktools.data.split import data_split_index
 from mgktools.evaluators.metric import Metric
 from molalkit.logging import create_logger

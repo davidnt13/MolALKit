@@ -10,8 +10,29 @@ import pandas as pd
 import rdkit.Chem.AllChem as Chem
 from joblib import Parallel, delayed
 from sklearn.preprocessing import StandardScaler
-from mgktools.features_mol import FeaturesGenerator
-from mgktools.data.data import tolist, to_numpy
+from mgktools.features_mol.features_generators import FeaturesGenerator
+#from mgktools.data.data import tolist, to_numpy
+def tolist(list_: Union[pd.Series, List]) -> List[str]:
+    if list_ is None:
+        return []
+    else:
+        result = []
+        for string_ in list_:
+            if ',' in string_:
+                result.append(json.loads(string_))
+            else:
+                result.append(string_)
+        return result
+def to_numpy(list_: pd.Series) -> Optional[np.ndarray]:
+    if list_ is None:
+        return None
+    else:
+        ndarray = list_.to_numpy()
+        if ndarray.size == 0:
+            return None
+        else:
+            return ndarray
+
 # Cache of RDKit molecules
 CACHE_MOL = True
 SMILES_TO_MOL: Dict[str, Chem.Mol] = {}

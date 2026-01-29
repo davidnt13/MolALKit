@@ -70,5 +70,5 @@ The following arguments are required for choosing a machine learning model:
 ## First Example
 Here's an example of running active learning using MolALKit with the BACE dataset, a 50:50 scaffold split, and Random Forest as the machine learning model:
 ```
-molalkit_run --data_public bace --metrics roc-auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir bace
+molalkit_run --data_public bace --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir bace
 ```
