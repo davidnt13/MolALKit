@@ -7,7 +7,6 @@ from molalkit.models.random_forest.RandomForestClassifier import RFClassifier
 from molalkit.models.gaussian_process.GaussianProcessRegressor import GPRegressor
 from molalkit.al.selection_method import get_topn_idx
 
-
 class BaseForgetter(ABC):
     def __init__(self, batch_size: int = 1, forget_size: int = 1, forget_cutoff: float = None):
         self.batch_size = batch_size
@@ -148,3 +147,201 @@ class MinLOOErrorForgetter(BaseRandomForgetter):
     @property
     def info(self) -> str:
         return 'MinLOOErrorForgetter'
+
+# Updates with MC/Dropout
+import numpy as np
+from typing import List, Tuple, Optional
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import DataLoader, Dataset
+
+def get_topn_idx(scores: np.ndarray, n: int, target: str = "max") -> List[int]:
+    assert target in ("max", "min")
+    if n <= 0:
+        return []
+    if target == "max":
+        return list(np.argsort(-scores)[:n])
+    else:
+        return list(np.argsort(scores)[:n])
+
+
+class MCDropoutForgetter(BaseForgetter):
+    """
+    Monte Carlo Dropout forgetter aligned with your other forgetter examples.
+
+    Usage:
+      forgetter = MCDropoutForgetter(device='cuda', mc_samples=20, score_method='bald', batch_size_eval=64, target='max')
+      idxs, scores = forgetter(model, data, batch_size=10)
+    """
+
+    def __init__(
+        self,
+        device: str = "cpu",
+        mc_samples: int = 20,
+        score_method: str = "bald",   # 'bald'|'entropy'|'variance'|'variation_ratio'
+        batch_size_eval: int = 64,
+        target: str = "max"           # whether to pick top 'max' uncertainty or 'min' uncertainty
+    ):
+        self.device = torch.device(device)
+        self.mc_samples = int(mc_samples)
+        self.score_method = score_method.lower()
+        assert self.score_method in ("bald", "entropy", "variance", "variation_ratio")
+        assert target in ("max", "min")
+        self.batch_size_eval = int(batch_size_eval)
+        self.target = target
+
+    @property
+    def info(self) -> str:
+        # return f"MCDropoutForgetter(mc={self.mc_samples}, score={self.score_method}, target={self.target})"
+        return f"MCDropoutForgetter"
+
+    def _enable_dropout(self, model: nn.Module):
+        # enable only Dropout layers (keep BatchNorm in eval)
+        for m in model.modules():
+            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
+                m.train()
+
+    def _disable_dropout(self, model: nn.Module):
+        for m in model.modules():
+            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
+                m.eval()
+
+    def _to_probs(self, logits: torch.Tensor) -> torch.Tensor:
+        # logits -> probs. handle binary logits too
+        if logits.dim() == 1 or (logits.dim() == 2 and logits.size(1) == 1):
+            p_pos = torch.sigmoid(logits.view(-1))  # [B]
+            p = torch.stack([1.0 - p_pos, p_pos], dim=1)  # [B, 2]
+        else:
+            p = F.softmax(logits, dim=1)
+        return p
+
+    def _mc_forward(self, model: nn.Module, batch: torch.Tensor) -> np.ndarray:
+        """
+        Run mc_samples forward passes. Return shape (mc, B, C) numpy array of probabilities.
+        """
+        model.to(self.device)
+        model.eval()               # keep BN, etc. in eval
+        self._enable_dropout(model)  # enable dropout layers
+
+        batch = batch.to(self.device)
+        mc_probs = []
+        with torch.no_grad():
+            for _ in range(self.mc_samples):
+                out = model(batch)
+                probs = self._to_probs(out)            # torch tensor [B, C]
+                mc_probs.append(probs.cpu().numpy())  # append [B, C]
+        mc_probs = np.stack(mc_probs, axis=0)  # [mc, B, C]
+
+        self._disable_dropout(model)
+        return mc_probs
+
+    @staticmethod
+    def _predictive_entropy(mean_probs: np.ndarray) -> np.ndarray:
+        eps = 1e-12
+        return -np.sum(mean_probs * np.log2(mean_probs + eps), axis=1)  # [B,]
+
+    @staticmethod
+    def _expected_entropy(mc_probs: np.ndarray) -> np.ndarray:
+        eps = 1e-12
+        mc_ent = -np.sum(mc_probs * np.log2(mc_probs + eps), axis=2)  # [mc, B]
+        return mc_ent.mean(axis=0)  # [B,]
+
+    @staticmethod
+    def _variation_ratio(mc_probs: np.ndarray) -> np.ndarray:
+        # Variation ratio = 1 - mode_fraction
+        mc_preds = np.argmax(mc_probs, axis=2)  # [mc, B]
+        mc = mc_preds.shape[0]
+        B = mc_preds.shape[1]
+        vr = np.empty(B, dtype=float)
+        for i in range(B):
+            vals, counts = np.unique(mc_preds[:, i], return_counts=True)
+            mode_count = counts.max()
+            vr[i] = 1.0 - (mode_count / float(mc))
+        return vr
+
+    def _bald(self, mc_probs: np.ndarray) -> np.ndarray:
+        mean_probs = mc_probs.mean(axis=0)  # [B, C]
+        H_mean = self._predictive_entropy(mean_probs)
+        E_H = self._expected_entropy(mc_probs)
+        return H_mean - E_H
+
+    def _variance(self, mc_probs: np.ndarray) -> np.ndarray:
+        var = np.var(mc_probs, axis=0)  # [B, C]
+        return var.sum(axis=1)
+
+    def _entropy(self, mc_probs: np.ndarray) -> np.ndarray:
+        mean_probs = mc_probs.mean(axis=0)
+        return self._predictive_entropy(mean_probs)
+
+    def _score_from_mc(self, mc_probs: np.ndarray) -> np.ndarray:
+        if self.score_method == "bald":
+            return self._bald(mc_probs)
+        elif self.score_method == "variance":
+            return self._variance(mc_probs)
+        elif self.score_method == "entropy":
+            return self._entropy(mc_probs)
+        elif self.score_method == "variation_ratio":
+            return self._variation_ratio(mc_probs)
+        else:
+            raise ValueError("Unknown score_method")
+
+    def _prepare_dataloader(self, data) -> DataLoader:
+        # Accept Dataset, numpy array, torch tensor, or list
+        if isinstance(data, Dataset):
+            return DataLoader(data, batch_size=self.batch_size_eval, shuffle=False)
+        else:
+            # assume array-like where len(data) gives N and indexing returns an input tensor/ndarray
+            # build a simple dataset that returns (x, idx)
+            X = data
+            if isinstance(X, torch.Tensor):
+                X_np = X.cpu().numpy()
+            else:
+                X_np = np.asarray(X)
+            class _ArrDataset(Dataset):
+                def __len__(self_inner):
+                    return X_np.shape[0]
+                def __getitem__(self_inner, idx):
+                    return X_np[idx], idx
+            return DataLoader(_ArrDataset(), batch_size=self.batch_size_eval, shuffle=False)
+
+    def __call__(self, model: nn.Module, data, batch_size: int = 1) -> Tuple[List[int], List[float]]:
+        """
+        model: PyTorch model
+        data: Dataset or ndarray/tensor of inputs
+        batch_size: number of indices to forget (like your other forgetters)
+        returns: (list(indices), list(scores))
+        """
+        assert batch_size < (len(data) if not isinstance(data, Dataset) else len(data)), "batch_size must be < len(data)"
+        dl = self._prepare_dataloader(data)
+
+        all_indices = []
+        all_scores = []
+
+        for batch in dl:
+            # dataloader yields either (x, idx) (if Dataset) or (x_np, idx) from our wrapper
+            if isinstance(batch, (list, tuple)) and len(batch) >= 2:
+                x_batch, idxs = batch[0], batch[1]
+            else:
+                # fallback: dataloader might yield raw x only
+                x_batch = batch
+                idxs = torch.arange(len(x_batch))
+
+            # convert x_batch to torch tensor if needed
+            if not isinstance(x_batch, torch.Tensor):
+                x_batch = torch.tensor(np.asarray(x_batch), dtype=torch.float32)
+
+            mc_probs = self._mc_forward(model, x_batch)  # [mc, B, C]
+            scores = self._score_from_mc(mc_probs)       # [B,]
+
+            all_indices.extend([int(i) for i in idxs])
+            all_scores.extend([float(s) for s in scores])
+
+        all_indices = np.array(all_indices, dtype=int)
+        all_scores = np.array(all_scores, dtype=float)
+
+        picked = get_topn_idx(all_scores, n=batch_size, target=self.target)
+        picked_indices = all_indices[picked].tolist()
+        picked_scores = all_scores[picked].tolist()
+
+        return picked_indices, picked_scores
