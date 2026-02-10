@@ -676,6 +676,8 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
                 forgeter = MinOOBErrorForgetter(seed=0)
             elif self.forget_protocol == 'min_loo_error':
                 forgeter = MinLOOErrorForgetter(seed=0)
+            elif self.forget_protocol == 'MCDropoutForgetter':
+                forgeter = MCDropoutForgetter()
             else:
                 return None
             # set forget_size and forget_cutoff in forgetter.
