@@ -359,9 +359,9 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
     """load checkpoint file and continue the active learning."""
     # Arguments for forgetting active learning.
     forget_protocol: Literal['forget_first', 'forget_random', 'min_oob_uncertainty', 'max_oob_uncertainty',
-    'min_oob_error', 'min_loo_error'] = None
+    'min_oob_error', 'min_loo_error', 'MCDropoutForgetter'] = None
     """protocol to use (forget_first, forget_random, min_oob_uncertain (RF only), max_oob_uncertain (RF only)
-    , min_loo_error)."""
+    , min_loo_error, MCDropoutForgetter (DNN only))."""
     forget_cutoff: float = None
     """The error cutoff for forgetting ."""
     forget_size: int = None
