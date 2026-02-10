@@ -1,0 +1,37 @@
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+usage: molalkit_run --save_dir SAVE_DIR [--n_jobs N_JOBS]
+                    [--data_path DATA_PATH]
+                    [--metrics [{roc_auc,accuracy,balanced_accuracy,precision,recall,f1_score,mcc,rmse,mae,mse,r2,max,spearman,kendall,pearson} ...]]
+                    [--evaluate_stride EVALUATE_STRIDE] [--output_details]
+                    [--top_k TOP_K] [--yoked_learning_only] --learning_type
+                    {passive,explorative,exploitive}
+                    [--exploitive_target EXPLOITIVE_TARGET]
+                    [--init_size INIT_SIZE] [--batch_size BATCH_SIZE]
+                    [--batch_mode {naive,cluster}]
+                    [--cluster_size CLUSTER_SIZE] [--n_query N_QUERY]
+                    [--n_pool N_POOL] [--stop_ratio STOP_RATIO]
+                    [--stop_size STOP_SIZE] [--stop_cutoff STOP_CUTOFF]
+                    [--confidence_cutoff CONFIDENCE_CUTOFF]
+                    [--max_iter MAX_ITER] [--save_cpt_stride SAVE_CPT_STRIDE]
+                    [--write_traj_stride WRITE_TRAJ_STRIDE]
+                    [--load_checkpoint]
+                    [--forget_protocol {forget_first,forget_random,min_oob_uncertainty,max_oob_uncertainty,min_oob_error,min_loo_error}]
+                    [--forget_cutoff FORGET_CUTOFF]
+                    [--forget_size FORGET_SIZE] [--forget_ratio FORGET_RATIO]
+                    [--data_public DATA_PUBLIC]
+                    [--data_path_training DATA_PATH_TRAINING]
+                    [--data_path_pool DATA_PATH_POOL]
+                    [--data_path_val DATA_PATH_VAL]
+                    [--pure_columns [PURE_COLUMNS ...]]
+                    [--mixture_columns [MIXTURE_COLUMNS ...]]
+                    [--target_columns [TARGET_COLUMNS ...]]
+                    [--feature_columns [FEATURE_COLUMNS ...]]
+                    [--dataset_type {regression,classification,multiclass}]
+                    [--split_type {random,scaffold_random,scaffold_order}]
+                    [--split_sizes [SPLIT_SIZES ...]] [--full_val]
+                    [--error_rate ERROR_RATE] --model_config_selector
+                    MODEL_CONFIG_SELECTOR
+                    [--model_config_evaluators [MODEL_CONFIG_EVALUATORS ...]]
+                    [--quiet] [--logger_name LOGGER_NAME] [--seed SEED] [-h]
+molalkit_run: error: argument --forget_protocol: Value for variable "forget_protocol" must be one of ['forget_first', 'forget_random', 'min_oob_uncertainty', 'max_oob_uncertainty', 'min_oob_error', 'min_loo_error'].
