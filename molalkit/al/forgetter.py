@@ -150,7 +150,7 @@ class MinLOOErrorForgetter(BaseRandomForgetter):
 
 # Updates with MC/Dropout
 import numpy as np
-from typing import List, Tuple, Optional
+from typing import List, Tuple, Optional, Any
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -286,24 +286,130 @@ class MCDropoutForgetter(BaseForgetter):
         else:
             raise ValueError("Unknown score_method")
 
-    def _prepare_dataloader(self, data) -> DataLoader:
-        # Accept Dataset, numpy array, torch tensor, or list
-        if isinstance(data, Dataset):
-            return DataLoader(data, batch_size=self.batch_size_eval, shuffle=False)
+    # inside your forgetter class...
+
+    def _default_collate_fn(self, batch: list) -> tuple:
+        """
+        Convert a batch of dataset items into (tensor_inputs, tensor_indices).
+        The dataset item may be:
+          - (x, idx)
+          - x (where x is tensor/ndarray)  -> indices will be auto-generated
+          - custom object (e.g. MoleculeDatapoint) -> we try to extract features
+        Extraction heuristics (in order):
+          - If item is tuple/list and len>=2: assume (x, idx)
+          - If item is Tensor/ndarray/number: stack them
+          - If item has attribute 'features' or 'feature_vector' or 'fp' -> use that
+          - If item has attribute 'smiles' and you have a featurizer function, raise informative error (see below)
+        """
+        # If items are (x, idx) pairs, separate them
+        first = batch[0]
+        if isinstance(first, (tuple, list)) and len(first) >= 2:
+            xs = [b[0] for b in batch]
+            idxs = [b[1] for b in batch]
         else:
-            # assume array-like where len(data) gives N and indexing returns an input tensor/ndarray
-            # build a simple dataset that returns (x, idx)
-            X = data
-            if isinstance(X, torch.Tensor):
-                X_np = X.cpu().numpy()
+            xs = batch
+            idxs = None
+
+        # try stacking xs into a tensor
+        # if elements are already tensors or arrays, convert/stack
+        if isinstance(xs[0], torch.Tensor):
+            x_tensor = torch.stack(xs)
+        elif isinstance(xs[0], np.ndarray):
+            x_tensor = torch.tensor(np.stack(xs))
+        elif isinstance(xs[0], (int, float, np.number)):
+            x_tensor = torch.tensor(xs, dtype=torch.float32)
+        else:
+            # fallback: custom objects (e.g. MoleculeDatapoint)
+            extracted = []
+            for obj in xs:
+                # if object provides .features, .feature_vector, .fp, .fingerprint
+                if hasattr(obj, "features"):
+                    f = getattr(obj, "features")
+                elif hasattr(obj, "feature_vector"):
+                    f = getattr(obj, "feature_vector")
+                elif hasattr(obj, "fp"):
+                    f = getattr(obj, "fp")
+                elif hasattr(obj, "fingerprint"):
+                    f = getattr(obj, "fingerprint")
+                # sometimes chemprop MoleculeDatapoint stores features in .smiles and needs featurizer
+                elif hasattr(obj, "smiles") and hasattr(obj, "features"):
+                    f = getattr(obj, "features")
+                else:
+                    # We cannot auto-extract — raise a helpful error telling the user what to do.
+                    typename = type(obj).__name__
+                    raise TypeError(
+                        f"Cannot collate dataset element of type {typename}. "
+                        "Please either (a) wrap your dataset so __getitem__ returns (input_tensor, index), "
+                        "or (b) provide a custom collate_fn that converts a dataset element to a numeric array/tensor. "
+                        "If this is a chemprop MoleculeDatapoint, extract the model input (fingerprint / features) "
+                        "in your dataset or pass a small adapter dataset that returns (features_tensor, idx)."
+                    )
+                # ensure f is numeric / array-like
+                if isinstance(f, torch.Tensor):
+                    extracted.append(f.cpu().numpy())
+                else:
+                    extracted.append(np.asarray(f))
+            x_tensor = torch.tensor(np.stack(extracted), dtype=torch.float32)
+
+        # indices default if not present
+        if idxs is None:
+            idxs = list(range(len(x_tensor)))
+        else:
+            # try to coerce to list of ints
+            idxs = [int(i) for i in idxs]
+
+        return x_tensor, torch.tensor(idxs, dtype=torch.long)
+
+
+    def _prepare_dataloader(self, data) -> DataLoader:
+        """
+        Accepts:
+          - a PyTorch Dataset (will use our collate function)
+          - an ndarray / tensor (we construct a simple Dataset that yields (x, idx))
+        """
+        if isinstance(data, Dataset):
+            # use our collate_fn to convert MoleculeDatapoint -> (tensor, idx)
+            return DataLoader(data,
+                              batch_size=self.batch_size_eval,
+                              shuffle=False,
+                              collate_fn=self._default_collate_fn,
+                              num_workers=0)  # try 0 first for debugging; you can increase
+        else:
+            # construct simple dataset from array/tensor
+            if isinstance(data, torch.Tensor):
+                X_np = data.cpu().numpy()
             else:
-                X_np = np.asarray(X)
+                X_np = np.asarray(data)
+
             class _ArrDataset(Dataset):
-                def __len__(self_inner):
-                    return X_np.shape[0]
+                def __len__(self_inner): return X_np.shape[0]
                 def __getitem__(self_inner, idx):
                     return X_np[idx], idx
-            return DataLoader(_ArrDataset(), batch_size=self.batch_size_eval, shuffle=False)
+
+            return DataLoader(_ArrDataset(),
+                              batch_size=self.batch_size_eval,
+                              shuffle=False,
+                              collate_fn=self._default_collate_fn,
+                              num_workers=0)
+    
+    # def _prepare_dataloader(self, data) -> DataLoader:
+    #     # Accept Dataset, numpy array, torch tensor, or list
+    #     if isinstance(data, Dataset):
+    #         return DataLoader(data, batch_size=self.batch_size_eval, shuffle=False)
+    #     else:
+    #         # assume array-like where len(data) gives N and indexing returns an input tensor/ndarray
+    #         # build a simple dataset that returns (x, idx)
+    #         X = data
+    #         if isinstance(X, torch.Tensor):
+    #             X_np = X.cpu().numpy()
+    #         else:
+    #             X_np = np.asarray(X)
+    #         class _ArrDataset(Dataset):
+    #             def __len__(self_inner):
+    #                 return X_np.shape[0]
+    #             def __getitem__(self_inner, idx):
+    #                 return X_np[idx], idx
+    #         return DataLoader(_ArrDataset(), batch_size=self.batch_size_eval, shuffle=False)
 
     def __call__(self, model: nn.Module, data, batch_size: int = 1) -> Tuple[List[int], List[float]]:
         """
