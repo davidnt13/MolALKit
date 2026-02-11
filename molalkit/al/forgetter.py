@@ -196,16 +196,16 @@ class MCDropoutForgetter(BaseForgetter):
         # return f"MCDropoutForgetter(mc={self.mc_samples}, score={self.score_method}, target={self.target})"
         return f"MCDropoutForgetter"
 
-    def _enable_dropout(self, model: nn.Module):
-        # enable only Dropout layers (keep BatchNorm in eval)
-        for m in model.modules():
-            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
-                m.train()
+    # def _enable_dropout(self, model: nn.Module):
+    #     # enable only Dropout layers (keep BatchNorm in eval)
+    #     for m in model.modules():
+    #         if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
+    #             m.train()
 
-    def _disable_dropout(self, model: nn.Module):
-        for m in model.modules():
-            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
-                m.eval()
+    # def _disable_dropout(self, model: nn.Module):
+    #     for m in model.modules():
+    #         if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
+    #             m.eval()
 
     def _to_probs(self, logits: torch.Tensor) -> torch.Tensor:
         # logits -> probs. handle binary logits too
@@ -216,24 +216,159 @@ class MCDropoutForgetter(BaseForgetter):
             p = F.softmax(logits, dim=1)
         return p
 
-    def _mc_forward(self, model: nn.Module, batch: torch.Tensor) -> np.ndarray:
-        """
-        Run mc_samples forward passes. Return shape (mc, B, C) numpy array of probabilities.
-        """
-        model.to(self.device)
-        model.eval()               # keep BN, etc. in eval
-        self._enable_dropout(model)  # enable dropout layers
+    # def _mc_forward(self, model: nn.Module, batch: torch.Tensor) -> np.ndarray:
+    #     """
+    #     Run mc_samples forward passes. Return shape (mc, B, C) numpy array of probabilities.
+    #     """
+    #     model.to(self.device)
+    #     model.eval()               # keep BN, etc. in eval
+    #     self._enable_dropout(model)  # enable dropout layers
 
+    #     batch = batch.to(self.device)
+    #     mc_probs = []
+    #     with torch.no_grad():
+    #         for _ in range(self.mc_samples):
+    #             out = model(batch)
+    #             probs = self._to_probs(out)            # torch tensor [B, C]
+    #             mc_probs.append(probs.cpu().numpy())  # append [B, C]
+    #     mc_probs = np.stack(mc_probs, axis=0)  # [mc, B, C]
+
+    #     self._disable_dropout(model)
+    #     return mc_probs
+    def _find_nn_module(self, model) -> Optional[nn.Module]:
+        """
+        Try to find an underlying torch.nn.Module inside `model`.
+        Returns:
+          - a torch.nn.Module object if found, else None.
+        Looks for attributes commonly used by wrapper classes:
+          - model, _model, network, net, module
+        """
+        if isinstance(model, nn.Module):
+            return model
+        # common wrapper attributes
+        for attr in ("model", "_model", "network", "net", "module"):
+            m = getattr(model, attr, None)
+            if isinstance(m, nn.Module):
+                return m
+        # perhaps the wrapper has an attribute that *is* nn.Module but nested in dict
+        # or the wrapper subclassed nn.Module but didn't expose isinstance: unlikely
+        return None
+
+    def _enable_dropout(self, model):
+        """
+        Enable dropout layers on the underlying nn.Module if we can find one.
+        This avoids touching non-nn objects.
+        """
+        nn_mod = self._find_nn_module(model)
+        if nn_mod is None:
+            # nothing to enable; silently skip (model may not use dropout)
+            return
+        for m in nn_mod.modules():
+            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
+                m.train()
+
+    def _disable_dropout(self, model):
+        nn_mod = self._find_nn_module(model)
+        if nn_mod is None:
+            return
+        for m in nn_mod.modules():
+            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d)):
+                m.eval()
+
+    def _maybe_move_model(self, model):
+        """
+        Try to move model to device if possible. Return the model actually moved (or the original).
+        Attempts:
+          - model.to(device) if exists
+          - model.cuda() if device is cuda and cuda exists
+          - find internal nn.Module and call .to() on that submodule
+        If nothing works, return the original model (assume it is already on the right device).
+        """
+        # If model has to(), use it safely
+        try:
+            if hasattr(model, "to") and callable(getattr(model, "to")):
+                # some wrappers implement to() but have a different signature; wrap in try
+                try:
+                    model.to(self.device)
+                    return model
+                except Exception:
+                    # fall through to try moving internal module
+                    pass
+
+            # maybe a plain method cuda()
+            if str(self.device).startswith("cuda") and hasattr(model, "cuda") and callable(getattr(model, "cuda")):
+                try:
+                    model.cuda()
+                    return model
+                except Exception:
+                    pass
+
+            # fallback: move underlying nn.Module if present
+            nn_mod = self._find_nn_module(model)
+            if nn_mod is not None:
+                try:
+                    nn_mod.to(self.device)
+                    return model
+                except Exception:
+                    pass
+        except Exception:
+            # be conservative: don't crash moving model
+            pass
+
+        # last resort: do nothing (model may already be device-aware)
+        return model
+
+    def _mc_forward(self, model, batch: torch.Tensor) -> np.ndarray:
+        """
+        Robust MC forward that doesn't assume model.to() exists.
+        - Moves input batch to self.device.
+        - Attempts to move model or its internal nn.Module if possible.
+        - Enables dropout only on found nn.Module.
+        - Runs mc_samples forward passes and returns mc_probs np array [mc, B, C].
+        """
+        # Move inputs to device always
         batch = batch.to(self.device)
+
+        # Try to move model safely; don't fail if not possible
+        model = self._maybe_move_model(model)
+
+        # Enable dropout on underlying module (if any). If not possible, skip.
+        self._enable_dropout(model)
+
         mc_probs = []
         with torch.no_grad():
             for _ in range(self.mc_samples):
-                out = model(batch)
-                probs = self._to_probs(out)            # torch tensor [B, C]
-                mc_probs.append(probs.cpu().numpy())  # append [B, C]
+                # forward: try calling model(batch); if wrapper expects a dict or different args,
+                # this may fail — handle with informative errors.
+                try:
+                    logits = model(batch)
+                except TypeError:
+                    # some wrappers expect a dict or multiple args; try common alternatives:
+                    # - model.forward(batch)
+                    # - model.forward(input=batch)
+                    try:
+                        logits = model.forward(batch)
+                    except Exception:
+                        # final fallback: try calling model with batch.cpu() (in case model expects CPU tensors)
+                        try:
+                            logits = model(batch.cpu())
+                        except Exception as e:
+                            # we cannot safely call the model; raise a helpful error
+                            raise RuntimeError(
+                                "Failed to call the model on a tensor. The model object does not accept a single "
+                                "tensor argument. You may need to wrap your model with a callable that accepts the "
+                                "input tensor and returns logits. Underlying error: " + repr(e)
+                            ) from e
+
+                # convert logits -> probs (reuse your existing _to_probs logic)
+                probs = self._to_probs(logits)  # expects a torch.Tensor
+                mc_probs.append(probs.cpu().numpy())
+
         mc_probs = np.stack(mc_probs, axis=0)  # [mc, B, C]
 
+        # restore dropout state
         self._disable_dropout(model)
+
         return mc_probs
 
     @staticmethod
