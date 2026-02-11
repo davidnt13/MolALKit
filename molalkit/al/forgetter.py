@@ -318,58 +318,166 @@ class MCDropoutForgetter(BaseForgetter):
         # last resort: do nothing (model may already be device-aware)
         return model
 
-    def _mc_forward(self, model, batch: torch.Tensor) -> np.ndarray:
-        """
-        Robust MC forward that doesn't assume model.to() exists.
-        - Moves input batch to self.device.
-        - Attempts to move model or its internal nn.Module if possible.
-        - Enables dropout only on found nn.Module.
-        - Runs mc_samples forward passes and returns mc_probs np array [mc, B, C].
-        """
-        # Move inputs to device always
-        batch = batch.to(self.device)
+    def _mc_forward(self, model, batch: torch.Tensor, raw_batch_objs=None) -> np.ndarray:
+    """
+    Robust MC forward that tries several call strategies:
+      1) call underlying nn.Module if found (nn_mod(batch))
+      2) call model.forward(batch)
+      3) call model.predict on numpy/list inputs (if present)
+      4) if raw_batch_objs provided (original dataset objects), try model.predict on them
+    Returns mc_probs np array [mc, B, C].
 
-        # Try to move model safely; don't fail if not possible
+    raw_batch_objs: optional list of original dataset items (e.g. MoleculeDatapoint) if you have them.
+    """
+    batch_device = self.device
+    # move inputs to device
+    batch = batch.to(batch_device)
+
+    # try to move underlying module if possible (non-fatal)
+    try:
         model = self._maybe_move_model(model)
+    except Exception:
+        pass
 
-        # Enable dropout on underlying module (if any). If not possible, skip.
-        self._enable_dropout(model)
+    # enable dropout where possible
+    self._enable_dropout(model)
 
-        mc_probs = []
-        with torch.no_grad():
-            for _ in range(self.mc_samples):
-                # forward: try calling model(batch); if wrapper expects a dict or different args,
-                # this may fail — handle with informative errors.
+    mc_probs = []
+    last_exc = None
+
+    for _ in range(self.mc_samples):
+        logits = None
+        # Try 1: call underlying nn.Module if present
+        nn_mod = self._find_nn_module(model)
+        if nn_mod is not None:
+            try:
+                nn_mod.eval()  # keep BN stable
+                # assume nn_mod is callable
+                with torch.no_grad():
+                    out = nn_mod(batch)
+                if isinstance(out, torch.Tensor):
+                    logits = out
+            except Exception as e:
+                last_exc = e
+
+        # Try 2: call model.forward(batch)
+        if logits is None:
+            try:
+                with torch.no_grad():
+                    out = model.forward(batch)  # some wrappers expose forward
+                if isinstance(out, torch.Tensor):
+                    logits = out
+            except Exception as e:
+                last_exc = e
+
+        # Try 3: call model(batch.cpu()) — sometimes wrapper expects CPU tensors
+        if logits is None:
+            try:
+                with torch.no_grad():
+                    out = model(batch.cpu())
+                if isinstance(out, torch.Tensor):
+                    logits = out
+            except Exception as e:
+                last_exc = e
+
+        # Try 4: call model.predict / predict_proba on numpy/list inputs
+        if logits is None:
+            try:
+                # convert batch to numpy list of rows
                 try:
-                    logits = model(batch)
-                except TypeError:
-                    # some wrappers expect a dict or multiple args; try common alternatives:
-                    # - model.forward(batch)
-                    # - model.forward(input=batch)
-                    try:
-                        logits = model.forward(batch)
-                    except Exception:
-                        # final fallback: try calling model with batch.cpu() (in case model expects CPU tensors)
-                        try:
-                            logits = model(batch.cpu())
-                        except Exception as e:
-                            # we cannot safely call the model; raise a helpful error
-                            raise RuntimeError(
-                                "Failed to call the model on a tensor. The model object does not accept a single "
-                                "tensor argument. You may need to wrap your model with a callable that accepts the "
-                                "input tensor and returns logits. Underlying error: " + repr(e)
-                            ) from e
+                    arr = batch.detach().cpu().numpy()
+                except Exception:
+                    arr = batch.cpu().numpy()
+                # flatten to list-of-inputs depending on shape: e.g., [x for x in arr]
+                input_list = [arr[i] for i in range(arr.shape[0])]
+                if hasattr(model, "predict_proba"):
+                    preds = model.predict_proba(input_list)
+                elif hasattr(model, "predict"):
+                    preds = model.predict(input_list)
+                else:
+                    preds = None
 
-                # convert logits -> probs (reuse your existing _to_probs logic)
-                probs = self._to_probs(logits)  # expects a torch.Tensor
-                mc_probs.append(probs.cpu().numpy())
+                if preds is not None:
+                    # preds might already be probabilities or logits; try to coerce to tensor
+                    preds = np.asarray(preds)
+                    # if shape [B] for binary, convert to [B,2]
+                    if preds.ndim == 1 or (preds.ndim == 2 and preds.shape[1] == 1):
+                        # assume scalar positive class prob
+                        p_pos = preds.reshape(-1)
+                        p_neg = 1.0 - p_pos
+                        probs = np.stack([p_neg, p_pos], axis=1)
+                    else:
+                        probs = preds
+                    # convert to torch tensor to run _to_probs pipeline below
+                    logits = torch.tensor(probs, dtype=torch.float32)
+                    # note: here logits variable actually holds probs — that's OK,
+                    # we'll detect it below by shape/content.
+            except Exception as e:
+                last_exc = e
 
-        mc_probs = np.stack(mc_probs, axis=0)  # [mc, B, C]
+        # Try 5: if raw_batch_objs provided (dataset items), call model.predict on them directly
+        if logits is None and raw_batch_objs is not None:
+            try:
+                if hasattr(model, "predict") or hasattr(model, "predict_proba"):
+                    if hasattr(model, "predict_proba"):
+                        preds = model.predict_proba(raw_batch_objs)
+                    else:
+                        preds = model.predict(raw_batch_objs)
+                    preds = np.asarray(preds)
+                    if preds.ndim == 1 or (preds.ndim == 2 and preds.shape[1] == 1):
+                        p_pos = preds.reshape(-1)
+                        p_neg = 1.0 - p_pos
+                        probs = np.stack([p_neg, p_pos], axis=1)
+                    else:
+                        probs = preds
+                    logits = torch.tensor(probs, dtype=torch.float32)
+            except Exception as e:
+                last_exc = e
 
-        # restore dropout state
-        self._disable_dropout(model)
+        # If still no logits, give up with a helpful error
+        if logits is None:
+            # disable dropout before raising
+            self._disable_dropout(model)
+            # collect some diagnostics
+            model_attrs = [a for a in dir(model) if not a.startswith("_")]
+            msg = (
+                "Failed to call the model on a tensor. The model object does not accept a single-tensor input "
+                "and we couldn't find a callable submodule or predict method to use. "
+                "Tried calling underlying nn.Module, model.forward(tensor), model(tensor), model.predict(list), "
+                "and model.predict on raw objects. Underlying exception (from last attempt): "
+                f"{repr(last_exc)}. Model attributes (first 200): {model_attrs[:200]}. "
+                "To fix this, either:\n"
+                " (a) provide a callable wrapper that accepts a tensor and returns logits (recommended), e.g.\n"
+                "       def wrapper(tensor_batch): return your_model.predict_fn(tensor_batch)\n"
+                "     and pass that wrapper as the model to the forgetter;\n"
+                " (b) adapt your dataset so the forgetter receives the dataset objects and the forgetter can call\n"
+                "     model.predict on them (set raw_batch_objs accordingly);\n"
+                " (c) modify your model class to expose an nn.Module submodule (e.g., .model) or implement __call__.\n"
+            )
+            raise RuntimeError(msg)
 
-        return mc_probs
+        # At this point, logits might actually be probabilities (if we used predict_proba).
+        # Normalize to a probabilities tensor of shape [B, C]
+        if isinstance(logits, torch.Tensor):
+            # if logits looks like probabilities (sum to ~1), skip softmax
+            if logits.dim() == 2 and torch.allclose(logits.sum(dim=1), torch.ones(logits.size(0)), atol=1e-3):
+                probs = logits.detach().cpu()
+            else:
+                # convert logits to probs consistent with earlier helper
+                probs = self._to_probs(logits).detach().cpu()
+        else:
+            # If some other format returns, coerce
+            probs = torch.tensor(np.asarray(logits), dtype=torch.float32)
+
+        mc_probs.append(probs.numpy())
+
+    mc_probs = np.stack(mc_probs, axis=0)  # [mc, B, C]
+
+    # restore dropout
+    self._disable_dropout(model)
+
+    return mc_probs
+
 
     @staticmethod
     def _predictive_entropy(mean_probs: np.ndarray) -> np.ndarray:
