@@ -379,8 +379,8 @@ class ActiveLearner:
         # forget algorithm is applied.
         forget_idx, acquisition = self.forgetter(model=self.model_selector,
                                                  data=self.dataset_train_selector,
-                                                 batch_size=self.forgetter.batch_size,
-                                                 cutoff=self.forgetter.forget_cutoff)
+                                                 batch_size=self.forgetter.batch_size)#,
+                                                 #cutoff=self.forgetter.forget_cutoff)
         if forget_idx:
             alr.id_forget = [self.dataset_train_selector.data[i].id for i in forget_idx]
             alr.acquisition_forget = acquisition
