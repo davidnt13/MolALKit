@@ -299,7 +299,7 @@ class MCDropoutForgetter(BaseForgetter):
             all_ids.append(ids.cpu().numpy())
             all_scores.append(s)
 
-        all_scores += 1e-6 * np.random.randn(len(scores))
+        all_scores += 1e-6 * np.random.randn(len(all_scores))
 
         all_ids = np.concatenate(all_ids, axis=0)
         all_scores = np.concatenate(all_scores, axis=0)
