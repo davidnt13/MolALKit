@@ -156,44 +156,16 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 
-class XWithIdDataset(Dataset):
-    """
-    Adapter that yields (x_tensor, idx) for forgetter evaluation.
-
-    Supports:
-      - XWithIdDataset(X, ids)
-      - XWithIdDataset(molalkit_dataset=subset)  where subset has .X and .data
-    """
-    def __init__(self, X=None, ids=None, molalkit_dataset=None, dtype=torch.float32):
+class XWithIndexDataset(Dataset):
+    def __init__(self, X, dtype=torch.float32):
+        self.X = np.asarray(X, dtype=np.float32)
         self.dtype = dtype
-
-        if molalkit_dataset is not None:
-            assert hasattr(molalkit_dataset, "X"), "molalkit_dataset must have .X"
-            assert hasattr(molalkit_dataset, "data"), "molalkit_dataset must have .data list"
-            self.X = np.asarray(molalkit_dataset.X, dtype=np.float32)
-
-            extracted = []
-            for i, dp in enumerate(molalkit_dataset.data):
-                if hasattr(dp, "data_idx") and dp.data_idx is not None:
-                    extracted.append(int(dp.data_idx))
-                elif hasattr(dp, "id") and dp.id is not None:
-                    extracted.append(int(dp.id))
-                else:
-                    # last-resort: subset-local index (only if your pipeline supports it)
-                    extracted.append(i)
-
-            self.ids = extracted
-
-        else:
-            self.X = np.asarray(X, dtype=np.float32)
-            self.ids = [int(i) for i in ids]
-            assert self.X.shape[0] == len(self.ids), "Length mismatch between X and ids"
 
     def __len__(self):
         return self.X.shape[0]
 
     def __getitem__(self, i):
-        return torch.tensor(self.X[i], dtype=self.dtype), self.ids[i]
+        return torch.tensor(self.X[i], dtype=self.dtype), int(i)
 
 class MCDropoutForgetter(BaseForgetter):
     def __init__(
