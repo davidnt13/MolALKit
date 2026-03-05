@@ -15,7 +15,7 @@ from functools import cached_property
 from molalkit.models.mpnn.mpnn import MPNN, TrainArgs
 from ..args import Metric
 from .selection_method import BaseSelectionMethod, RandomSelectionMethod, get_subset
-from .forgetter import BaseForgetter, RandomForgetter, FirstForgetter, MCDropoutForgetter, FeaturesWithIndexDataset
+from .forgetter import BaseForgetter, RandomForgetter, FirstForgetter, MCDropoutForgetter, XWithIdDataset
 
 
 def eval_metric_func(y, y_pred, metric: str) -> float:
@@ -377,9 +377,10 @@ class ActiveLearner:
         if not self.model_fitted and not self.forgetter.__class__ in [RandomForgetter, FirstForgetter]:
             self.model_selector.fit_molalkit(self.dataset_train_selector)
         # forget algorithm is applied.
-        
+
+        forget_ds = XWithIdDataset(subset.X, df["id"].tolist())
         forget_idx, acquisition = self.forgetter(model=self.model_selector,
-                                                 data=self.dataset_train_selector,
+                                                 data=forget_ds,
                                                  batch_size=self.forgetter.batch_size)#,
                                                  #cutoff=self.forgetter.forget_cutoff)
         if forget_idx:
