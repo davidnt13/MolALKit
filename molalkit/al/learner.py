@@ -379,7 +379,7 @@ class ActiveLearner:
         # forget algorithm is applied.
 
         subset = self.dataset_train_selector
-        forget_ds = XWithIdDataset(molalkit_dataset=subset)
+        forget_ds = XWithIndexDataset(subset.X)
         forget_idx, acquisition = self.forgetter(model=self.model_selector,
                                                  data=forget_ds,
                                                  batch_size=self.forgetter.batch_size)#,
