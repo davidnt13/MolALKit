@@ -379,8 +379,7 @@ class ActiveLearner:
         # forget algorithm is applied.
 
         subset = self.dataset_train_selector
-        df = pd.read_csv(f"{self.save_dir}/train_init.csv")
-        forget_ds = XWithIdDataset(subset.X, df["id"].tolist())
+        forget_ds = XWithIdDataset(molalkit_dataset=subset)
         forget_idx, acquisition = self.forgetter(model=self.model_selector,
                                                  data=forget_ds,
                                                  batch_size=self.forgetter.batch_size)#,
