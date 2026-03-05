@@ -172,7 +172,7 @@ class MCDropoutForgetter(BaseForgetter):
         self,
         device: str = "cpu",
         mc_samples: int = 20,
-        score_method: str = "bald",     # bald|entropy|variance|variation_ratio
+        score_method: str = "variance",     # bald|entropy|variance|variation_ratio
         batch_size_eval: int = 256,
         target: str = "min",
         num_workers: int = 0,
@@ -298,6 +298,8 @@ class MCDropoutForgetter(BaseForgetter):
             s = self._score(mc)           # (B,)
             all_ids.append(ids.cpu().numpy())
             all_scores.append(s)
+
+        all_scores += 1e-6 * np.random.randn(len(scores))
 
         all_ids = np.concatenate(all_ids, axis=0)
         all_scores = np.concatenate(all_scores, axis=0)
