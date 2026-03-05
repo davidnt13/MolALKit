@@ -76,7 +76,7 @@ def get_model(data_format: Literal['mgktools', 'chemprop', 'fingerprints'],
               dataset_type: Literal['regression', 'classification', 'multiclass'],
               model: Literal['random_forest', 'naive_bayes', 'logistic_regression', 'gaussian_process_regression',
                              'gaussian_process_classification', 'support_vector_machine', 'adaboost', 'xgboost', 
-                             'decision_tree', 'extra_trees', 'MultinomialNB', 'BernoulliNB', 'GaussianNB'],
+                             'decision_tree', 'extra_trees', 'MultinomialNB', 'BernoulliNB', 'GaussianNB', 'david_mlp'],
               save_dir: str = None,
               data_path: str = None,
               smiles_columns: List[str] = None,
@@ -188,6 +188,9 @@ def get_model(data_format: Literal['mgktools', 'chemprop', 'fingerprints'],
             else:
                 from molalkit.models.gradient_boosting.gradient_boosting import GradientBoostingClassifier
                 return GradientBoostingClassifier(n_estimators=n_estimators, max_depth=max_depth, learning_rate=learning_rate, random_state=seed)
+        elif model == 'david_mlp':
+            from molalkit.models.david_mlp.david_mlp import david_mlp
+            return david_mlp()
         else:
             raise ValueError(f'unknown model: {model}')
     elif data_format == 'chemprop':
