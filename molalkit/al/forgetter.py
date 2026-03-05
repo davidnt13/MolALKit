@@ -149,12 +149,30 @@ class MinLOOErrorForgetter(BaseRandomForgetter):
         return 'MinLOOErrorForgetter'
 
 # Updates with MC/Dropout
+from typing import List, Tuple
 import numpy as np
-from typing import List, Tuple, Optional, Any
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
+
+class XWithIdDataset(Dataset):
+    """
+    Wrap a MolALKit dataset-like object that has .X
+    and an accompanying list of global ids (same order as rows in .X).
+    Yields (x_tensor, id_int).
+    """
+    def __init__(self, X, ids, dtype=torch.float32):
+        self.X = np.asarray(X, dtype=np.float32)
+        self.ids = [int(i) for i in ids]
+        assert self.X.shape[0] == len(self.ids)
+        self.dtype = dtype
+
+    def __len__(self):
+        return self.X.shape[0]
+
+    def __getitem__(self, i):
+        return torch.tensor(self.X[i], dtype=self.dtype), self.ids[i]
 
 class MCDropoutForgetter(BaseForgetter):
     def __init__(
@@ -163,7 +181,7 @@ class MCDropoutForgetter(BaseForgetter):
         mc_samples: int = 20,
         score_method: str = "bald",     # bald|entropy|variance|variation_ratio
         batch_size_eval: int = 256,
-        target: str = "max",            # max uncertainty or min uncertainty
+        target: str = "max",
         num_workers: int = 0,
         pin_memory: bool = True,
     ):
@@ -181,44 +199,27 @@ class MCDropoutForgetter(BaseForgetter):
     def info(self) -> str:
         return "MCDropoutForgetter"
 
-    # ---- model + dropout helpers ----
-
     @staticmethod
     def _unwrap_nn(model) -> nn.Module:
-        """
-        Accept either:
-          - an nn.Module
-          - a wrapper object with .model as nn.Module (like your TorchMLPClassifier)
-        """
         if isinstance(model, nn.Module):
             return model
         m = getattr(model, "model", None)
         if isinstance(m, nn.Module):
             return m
-        raise TypeError(
-            f"MCDropoutForgetter expects an nn.Module or a wrapper with `.model` as nn.Module, got {type(model)}"
-        )
+        raise TypeError("Expected nn.Module or wrapper with `.model` as nn.Module")
 
     @staticmethod
     def _enable_dropout_only(m: nn.Module):
-        # keep whole model in eval to stabilize BatchNorm etc.
-        m.eval()
-        # then turn dropout layers back to train so they sample masks
+        m.eval()  # keep BN stable
         for layer in m.modules():
             if isinstance(layer, (nn.Dropout, nn.Dropout2d, nn.Dropout3d, nn.AlphaDropout)):
                 layer.train()
 
     @staticmethod
     def _to_probs(logits: torch.Tensor) -> torch.Tensor:
-        """
-        Convert logits -> probabilities.
-        Supports:
-          - binary logits shape (B,) or (B,1)
-          - multiclass logits shape (B,C)
-        """
         if logits.dim() == 1:
-            p1 = torch.sigmoid(logits)                    # (B,)
-            return torch.stack([1.0 - p1, p1], dim=1)     # (B,2)
+            p1 = torch.sigmoid(logits)
+            return torch.stack([1.0 - p1, p1], dim=1)
         if logits.dim() == 2 and logits.size(1) == 1:
             p1 = torch.sigmoid(logits.squeeze(1))
             return torch.stack([1.0 - p1, p1], dim=1)
@@ -226,31 +227,26 @@ class MCDropoutForgetter(BaseForgetter):
 
     @torch.no_grad()
     def _mc_probs(self, m: nn.Module, x: torch.Tensor) -> np.ndarray:
-        """
-        Returns: mc_probs [S, B, C] on CPU as numpy
-        """
         self._enable_dropout_only(m)
         x = x.to(self.device, non_blocking=True)
 
         probs = []
         for _ in range(self.mc_samples):
             logits = m(x)
-            p = self._to_probs(logits).detach().cpu().numpy()
+            p = self._to_probs(logits).detach().cpu().numpy()  # (B,C)
             probs.append(p)
-        return np.stack(probs, axis=0)
-
-    # ---- scoring ----
+        return np.stack(probs, axis=0)  # (S,B,C)
 
     @staticmethod
     def _predictive_entropy(mean_probs: np.ndarray) -> np.ndarray:
         eps = 1e-12
-        return -np.sum(mean_probs * np.log2(mean_probs + eps), axis=1)  # (B,)
+        return -np.sum(mean_probs * np.log2(mean_probs + eps), axis=1)
 
     @staticmethod
     def _expected_entropy(mc_probs: np.ndarray) -> np.ndarray:
         eps = 1e-12
         ent = -np.sum(mc_probs * np.log2(mc_probs + eps), axis=2)  # (S,B)
-        return ent.mean(axis=0)                                     # (B,)
+        return ent.mean(axis=0)
 
     @staticmethod
     def _variation_ratio(mc_probs: np.ndarray) -> np.ndarray:
@@ -264,8 +260,7 @@ class MCDropoutForgetter(BaseForgetter):
 
     @staticmethod
     def _variance(mc_probs: np.ndarray) -> np.ndarray:
-        # sum variance across classes
-        return np.var(mc_probs, axis=0).sum(axis=1)  # (B,)
+        return np.var(mc_probs, axis=0).sum(axis=1)
 
     def _score(self, mc_probs: np.ndarray) -> np.ndarray:
         mean_probs = mc_probs.mean(axis=0)  # (B,C)
@@ -275,19 +270,13 @@ class MCDropoutForgetter(BaseForgetter):
             return self._variance(mc_probs)
         if self.score_method == "variation_ratio":
             return self._variation_ratio(mc_probs)
-        # bald = H[p(y|x,D)] - E_q(w)[H[p(y|x,w)]]
+        # BALD
         H = self._predictive_entropy(mean_probs)
         EH = self._expected_entropy(mc_probs)
         return H - EH
 
-    # ---- dataloader ----
-
     @staticmethod
     def _collate_x_idx(batch):
-        """
-        Expect dataset items are (x, idx).
-        x can be tensor or numpy; returns x_tensor (B,D) float32 and idx_tensor (B,)
-        """
         xs, idxs = zip(*batch)
         if isinstance(xs[0], torch.Tensor):
             x = torch.stack(xs, dim=0).float()
@@ -296,17 +285,8 @@ class MCDropoutForgetter(BaseForgetter):
         idx = torch.tensor([int(i) for i in idxs], dtype=torch.long)
         return x, idx
 
-    def __call__(self, model, data, batch_size: int = 1) -> Tuple[List[int], List[float]]:
-        """
-        data must be a Dataset that yields (x, idx).
-        """
+    def __call__(self, model, data: Dataset, batch_size: int = 1) -> Tuple[List[int], List[float]]:
         m = self._unwrap_nn(model).to(self.device)
-
-        if not isinstance(data, Dataset):
-            raise TypeError(
-                "MCDropoutForgetter expects `data` to be a torch Dataset yielding (x, idx). "
-                "Wrap your original dataset with FeaturesWithIndexDataset."
-            )
 
         dl = DataLoader(
             data,
@@ -317,17 +297,17 @@ class MCDropoutForgetter(BaseForgetter):
             collate_fn=self._collate_x_idx,
         )
 
-        all_idx = []
-        all_score = []
+        all_ids = []
+        all_scores = []
 
-        for x, idx in dl:
-            mc = self._mc_probs(m, x)      # (S,B,C)
-            score = self._score(mc)        # (B,)
-            all_idx.append(idx.cpu().numpy())
-            all_score.append(score)
+        for x, ids in dl:
+            mc = self._mc_probs(m, x)     # (S,B,C)
+            s = self._score(mc)           # (B,)
+            all_ids.append(ids.cpu().numpy())
+            all_scores.append(s)
 
-        all_idx = np.concatenate(all_idx, axis=0)
-        all_score = np.concatenate(all_score, axis=0)
+        all_ids = np.concatenate(all_ids, axis=0)
+        all_scores = np.concatenate(all_scores, axis=0)
 
-        picked = get_topn_idx(all_score, n=batch_size, target=self.target)
-        return all_idx[picked].tolist(), all_score[picked].tolist()
+        picked = get_topn_idx(all_scores, n=batch_size, target=self.target)
+        return all_ids[picked].tolist(), all_scores[picked].tolist()
