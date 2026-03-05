@@ -15,7 +15,7 @@ from functools import cached_property
 from molalkit.models.mpnn.mpnn import MPNN, TrainArgs
 from ..args import Metric
 from .selection_method import BaseSelectionMethod, RandomSelectionMethod, get_subset
-from .forgetter import BaseForgetter, RandomForgetter, FirstForgetter, MCDropoutForgetter, XWithIdDataset
+from .forgetter import BaseForgetter, RandomForgetter, FirstForgetter, MCDropoutForgetter, XWithIndexDataset
 
 
 def eval_metric_func(y, y_pred, metric: str) -> float:
