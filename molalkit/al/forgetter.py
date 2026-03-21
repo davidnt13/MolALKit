@@ -220,6 +220,7 @@ class MCDropoutForgetter(BaseForgetter):
 
     @torch.no_grad()
     def _mc_probs(self, m: nn.Module, x: torch.Tensor) -> np.ndarray:
+        prev_model = m.training
         self._enable_dropout_only(m)
         x = x.to(self.device, non_blocking=True)
 
@@ -228,6 +229,7 @@ class MCDropoutForgetter(BaseForgetter):
             logits = m(x)
             p = self._to_probs(logits).detach().cpu().numpy()  # (B,C)
             probs.append(p)
+        m.train(prev_model)
         return np.stack(probs, axis=0)  # (S,B,C)
 
     @staticmethod
