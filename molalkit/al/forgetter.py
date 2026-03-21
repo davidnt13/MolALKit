@@ -172,7 +172,7 @@ class MCDropoutForgetter(BaseForgetter):
         self,
         device: str = "cpu",
         mc_samples: int = 20,
-        score_method: str = "variance",     # bald|entropy|variance|variation_ratio
+        score_method: str = "bald",     # bald|entropy|variance|variation_ratio
         batch_size_eval: int = 256,
         target: str = "min",
         num_workers: int = 0,
