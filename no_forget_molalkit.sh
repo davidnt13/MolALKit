@@ -17,7 +17,7 @@
 module load Anaconda3
 source activate molalkit
 
-python molalkit_run --data_public bbb_martins --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector David_MLP_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir "test data/bbb_david_mlp_mc_explorative"
+python molalkit_run --data_public bbb_martins --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector David_MLP_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir "test data/bbb_david_mlp_mc_explorative" --batch_size 2
 
 # python molalkit_run --data_public bace --metrics roc_auc mcc accuracy precision recall f1_score --learning_type passive --model_config_selector MLP_Morgan_BinaryClassification_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir bace_chemprop_no_forget
 
