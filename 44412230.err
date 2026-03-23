@@ -805,3 +805,191 @@ Start an new iteration of active learning: 245.
 Training set size = 494
 Pool set size = 115
 Start an new iteration of active learning: 246.
+Training set size = 496
+Pool set size = 113
+Start an new iteration of active learning: 247.
+Training set size = 498
+Pool set size = 111
+Start an new iteration of active learning: 248.
+Training set size = 500
+Pool set size = 109
+Start an new iteration of active learning: 249.
+Training set size = 502
+Pool set size = 107
+Start an new iteration of active learning: 250.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 504
+Pool set size = 105
+Start an new iteration of active learning: 251.
+Training set size = 506
+Pool set size = 103
+Start an new iteration of active learning: 252.
+Training set size = 508
+Pool set size = 101
+Start an new iteration of active learning: 253.
+Training set size = 510
+Pool set size = 99
+Start an new iteration of active learning: 254.
+Training set size = 512
+Pool set size = 97
+Start an new iteration of active learning: 255.
+Training set size = 514
+Pool set size = 95
+Start an new iteration of active learning: 256.
+Training set size = 516
+Pool set size = 93
+Start an new iteration of active learning: 257.
+Training set size = 518
+Pool set size = 91
+Start an new iteration of active learning: 258.
+Training set size = 520
+Pool set size = 89
+Start an new iteration of active learning: 259.
+Training set size = 522
+Pool set size = 87
+Start an new iteration of active learning: 260.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 524
+Pool set size = 85
+Start an new iteration of active learning: 261.
+Training set size = 526
+Pool set size = 83
+Start an new iteration of active learning: 262.
+Training set size = 528
+Pool set size = 81
+Start an new iteration of active learning: 263.
+Training set size = 530
+Pool set size = 79
+Start an new iteration of active learning: 264.
+Training set size = 532
+Pool set size = 77
+Start an new iteration of active learning: 265.
+Training set size = 534
+Pool set size = 75
+Start an new iteration of active learning: 266.
+Training set size = 536
+Pool set size = 73
+Start an new iteration of active learning: 267.
+Training set size = 538
+Pool set size = 71
+Start an new iteration of active learning: 268.
+Training set size = 540
+Pool set size = 69
+Start an new iteration of active learning: 269.
+Training set size = 542
+Pool set size = 67
+Start an new iteration of active learning: 270.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 544
+Pool set size = 65
+Start an new iteration of active learning: 271.
+Training set size = 546
+Pool set size = 63
+Start an new iteration of active learning: 272.
+Training set size = 548
+Pool set size = 61
+Start an new iteration of active learning: 273.
+Training set size = 550
+Pool set size = 59
+Start an new iteration of active learning: 274.
+Training set size = 552
+Pool set size = 57
+Start an new iteration of active learning: 275.
+Training set size = 554
+Pool set size = 55
+Start an new iteration of active learning: 276.
+Training set size = 556
+Pool set size = 53
+Start an new iteration of active learning: 277.
+Training set size = 558
+Pool set size = 51
+Start an new iteration of active learning: 278.
+Training set size = 560
+Pool set size = 49
+Start an new iteration of active learning: 279.
+Training set size = 562
+Pool set size = 47
+Start an new iteration of active learning: 280.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 564
+Pool set size = 45
+Start an new iteration of active learning: 281.
+Training set size = 566
+Pool set size = 43
+Start an new iteration of active learning: 282.
+Training set size = 568
+Pool set size = 41
+Start an new iteration of active learning: 283.
+Training set size = 570
+Pool set size = 39
+Start an new iteration of active learning: 284.
+Training set size = 572
+Pool set size = 37
+Start an new iteration of active learning: 285.
+Training set size = 574
+Pool set size = 35
+Start an new iteration of active learning: 286.
+Training set size = 576
+Pool set size = 33
+Start an new iteration of active learning: 287.
+Training set size = 578
+Pool set size = 31
+Start an new iteration of active learning: 288.
+Training set size = 580
+Pool set size = 29
+Start an new iteration of active learning: 289.
+Training set size = 582
+Pool set size = 27
+Start an new iteration of active learning: 290.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 584
+Pool set size = 25
+Start an new iteration of active learning: 291.
+Training set size = 586
+Pool set size = 23
+Start an new iteration of active learning: 292.
+Training set size = 588
+Pool set size = 21
+Start an new iteration of active learning: 293.
+Training set size = 590
+Pool set size = 19
+Start an new iteration of active learning: 294.
+Training set size = 592
+Pool set size = 17
+Start an new iteration of active learning: 295.
+Training set size = 594
+Pool set size = 15
+Start an new iteration of active learning: 296.
+Training set size = 596
+Pool set size = 13
+Start an new iteration of active learning: 297.
+Training set size = 598
+Pool set size = 11
+Start an new iteration of active learning: 298.
+Training set size = 600
+Pool set size = 9
+Start an new iteration of active learning: 299.
+Training set size = 602
+Pool set size = 7
+Start an new iteration of active learning: 300.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 604
+Pool set size = 5
+Start an new iteration of active learning: 301.
+Training set size = 606
+Pool set size = 3
+Start an new iteration of active learning: 302.
+Training set size = 608
+Pool set size = 1
+Start an new iteration of active learning: 303.
+Training set size = 609
+Pool set size = 0
+Start an new iteration of active learning: 304.
+total time: 145 s
+<molalkit.al.learner.ActiveLearner object at 0x7f90f9516c80>
