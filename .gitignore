@@ -1,2 +1,3 @@
+test data/cyp/**/al_traj.csv
 test data/cyp_mlp_forget/al_traj.csv
 test data/cyp/cyp_mlp_forget/al_traj.csv
