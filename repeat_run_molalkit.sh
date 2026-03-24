@@ -23,9 +23,11 @@ source activate molalkit
 
 # python molalkit_run --data_public bace --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector MLP_Morgan_BinaryClassification_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir bace_dnn_mc_forget --forget_protocol MCDropoutForgetter --forget_size 2
 
-python molalkit_run --data_public pgp_broccatelli  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 1 --batch_size 2 --save_dir "test data/pgp/rf/pgp_rf_explorative_maxf2"  --forget_protocol max_oob_uncertainty --forget_size 200
+# python molalkit_run --data_public pgp_broccatelli  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --batch_size 2 --save_dir "test data/pgp/rf/pgp_rf_explorative_minf2"  --forget_protocol min_oob_uncertainty --forget_size 200
 
-python molalkit_run --data_public pgp_broccatelli  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 2 --batch_size 2 --save_dir "test data/pgp/rf/pgp_rf_explorative_maxf3"  --forget_protocol max_oob_uncertainty --forget_size 200
+python molalkit_run --data_public pgp_broccatelli  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 1 --batch_size 2 --save_dir "test data/pgp/rf/pgp_rf_explorative_nf2"  #--forget_protocol min_oob_uncertainty --forget_size 200
+
+python molalkit_run --data_public pgp_broccatelli  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector RandomForest_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 2 --batch_size 2 --save_dir "test data/pgp/rf/pgp_rf_explorative_nf3"  #--forget_protocol max_oob_uncertainty --forget_size 200
 
 # Models Used:
 # Custom MLP: David_MLP_Morgan_Config

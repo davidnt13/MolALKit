@@ -1,14 +1,14 @@
 /hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
   import pkg_resources
-  0%|          | 0/1218 [00:00<?, ?it/s] 20%|██        | 246/1218 [00:00<00:00, 2450.42it/s] 43%|████▎     | 529/1218 [00:00<00:00, 2664.95it/s] 65%|██████▌   | 796/1218 [00:00<00:00, 2435.81it/s] 86%|████████▌ | 1042/1218 [00:00<00:00, 2231.81it/s]100%|██████████| 1218/1218 [00:00<00:00, 2359.39it/s]
+  0%|          | 0/1218 [00:00<?, ?it/s] 19%|█▉        | 229/1218 [00:00<00:00, 2288.52it/s] 40%|███▉      | 483/1218 [00:00<00:00, 2432.84it/s] 60%|█████▉    | 727/1218 [00:00<00:00, 2279.40it/s] 79%|███████▊  | 957/1218 [00:00<00:00, 2129.07it/s] 96%|█████████▋| 1174/1218 [00:00<00:00, 2142.22it/s]100%|██████████| 1218/1218 [00:00<00:00, 2208.61it/s]
 Total scaffolds = 682 | 
 split 0 scaffolds = 117 | 
 split 1 scaffolds = 565 | 
 [Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
 [Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
-[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.6s
-[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.1s
-[Parallel(n_jobs=1)]: Done 1218 out of 1218 | elapsed:    1.7s finished
+[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.7s
+[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.2s
+[Parallel(n_jobs=1)]: Done 1218 out of 1218 | elapsed:    1.9s finished
 Start a new active learning run.
 Start active learning: 
 Training set size = 2
@@ -1962,5 +1962,5 @@ Pool set size = 1
 Start an new iteration of active learning: 607.
 Training set size = 608
 Pool set size = 1
-total time: 735 s
-<molalkit.al.learner.ActiveLearner object at 0x7f3d54696590>
+total time: 821 s
+<molalkit.al.learner.ActiveLearner object at 0x7fcde43df880>

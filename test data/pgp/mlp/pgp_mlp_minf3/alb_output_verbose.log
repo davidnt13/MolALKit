@@ -1,21 +1,13 @@
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-  0%|          | 0/1218 [00:00<?, ?it/s] 20%|█▉        | 240/1218 [00:00<00:00, 2397.26it/s] 43%|████▎     | 521/1218 [00:00<00:00, 2630.53it/s] 64%|██████▍   | 785/1218 [00:00<00:00, 2386.72it/s] 84%|████████▍ | 1027/1218 [00:00<00:00, 2196.40it/s]100%|██████████| 1218/1218 [00:00<00:00, 2310.47it/s]
 Total scaffolds = 682 | 
 split 0 scaffolds = 117 | 
 split 1 scaffolds = 565 | 
-[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
-[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
-[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.7s
-[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.2s
-[Parallel(n_jobs=1)]: Done 1218 out of 1218 | elapsed:    1.8s finished
 Start a new active learning run.
 Start active learning: 
 Training set size = 2
 Pool set size = 607
 Validation set size = 609
 selection method: ExplorativeSelectionMethod(batch_size=2)
-Forgetter: MaxOOBUncertaintyForgetter
+Forgetter: MCDropoutForgetter
 Start an new iteration of active learning: 0.
 evaluating model performance.
 evaluating model performance finished.
@@ -1962,5 +1954,4 @@ Pool set size = 1
 Start an new iteration of active learning: 607.
 Training set size = 608
 Pool set size = 1
-total time: 314 s
-<molalkit.al.learner.ActiveLearner object at 0x7fe1f41bab30>
+total time: 821 s
