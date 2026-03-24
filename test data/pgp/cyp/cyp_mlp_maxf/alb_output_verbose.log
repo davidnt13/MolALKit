@@ -1,0 +1,80 @@
+Total scaffolds = 7,428 | 
+split 0 scaffolds = 1,410 | 
+split 1 scaffolds = 6,018 | 
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 6162
+Validation set size = 6164
+selection method: ExplorativeSelectionMethod(batch_size=2)
+Forgetter: MCDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 4
+Pool set size = 6160
+Start an new iteration of active learning: 1.
+Training set size = 6
+Pool set size = 6158
+Start an new iteration of active learning: 2.
+Training set size = 8
+Pool set size = 6156
+Start an new iteration of active learning: 3.
+Training set size = 10
+Pool set size = 6154
+Start an new iteration of active learning: 4.
+Training set size = 12
+Pool set size = 6152
+Start an new iteration of active learning: 5.
+Training set size = 14
+Pool set size = 6150
+Start an new iteration of active learning: 6.
+Training set size = 16
+Pool set size = 6148
+Start an new iteration of active learning: 7.
+Training set size = 18
+Pool set size = 6146
+Start an new iteration of active learning: 8.
+Training set size = 20
+Pool set size = 6144
+Start an new iteration of active learning: 9.
+Training set size = 22
+Pool set size = 6142
+Start an new iteration of active learning: 10.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 24
+Pool set size = 6140
+Start an new iteration of active learning: 11.
+Training set size = 26
+Pool set size = 6138
+Start an new iteration of active learning: 12.
+Training set size = 28
+Pool set size = 6136
+Start an new iteration of active learning: 13.
+Training set size = 30
+Pool set size = 6134
+Start an new iteration of active learning: 14.
+Training set size = 32
+Pool set size = 6132
+Start an new iteration of active learning: 15.
+Training set size = 34
+Pool set size = 6130
+Start an new iteration of active learning: 16.
+Training set size = 36
+Pool set size = 6128
+Start an new iteration of active learning: 17.
+Training set size = 38
+Pool set size = 6126
+Start an new iteration of active learning: 18.
+Training set size = 40
+Pool set size = 6124
+Start an new iteration of active learning: 19.
+Training set size = 42
+Pool set size = 6122
+Start an new iteration of active learning: 20.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 44
+Pool set size = 6120
+Start an new iteration of active learning: 21.

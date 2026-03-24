@@ -1,0 +1,99 @@
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/12328 [00:00<?, ?it/s]  2%|▏         | 299/12328 [00:00<00:04, 2988.86it/s]  5%|▍         | 598/12328 [00:00<00:04, 2883.99it/s]  7%|▋         | 887/12328 [00:00<00:04, 2854.02it/s] 10%|▉         | 1173/12328 [00:00<00:03, 2819.62it/s] 12%|█▏        | 1457/12328 [00:00<00:03, 2826.45it/s] 14%|█▍        | 1740/12328 [00:00<00:03, 2807.73it/s] 16%|█▋        | 2021/12328 [00:00<00:03, 2782.75it/s] 19%|█▊        | 2302/12328 [00:00<00:03, 2789.56it/s] 21%|██        | 2603/12328 [00:00<00:03, 2855.79it/s] 24%|██▍       | 2942/12328 [00:01<00:03, 3018.60it/s] 27%|██▋       | 3276/12328 [00:01<00:02, 3115.18it/s] 29%|██▉       | 3630/12328 [00:01<00:02, 3243.12it/s] 33%|███▎      | 4040/12328 [00:01<00:02, 3501.07it/s] 36%|███▌      | 4427/12328 [00:01<00:02, 3610.57it/s] 39%|███▉      | 4789/12328 [00:01<00:02, 3567.48it/s] 42%|████▏     | 5146/12328 [00:01<00:02, 3555.62it/s] 45%|████▌     | 5566/12328 [00:01<00:01, 3746.85it/s] 48%|████▊     | 5941/12328 [00:01<00:01, 3694.49it/s] 51%|█████     | 6311/12328 [00:01<00:01, 3464.88it/s] 54%|█████▍    | 6670/12328 [00:02<00:01, 3498.31it/s] 57%|█████▋    | 7023/12328 [00:02<00:01, 3376.24it/s] 60%|█████▉    | 7388/12328 [00:02<00:01, 3451.36it/s] 63%|██████▎   | 7736/12328 [00:02<00:01, 3454.30it/s] 66%|██████▌   | 8083/12328 [00:02<00:01, 3435.84it/s] 68%|██████▊   | 8428/12328 [00:02<00:01, 3381.70it/s] 71%|███████   | 8767/12328 [00:02<00:01, 3223.51it/s] 74%|███████▍  | 9092/12328 [00:02<00:01, 2818.63it/s] 76%|███████▋  | 9415/12328 [00:02<00:00, 2925.45it/s] 79%|███████▉  | 9761/12328 [00:03<00:00, 3068.58it/s] 82%|████████▏ | 10084/12328 [00:03<00:00, 3112.77it/s] 84%|████████▍ | 10401/12328 [00:03<00:00, 3125.96it/s] 87%|████████▋ | 10731/12328 [00:03<00:00, 3174.12it/s] 90%|████████▉ | 11079/12328 [00:03<00:00, 3263.00it/s] 93%|█████████▎| 11408/12328 [00:03<00:00, 3251.41it/s] 95%|█████████▌| 11735/12328 [00:03<00:00, 3242.35it/s] 98%|█████████▊| 12061/12328 [00:03<00:00, 3026.78it/s]100%|██████████| 12328/12328 [00:03<00:00, 3181.63it/s]
+Total scaffolds = 7,428 | 
+split 0 scaffolds = 1,410 | 
+split 1 scaffolds = 6,018 | 
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.5s
+[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.0s
+[Parallel(n_jobs=1)]: Done 1249 tasks      | elapsed:    1.5s
+[Parallel(n_jobs=1)]: Done 1799 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done 2449 tasks      | elapsed:    3.0s
+[Parallel(n_jobs=1)]: Done 3199 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=1)]: Done 4049 tasks      | elapsed:    4.8s
+[Parallel(n_jobs=1)]: Done 4999 tasks      | elapsed:    5.9s
+[Parallel(n_jobs=1)]: Done 6049 tasks      | elapsed:    7.1s
+[Parallel(n_jobs=1)]: Done 7199 tasks      | elapsed:    8.7s
+[Parallel(n_jobs=1)]: Done 8449 tasks      | elapsed:   10.2s
+[Parallel(n_jobs=1)]: Done 9799 tasks      | elapsed:   11.8s
+[Parallel(n_jobs=1)]: Done 11249 tasks      | elapsed:   13.6s
+[Parallel(n_jobs=1)]: Done 12328 out of 12328 | elapsed:   14.9s finished
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 6162
+Validation set size = 6164
+selection method: ExplorativeSelectionMethod(batch_size=2)
+Forgetter: MCDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 4
+Pool set size = 6160
+Start an new iteration of active learning: 1.
+Training set size = 6
+Pool set size = 6158
+Start an new iteration of active learning: 2.
+Training set size = 8
+Pool set size = 6156
+Start an new iteration of active learning: 3.
+Training set size = 10
+Pool set size = 6154
+Start an new iteration of active learning: 4.
+Training set size = 12
+Pool set size = 6152
+Start an new iteration of active learning: 5.
+Training set size = 14
+Pool set size = 6150
+Start an new iteration of active learning: 6.
+Training set size = 16
+Pool set size = 6148
+Start an new iteration of active learning: 7.
+Training set size = 18
+Pool set size = 6146
+Start an new iteration of active learning: 8.
+Training set size = 20
+Pool set size = 6144
+Start an new iteration of active learning: 9.
+Training set size = 22
+Pool set size = 6142
+Start an new iteration of active learning: 10.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 24
+Pool set size = 6140
+Start an new iteration of active learning: 11.
+Training set size = 26
+Pool set size = 6138
+Start an new iteration of active learning: 12.
+Training set size = 28
+Pool set size = 6136
+Start an new iteration of active learning: 13.
+Training set size = 30
+Pool set size = 6134
+Start an new iteration of active learning: 14.
+Training set size = 32
+Pool set size = 6132
+Start an new iteration of active learning: 15.
+Training set size = 34
+Pool set size = 6130
+Start an new iteration of active learning: 16.
+Training set size = 36
+Pool set size = 6128
+Start an new iteration of active learning: 17.
+Training set size = 38
+Pool set size = 6126
+Start an new iteration of active learning: 18.
+Training set size = 40
+Pool set size = 6124
+Start an new iteration of active learning: 19.
+Training set size = 42
+Pool set size = 6122
+Start an new iteration of active learning: 20.
+evaluating model performance.
+evaluating model performance finished.
+Training set size = 44
+Pool set size = 6120
+Start an new iteration of active learning: 21.
