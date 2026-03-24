@@ -1,6 +1,6 @@
 /hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
   import pkg_resources
-  0%|          | 0/12328 [00:00<?, ?it/s]  3%|▎         | 341/12328 [00:00<00:03, 3398.82it/s]  6%|▌         | 681/12328 [00:00<00:03, 3286.43it/s]  8%|▊         | 1010/12328 [00:00<00:03, 3237.90it/s] 11%|█         | 1334/12328 [00:00<00:03, 3226.06it/s] 13%|█▎        | 1657/12328 [00:00<00:03, 3213.84it/s] 16%|█▌        | 1979/12328 [00:00<00:03, 3177.24it/s] 19%|█▊        | 2300/12328 [00:00<00:03, 3184.86it/s] 21%|██▏       | 2630/12328 [00:00<00:03, 3220.37it/s] 24%|██▍       | 2979/12328 [00:00<00:02, 3301.46it/s] 27%|██▋       | 3318/12328 [00:01<00:02, 3327.38it/s] 30%|██▉       | 3696/12328 [00:01<00:02, 3461.47it/s] 33%|███▎      | 4120/12328 [00:01<00:02, 3696.14it/s] 37%|███▋      | 4502/12328 [00:01<00:02, 3732.36it/s] 40%|███▉      | 4882/12328 [00:01<00:01, 3751.22it/s] 43%|████▎     | 5258/12328 [00:01<00:01, 3709.27it/s] 46%|████▌     | 5679/12328 [00:01<00:01, 3857.27it/s] 49%|████▉     | 6065/12328 [00:01<00:01, 3744.04it/s] 52%|█████▏    | 6441/12328 [00:01<00:01, 3419.55it/s] 55%|█████▌    | 6833/12328 [00:01<00:01, 3557.60it/s] 58%|█████▊    | 7194/12328 [00:02<00:01, 3485.99it/s] 61%|██████▏   | 7557/12328 [00:02<00:01, 3526.12it/s] 64%|██████▍   | 7913/12328 [00:02<00:01, 3510.82it/s] 67%|██████▋   | 8266/12328 [00:02<00:01, 3476.03it/s] 70%|██████▉   | 8615/12328 [00:02<00:01, 3433.43it/s] 73%|███████▎  | 8960/12328 [00:02<00:01, 2966.50it/s] 75%|███████▌  | 9268/12328 [00:02<00:01, 2934.08it/s] 78%|███████▊  | 9611/12328 [00:02<00:00, 3066.59it/s] 81%|████████  | 9958/12328 [00:02<00:00, 3177.15it/s] 83%|████████▎ | 10282/12328 [00:03<00:00, 3168.75it/s] 86%|████████▌ | 10615/12328 [00:03<00:00, 3213.36it/s] 89%|████████▉ | 10966/12328 [00:03<00:00, 3298.76it/s] 92%|█████████▏| 11300/12328 [00:03<00:00, 3309.13it/s] 94%|█████████▍| 11633/12328 [00:03<00:00, 3304.79it/s] 97%|█████████▋| 11965/12328 [00:03<00:00, 3217.24it/s]100%|█████████▉| 12288/12328 [00:03<00:00, 2956.64it/s]100%|██████████| 12328/12328 [00:03<00:00, 3325.57it/s]
+  0%|          | 0/12328 [00:00<?, ?it/s]  3%|▎         | 332/12328 [00:00<00:03, 3318.71it/s]  5%|▌         | 664/12328 [00:00<00:03, 3215.60it/s]  8%|▊         | 986/12328 [00:00<00:03, 3161.29it/s] 11%|█         | 1303/12328 [00:00<00:03, 3145.92it/s] 13%|█▎        | 1618/12328 [00:00<00:03, 3130.27it/s] 16%|█▌        | 1932/12328 [00:00<00:03, 3083.03it/s] 18%|█▊        | 2243/12328 [00:00<00:03, 3089.08it/s] 21%|██        | 2558/12328 [00:00<00:03, 3107.74it/s] 23%|██▎       | 2891/12328 [00:00<00:02, 3175.48it/s] 26%|██▌       | 3223/12328 [00:01<00:02, 3219.58it/s] 29%|██▉       | 3565/12328 [00:01<00:02, 3280.38it/s] 32%|███▏      | 3979/12328 [00:01<00:02, 3540.75it/s] 35%|███▌      | 4359/12328 [00:01<00:02, 3618.31it/s] 38%|███▊      | 4721/12328 [00:01<00:02, 3598.96it/s] 41%|████      | 5082/12328 [00:01<00:02, 3581.28it/s] 45%|████▍     | 5496/12328 [00:01<00:01, 3746.07it/s] 48%|████▊     | 5871/12328 [00:01<00:01, 3711.09it/s] 51%|█████     | 6243/12328 [00:01<00:01, 3513.46it/s] 54%|█████▎    | 6597/12328 [00:01<00:01, 3436.74it/s] 56%|█████▋    | 6943/12328 [00:02<00:01, 3412.86it/s] 59%|█████▉    | 7292/12328 [00:02<00:01, 3434.28it/s] 62%|██████▏   | 7637/12328 [00:02<00:01, 3437.00it/s] 65%|██████▍   | 7982/12328 [00:02<00:01, 3404.84it/s] 68%|██████▊   | 8323/12328 [00:02<00:01, 3356.77it/s] 70%|███████   | 8660/12328 [00:02<00:01, 3284.51it/s] 73%|███████▎  | 8989/12328 [00:02<00:01, 2807.16it/s] 75%|███████▌  | 9297/12328 [00:02<00:01, 2876.40it/s] 78%|███████▊  | 9634/12328 [00:02<00:00, 3009.84it/s] 81%|████████  | 9971/12328 [00:03<00:00, 3108.08it/s] 83%|████████▎ | 10288/12328 [00:03<00:00, 3082.10it/s] 86%|████████▌ | 10613/12328 [00:03<00:00, 3124.87it/s] 89%|████████▉ | 10963/12328 [00:03<00:00, 3233.12it/s] 92%|█████████▏| 11296/12328 [00:03<00:00, 3261.38it/s] 94%|█████████▍| 11625/12328 [00:03<00:00, 3269.62it/s] 97%|█████████▋| 11954/12328 [00:03<00:00, 3218.71it/s]100%|█████████▉| 12277/12328 [00:03<00:00, 2931.22it/s]100%|██████████| 12328/12328 [00:03<00:00, 3246.56it/s]
 Total scaffolds = 7,428 | 
 split 0 scaffolds = 1,410 | 
 split 1 scaffolds = 6,018 | 
@@ -10,16 +10,16 @@ split 1 scaffolds = 6,018 |
 [Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    0.9s
 [Parallel(n_jobs=1)]: Done 1249 tasks      | elapsed:    1.5s
 [Parallel(n_jobs=1)]: Done 1799 tasks      | elapsed:    2.1s
-[Parallel(n_jobs=1)]: Done 2449 tasks      | elapsed:    2.8s
-[Parallel(n_jobs=1)]: Done 3199 tasks      | elapsed:    3.7s
-[Parallel(n_jobs=1)]: Done 4049 tasks      | elapsed:    4.6s
-[Parallel(n_jobs=1)]: Done 4999 tasks      | elapsed:    5.7s
-[Parallel(n_jobs=1)]: Done 6049 tasks      | elapsed:    6.9s
-[Parallel(n_jobs=1)]: Done 7199 tasks      | elapsed:    8.4s
-[Parallel(n_jobs=1)]: Done 8449 tasks      | elapsed:    9.8s
-[Parallel(n_jobs=1)]: Done 9799 tasks      | elapsed:   11.4s
-[Parallel(n_jobs=1)]: Done 11249 tasks      | elapsed:   13.0s
-[Parallel(n_jobs=1)]: Done 12328 out of 12328 | elapsed:   14.3s finished
+[Parallel(n_jobs=1)]: Done 2449 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done 3199 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=1)]: Done 4049 tasks      | elapsed:    4.7s
+[Parallel(n_jobs=1)]: Done 4999 tasks      | elapsed:    5.8s
+[Parallel(n_jobs=1)]: Done 6049 tasks      | elapsed:    7.0s
+[Parallel(n_jobs=1)]: Done 7199 tasks      | elapsed:    8.5s
+[Parallel(n_jobs=1)]: Done 8449 tasks      | elapsed:   10.0s
+[Parallel(n_jobs=1)]: Done 9799 tasks      | elapsed:   11.6s
+[Parallel(n_jobs=1)]: Done 11249 tasks      | elapsed:   13.3s
+[Parallel(n_jobs=1)]: Done 12328 out of 12328 | elapsed:   14.5s finished
 Start a new active learning run.
 Start active learning: 
 Training set size = 2
@@ -16880,76 +16880,3 @@ Start an new iteration of active learning: 5265.
 Training set size = 5366
 Pool set size = 798
 Start an new iteration of active learning: 5266.
-Training set size = 5367
-Pool set size = 797
-Start an new iteration of active learning: 5267.
-Training set size = 5368
-Pool set size = 796
-Start an new iteration of active learning: 5268.
-Training set size = 5369
-Pool set size = 795
-Start an new iteration of active learning: 5269.
-Training set size = 5370
-Pool set size = 794
-Start an new iteration of active learning: 5270.
-evaluating model performance.
-evaluating model performance finished.
-Training set size = 5371
-Pool set size = 793
-Start an new iteration of active learning: 5271.
-Training set size = 5372
-Pool set size = 792
-Start an new iteration of active learning: 5272.
-Training set size = 5373
-Pool set size = 791
-Start an new iteration of active learning: 5273.
-Training set size = 5374
-Pool set size = 790
-Start an new iteration of active learning: 5274.
-Training set size = 5375
-Pool set size = 789
-Start an new iteration of active learning: 5275.
-Training set size = 5376
-Pool set size = 788
-Start an new iteration of active learning: 5276.
-Training set size = 5377
-Pool set size = 787
-Start an new iteration of active learning: 5277.
-Training set size = 5378
-Pool set size = 786
-Start an new iteration of active learning: 5278.
-Training set size = 5379
-Pool set size = 785
-Start an new iteration of active learning: 5279.
-Training set size = 5380
-Pool set size = 784
-Start an new iteration of active learning: 5280.
-evaluating model performance.
-evaluating model performance finished.
-Training set size = 5381
-Pool set size = 783
-Start an new iteration of active learning: 5281.
-Training set size = 5382
-Pool set size = 782
-Start an new iteration of active learning: 5282.
-Training set size = 5383
-Pool set size = 781
-Start an new iteration of active learning: 5283.
-Training set size = 5384
-Pool set size = 780
-Start an new iteration of active learning: 5284.
-Training set size = 5385
-Pool set size = 779
-Start an new iteration of active learning: 5285.
-Training set size = 5386
-Pool set size = 778
-Start an new iteration of active learning: 5286.
-Training set size = 5387
-Pool set size = 777
-Start an new iteration of active learning: 5287.
-Training set size = 5388
-Pool set size = 776
-Start an new iteration of active learning: 5288.
-Training set size = 5389
-Pool set size = 775
-Start an new iteration of active learning: 5289.

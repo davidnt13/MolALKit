@@ -262,6 +262,7 @@ Emopamil,CC(C)[C@](C#N)(CCCN(C)CCc1ccccc1)c1ccccc1,1,521
 "5,6,7-trimethoxy-2-phenylchromen-4-one",COc1cc2oc(-c3ccccc3)cc(=O)c2c(OC)c1OC,1,540
 "5-hydroxy-6,7-dimethoxy-2-phenylchromen-4-one",COc1cc2oc(-c3ccccc3)cc(=O)c2c(O)c1OC,1,541
 "5,7-dihydroxy-2-phenyl-6-propoxychromen-4-one",CCCOc1c(O)cc2oc(-c3ccccc3)cc(=O)c2c1O,1,547
+"6-ethoxy-5,7-dihydroxy-2-phenylchromen-4-one",CCOc1c(O)cc2oc(-c3ccccc3)cc(=O)c2c1O,1,548
 (6-acetyloxy-5-hydroxy-4-oxo-2-phenylchromen-7-yl)acetate,CC(=O)Oc1cc2oc(-c3ccccc3)cc(=O)c2c(O)c1OC(C)=O,1,549
 6-ethoxy-5-hydroxy-7-methoxy-2-phenylchromen-4-one,CCOc1c(OC)cc2oc(-c3ccccc3)cc(=O)c2c1O,1,550
 "5,7-dimethoxy-2-phenyl-6-propoxychromen-4-one",CCCOc1c(OC)cc2oc(-c3ccccc3)cc(=O)c2c1OC,1,551
@@ -308,7 +309,6 @@ Emopamil,CC(C)[C@](C#N)(CCCN(C)CCc1ccccc1)c1ccccc1,1,521
 1-[2-[(2R)-2-hydroxy-3-piperidin-1-ylpropoxy]phenyl]propan-1-one,CCC(=O)c1ccccc1OC[C@H](O)CN1CCCCC1,1,625
 1-[2-[(2S)-2-hydroxy-3-(4-phenylpiperazin-1-yl)propoxy]phenyl]-3-phenylpropan-1-one,O=C(CCc1ccccc1)c1ccccc1OC[C@@H](O)CN1CCN(c2ccccc2)CC1,1,626
 1-[2-[(2R)-2-hydroxy-3-[4-(2-methoxyphenyl)piperazin-1-yl]propoxy]phenyl]-3-phenylpropan-1-one,COc1ccccc1N1CCN(C[C@@H](O)COc2ccccc2C(=O)CCc2ccccc2)CC1,1,627
-1-[2-[(2S)-2-hydroxy-3-morpholin-4-ylpropoxy]phenyl]propan-1-one,CCC(=O)c1ccccc1OC[C@@H](O)CN1CCOCC1,0,628
 1-[2-[(2S)-2-hydroxy-3-[4-(3-methoxyphenyl)piperazin-1-yl]propoxy]phenyl]-3-phenylpropan-1-one,COc1cccc(N2CCN(C[C@H](O)COc3ccccc3C(=O)CCc3ccccc3)CC2)c1,1,629
 1-[2-[(2S)-2-hydroxy-3-[4-(4-methoxyphenyl)piperazin-1-yl]propoxy]phenyl]-3-phenylpropan-1-one,COc1ccc(N2CCN(C[C@H](O)COc3ccccc3C(=O)CCc3ccccc3)CC2)cc1,1,630
 1-[2-[(2S)-2-hydroxy-3-[4-(2-methylphenyl)piperazin-1-yl]propoxy]phenyl]-3-phenylpropan-1-one,Cc1ccccc1N1CCN(C[C@H](O)COc2ccccc2C(=O)CCc2ccccc2)CC1,1,631
@@ -370,6 +370,7 @@ Caffeic acid,O=C(O)/C=C/c1ccc(O)c(O)c1,0,742
 Mephentermine,CNCC(C)(C)c1ccccc1,0,745
 Apigenin,O=c1cc(-c2ccc(O)cc2)oc2cc(O)cc(O)c12,0,750
 Catechin,Oc1cc(O)c2c(c1)O[C@H](c1ccc(O)c(O)c1)[C@@H](O)C2,0,753
+Etanidazole,O=C(Cn1ccnc1[N+](=O)[O-])NCCO,0,759
 Hespertin,COc1ccc([C@H]2CC(=O)c3c(O)cc(O)cc3O2)cc1O,0,760
 Norethindrone,C#C[C@]1(O)CC[C@@H]2[C@@H]3CCC4=CC(=O)CC[C@H]4[C@H]3CC[C@]21C,0,765
 Phenylpropanolamine,C[C@H](N)[C@H](O)c1ccccc1,0,769
@@ -396,7 +397,6 @@ N-tert-butyl-N'-[(E)-(2-hydroxy-3-methoxyphenyl)methylideneamino]oxamide,COc1ccc
 N-[2-[[4-[2-[(3-hydroxy-4-methoxyphenyl)methyl-methylamino]ethyl]phenyl]carbamoyl]phenyl]quinoline-3-carboxamide,COc1ccc(CN(C)CCc2ccc(NC(=O)c3ccccc3NC(=O)c3cnc4ccccc4c3)cc2)cc1O,1,833
 N-[2-[[4-[2-[(4-hydroxy-3-methoxyphenyl)methyl-methylamino]ethyl]phenyl]carbamoyl]phenyl]quinoline-3-carboxamide,COc1cc(CN(C)CCc2ccc(NC(=O)c3ccccc3NC(=O)c3cnc4ccccc4c3)cc2)ccc1O,1,834
 "2-[(4-tert-butylbenzoyl)amino]-N-[2-[(2R)-6,7-dimethoxy-3,4-dihydro-1H-isoquinolin-2-yl]ethyl]benzamide",COc1cc2c(cc1OC)CN(CCNC(=O)c1ccccc1NC(=O)c1ccc(C(C)(C)C)cc1)CC2,1,836
-"4-chloro-N-[2-[(2R)-6,7-dimethoxy-3,4-dihydro-1H-isoquinolin-2-yl]ethyl]-2-[(4-propan-2-ylbenzoyl)amino]benzamide",COc1cc2c(cc1OC)CN(CCNC(=O)c1ccc(Cl)cc1NC(=O)c1ccc(C(C)C)cc1)CC2,1,837
 "5-chloro-N-[2-[(2R)-6,7-dimethoxy-3,4-dihydro-1H-isoquinolin-2-yl]ethyl]-2-[(4-propan-2-ylbenzoyl)amino]benzamide",COc1cc2c(cc1OC)CN(CCNC(=O)c1cc(Cl)ccc1NC(=O)c1ccc(C(C)C)cc1)CC2,1,838
 "N-[2-[(2R)-6,7-dimethoxy-3,4-dihydro-1H-isoquinolin-2-yl]ethyl]-2-[(4-propylbenzoyl)amino]benzamide",CCCc1ccc(C(=O)Nc2ccccc2C(=O)NCCN2CCc3cc(OC)c(OC)cc3C2)cc1,1,841
 "2-[(4-bromobenzoyl)amino]-N-[2-[(2S)-6,7-dimethoxy-3,4-dihydro-1H-isoquinolin-2-yl]ethyl]benzamide",COc1cc2c(cc1OC)CN(CCNC(=O)c1ccccc1NC(=O)c1ccc(Br)cc1)CC2,1,842

@@ -17,7 +17,7 @@
 module load Anaconda3
 source activate molalkit
 
-python molalkit_run --data_public CYP3A4_Veith --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector David_MLP_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --batch_size 2 --save_dir "test data/pgp/cyp/cyp_mlp_maxf3" --forget_protocol MCDropoutForgetter --forget_size 200
+python molalkit_run --data_public pgp_broccatelli --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector David_MLP_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 2 --batch_size 2 --save_dir "test data/pgp/mlp/pgp_mlp_maxf3" --forget_protocol MCDropoutForgetter --forget_size 200
 
 # python molalkit_run --data_public bbb_martins --metrics roc_auc mcc accuracy precision recall f1_score --learning_type passive --model_config_selector David_MLP_Morgan_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --save_dir "test data/bbb_david_mforg_batch2_random" --forget_protocol MCDropoutForgetter --forget_size 250 --batch_size 2
 
