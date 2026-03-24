@@ -174,7 +174,7 @@ class MCDropoutForgetter(BaseForgetter):
         mc_samples: int = 20,
         score_method: str = "bald",     # bald|entropy|variance|variation_ratio
         batch_size_eval: int = 256,
-        target: str = "min",
+        target: str = "max",
         num_workers: int = 0,
         pin_memory: bool = True,
     ):
