@@ -368,6 +368,8 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
     """the number of molecules in the training set to start forgetting data at."""
     forget_ratio: float = None
     """the percent of the full training set to start forgetting data."""
+    mc_forget_version: Literal['min', 'max'] = None
+    """min uncertainty forgetting or max uncertainty"""
 
     @property
     def model_selector(self):
@@ -677,7 +679,7 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
             elif self.forget_protocol == 'min_loo_error':
                 forgeter = MinLOOErrorForgetter(seed=0)
             elif self.forget_protocol == 'MCDropoutForgetter':
-                forgeter = MCDropoutForgetter()
+                forgeter = MCDropoutForgetter(target=self.mc_forget_version)
             else:
                 return None
             # set forget_size and forget_cutoff in forgetter.
