@@ -1,0 +1,25 @@
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/1218 [00:00<?, ?it/s] 19%|█▉        | 231/1218 [00:00<00:00, 2305.49it/s] 41%|████      | 502/1218 [00:00<00:00, 2539.34it/s] 62%|██████▏   | 756/1218 [00:00<00:00, 2286.52it/s] 81%|████████  | 988/1218 [00:00<00:00, 2131.27it/s]100%|██████████| 1218/1218 [00:00<00:00, 2183.45it/s]100%|██████████| 1218/1218 [00:00<00:00, 2227.61it/s]
+Total scaffolds = 682 | 
+split 0 scaffolds = 117 | 
+split 1 scaffolds = 565 | 
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.7s
+[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.2s
+[Parallel(n_jobs=1)]: Done 1218 out of 1218 | elapsed:    1.9s finished
+Traceback (most recent call last):
+  File "/work/dn123/MolALKit/molalkit_run", line 7, in <module>
+    sys.exit(molalkit_run())
+  File "/work/dn123/MolALKit/molalkit/al/run.py", line 11, in molalkit_run
+    args = ActiveLearningArgs().parse_args(arguments)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/tap/tap.py", line 481, in parse_args
+    self.process_args()
+  File "/work/dn123/MolALKit/molalkit/args.py", line 751, in process_args
+    assert (self.forgetter.forget_size is None) ^ (self.forgetter.forget_cutoff is None)
+  File "/work/dn123/MolALKit/molalkit/args.py", line 682, in forgetter
+    forgeter = MCDropoutForgetter(target=self.mc_forget_version)
+  File "/work/dn123/MolALKit/molalkit/al/forgetter.py", line 186, in __init__
+    assert target in ("max", "min")
+AssertionError
