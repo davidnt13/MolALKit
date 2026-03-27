@@ -7,6 +7,8 @@ from molalkit.models.random_forest.RandomForestClassifier import RFClassifier
 from molalkit.models.gaussian_process.GaussianProcessRegressor import GPRegressor
 from molalkit.al.selection_method import get_topn_idx
 
+TEMP_BATCH_SIZE = 1
+
 class BaseForgetter(ABC):
     def __init__(self, batch_size: int = 1, forget_size: int = 1, forget_cutoff: float = None):
         self.batch_size = batch_size
@@ -51,7 +53,7 @@ class FirstForgetter(BaseForgetter):
 
 
 class MinOOBUncertaintyForgetter(BaseRandomForgetter):
-    def __call__(self, model: RFClassifier, data, batch_size: int = 1, **kwargs) -> Tuple[List[int], List[float]]:
+    def __call__(self, model: RFClassifier, data, batch_size: int = 1, **kwargs) -> Tuple[List[int], List[float]]: 
         assert batch_size < len(data)
         assert isinstance(model, RFClassifier)
         assert model.oob_score is True
@@ -59,7 +61,8 @@ class MinOOBUncertaintyForgetter(BaseRandomForgetter):
         # uncertainty calculation, normalized into 0 to 1
         y_oob_uncertainty = (0.25 - np.var(y_oob_proba, axis=1)) * 4
         # select the top-n points with least uncertainty
-        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=batch_size, target='min')
+        temp_batch_size = 1 #100 #BATCH SIZE IS 100 FOR NOW
+        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=TEMP_BATCH_SIZE, target='min') 
         acquisition = y_oob_uncertainty[np.array(forgotten_idx)].tolist()
         return forgotten_idx, acquisition
 
@@ -88,7 +91,8 @@ class MaxOOBUncertaintyForgetter(BaseRandomForgetter):
         # uncertainty calculation, normalized into 0 to 1
         y_oob_uncertainty = (0.25 - np.var(y_oob_proba, axis=1)) * 4
         # select the top-n points with least uncertainty
-        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=batch_size)
+        temp_batch_size = 1# 100 #BATCH SIZE IS 100 FOR NOW
+        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=TEMP_BATCH_SIZE)
         acquisition = y_oob_uncertainty[np.array(forgotten_idx)].tolist()
         return forgotten_idx, acquisition
 
@@ -280,7 +284,7 @@ class MCDropoutForgetter(BaseForgetter):
         idx = torch.tensor([int(i) for i in idxs], dtype=torch.long)
         return x, idx
 
-    def __call__(self, model, data: Dataset, batch_size: int = 1) -> Tuple[List[int], List[float]]:
+    def __call__(self, model, data: Dataset, batch_size: int = 1) -> Tuple[List[int], List[float]]: #BATCH SIZE IS 100 FOR NOW
         m = self._unwrap_nn(model).to(self.device)
 
         dl = DataLoader(
@@ -306,5 +310,7 @@ class MCDropoutForgetter(BaseForgetter):
         all_ids = np.concatenate(all_ids, axis=0)
         all_scores = np.concatenate(all_scores, axis=0)
 
-        picked = get_topn_idx(all_scores, n=batch_size, target=self.target)
+        temp_batch_size = 1 #100 #BATCH SIZE IS 100 FOR NOW
+
+        picked = get_topn_idx(all_scores, n=TEMP_BATCH_SIZE, target=self.target)
         return all_ids[picked].tolist(), all_scores[picked].tolist()

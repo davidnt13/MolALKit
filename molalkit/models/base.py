@@ -37,6 +37,23 @@ class BaseSklearnModel(BaseModel, ABC):
         return (0.25 - np.var(p, axis=1)) * 4
 
     @staticmethod
+    # def predict_value_c(pred_data, model):
+    #     X = pred_data.X
+    #     return model.predict_proba(X)[:, 1]
+    
     def predict_value_c(pred_data, model):
         X = pred_data.X
-        return model.predict_proba(X)[:, 1]
+        proba = model.predict_proba(X)
+        classes = model.classes_
+
+        # If the model was trained on only one class, sklearn returns one column.
+        # Return a constant probability for class 1 in that case.
+        if len(classes) == 1:
+            return np.ones(len(X)) if classes[0] == 1 else np.zeros(len(X))
+
+        # Otherwise, find the column corresponding to class 1 explicitly.
+        class_to_col = {c: i for i, c in enumerate(classes)}
+        if 1 not in class_to_col:
+            raise ValueError(f"Class 1 not found in model.classes_: {classes}")
+
+        return proba[:, class_to_col[1]]

@@ -71,6 +71,11 @@ class ActiveLearningResult:
     def __init__(self, n_iter: int):
         self.n_iter = n_iter
         self.results = dict()
+        self.id_prior_al = []
+        self.id_add = []
+        self.acquisition_add = []
+        self.id_forget = []
+        self.acquisition_forget = []
 
 
 class ActiveLearningTrajectory:
@@ -166,6 +171,9 @@ class ActiveLearner:
         self.current_iter = 0
         self.active_learning_traj = ActiveLearningTrajectory(metrics=self.metrics,
                                                              top_k_score=self.top_k_id is not None)
+        
+        self.current_forget_iter = 0 # used for tracking the number of iterations since the last forget operation
+        self.last_forget_train_size = len(self.dataset_train_selector)
 
     @property
     def train_size(self) -> int:
@@ -282,7 +290,14 @@ class ActiveLearner:
             # add sample
             self.add_samples(alr)
             # forget sample
-            self.forget_samples(alr)
+            self.forget_samples(alr) 
+            # if self.forgetter is not None:
+            #     current_train_size = len(self.dataset_train_selector)
+            #     growth_since_forget = current_train_size - self.last_forget_train_size
+
+            #     if growth_since_forget >= 100:
+            #         self.forget_samples(alr)   # should remove 100 samples
+            #         self.last_forget_train_size = len(self.dataset_train_selector)
 
             self.current_iter += 1
             self.info('Training set size = %i' % self.train_size)
@@ -377,14 +392,15 @@ class ActiveLearner:
         if not self.model_fitted and not self.forgetter.__class__ in [RandomForgetter, FirstForgetter]:
             self.model_selector.fit_molalkit(self.dataset_train_selector)
         # forget algorithm is applied.
-
+        
         subset = self.dataset_train_selector
         forget_ds = XWithIndexDataset(subset.X)
         forget_idx, acquisition = self.forgetter(model=self.model_selector,
                                                  data=forget_ds,
                                                  batch_size=self.forgetter.batch_size)#,
                                                  #cutoff=self.forgetter.forget_cutoff)
-        if forget_idx:
+        self.info(f"forget_idx length: {len(forget_idx)}")
+        if len(forget_idx) > 0:
             alr.id_forget = [self.dataset_train_selector.data[i].id for i in forget_idx]
             alr.acquisition_forget = acquisition
             # transfer data from train to pool.
