@@ -152,6 +152,11 @@ class DatasetArgs(CommonArgs):
             self.pure_columns = ['smiles']
             self.target_columns = ['p_np']
             self.dataset_type = 'classification'
+        elif self.data_public == 'MDR1_MDCK_classification2':
+            self.data_path = os.path.join(DATA_DIR, '%s.csv' % self.data_public)
+            self.pure_columns = ['SMILES']
+            self.target_columns = ['Y']
+            self.dataset_type = 'classification'
         elif self.data_public == 'bace':
             self.data_path = os.path.join(DATA_DIR, '%s.csv' % self.data_public)
             self.pure_columns = ['mol']
