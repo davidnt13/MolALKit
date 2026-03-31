@@ -314,3 +314,170 @@ class MCDropoutForgetter(BaseForgetter):
 
         picked = get_topn_idx(all_scores, n=TEMP_BATCH_SIZE, target=self.target)
         return all_ids[picked].tolist(), all_scores[picked].tolist()
+
+# Chemprop Dropout
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+from typing import List, Tuple
+from torch.utils.data import Dataset
+
+from chemprop.data import MoleculeDataLoader
+
+
+class MCDropoutForgetter(BaseForgetter):
+    def __init__(
+        self,
+        device: str = "cpu",
+        mc_samples: int = 20,
+        score_method: str = "bald",     # bald|entropy|variance|variation_ratio
+        batch_size_eval: int = 256,
+        target: str = "min",
+        num_workers: int = 0,
+    ):
+        self.device = torch.device(device)
+        self.mc_samples = int(mc_samples)
+
+        self.score_method = score_method.lower()
+        assert self.score_method in ("bald", "entropy", "variance", "variation_ratio")
+
+        self.batch_size_eval = int(batch_size_eval)
+
+        assert target in ("max", "min")
+        self.target = target
+
+        self.num_workers = int(num_workers)
+
+    @property
+    def info(self) -> str:
+        return "MCDropoutForgetter"
+
+    # ---------------------------
+    # Dropout handling
+    # ---------------------------
+
+    @staticmethod
+    def _enable_dropout_only(m: nn.Module):
+        m.eval()  # freeze BN
+        for layer in m.modules():
+            if isinstance(layer, (nn.Dropout, nn.Dropout2d, nn.Dropout3d, nn.AlphaDropout)):
+                layer.train()
+
+    # ---------------------------
+    # MC sampling (Chemprop version)
+    # ---------------------------
+
+    @torch.no_grad()
+    def _mc_probs(self, model: nn.Module, data_loader) -> np.ndarray:
+        prev_mode = model.training
+
+        self._enable_dropout_only(model)
+        model.to(self.device)
+
+        all_probs = []
+
+        for _ in range(self.mc_samples):
+            batch_probs = []
+
+            for batch in data_loader:
+                # Chemprop batch format
+                mol_batch, features_batch, _ = batch
+
+                preds = model(mol_batch, features_batch)
+
+                # ---- Convert to probabilities ----
+                if preds.dim() == 2 and preds.size(1) == 1:
+                    p1 = torch.sigmoid(preds.squeeze(1))
+                    probs = torch.stack([1.0 - p1, p1], dim=1)
+                else:
+                    probs = F.softmax(preds, dim=1)
+
+                batch_probs.append(probs.detach().cpu().numpy())
+
+            all_probs.append(np.concatenate(batch_probs, axis=0))
+
+        model.train(prev_mode)
+
+        return np.stack(all_probs, axis=0)  # (S, N, C)
+
+    # ---------------------------
+    # Uncertainty metrics
+    # ---------------------------
+
+    @staticmethod
+    def _predictive_entropy(mean_probs: np.ndarray) -> np.ndarray:
+        eps = 1e-12
+        return -np.sum(mean_probs * np.log2(mean_probs + eps), axis=1)
+
+    @staticmethod
+    def _expected_entropy(mc_probs: np.ndarray) -> np.ndarray:
+        eps = 1e-12
+        ent = -np.sum(mc_probs * np.log2(mc_probs + eps), axis=2)  # (S,B)
+        return ent.mean(axis=0)
+
+    @staticmethod
+    def _variation_ratio(mc_probs: np.ndarray) -> np.ndarray:
+        preds = np.argmax(mc_probs, axis=2)  # (S,B)
+        S, B = preds.shape
+        out = np.empty(B, dtype=float)
+        for i in range(B):
+            _, counts = np.unique(preds[:, i], return_counts=True)
+            out[i] = 1.0 - (counts.max() / float(S))
+        return out
+
+    @staticmethod
+    def _variance(mc_probs: np.ndarray) -> np.ndarray:
+        return np.var(mc_probs, axis=0).sum(axis=1)
+
+    def _score(self, mc_probs: np.ndarray) -> np.ndarray:
+        mean_probs = mc_probs.mean(axis=0)  # (N,C)
+
+        if self.score_method == "entropy":
+            return self._predictive_entropy(mean_probs)
+
+        if self.score_method == "variance":
+            return self._variance(mc_probs)
+
+        if self.score_method == "variation_ratio":
+            return self._variation_ratio(mc_probs)
+
+        # BALD
+        H = self._predictive_entropy(mean_probs)
+        EH = self._expected_entropy(mc_probs)
+        return H - EH
+
+    # ---------------------------
+    # Main entry point
+    # ---------------------------
+
+    def __call__(
+        self,
+        model,
+        data,
+        batch_size: int = 1
+    ) -> Tuple[List[int], List[float]]:
+
+        model = model.to(self.device)
+
+        # Chemprop DataLoader
+        dl = MoleculeDataLoader(
+            dataset=data,
+            batch_size=self.batch_size_eval,
+            num_workers=self.num_workers,
+        )
+
+        # MC sampling
+        mc = self._mc_probs(model, dl)  # (S,N,C)
+
+        # Score
+        scores = self._score(mc)  # (N,)
+
+        # IDs (Chemprop datasets are ordered)
+        ids = np.arange(len(scores))
+
+        # Select top N
+        picked = get_topn_idx(scores, n=TEMP_BATCH_SIZE, target=self.target)
+
+        return ids[picked].tolist(), scores[picked].tolist()
