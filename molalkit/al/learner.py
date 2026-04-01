@@ -394,9 +394,10 @@ class ActiveLearner:
         # forget algorithm is applied.
         
         subset = self.dataset_train_selector
-        forget_ds = XWithIndexDataset(subset.X)
+        # data = XWithIndexDataset(subset.X)
+        data = subset
         forget_idx, acquisition = self.forgetter(model=self.model_selector,
-                                                 data=forget_ds,
+                                                 data=data,
                                                  batch_size=self.forgetter.batch_size)#,
                                                  #cutoff=self.forgetter.forget_cutoff)
         self.info(f"forget_idx length: {len(forget_idx)}")

@@ -325,9 +325,9 @@ from typing import List, Tuple
 from torch.utils.data import Dataset
 
 from chemprop.data import MoleculeDataLoader
+from chemprop.train import predict
 
-
-class MCDropoutForgetter(BaseForgetter):
+class ChempropDropoutForgetter(BaseForgetter):
     def __init__(
         self,
         device: str = "cpu",
@@ -352,7 +352,7 @@ class MCDropoutForgetter(BaseForgetter):
 
     @property
     def info(self) -> str:
-        return "MCDropoutForgetter"
+        return "ChempropDropoutForgetter"
 
     # ---------------------------
     # Dropout handling
@@ -365,38 +365,52 @@ class MCDropoutForgetter(BaseForgetter):
             if isinstance(layer, (nn.Dropout, nn.Dropout2d, nn.Dropout3d, nn.AlphaDropout)):
                 layer.train()
 
+    @staticmethod
+    def _unwrap_nn(model) -> nn.Module:
+        if isinstance(model, nn.Module):
+            return model
+        m = getattr(model, "model", None)
+        if isinstance(m, nn.Module):
+            return m
+        raise TypeError(...)
+
     # ---------------------------
     # MC sampling (Chemprop version)
     # ---------------------------
+
+    # from chemprop.train.predict import predict
+
 
     @torch.no_grad()
     def _mc_probs(self, model: nn.Module, data_loader) -> np.ndarray:
         prev_mode = model.training
 
-        self._enable_dropout_only(model)
-        model.to(self.device)
+        # Enable dropout only
+        model.eval()
+        for m in model.modules():
+            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d, nn.AlphaDropout)):
+                m.train()
 
         all_probs = []
 
         for _ in range(self.mc_samples):
-            batch_probs = []
+            # Let Chemprop handle batching internally
+            preds = predict(
+                model=model,
+                data_loader=data_loader,
+                scaler=None,  # IMPORTANT: MolALKit already handles scaling
+            )
 
-            for batch in data_loader:
-                # Chemprop batch format
-                mol_batch, features_batch, _ = batch
+            preds = np.array(preds)
 
-                preds = model(mol_batch, features_batch)
+            # ---- Convert to probabilities ----
+            if preds.ndim == 1 or preds.shape[1] == 1:
+                p1 = preds.reshape(-1)
+                probs = np.stack([1 - p1, p1], axis=1)
+            else:
+                probs = preds  # already probs for multiclass
 
-                # ---- Convert to probabilities ----
-                if preds.dim() == 2 and preds.size(1) == 1:
-                    p1 = torch.sigmoid(preds.squeeze(1))
-                    probs = torch.stack([1.0 - p1, p1], dim=1)
-                else:
-                    probs = F.softmax(preds, dim=1)
-
-                batch_probs.append(probs.detach().cpu().numpy())
-
-            all_probs.append(np.concatenate(batch_probs, axis=0))
+            all_probs.append(probs)
 
         model.train(prev_mode)
 
@@ -459,25 +473,30 @@ class MCDropoutForgetter(BaseForgetter):
         batch_size: int = 1
     ) -> Tuple[List[int], List[float]]:
 
-        model = model.to(self.device)
+        assert hasattr(model, "models"), "Expected MolALKit MPNN with .models"
 
-        # Chemprop DataLoader
+        models = model.models  # ensemble
         dl = MoleculeDataLoader(
             dataset=data,
             batch_size=self.batch_size_eval,
             num_workers=self.num_workers,
         )
 
-        # MC sampling
-        mc = self._mc_probs(model, dl)  # (S,N,C)
+        all_mc = []
 
-        # Score
-        scores = self._score(mc)  # (N,)
+        for net in models:
+            net = net.to(self.device)
 
-        # IDs (Chemprop datasets are ordered)
+            mc = self._mc_probs(net, dl)  # (S, N, C)
+            all_mc.append(mc)
+
+        # ---- combine ensemble + MC dropout ----
+        mc_probs = np.concatenate(all_mc, axis=0)  # (E*S, N, C)
+
+        # ---- scoring ----
+        scores = self._score(mc_probs)
+
         ids = np.arange(len(scores))
-
-        # Select top N
         picked = get_topn_idx(scores, n=TEMP_BATCH_SIZE, target=self.target)
 
         return ids[picked].tolist(), scores[picked].tolist()
