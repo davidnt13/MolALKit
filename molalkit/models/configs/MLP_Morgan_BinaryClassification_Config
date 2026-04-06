@@ -2,10 +2,10 @@
     "data_format": "chemprop",
     "loss_function": "binary_cross_entropy",
     "features_only": true,
-    "epochs": 30,
+    "epochs": 10,
     "ffn_num_layers": 2,
     "ffn_hidden_size": 300,
-    "dropout": 0.0,
+    "dropout": 0.1,
     "batch_size": 50,
     "ensemble_size": 1,
     "fingerprints_class": [
