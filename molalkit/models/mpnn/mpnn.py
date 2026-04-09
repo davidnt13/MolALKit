@@ -15,6 +15,7 @@ from chemprop.train.loss_functions import get_loss_func
 from chemprop.train import train
 from chemprop.train.predict import predict
 from chemprop.args import TrainArgs
+import time
 
 
 class MPNN:
@@ -97,6 +98,7 @@ class MPNN:
         self.logger = logger
 
     def fit_molalkit(self, train_data):
+        model_start_time = time.time()
         if not self.continuous_fit and torch.cuda.is_available():
             torch.cuda.empty_cache()
         args = self.args
@@ -186,6 +188,7 @@ class MPNN:
 
             n_iter = 0
             for epoch in trange(args.epochs):
+                epoch_start_time = time.time()
                 debug(f'Epoch {epoch}')
                 n_iter = train(
                     model=model,
@@ -198,12 +201,15 @@ class MPNN:
                     logger=logger,
                     writer=writer
                 )
+                epoch_end_time = time.time()
+                debug(f'Epoch {epoch} time: {epoch_end_time - epoch_start_time} seconds')
                 if isinstance(scheduler, ExponentialLR):
                     scheduler.step()
             if len(self.models) < args.ensemble_size:
                 assert len(self.models) == model_idx
                 self.models.append(model)
-
+            model_end_time = time.time()
+            debug(f'Model {model_idx} time: {model_end_time - model_start_time} seconds')
             self.scaler = scaler
 
     def predict_uncertainty(self, pred_data):

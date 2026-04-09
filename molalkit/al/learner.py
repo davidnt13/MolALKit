@@ -16,7 +16,7 @@ from molalkit.models.mpnn.mpnn import MPNN, TrainArgs
 from ..args import Metric
 from .selection_method import BaseSelectionMethod, RandomSelectionMethod, get_subset
 from .forgetter import BaseForgetter, RandomForgetter, FirstForgetter, MCDropoutForgetter, XWithIndexDataset
-
+import time
 
 def eval_metric_func(y, y_pred, metric: str) -> float:
     if metric == 'roc_auc':
@@ -335,7 +335,10 @@ class ActiveLearner:
             # evaluate the prediction performance of ML model on the validation set
             if self.metrics is not None:
                 if not self.model_fitted:
+                    model_start_time = time.time()
                     self.model_selector.fit_molalkit(self.dataset_train_selector)
+                    model_end_time = time.time()
+                    self.info(f'Model fitting time: {model_end_time - model_start_time} seconds')
                     self.model_fitted = True
                 y_pred = self.model_selector.predict_value(self.dataset_val_selector)
                 if self.output_details:
