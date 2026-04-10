@@ -5,6 +5,7 @@
 #SBATCH --mem=16G
 #SBATCH --time=48:00:00
 #SBATCH --partition=common
+#SBATCH --gres=gpu:1
 
 #SBATCH -o %j.out
 #SBATCH -e %j.err
@@ -17,7 +18,7 @@
 module load Anaconda3
 source activate molalkit
 
-python molalkit_run --data_public MDR1_MDCK_classification2  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector DMPNN+Morgan_BinaryClassification_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --batch_size 1 --save_dir "test data/mdr1/cp_dmpnn_test_10_epochs/mdr1_cp_minf"  --forget_protocol ChempropDropoutForgetter --forget_size 500 --mc_forget_version "min"
+python molalkit_run --data_public MDR1_MDCK_classification2  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector DMPNN_BinaryClassification_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 0 --batch_size 1 --save_dir "test data/mdr1/cp_dmpnn_test_nomorgan_gpu/mdr1_cp_minf"  --forget_protocol ChempropDropoutForgetter --forget_size 500 --mc_forget_version "min"
 
 # python molalkit_run --data_public MDR1_MDCK_classification2  --metrics roc_auc mcc accuracy precision recall f1_score --learning_type explorative --model_config_selector MLP_Morgan_BinaryClassification_Config --split_type scaffold_order --split_sizes 0.5 0.5 --evaluate_stride 10 --seed 1 --batch_size 1 --save_dir "test data/mdr1/cp_test_10_epochs/mdr1_cp_minf2"  --forget_protocol ChempropDropoutForgetter --forget_size 500 --mc_forget_version "min"
 
@@ -41,6 +42,7 @@ python molalkit_run --data_public MDR1_MDCK_classification2  --metrics roc_auc m
 # RF: RandomForest_Morgan_Config
 # Chemprop: MLP_Morgan_BinaryClassification_Config
 # DMPNN: DMPNN+Morgan_BinaryClassification_Config
+# OR: DMPNN_BinaryClassification_Config
 
 # Datasets Used:
 # pgp_broccatelli

@@ -1,0 +1,3092 @@
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=1)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.5609e-01, PNorm = 34.0109, GNorm = 1.9887, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2723357677459717 seconds
+Epoch 1
+Loss = 5.5314e-01, PNorm = 34.0149, GNorm = 1.7521, lr_0 = 7.4989e-04
+Epoch 1 time: 0.07923388481140137 seconds
+Epoch 2
+Loss = 5.5473e-01, PNorm = 34.0191, GNorm = 2.1395, lr_0 = 5.6234e-04
+Epoch 2 time: 0.07850360870361328 seconds
+Epoch 3
+Loss = 6.3848e-01, PNorm = 34.0227, GNorm = 2.2700, lr_0 = 4.2170e-04
+Epoch 3 time: 0.07282185554504395 seconds
+Epoch 4
+Loss = 5.1356e-01, PNorm = 34.0254, GNorm = 2.0625, lr_0 = 3.1623e-04
+Epoch 4 time: 0.07512474060058594 seconds
+Epoch 5
+Loss = 4.1422e-01, PNorm = 34.0276, GNorm = 1.5839, lr_0 = 2.3714e-04
+Epoch 5 time: 0.07684493064880371 seconds
+Epoch 6
+Loss = 3.7331e-01, PNorm = 34.0293, GNorm = 1.6255, lr_0 = 1.7783e-04
+Epoch 6 time: 0.07353425025939941 seconds
+Epoch 7
+Loss = 3.4411e-01, PNorm = 34.0306, GNorm = 1.6767, lr_0 = 1.3335e-04
+Epoch 7 time: 0.0731198787689209 seconds
+Epoch 8
+Loss = 3.6447e-01, PNorm = 34.0316, GNorm = 1.9133, lr_0 = 1.0000e-04
+Epoch 8 time: 0.0740668773651123 seconds
+Epoch 9
+Loss = 3.2567e-01, PNorm = 34.0323, GNorm = 1.7343, lr_0 = 1.0000e-04
+Epoch 9 time: 0.07408714294433594 seconds
+Model 0 time: 3.4384186267852783 seconds
+Model fitting time: 3.4385287761688232 seconds
+evaluating model performance finished.
+Training set size = 3
+Pool set size = 1106
+Start an new iteration of active learning: 1.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.3142e-01, PNorm = 34.0113, GNorm = 2.1962, lr_0 = 1.0000e-03
+Epoch 0 time: 0.10947728157043457 seconds
+Epoch 1
+Loss = 5.8711e-01, PNorm = 34.0156, GNorm = 1.4280, lr_0 = 7.4989e-04
+Epoch 1 time: 0.07936859130859375 seconds
+Epoch 2
+Loss = 6.3834e-01, PNorm = 34.0187, GNorm = 1.7739, lr_0 = 5.6234e-04
+Epoch 2 time: 0.07992243766784668 seconds
+Epoch 3
+Loss = 5.6462e-01, PNorm = 34.0211, GNorm = 1.6155, lr_0 = 4.2170e-04
+Epoch 3 time: 0.07951855659484863 seconds
+Epoch 4
+Loss = 5.5210e-01, PNorm = 34.0230, GNorm = 1.4606, lr_0 = 3.1623e-04
+Epoch 4 time: 0.08033204078674316 seconds
+Epoch 5
+Loss = 5.3704e-01, PNorm = 34.0244, GNorm = 1.4681, lr_0 = 2.3714e-04
+Epoch 5 time: 0.08199667930603027 seconds
+Epoch 6
+Loss = 5.6281e-01, PNorm = 34.0255, GNorm = 1.5221, lr_0 = 1.7783e-04
+Epoch 6 time: 0.07961010932922363 seconds
+Epoch 7
+Loss = 5.4126e-01, PNorm = 34.0263, GNorm = 1.5140, lr_0 = 1.3335e-04
+Epoch 7 time: 0.07944822311401367 seconds
+Epoch 8
+Loss = 4.3654e-01, PNorm = 34.0270, GNorm = 1.3567, lr_0 = 1.0000e-04
+Epoch 8 time: 0.0797874927520752 seconds
+Epoch 9
+Loss = 4.2888e-01, PNorm = 34.0276, GNorm = 1.1792, lr_0 = 1.0000e-04
+Epoch 9 time: 0.08353424072265625 seconds
+Model 0 time: 0.8464562892913818 seconds
+Training set size = 4
+Pool set size = 1105
+Start an new iteration of active learning: 2.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.4602e-01, PNorm = 34.0116, GNorm = 2.7714, lr_0 = 1.0000e-03
+Epoch 0 time: 0.09285807609558105 seconds
+Epoch 1
+Loss = 5.8694e-01, PNorm = 34.0166, GNorm = 1.2306, lr_0 = 7.4989e-04
+Epoch 1 time: 0.08451080322265625 seconds
+Epoch 2
+Loss = 5.5960e-01, PNorm = 34.0198, GNorm = 1.6504, lr_0 = 5.6234e-04
+Epoch 2 time: 0.08395600318908691 seconds
+Epoch 3
+Loss = 5.8202e-01, PNorm = 34.0219, GNorm = 1.6915, lr_0 = 4.2170e-04
+Epoch 3 time: 0.08357524871826172 seconds
+Epoch 4
+Loss = 5.3492e-01, PNorm = 34.0233, GNorm = 1.4905, lr_0 = 3.1623e-04
+Epoch 4 time: 0.08563446998596191 seconds
+Epoch 5
+Loss = 5.7041e-01, PNorm = 34.0242, GNorm = 1.4578, lr_0 = 2.3714e-04
+Epoch 5 time: 0.08848953247070312 seconds
+Epoch 6
+Loss = 5.4676e-01, PNorm = 34.0248, GNorm = 1.3573, lr_0 = 1.7783e-04
+Epoch 6 time: 0.10021114349365234 seconds
+Epoch 7
+Loss = 5.1464e-01, PNorm = 34.0253, GNorm = 1.3049, lr_0 = 1.3335e-04
+Epoch 7 time: 0.08357477188110352 seconds
+Epoch 8
+Loss = 5.2021e-01, PNorm = 34.0256, GNorm = 1.2731, lr_0 = 1.0000e-04
+Epoch 8 time: 0.14847469329833984 seconds
+Epoch 9
+Loss = 5.5640e-01, PNorm = 34.0259, GNorm = 1.2193, lr_0 = 1.0000e-04
+Epoch 9 time: 0.08342695236206055 seconds
+Model 0 time: 0.943640947341919 seconds
+Training set size = 5
+Pool set size = 1104
+Start an new iteration of active learning: 3.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.4053e-01, PNorm = 34.0114, GNorm = 2.8068, lr_0 = 1.0000e-03
+Epoch 0 time: 0.09677648544311523 seconds
+Epoch 1
+Loss = 5.4689e-01, PNorm = 34.0166, GNorm = 1.3518, lr_0 = 7.4989e-04
+Epoch 1 time: 0.08796882629394531 seconds
+Epoch 2
+Loss = 5.0665e-01, PNorm = 34.0202, GNorm = 1.2278, lr_0 = 5.6234e-04
+Epoch 2 time: 0.08892416954040527 seconds
+Epoch 3
+Loss = 5.4069e-01, PNorm = 34.0223, GNorm = 1.3477, lr_0 = 4.2170e-04
+Epoch 3 time: 0.16564321517944336 seconds
+Epoch 4
+Loss = 4.5761e-01, PNorm = 34.0236, GNorm = 1.0742, lr_0 = 3.1623e-04
+Epoch 4 time: 0.08618760108947754 seconds
+Epoch 5
+Loss = 4.7063e-01, PNorm = 34.0246, GNorm = 1.0797, lr_0 = 2.3714e-04
+Epoch 5 time: 0.09005880355834961 seconds
+Epoch 6
+Loss = 4.7520e-01, PNorm = 34.0253, GNorm = 0.9211, lr_0 = 1.7783e-04
+Epoch 6 time: 0.08803606033325195 seconds
+Epoch 7
+Loss = 4.4006e-01, PNorm = 34.0258, GNorm = 0.9409, lr_0 = 1.3335e-04
+Epoch 7 time: 0.08547854423522949 seconds
+Epoch 8
+Loss = 4.4645e-01, PNorm = 34.0262, GNorm = 0.9041, lr_0 = 1.0000e-04
+Epoch 8 time: 0.08598136901855469 seconds
+Epoch 9
+Epoch 9 time: 0.08961701393127441 seconds
+Model 0 time: 0.975283145904541 seconds
+Training set size = 6
+Pool set size = 1103
+Start an new iteration of active learning: 4.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7230e-01, PNorm = 34.0114, GNorm = 2.9696, lr_0 = 1.0000e-03
+Epoch 0 time: 0.09763050079345703 seconds
+Epoch 1
+Loss = 4.9873e-01, PNorm = 34.0168, GNorm = 1.6905, lr_0 = 7.4989e-04
+Epoch 1 time: 0.09212231636047363 seconds
+Epoch 2
+Loss = 4.3152e-01, PNorm = 34.0210, GNorm = 0.9779, lr_0 = 5.6234e-04
+Epoch 2 time: 0.0917353630065918 seconds
+Epoch 3
+Loss = 4.7128e-01, PNorm = 34.0234, GNorm = 1.3428, lr_0 = 4.2170e-04
+Epoch 3 time: 0.0939488410949707 seconds
+Epoch 4
+Loss = 4.7836e-01, PNorm = 34.0246, GNorm = 1.3177, lr_0 = 3.1623e-04
+Epoch 4 time: 0.09163618087768555 seconds
+Epoch 5
+Loss = 5.0095e-01, PNorm = 34.0253, GNorm = 1.2907, lr_0 = 2.3714e-04
+Epoch 5 time: 0.09340071678161621 seconds
+Epoch 6
+Loss = 5.1007e-01, PNorm = 34.0256, GNorm = 1.2313, lr_0 = 1.7783e-04
+Epoch 6 time: 0.09415531158447266 seconds
+Epoch 7
+Loss = 4.7650e-01, PNorm = 34.0257, GNorm = 1.1087, lr_0 = 1.3335e-04
+Epoch 7 time: 0.14385175704956055 seconds
+Epoch 8
+Epoch 8 time: 0.08910250663757324 seconds
+Epoch 9
+Epoch 9 time: 0.09044981002807617 seconds
+Model 0 time: 0.9883863925933838 seconds
+Training set size = 7
+Pool set size = 1102
+Start an new iteration of active learning: 5.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.2126e-01, PNorm = 34.0116, GNorm = 3.3956, lr_0 = 1.0000e-03
+Epoch 0 time: 0.09859871864318848 seconds
+Epoch 1
+Loss = 4.9323e-01, PNorm = 34.0174, GNorm = 1.6073, lr_0 = 7.4989e-04
+Epoch 1 time: 0.0944967269897461 seconds
+Epoch 2
+Loss = 4.3480e-01, PNorm = 34.0221, GNorm = 0.8332, lr_0 = 5.6234e-04
+Epoch 2 time: 0.09465360641479492 seconds
+Epoch 3
+Loss = 4.4397e-01, PNorm = 34.0248, GNorm = 1.2717, lr_0 = 4.2170e-04
+Epoch 3 time: 0.0957956314086914 seconds
+Epoch 4
+Loss = 4.1148e-01, PNorm = 34.0262, GNorm = 1.1811, lr_0 = 3.1623e-04
+Epoch 4 time: 0.09453654289245605 seconds
+Epoch 5
+Loss = 4.4141e-01, PNorm = 34.0270, GNorm = 1.1886, lr_0 = 2.3714e-04
+Epoch 5 time: 0.09978032112121582 seconds
+Epoch 6
+Loss = 4.1976e-01, PNorm = 34.0274, GNorm = 1.1028, lr_0 = 1.7783e-04
+Epoch 6 time: 0.0932619571685791 seconds
+Epoch 7
+Epoch 7 time: 0.0938868522644043 seconds
+Epoch 8
+Epoch 8 time: 0.09680485725402832 seconds
+Epoch 9
+Epoch 9 time: 0.09536290168762207 seconds
+Model 0 time: 0.9692919254302979 seconds
+Training set size = 8
+Pool set size = 1101
+Start an new iteration of active learning: 6.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.4611e-01, PNorm = 34.0114, GNorm = 2.8803, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1029975414276123 seconds
+Epoch 1
+Loss = 4.9203e-01, PNorm = 34.0175, GNorm = 1.6161, lr_0 = 7.4989e-04
+Epoch 1 time: 0.09707498550415039 seconds
+Epoch 2
+Loss = 3.9593e-01, PNorm = 34.0227, GNorm = 0.6784, lr_0 = 5.6234e-04
+Epoch 2 time: 0.09642362594604492 seconds
+Epoch 3
+Loss = 3.9219e-01, PNorm = 34.0259, GNorm = 0.9636, lr_0 = 4.2170e-04
+Epoch 3 time: 0.09970831871032715 seconds
+Epoch 4
+Loss = 3.9330e-01, PNorm = 34.0277, GNorm = 1.0321, lr_0 = 3.1623e-04
+Epoch 4 time: 0.10151171684265137 seconds
+Epoch 5
+Loss = 4.4213e-01, PNorm = 34.0286, GNorm = 1.1893, lr_0 = 2.3714e-04
+Epoch 5 time: 0.09958529472351074 seconds
+Epoch 6
+Epoch 6 time: 0.09766197204589844 seconds
+Epoch 7
+Epoch 7 time: 0.0989537239074707 seconds
+Epoch 8
+Epoch 8 time: 0.09426760673522949 seconds
+Epoch 9
+Epoch 9 time: 0.09551858901977539 seconds
+Model 0 time: 0.9947493076324463 seconds
+Training set size = 9
+Pool set size = 1100
+Start an new iteration of active learning: 7.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.1710e-01, PNorm = 34.0118, GNorm = 3.1823, lr_0 = 1.0000e-03
+Epoch 0 time: 0.146209716796875 seconds
+Epoch 1
+Loss = 4.5049e-01, PNorm = 34.0182, GNorm = 1.6796, lr_0 = 7.4989e-04
+Epoch 1 time: 0.10008692741394043 seconds
+Epoch 2
+Loss = 3.4341e-01, PNorm = 34.0242, GNorm = 0.6262, lr_0 = 5.6234e-04
+Epoch 2 time: 0.09757781028747559 seconds
+Epoch 3
+Loss = 3.8785e-01, PNorm = 34.0277, GNorm = 0.9582, lr_0 = 4.2170e-04
+Epoch 3 time: 0.09789776802062988 seconds
+Epoch 4
+Loss = 3.5133e-01, PNorm = 34.0299, GNorm = 0.9221, lr_0 = 3.1623e-04
+Epoch 4 time: 0.10605072975158691 seconds
+Epoch 5
+Epoch 5 time: 0.09940338134765625 seconds
+Epoch 6
+Epoch 6 time: 0.09826493263244629 seconds
+Epoch 7
+Epoch 7 time: 0.09872961044311523 seconds
+Epoch 8
+Epoch 8 time: 0.10170602798461914 seconds
+Epoch 9
+Epoch 9 time: 0.10076546669006348 seconds
+Model 0 time: 1.0561792850494385 seconds
+Training set size = 10
+Pool set size = 1099
+Start an new iteration of active learning: 8.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8373e-01, PNorm = 34.0118, GNorm = 3.1022, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1074364185333252 seconds
+Epoch 1
+Loss = 4.5824e-01, PNorm = 34.0184, GNorm = 1.8042, lr_0 = 7.4989e-04
+Epoch 1 time: 0.10415863990783691 seconds
+Epoch 2
+Loss = 2.7564e-01, PNorm = 34.0248, GNorm = 0.5061, lr_0 = 5.6234e-04
+Epoch 2 time: 0.1029195785522461 seconds
+Epoch 3
+Loss = 3.2919e-01, PNorm = 34.0289, GNorm = 0.8161, lr_0 = 4.2170e-04
+Epoch 3 time: 0.10811400413513184 seconds
+Epoch 4
+Epoch 4 time: 0.10365700721740723 seconds
+Epoch 5
+Epoch 5 time: 0.1393294334411621 seconds
+Epoch 6
+Epoch 6 time: 0.10466265678405762 seconds
+Epoch 7
+Epoch 7 time: 0.1048440933227539 seconds
+Epoch 8
+Epoch 8 time: 0.10328793525695801 seconds
+Epoch 9
+Epoch 9 time: 0.10429978370666504 seconds
+Model 0 time: 1.0940346717834473 seconds
+Training set size = 11
+Pool set size = 1098
+Start an new iteration of active learning: 9.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8954e-01, PNorm = 34.0113, GNorm = 3.3091, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1130833625793457 seconds
+Epoch 1
+Loss = 4.4425e-01, PNorm = 34.0174, GNorm = 1.7680, lr_0 = 7.4989e-04
+Epoch 1 time: 0.10733699798583984 seconds
+Epoch 2
+Loss = 3.0673e-01, PNorm = 34.0236, GNorm = 0.5127, lr_0 = 5.6234e-04
+Epoch 2 time: 0.10928726196289062 seconds
+Epoch 3
+Loss = 3.3121e-01, PNorm = 34.0277, GNorm = 0.7185, lr_0 = 4.2170e-04
+Epoch 3 time: 0.10970592498779297 seconds
+Epoch 4
+Epoch 4 time: 0.10229992866516113 seconds
+Epoch 5
+Epoch 5 time: 0.1060798168182373 seconds
+Epoch 6
+Epoch 6 time: 0.10464239120483398 seconds
+Epoch 7
+Epoch 7 time: 0.10593819618225098 seconds
+Epoch 8
+Epoch 8 time: 0.10540580749511719 seconds
+Epoch 9
+Epoch 9 time: 0.1052248477935791 seconds
+Model 0 time: 1.0801904201507568 seconds
+Training set size = 12
+Pool set size = 1097
+Start an new iteration of active learning: 10.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.1892e-01, PNorm = 34.0113, GNorm = 3.3560, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1145026683807373 seconds
+Epoch 1
+Loss = 4.4698e-01, PNorm = 34.0177, GNorm = 1.7918, lr_0 = 7.4989e-04
+Epoch 1 time: 0.11149406433105469 seconds
+Epoch 2
+Loss = 2.8635e-01, PNorm = 34.0243, GNorm = 0.5018, lr_0 = 5.6234e-04
+Epoch 2 time: 0.11334586143493652 seconds
+Epoch 3
+Loss = 2.6861e-01, PNorm = 34.0288, GNorm = 0.7060, lr_0 = 4.2170e-04
+Epoch 3 time: 0.11070704460144043 seconds
+Epoch 4
+Epoch 4 time: 0.11021256446838379 seconds
+Epoch 5
+Epoch 5 time: 0.10948514938354492 seconds
+Epoch 6
+Epoch 6 time: 0.11780905723571777 seconds
+Epoch 7
+Epoch 7 time: 0.11804771423339844 seconds
+Epoch 8
+Epoch 8 time: 0.11065173149108887 seconds
+Epoch 9
+Epoch 9 time: 0.11130762100219727 seconds
+Model 0 time: 1.1379203796386719 seconds
+Model fitting time: 1.138051986694336 seconds
+evaluating model performance finished.
+Training set size = 13
+Pool set size = 1096
+Start an new iteration of active learning: 11.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.6058e-01, PNorm = 34.0120, GNorm = 2.9204, lr_0 = 1.0000e-03
+Epoch 0 time: 0.11945986747741699 seconds
+Epoch 1
+Loss = 4.3282e-01, PNorm = 34.0190, GNorm = 1.8834, lr_0 = 7.4989e-04
+Epoch 1 time: 0.11618733406066895 seconds
+Epoch 2
+Loss = 2.9496e-01, PNorm = 34.0260, GNorm = 0.4792, lr_0 = 5.6234e-04
+Epoch 2 time: 0.11606478691101074 seconds
+Epoch 3
+Epoch 3 time: 0.11832427978515625 seconds
+Epoch 4
+Epoch 4 time: 0.11521363258361816 seconds
+Epoch 5
+Epoch 5 time: 0.1160886287689209 seconds
+Epoch 6
+Epoch 6 time: 0.11387419700622559 seconds
+Epoch 7
+Epoch 7 time: 0.11582016944885254 seconds
+Epoch 8
+Epoch 8 time: 0.11492753028869629 seconds
+Epoch 9
+Epoch 9 time: 0.11736106872558594 seconds
+Model 0 time: 1.1769654750823975 seconds
+Training set size = 14
+Pool set size = 1095
+Start an new iteration of active learning: 12.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9807e-01, PNorm = 34.0115, GNorm = 3.1756, lr_0 = 1.0000e-03
+Epoch 0 time: 0.12263822555541992 seconds
+Epoch 1
+Loss = 4.6414e-01, PNorm = 34.0181, GNorm = 1.9800, lr_0 = 7.4989e-04
+Epoch 1 time: 0.11863565444946289 seconds
+Epoch 2
+Loss = 2.4210e-01, PNorm = 34.0250, GNorm = 0.5294, lr_0 = 5.6234e-04
+Epoch 2 time: 0.1194155216217041 seconds
+Epoch 3
+Epoch 3 time: 0.11766576766967773 seconds
+Epoch 4
+Epoch 4 time: 0.11762404441833496 seconds
+Epoch 5
+Epoch 5 time: 0.11586713790893555 seconds
+Epoch 6
+Epoch 6 time: 0.11737966537475586 seconds
+Epoch 7
+Epoch 7 time: 0.11777687072753906 seconds
+Epoch 8
+Epoch 8 time: 0.1241295337677002 seconds
+Epoch 9
+Epoch 9 time: 0.12236714363098145 seconds
+Model 0 time: 1.2038748264312744 seconds
+Training set size = 15
+Pool set size = 1094
+Start an new iteration of active learning: 13.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0742e-01, PNorm = 34.0112, GNorm = 3.3653, lr_0 = 1.0000e-03
+Epoch 0 time: 0.126237154006958 seconds
+Epoch 1
+Loss = 4.5013e-01, PNorm = 34.0175, GNorm = 1.8651, lr_0 = 7.4989e-04
+Epoch 1 time: 0.13313817977905273 seconds
+Epoch 2
+Loss = 2.6094e-01, PNorm = 34.0241, GNorm = 0.4363, lr_0 = 5.6234e-04
+Epoch 2 time: 0.12433457374572754 seconds
+Epoch 3
+Epoch 3 time: 0.12395262718200684 seconds
+Epoch 4
+Epoch 4 time: 0.12301087379455566 seconds
+Epoch 5
+Epoch 5 time: 0.12107110023498535 seconds
+Epoch 6
+Epoch 6 time: 0.11866879463195801 seconds
+Epoch 7
+Epoch 7 time: 0.11957740783691406 seconds
+Epoch 8
+Epoch 8 time: 0.12327265739440918 seconds
+Epoch 9
+Epoch 9 time: 0.12164831161499023 seconds
+Model 0 time: 1.2465531826019287 seconds
+Training set size = 16
+Pool set size = 1093
+Start an new iteration of active learning: 14.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9484e-01, PNorm = 34.0115, GNorm = 3.1668, lr_0 = 1.0000e-03
+Epoch 0 time: 0.13127493858337402 seconds
+Epoch 1
+Loss = 4.2202e-01, PNorm = 34.0182, GNorm = 1.8255, lr_0 = 7.4989e-04
+Epoch 1 time: 0.12366247177124023 seconds
+Epoch 2
+Loss = 2.4828e-01, PNorm = 34.0253, GNorm = 0.4377, lr_0 = 5.6234e-04
+Epoch 2 time: 0.12658429145812988 seconds
+Epoch 3
+Epoch 3 time: 0.12432050704956055 seconds
+Epoch 4
+Epoch 4 time: 0.12453842163085938 seconds
+Epoch 5
+Epoch 5 time: 0.12341475486755371 seconds
+Epoch 6
+Epoch 6 time: 0.12245059013366699 seconds
+Epoch 7
+Epoch 7 time: 0.1227571964263916 seconds
+Epoch 8
+Epoch 8 time: 0.12510251998901367 seconds
+Epoch 9
+Epoch 9 time: 0.12426137924194336 seconds
+Model 0 time: 1.258641242980957 seconds
+Training set size = 17
+Pool set size = 1092
+Start an new iteration of active learning: 15.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0903e-01, PNorm = 34.0115, GNorm = 3.2825, lr_0 = 1.0000e-03
+Epoch 0 time: 0.12954020500183105 seconds
+Epoch 1
+Loss = 4.2976e-01, PNorm = 34.0181, GNorm = 2.0133, lr_0 = 7.4989e-04
+Epoch 1 time: 0.12404870986938477 seconds
+Epoch 2
+Epoch 2 time: 0.13110947608947754 seconds
+Epoch 3
+Epoch 3 time: 0.1274881362915039 seconds
+Epoch 4
+Epoch 4 time: 0.12661123275756836 seconds
+Epoch 5
+Epoch 5 time: 0.1267542839050293 seconds
+Epoch 6
+Epoch 6 time: 0.12874603271484375 seconds
+Epoch 7
+Epoch 7 time: 0.12724781036376953 seconds
+Epoch 8
+Epoch 8 time: 0.12772083282470703 seconds
+Epoch 9
+Epoch 9 time: 0.13005328178405762 seconds
+Model 0 time: 1.2927467823028564 seconds
+Training set size = 18
+Pool set size = 1091
+Start an new iteration of active learning: 16.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0736e-01, PNorm = 34.0113, GNorm = 3.4920, lr_0 = 1.0000e-03
+Epoch 0 time: 0.15936017036437988 seconds
+Epoch 1
+Loss = 4.2301e-01, PNorm = 34.0178, GNorm = 1.9188, lr_0 = 7.4989e-04
+Epoch 1 time: 0.1309802532196045 seconds
+Epoch 2
+Epoch 2 time: 0.1276700496673584 seconds
+Epoch 3
+Epoch 3 time: 0.13109731674194336 seconds
+Epoch 4
+Epoch 4 time: 0.1284961700439453 seconds
+Epoch 5
+Epoch 5 time: 0.13533306121826172 seconds
+Epoch 6
+Epoch 6 time: 0.12982416152954102 seconds
+Epoch 7
+Epoch 7 time: 0.13257050514221191 seconds
+Epoch 8
+Epoch 8 time: 0.1343545913696289 seconds
+Epoch 9
+Epoch 9 time: 0.12949872016906738 seconds
+Model 0 time: 1.3499681949615479 seconds
+Training set size = 19
+Pool set size = 1090
+Start an new iteration of active learning: 17.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.1092e-01, PNorm = 34.0116, GNorm = 3.5861, lr_0 = 1.0000e-03
+Epoch 0 time: 0.13374114036560059 seconds
+Epoch 1
+Loss = 4.3096e-01, PNorm = 34.0182, GNorm = 1.9957, lr_0 = 7.4989e-04
+Epoch 1 time: 0.13333892822265625 seconds
+Epoch 2
+Epoch 2 time: 0.13292789459228516 seconds
+Epoch 3
+Epoch 3 time: 0.131591796875 seconds
+Epoch 4
+Epoch 4 time: 0.13904476165771484 seconds
+Epoch 5
+Epoch 5 time: 0.13769054412841797 seconds
+Epoch 6
+Epoch 6 time: 0.13700032234191895 seconds
+Epoch 7
+Epoch 7 time: 0.13321709632873535 seconds
+Epoch 8
+Epoch 8 time: 0.13205957412719727 seconds
+Epoch 9
+Epoch 9 time: 0.13709568977355957 seconds
+Model 0 time: 1.3594300746917725 seconds
+Training set size = 20
+Pool set size = 1089
+Start an new iteration of active learning: 18.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7896e-01, PNorm = 34.0117, GNorm = 3.4674, lr_0 = 1.0000e-03
+Epoch 0 time: 0.13920950889587402 seconds
+Epoch 1
+Loss = 4.0199e-01, PNorm = 34.0185, GNorm = 1.9387, lr_0 = 7.4989e-04
+Epoch 1 time: 0.1342635154724121 seconds
+Epoch 2
+Epoch 2 time: 0.13547229766845703 seconds
+Epoch 3
+Epoch 3 time: 0.1362466812133789 seconds
+Epoch 4
+Epoch 4 time: 0.13976097106933594 seconds
+Epoch 5
+Epoch 5 time: 0.1353139877319336 seconds
+Epoch 6
+Epoch 6 time: 0.13786745071411133 seconds
+Epoch 7
+Epoch 7 time: 0.1362919807434082 seconds
+Epoch 8
+Epoch 8 time: 0.135636568069458 seconds
+Epoch 9
+Epoch 9 time: 0.1351306438446045 seconds
+Model 0 time: 1.3751921653747559 seconds
+Training set size = 21
+Pool set size = 1088
+Start an new iteration of active learning: 19.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8908e-01, PNorm = 34.0117, GNorm = 3.4734, lr_0 = 1.0000e-03
+Epoch 0 time: 0.14431214332580566 seconds
+Epoch 1
+Loss = 4.1876e-01, PNorm = 34.0186, GNorm = 2.0143, lr_0 = 7.4989e-04
+Epoch 1 time: 0.14302372932434082 seconds
+Epoch 2
+Epoch 2 time: 0.1433091163635254 seconds
+Epoch 3
+Epoch 3 time: 0.1513376235961914 seconds
+Epoch 4
+Epoch 4 time: 0.14368057250976562 seconds
+Epoch 5
+Epoch 5 time: 0.14400577545166016 seconds
+Epoch 6
+Epoch 6 time: 0.14492034912109375 seconds
+Epoch 7
+Epoch 7 time: 0.15119266510009766 seconds
+Epoch 8
+Epoch 8 time: 0.14141106605529785 seconds
+Epoch 9
+Epoch 9 time: 0.14761853218078613 seconds
+Model 0 time: 1.4654808044433594 seconds
+Training set size = 22
+Pool set size = 1087
+Start an new iteration of active learning: 20.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0885e-01, PNorm = 34.0117, GNorm = 3.5233, lr_0 = 1.0000e-03
+Epoch 0 time: 0.15253973007202148 seconds
+Epoch 1
+Loss = 4.0069e-01, PNorm = 34.0187, GNorm = 2.0699, lr_0 = 7.4989e-04
+Epoch 1 time: 0.15925931930541992 seconds
+Epoch 2
+Epoch 2 time: 0.1472475528717041 seconds
+Epoch 3
+Epoch 3 time: 0.14762091636657715 seconds
+Epoch 4
+Epoch 4 time: 0.15077686309814453 seconds
+Epoch 5
+Epoch 5 time: 0.14852452278137207 seconds
+Epoch 6
+Epoch 6 time: 0.15011835098266602 seconds
+Epoch 7
+Epoch 7 time: 0.14804458618164062 seconds
+Epoch 8
+Epoch 8 time: 0.14795374870300293 seconds
+Epoch 9
+Epoch 9 time: 0.14858698844909668 seconds
+Model 0 time: 1.5144858360290527 seconds
+Model fitting time: 1.5146081447601318 seconds
+evaluating model performance finished.
+Training set size = 23
+Pool set size = 1086
+Start an new iteration of active learning: 21.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9613e-01, PNorm = 34.0114, GNorm = 3.4847, lr_0 = 1.0000e-03
+Epoch 0 time: 0.15236711502075195 seconds
+Epoch 1
+Loss = 4.0935e-01, PNorm = 34.0183, GNorm = 2.0659, lr_0 = 7.4989e-04
+Epoch 1 time: 0.14896178245544434 seconds
+Epoch 2
+Epoch 2 time: 0.14728975296020508 seconds
+Epoch 3
+Epoch 3 time: 0.15000653266906738 seconds
+Epoch 4
+Epoch 4 time: 0.1532304286956787 seconds
+Epoch 5
+Epoch 5 time: 0.14861273765563965 seconds
+Epoch 6
+Epoch 6 time: 0.15027546882629395 seconds
+Epoch 7
+Epoch 7 time: 0.1501009464263916 seconds
+Epoch 8
+Epoch 8 time: 0.15040111541748047 seconds
+Epoch 9
+Epoch 9 time: 0.14855146408081055 seconds
+Model 0 time: 1.5121586322784424 seconds
+Training set size = 24
+Pool set size = 1085
+Start an new iteration of active learning: 22.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0345e-01, PNorm = 34.0116, GNorm = 3.3482, lr_0 = 1.0000e-03
+Epoch 0 time: 0.15431594848632812 seconds
+Epoch 1
+Loss = 3.9081e-01, PNorm = 34.0182, GNorm = 2.0138, lr_0 = 7.4989e-04
+Epoch 1 time: 0.15848994255065918 seconds
+Epoch 2
+Epoch 2 time: 0.15222930908203125 seconds
+Epoch 3
+Epoch 3 time: 0.1531364917755127 seconds
+Epoch 4
+Epoch 4 time: 0.15144896507263184 seconds
+Epoch 5
+Epoch 5 time: 0.1503920555114746 seconds
+Epoch 6
+Epoch 6 time: 0.15559840202331543 seconds
+Epoch 7
+Epoch 7 time: 0.14981698989868164 seconds
+Epoch 8
+Epoch 8 time: 0.15167880058288574 seconds
+Epoch 9
+Epoch 9 time: 0.15241599082946777 seconds
+Model 0 time: 1.5423705577850342 seconds
+Training set size = 25
+Pool set size = 1084
+Start an new iteration of active learning: 23.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0905e-01, PNorm = 34.0113, GNorm = 3.5067, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1606462001800537 seconds
+Epoch 1
+Epoch 1 time: 0.1584641933441162 seconds
+Epoch 2
+Epoch 2 time: 0.15273070335388184 seconds
+Epoch 3
+Epoch 3 time: 0.15646123886108398 seconds
+Epoch 4
+Epoch 4 time: 0.15935921669006348 seconds
+Epoch 5
+Epoch 5 time: 0.15783119201660156 seconds
+Epoch 6
+Epoch 6 time: 0.1556241512298584 seconds
+Epoch 7
+Epoch 7 time: 0.1594243049621582 seconds
+Epoch 8
+Epoch 8 time: 0.15778040885925293 seconds
+Epoch 9
+Epoch 9 time: 0.15982890129089355 seconds
+Model 0 time: 1.5887269973754883 seconds
+Training set size = 26
+Pool set size = 1083
+Start an new iteration of active learning: 24.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8157e-01, PNorm = 34.0116, GNorm = 3.4935, lr_0 = 1.0000e-03
+Epoch 0 time: 0.161956787109375 seconds
+Epoch 1
+Epoch 1 time: 0.16771388053894043 seconds
+Epoch 2
+Epoch 2 time: 0.15792560577392578 seconds
+Epoch 3
+Epoch 3 time: 0.15840697288513184 seconds
+Epoch 4
+Epoch 4 time: 0.15977263450622559 seconds
+Epoch 5
+Epoch 5 time: 0.15775299072265625 seconds
+Epoch 6
+Epoch 6 time: 0.15708088874816895 seconds
+Epoch 7
+Epoch 7 time: 0.15886974334716797 seconds
+Epoch 8
+Epoch 8 time: 0.15630650520324707 seconds
+Epoch 9
+Epoch 9 time: 0.1584784984588623 seconds
+Model 0 time: 1.606719970703125 seconds
+Training set size = 27
+Pool set size = 1082
+Start an new iteration of active learning: 25.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9587e-01, PNorm = 34.0113, GNorm = 3.5386, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1692485809326172 seconds
+Epoch 1
+Epoch 1 time: 0.16399049758911133 seconds
+Epoch 2
+Epoch 2 time: 0.16928863525390625 seconds
+Epoch 3
+Epoch 3 time: 0.16541194915771484 seconds
+Epoch 4
+Epoch 4 time: 0.16749238967895508 seconds
+Epoch 5
+Epoch 5 time: 0.16443300247192383 seconds
+Epoch 6
+Epoch 6 time: 0.16946697235107422 seconds
+Epoch 7
+Epoch 7 time: 0.1622612476348877 seconds
+Epoch 8
+Epoch 8 time: 0.1621391773223877 seconds
+Epoch 9
+Epoch 9 time: 0.16658568382263184 seconds
+Model 0 time: 1.672060489654541 seconds
+Training set size = 28
+Pool set size = 1081
+Start an new iteration of active learning: 26.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0082e-01, PNorm = 34.0116, GNorm = 3.5589, lr_0 = 1.0000e-03
+Epoch 0 time: 0.16909575462341309 seconds
+Epoch 1
+Epoch 1 time: 0.16795802116394043 seconds
+Epoch 2
+Epoch 2 time: 0.1734941005706787 seconds
+Epoch 3
+Epoch 3 time: 0.16797280311584473 seconds
+Epoch 4
+Epoch 4 time: 0.16902804374694824 seconds
+Epoch 5
+Epoch 5 time: 0.16755986213684082 seconds
+Epoch 6
+Epoch 6 time: 0.16814136505126953 seconds
+Epoch 7
+Epoch 7 time: 0.1658153533935547 seconds
+Epoch 8
+Epoch 8 time: 0.18068218231201172 seconds
+Epoch 9
+Epoch 9 time: 0.1778421401977539 seconds
+Model 0 time: 1.721001148223877 seconds
+Training set size = 29
+Pool set size = 1080
+Start an new iteration of active learning: 27.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0149e-01, PNorm = 34.0116, GNorm = 3.2446, lr_0 = 1.0000e-03
+Epoch 0 time: 0.17259716987609863 seconds
+Epoch 1
+Epoch 1 time: 0.17331814765930176 seconds
+Epoch 2
+Epoch 2 time: 0.1725327968597412 seconds
+Epoch 3
+Epoch 3 time: 0.17066597938537598 seconds
+Epoch 4
+Epoch 4 time: 0.17523741722106934 seconds
+Epoch 5
+Epoch 5 time: 0.17151546478271484 seconds
+Epoch 6
+Epoch 6 time: 0.17485260963439941 seconds
+Epoch 7
+Epoch 7 time: 0.1754601001739502 seconds
+Epoch 8
+Epoch 8 time: 0.16875791549682617 seconds
+Epoch 9
+Epoch 9 time: 0.16996455192565918 seconds
+Model 0 time: 1.7389013767242432 seconds
+Training set size = 30
+Pool set size = 1079
+Start an new iteration of active learning: 28.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9441e-01, PNorm = 34.0117, GNorm = 3.2449, lr_0 = 1.0000e-03
+Epoch 0 time: 0.17554497718811035 seconds
+Epoch 1
+Epoch 1 time: 0.17447352409362793 seconds
+Epoch 2
+Epoch 2 time: 0.18031048774719238 seconds
+Epoch 3
+Epoch 3 time: 0.17268824577331543 seconds
+Epoch 4
+Epoch 4 time: 0.1777036190032959 seconds
+Epoch 5
+Epoch 5 time: 0.1737828254699707 seconds
+Epoch 6
+Epoch 6 time: 0.17789888381958008 seconds
+Epoch 7
+Epoch 7 time: 0.17777681350708008 seconds
+Epoch 8
+Epoch 8 time: 0.17096543312072754 seconds
+Epoch 9
+Epoch 9 time: 0.17117691040039062 seconds
+Model 0 time: 1.7643661499023438 seconds
+Training set size = 31
+Pool set size = 1078
+Start an new iteration of active learning: 29.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0800e-01, PNorm = 34.0114, GNorm = 3.3165, lr_0 = 1.0000e-03
+Epoch 0 time: 0.17743182182312012 seconds
+Epoch 1
+Epoch 1 time: 0.18164587020874023 seconds
+Epoch 2
+Epoch 2 time: 0.17793655395507812 seconds
+Epoch 3
+Epoch 3 time: 0.18032002449035645 seconds
+Epoch 4
+Epoch 4 time: 0.18256831169128418 seconds
+Epoch 5
+Epoch 5 time: 0.1774153709411621 seconds
+Epoch 6
+Epoch 6 time: 0.17964982986450195 seconds
+Epoch 7
+Epoch 7 time: 0.17915105819702148 seconds
+Epoch 8
+Epoch 8 time: 0.1774892807006836 seconds
+Epoch 9
+Epoch 9 time: 0.17891740798950195 seconds
+Model 0 time: 1.803093671798706 seconds
+Training set size = 32
+Pool set size = 1077
+Start an new iteration of active learning: 30.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9922e-01, PNorm = 34.0114, GNorm = 3.2852, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1895585060119629 seconds
+Epoch 1
+Epoch 1 time: 0.18593239784240723 seconds
+Epoch 2
+Epoch 2 time: 0.18455243110656738 seconds
+Epoch 3
+Epoch 3 time: 0.19273638725280762 seconds
+Epoch 4
+Epoch 4 time: 0.18346071243286133 seconds
+Epoch 5
+Epoch 5 time: 0.1860673427581787 seconds
+Epoch 6
+Epoch 6 time: 0.1847531795501709 seconds
+Epoch 7
+Epoch 7 time: 0.1847093105316162 seconds
+Epoch 8
+Epoch 8 time: 0.18798375129699707 seconds
+Epoch 9
+Epoch 9 time: 0.1852881908416748 seconds
+Model 0 time: 1.876539707183838 seconds
+Model fitting time: 1.8766603469848633 seconds
+evaluating model performance finished.
+Training set size = 33
+Pool set size = 1076
+Start an new iteration of active learning: 31.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8268e-01, PNorm = 34.0116, GNorm = 3.1956, lr_0 = 1.0000e-03
+Epoch 0 time: 0.1955699920654297 seconds
+Epoch 1
+Epoch 1 time: 0.18416380882263184 seconds
+Epoch 2
+Epoch 2 time: 0.1895914077758789 seconds
+Epoch 3
+Epoch 3 time: 0.18736958503723145 seconds
+Epoch 4
+Epoch 4 time: 0.19318389892578125 seconds
+Epoch 5
+Epoch 5 time: 0.18778157234191895 seconds
+Epoch 6
+Epoch 6 time: 0.5604984760284424 seconds
+Epoch 7
+Epoch 7 time: 0.18408465385437012 seconds
+Epoch 8
+Epoch 8 time: 0.19414925575256348 seconds
+Epoch 9
+Epoch 9 time: 0.19005060195922852 seconds
+Model 0 time: 2.276618719100952 seconds
+Training set size = 34
+Pool set size = 1075
+Start an new iteration of active learning: 32.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7643e-01, PNorm = 34.0116, GNorm = 3.0979, lr_0 = 1.0000e-03
+Epoch 0 time: 0.19854021072387695 seconds
+Epoch 1
+Epoch 1 time: 0.1989603042602539 seconds
+Epoch 2
+Epoch 2 time: 0.1891779899597168 seconds
+Epoch 3
+Epoch 3 time: 0.19007444381713867 seconds
+Epoch 4
+Epoch 4 time: 0.19547533988952637 seconds
+Epoch 5
+Epoch 5 time: 0.18807458877563477 seconds
+Epoch 6
+Epoch 6 time: 0.191253662109375 seconds
+Epoch 7
+Epoch 7 time: 0.19134044647216797 seconds
+Epoch 8
+Epoch 8 time: 0.1898043155670166 seconds
+Epoch 9
+Epoch 9 time: 0.1874089241027832 seconds
+Model 0 time: 1.9347805976867676 seconds
+Training set size = 35
+Pool set size = 1074
+Start an new iteration of active learning: 33.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8795e-01, PNorm = 34.0117, GNorm = 2.8866, lr_0 = 1.0000e-03
+Epoch 0 time: 0.19421863555908203 seconds
+Epoch 1
+Epoch 1 time: 0.1925961971282959 seconds
+Epoch 2
+Epoch 2 time: 0.19553780555725098 seconds
+Epoch 3
+Epoch 3 time: 0.19104290008544922 seconds
+Epoch 4
+Epoch 4 time: 0.19685935974121094 seconds
+Epoch 5
+Epoch 5 time: 0.19588780403137207 seconds
+Epoch 6
+Epoch 6 time: 0.1927015781402588 seconds
+Epoch 7
+Epoch 7 time: 0.19255375862121582 seconds
+Epoch 8
+Epoch 8 time: 0.19578194618225098 seconds
+Epoch 9
+Epoch 9 time: 0.19143939018249512 seconds
+Model 0 time: 1.9498486518859863 seconds
+Training set size = 36
+Pool set size = 1073
+Start an new iteration of active learning: 34.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7729e-01, PNorm = 34.0116, GNorm = 2.8142, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2012791633605957 seconds
+Epoch 1
+Epoch 1 time: 0.20014309883117676 seconds
+Epoch 2
+Epoch 2 time: 0.19847345352172852 seconds
+Epoch 3
+Epoch 3 time: 0.1996924877166748 seconds
+Epoch 4
+Epoch 4 time: 0.1980266571044922 seconds
+Epoch 5
+Epoch 5 time: 0.1981184482574463 seconds
+Epoch 6
+Epoch 6 time: 0.19847846031188965 seconds
+Epoch 7
+Epoch 7 time: 0.20699644088745117 seconds
+Epoch 8
+Epoch 8 time: 0.19636821746826172 seconds
+Epoch 9
+Epoch 9 time: 0.201399564743042 seconds
+Model 0 time: 2.0113303661346436 seconds
+Training set size = 37
+Pool set size = 1072
+Start an new iteration of active learning: 35.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9604e-01, PNorm = 34.0115, GNorm = 2.7605, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2698955535888672 seconds
+Epoch 1
+Epoch 1 time: 0.20408320426940918 seconds
+Epoch 2
+Epoch 2 time: 0.20762968063354492 seconds
+Epoch 3
+Epoch 3 time: 0.21065878868103027 seconds
+Epoch 4
+Epoch 4 time: 0.2052767276763916 seconds
+Epoch 5
+Epoch 5 time: 0.2086658477783203 seconds
+Epoch 6
+Epoch 6 time: 0.2073042392730713 seconds
+Epoch 7
+Epoch 7 time: 0.2092134952545166 seconds
+Epoch 8
+Epoch 8 time: 0.2031416893005371 seconds
+Epoch 9
+Epoch 9 time: 0.20900321006774902 seconds
+Model 0 time: 2.1453824043273926 seconds
+Training set size = 38
+Pool set size = 1071
+Start an new iteration of active learning: 36.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9572e-01, PNorm = 34.0115, GNorm = 2.7673, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2094113826751709 seconds
+Epoch 1
+Epoch 1 time: 0.21427559852600098 seconds
+Epoch 2
+Epoch 2 time: 0.20914769172668457 seconds
+Epoch 3
+Epoch 3 time: 0.2106177806854248 seconds
+Epoch 4
+Epoch 4 time: 0.2124171257019043 seconds
+Epoch 5
+Epoch 5 time: 0.20772886276245117 seconds
+Epoch 6
+Epoch 6 time: 0.21050262451171875 seconds
+Epoch 7
+Epoch 7 time: 0.20884943008422852 seconds
+Epoch 8
+Epoch 8 time: 0.21075868606567383 seconds
+Epoch 9
+Epoch 9 time: 0.2084674835205078 seconds
+Model 0 time: 2.1169450283050537 seconds
+Training set size = 39
+Pool set size = 1070
+Start an new iteration of active learning: 37.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7128e-01, PNorm = 34.0116, GNorm = 2.5134, lr_0 = 1.0000e-03
+Epoch 0 time: 0.21296191215515137 seconds
+Epoch 1
+Epoch 1 time: 0.2076423168182373 seconds
+Epoch 2
+Epoch 2 time: 0.2120680809020996 seconds
+Epoch 3
+Epoch 3 time: 0.2089083194732666 seconds
+Epoch 4
+Epoch 4 time: 0.21599507331848145 seconds
+Epoch 5
+Epoch 5 time: 0.21376252174377441 seconds
+Epoch 6
+Epoch 6 time: 0.21372079849243164 seconds
+Epoch 7
+Epoch 7 time: 0.21079444885253906 seconds
+Epoch 8
+Epoch 8 time: 0.2097623348236084 seconds
+Epoch 9
+Epoch 9 time: 0.21860313415527344 seconds
+Model 0 time: 2.1395483016967773 seconds
+Training set size = 40
+Pool set size = 1069
+Start an new iteration of active learning: 38.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7657e-01, PNorm = 34.0115, GNorm = 2.4699, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2180945873260498 seconds
+Epoch 1
+Epoch 1 time: 0.217576265335083 seconds
+Epoch 2
+Epoch 2 time: 0.21667075157165527 seconds
+Epoch 3
+Epoch 3 time: 0.2168428897857666 seconds
+Epoch 4
+Epoch 4 time: 0.21561694145202637 seconds
+Epoch 5
+Epoch 5 time: 0.21636319160461426 seconds
+Epoch 6
+Epoch 6 time: 0.21833014488220215 seconds
+Epoch 7
+Epoch 7 time: 0.222670316696167 seconds
+Epoch 8
+Epoch 8 time: 0.21645832061767578 seconds
+Epoch 9
+Epoch 9 time: 0.21969151496887207 seconds
+Model 0 time: 2.1896448135375977 seconds
+Training set size = 41
+Pool set size = 1068
+Start an new iteration of active learning: 39.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.1514e-01, PNorm = 34.0112, GNorm = 2.4293, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2167072296142578 seconds
+Epoch 1
+Epoch 1 time: 0.21957635879516602 seconds
+Epoch 2
+Epoch 2 time: 0.22122645378112793 seconds
+Epoch 3
+Epoch 3 time: 0.2231295108795166 seconds
+Epoch 4
+Epoch 4 time: 0.22005939483642578 seconds
+Epoch 5
+Epoch 5 time: 0.2795121669769287 seconds
+Epoch 6
+Epoch 6 time: 0.2179272174835205 seconds
+Epoch 7
+Epoch 7 time: 0.2169206142425537 seconds
+Epoch 8
+Epoch 8 time: 0.22510290145874023 seconds
+Epoch 9
+Epoch 9 time: 0.21839570999145508 seconds
+Model 0 time: 2.270253896713257 seconds
+Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 40.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7120e-01, PNorm = 34.0118, GNorm = 2.4190, lr_0 = 1.0000e-03
+Epoch 0 time: 0.22605419158935547 seconds
+Epoch 1
+Epoch 1 time: 0.2382984161376953 seconds
+Epoch 2
+Epoch 2 time: 0.22839641571044922 seconds
+Epoch 3
+Epoch 3 time: 0.22889184951782227 seconds
+Epoch 4
+Epoch 4 time: 0.22846412658691406 seconds
+Epoch 5
+Epoch 5 time: 0.23152852058410645 seconds
+Epoch 6
+Epoch 6 time: 0.22845840454101562 seconds
+Epoch 7
+Epoch 7 time: 0.22994065284729004 seconds
+Epoch 8
+Epoch 8 time: 0.22577905654907227 seconds
+Epoch 9
+Epoch 9 time: 0.23465633392333984 seconds
+Model 0 time: 2.313070058822632 seconds
+Model fitting time: 2.3148136138916016 seconds
+evaluating model performance finished.
+Training set size = 43
+Pool set size = 1066
+Start an new iteration of active learning: 41.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.9080e-01, PNorm = 34.0112, GNorm = 2.5078, lr_0 = 1.0000e-03
+Epoch 0 time: 0.22936058044433594 seconds
+Epoch 1
+Epoch 1 time: 0.23294973373413086 seconds
+Epoch 2
+Epoch 2 time: 0.23076224327087402 seconds
+Epoch 3
+Epoch 3 time: 0.22909903526306152 seconds
+Epoch 4
+Epoch 4 time: 0.23436498641967773 seconds
+Epoch 5
+Epoch 5 time: 0.2302536964416504 seconds
+Epoch 6
+Epoch 6 time: 0.2356100082397461 seconds
+Epoch 7
+Epoch 7 time: 0.22853660583496094 seconds
+Epoch 8
+Epoch 8 time: 0.2344970703125 seconds
+Epoch 9
+Epoch 9 time: 0.23538827896118164 seconds
+Model 0 time: 2.334836006164551 seconds
+Training set size = 44
+Pool set size = 1065
+Start an new iteration of active learning: 42.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7904e-01, PNorm = 34.0118, GNorm = 2.5195, lr_0 = 1.0000e-03
+Epoch 0 time: 0.234572172164917 seconds
+Epoch 1
+Epoch 1 time: 0.23744893074035645 seconds
+Epoch 2
+Epoch 2 time: 0.23637914657592773 seconds
+Epoch 3
+Epoch 3 time: 0.24044108390808105 seconds
+Epoch 4
+Epoch 4 time: 0.23413324356079102 seconds
+Epoch 5
+Epoch 5 time: 0.23707175254821777 seconds
+Epoch 6
+Epoch 6 time: 0.23652315139770508 seconds
+Epoch 7
+Epoch 7 time: 0.23723745346069336 seconds
+Epoch 8
+Epoch 8 time: 0.2350468635559082 seconds
+Epoch 9
+Epoch 9 time: 0.24503254890441895 seconds
+Model 0 time: 2.388183116912842 seconds
+Training set size = 45
+Pool set size = 1064
+Start an new iteration of active learning: 43.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0905e-01, PNorm = 34.0117, GNorm = 2.4832, lr_0 = 1.0000e-03
+Epoch 0 time: 0.24419450759887695 seconds
+Epoch 1
+Epoch 1 time: 0.24148130416870117 seconds
+Epoch 2
+Epoch 2 time: 0.24417543411254883 seconds
+Epoch 3
+Epoch 3 time: 0.24132251739501953 seconds
+Epoch 4
+Epoch 4 time: 0.23749756813049316 seconds
+Epoch 5
+Epoch 5 time: 0.24066519737243652 seconds
+Epoch 6
+Epoch 6 time: 0.24097013473510742 seconds
+Epoch 7
+Epoch 7 time: 0.24488258361816406 seconds
+Epoch 8
+Epoch 8 time: 0.2548849582672119 seconds
+Epoch 9
+Epoch 9 time: 0.24263691902160645 seconds
+Model 0 time: 2.4433770179748535 seconds
+Training set size = 46
+Pool set size = 1063
+Start an new iteration of active learning: 44.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.7860e-01, PNorm = 34.0113, GNorm = 2.2126, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2443239688873291 seconds
+Epoch 1
+Epoch 1 time: 0.24464988708496094 seconds
+Epoch 2
+Epoch 2 time: 0.24273991584777832 seconds
+Epoch 3
+Epoch 3 time: 0.25503110885620117 seconds
+Epoch 4
+Epoch 4 time: 0.2422952651977539 seconds
+Epoch 5
+Epoch 5 time: 0.24280405044555664 seconds
+Epoch 6
+Epoch 6 time: 0.24310064315795898 seconds
+Epoch 7
+Epoch 7 time: 0.2466740608215332 seconds
+Epoch 8
+Epoch 8 time: 0.24468517303466797 seconds
+Epoch 9
+Epoch 9 time: 0.24373245239257812 seconds
+Model 0 time: 2.4624953269958496 seconds
+Training set size = 47
+Pool set size = 1062
+Start an new iteration of active learning: 45.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8337e-01, PNorm = 34.0120, GNorm = 2.0274, lr_0 = 1.0000e-03
+Epoch 0 time: 0.25615477561950684 seconds
+Epoch 1
+Epoch 1 time: 0.2499527931213379 seconds
+Epoch 2
+Epoch 2 time: 0.25702619552612305 seconds
+Epoch 3
+Epoch 3 time: 0.25154900550842285 seconds
+Epoch 4
+Epoch 4 time: 0.26741623878479004 seconds
+Epoch 5
+Epoch 5 time: 0.25327205657958984 seconds
+Epoch 6
+Epoch 6 time: 0.2581503391265869 seconds
+Epoch 7
+Epoch 7 time: 0.25351595878601074 seconds
+Epoch 8
+Epoch 8 time: 0.250781774520874 seconds
+Epoch 9
+Epoch 9 time: 0.2495260238647461 seconds
+Model 0 time: 2.5580506324768066 seconds
+Training set size = 48
+Pool set size = 1061
+Start an new iteration of active learning: 46.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0492e-01, PNorm = 34.0117, GNorm = 2.0682, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2581601142883301 seconds
+Epoch 1
+Epoch 1 time: 0.2620394229888916 seconds
+Epoch 2
+Epoch 2 time: 0.25620603561401367 seconds
+Epoch 3
+Epoch 3 time: 0.25846123695373535 seconds
+Epoch 4
+Epoch 4 time: 0.2566964626312256 seconds
+Epoch 5
+Epoch 5 time: 0.2560420036315918 seconds
+Epoch 6
+Epoch 6 time: 0.25962257385253906 seconds
+Epoch 7
+Epoch 7 time: 0.25785040855407715 seconds
+Epoch 8
+Epoch 8 time: 0.26029396057128906 seconds
+Epoch 9
+Epoch 9 time: 0.29639768600463867 seconds
+Model 0 time: 2.633607864379883 seconds
+Training set size = 49
+Pool set size = 1060
+Start an new iteration of active learning: 47.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8769e-01, PNorm = 34.0116, GNorm = 1.9325, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2677311897277832 seconds
+Epoch 1
+Epoch 1 time: 0.2587311267852783 seconds
+Epoch 2
+Epoch 2 time: 0.26732921600341797 seconds
+Epoch 3
+Epoch 3 time: 0.2673912048339844 seconds
+Epoch 4
+Epoch 4 time: 0.26156187057495117 seconds
+Epoch 5
+Epoch 5 time: 0.26134705543518066 seconds
+Epoch 6
+Epoch 6 time: 0.2622051239013672 seconds
+Epoch 7
+Epoch 7 time: 0.26731085777282715 seconds
+Epoch 8
+Epoch 8 time: 0.264512300491333 seconds
+Epoch 9
+Epoch 9 time: 0.26660728454589844 seconds
+Model 0 time: 2.6554832458496094 seconds
+Training set size = 50
+Pool set size = 1059
+Start an new iteration of active learning: 48.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.2720468044281006 seconds
+Epoch 1
+Epoch 1 time: 0.28989171981811523 seconds
+Epoch 2
+Epoch 2 time: 0.2729966640472412 seconds
+Epoch 3
+Epoch 3 time: 0.272188663482666 seconds
+Epoch 4
+Epoch 4 time: 0.26952648162841797 seconds
+Epoch 5
+Epoch 5 time: 0.272413969039917 seconds
+Epoch 6
+Epoch 6 time: 0.2753410339355469 seconds
+Epoch 7
+Epoch 7 time: 0.26888298988342285 seconds
+Epoch 8
+Epoch 8 time: 0.2702980041503906 seconds
+Epoch 9
+Loss = 4.5642e-01, PNorm = 34.0266, GNorm = 0.3983, lr_0 = 1.0000e-04
+Epoch 9 time: 0.2757267951965332 seconds
+Model 0 time: 2.7508983612060547 seconds
+Training set size = 51
+Pool set size = 1058
+Start an new iteration of active learning: 49.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.28464818000793457 seconds
+Epoch 1
+Epoch 1 time: 0.28166961669921875 seconds
+Epoch 2
+Epoch 2 time: 0.27803540229797363 seconds
+Epoch 3
+Epoch 3 time: 0.2845335006713867 seconds
+Epoch 4
+Epoch 4 time: 0.27805519104003906 seconds
+Epoch 5
+Epoch 5 time: 0.2805807590484619 seconds
+Epoch 6
+Epoch 6 time: 0.27747225761413574 seconds
+Epoch 7
+Epoch 7 time: 0.27602076530456543 seconds
+Epoch 8
+Epoch 8 time: 0.2800557613372803 seconds
+Epoch 9
+Loss = 4.9244e-01, PNorm = 34.0216, GNorm = 0.4189, lr_0 = 1.0000e-04
+Loss = 2.6284e-01, PNorm = 34.0217, GNorm = 1.9623, lr_0 = 1.0000e-04
+Epoch 9 time: 0.27883005142211914 seconds
+Model 0 time: 2.812238931655884 seconds
+Training set size = 52
+Pool set size = 1057
+Start an new iteration of active learning: 50.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3092992305755615 seconds
+Epoch 1
+Epoch 1 time: 0.31026577949523926 seconds
+Epoch 2
+Epoch 2 time: 1.353529930114746 seconds
+Epoch 3
+Epoch 3 time: 1.3878858089447021 seconds
+Epoch 4
+Epoch 4 time: 1.0755524635314941 seconds
+Epoch 5
+Epoch 5 time: 1.0215280055999756 seconds
+Epoch 6
+Epoch 6 time: 0.2865614891052246 seconds
+Epoch 7
+Epoch 7 time: 0.27777743339538574 seconds
+Epoch 8
+Epoch 8 time: 0.2882416248321533 seconds
+Epoch 9
+Loss = 4.9670e-01, PNorm = 34.0230, GNorm = 0.4055, lr_0 = 1.0000e-04
+Loss = 7.9470e-01, PNorm = 34.0230, GNorm = 3.0583, lr_0 = 1.0000e-04
+Epoch 9 time: 0.284975528717041 seconds
+Model 0 time: 6.60648250579834 seconds
+Model fitting time: 6.606594562530518 seconds
+evaluating model performance finished.
+Training set size = 53
+Pool set size = 1056
+Start an new iteration of active learning: 51.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.28516173362731934 seconds
+Epoch 1
+Epoch 1 time: 0.2841823101043701 seconds
+Epoch 2
+Epoch 2 time: 0.2925581932067871 seconds
+Epoch 3
+Epoch 3 time: 0.28718090057373047 seconds
+Epoch 4
+Epoch 4 time: 0.2914621829986572 seconds
+Epoch 5
+Epoch 5 time: 0.2895376682281494 seconds
+Epoch 6
+Epoch 6 time: 0.28852367401123047 seconds
+Epoch 7
+Epoch 7 time: 0.289370059967041 seconds
+Epoch 8
+Epoch 8 time: 0.28678083419799805 seconds
+Epoch 9
+Loss = 5.0546e-01, PNorm = 34.0215, GNorm = 0.3485, lr_0 = 1.0000e-04
+Loss = 6.3030e-01, PNorm = 34.0216, GNorm = 1.2567, lr_0 = 1.0000e-04
+Epoch 9 time: 0.29012179374694824 seconds
+Model 0 time: 2.8988656997680664 seconds
+Training set size = 54
+Pool set size = 1055
+Start an new iteration of active learning: 52.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.29271674156188965 seconds
+Epoch 1
+Epoch 1 time: 0.3146657943725586 seconds
+Epoch 2
+Epoch 2 time: 0.2947733402252197 seconds
+Epoch 3
+Epoch 3 time: 0.2965855598449707 seconds
+Epoch 4
+Epoch 4 time: 0.2930479049682617 seconds
+Epoch 5
+Epoch 5 time: 0.3192136287689209 seconds
+Epoch 6
+Epoch 6 time: 0.29372453689575195 seconds
+Epoch 7
+Epoch 7 time: 0.29144954681396484 seconds
+Epoch 8
+Epoch 8 time: 0.2940177917480469 seconds
+Epoch 9
+Loss = 5.0378e-01, PNorm = 34.0222, GNorm = 0.3693, lr_0 = 1.0000e-04
+Loss = 5.3756e-01, PNorm = 34.0224, GNorm = 1.0696, lr_0 = 1.0000e-04
+Epoch 9 time: 0.2944297790527344 seconds
+Model 0 time: 2.9958736896514893 seconds
+Training set size = 55
+Pool set size = 1054
+Start an new iteration of active learning: 53.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.2980976104736328 seconds
+Epoch 1
+Epoch 1 time: 0.2976055145263672 seconds
+Epoch 2
+Epoch 2 time: 0.3010249137878418 seconds
+Epoch 3
+Epoch 3 time: 0.3024728298187256 seconds
+Epoch 4
+Epoch 4 time: 0.3072624206542969 seconds
+Epoch 5
+Epoch 5 time: 0.30327272415161133 seconds
+Epoch 6
+Epoch 6 time: 0.30959129333496094 seconds
+Epoch 7
+Epoch 7 time: 0.30153584480285645 seconds
+Epoch 8
+Epoch 8 time: 0.2994110584259033 seconds
+Epoch 9
+Loss = 4.9954e-01, PNorm = 34.0234, GNorm = 0.4816, lr_0 = 1.0000e-04
+Epoch 9 time: 0.30319643020629883 seconds
+Model 0 time: 3.034856081008911 seconds
+Training set size = 56
+Pool set size = 1053
+Start an new iteration of active learning: 54.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3043355941772461 seconds
+Epoch 1
+Epoch 1 time: 0.31050896644592285 seconds
+Epoch 2
+Epoch 2 time: 0.3069941997528076 seconds
+Epoch 3
+Epoch 3 time: 0.6814632415771484 seconds
+Epoch 4
+Epoch 4 time: 0.3070688247680664 seconds
+Epoch 5
+Epoch 5 time: 0.30249714851379395 seconds
+Epoch 6
+Epoch 6 time: 0.3030281066894531 seconds
+Epoch 7
+Epoch 7 time: 0.30835938453674316 seconds
+Epoch 8
+Loss = 3.9909e-01, PNorm = 34.0261, GNorm = 1.8550, lr_0 = 1.0000e-04
+Epoch 8 time: 0.3084874153137207 seconds
+Epoch 9
+Epoch 9 time: 0.30814313888549805 seconds
+Model 0 time: 3.451077699661255 seconds
+Training set size = 57
+Pool set size = 1052
+Start an new iteration of active learning: 55.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3104219436645508 seconds
+Epoch 1
+Epoch 1 time: 0.31213831901550293 seconds
+Epoch 2
+Epoch 2 time: 0.3132343292236328 seconds
+Epoch 3
+Epoch 3 time: 0.31250977516174316 seconds
+Epoch 4
+Epoch 4 time: 0.31104040145874023 seconds
+Epoch 5
+Epoch 5 time: 0.31273579597473145 seconds
+Epoch 6
+Epoch 6 time: 0.30872273445129395 seconds
+Epoch 7
+Epoch 7 time: 0.31404924392700195 seconds
+Epoch 8
+Loss = 5.4609e-01, PNorm = 34.0226, GNorm = 0.4355, lr_0 = 1.0000e-04
+Loss = 3.5279e-01, PNorm = 34.0228, GNorm = 2.1781, lr_0 = 1.0000e-04
+Epoch 8 time: 0.3155174255371094 seconds
+Epoch 9
+Epoch 9 time: 0.3147261142730713 seconds
+Model 0 time: 3.135806083679199 seconds
+Training set size = 58
+Pool set size = 1051
+Start an new iteration of active learning: 56.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.31152892112731934 seconds
+Epoch 1
+Epoch 1 time: 0.3135077953338623 seconds
+Epoch 2
+Epoch 2 time: 0.31506824493408203 seconds
+Epoch 3
+Epoch 3 time: 0.31253743171691895 seconds
+Epoch 4
+Epoch 4 time: 0.3078329563140869 seconds
+Epoch 5
+Epoch 5 time: 0.3089776039123535 seconds
+Epoch 6
+Epoch 6 time: 0.3071913719177246 seconds
+Epoch 7
+Epoch 7 time: 0.30674314498901367 seconds
+Epoch 8
+Loss = 5.5775e-01, PNorm = 34.0253, GNorm = 0.4791, lr_0 = 1.0000e-04
+Loss = 3.6414e-01, PNorm = 34.0256, GNorm = 2.4143, lr_0 = 1.0000e-04
+Epoch 8 time: 0.3107023239135742 seconds
+Epoch 9
+Epoch 9 time: 0.31258606910705566 seconds
+Model 0 time: 3.116888999938965 seconds
+Training set size = 59
+Pool set size = 1050
+Start an new iteration of active learning: 57.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3159492015838623 seconds
+Epoch 1
+Epoch 1 time: 0.3186328411102295 seconds
+Epoch 2
+Epoch 2 time: 0.32451701164245605 seconds
+Epoch 3
+Epoch 3 time: 0.3239572048187256 seconds
+Epoch 4
+Epoch 4 time: 0.3160226345062256 seconds
+Epoch 5
+Epoch 5 time: 0.31908249855041504 seconds
+Epoch 6
+Epoch 6 time: 0.31422877311706543 seconds
+Epoch 7
+Epoch 7 time: 0.3166816234588623 seconds
+Epoch 8
+Loss = 5.1952e-01, PNorm = 34.0232, GNorm = 0.3645, lr_0 = 1.0000e-04
+Loss = 5.2462e-01, PNorm = 34.0235, GNorm = 1.0676, lr_0 = 1.0000e-04
+Epoch 8 time: 0.3250389099121094 seconds
+Epoch 9
+Epoch 9 time: 0.317415714263916 seconds
+Model 0 time: 3.2031545639038086 seconds
+Training set size = 60
+Pool set size = 1049
+Start an new iteration of active learning: 58.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3227362632751465 seconds
+Epoch 1
+Epoch 1 time: 0.32356858253479004 seconds
+Epoch 2
+Epoch 2 time: 0.3230135440826416 seconds
+Epoch 3
+Epoch 3 time: 0.32468247413635254 seconds
+Epoch 4
+Epoch 4 time: 0.314131498336792 seconds
+Epoch 5
+Epoch 5 time: 0.32468557357788086 seconds
+Epoch 6
+Epoch 6 time: 0.3230140209197998 seconds
+Epoch 7
+Epoch 7 time: 0.31565165519714355 seconds
+Epoch 8
+Loss = 4.9138e-01, PNorm = 34.0257, GNorm = 0.4719, lr_0 = 1.0000e-04
+Loss = 5.2086e-01, PNorm = 34.0261, GNorm = 1.1515, lr_0 = 1.0000e-04
+Epoch 8 time: 0.32735729217529297 seconds
+Epoch 9
+Epoch 9 time: 0.315746545791626 seconds
+Model 0 time: 3.225005626678467 seconds
+Training set size = 61
+Pool set size = 1048
+Start an new iteration of active learning: 59.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3244740962982178 seconds
+Epoch 1
+Epoch 1 time: 0.3271479606628418 seconds
+Epoch 2
+Epoch 2 time: 0.33114051818847656 seconds
+Epoch 3
+Epoch 3 time: 0.3285493850708008 seconds
+Epoch 4
+Epoch 4 time: 0.33404111862182617 seconds
+Epoch 5
+Epoch 5 time: 0.3226792812347412 seconds
+Epoch 6
+Epoch 6 time: 0.3268122673034668 seconds
+Epoch 7
+Epoch 7 time: 0.32479000091552734 seconds
+Epoch 8
+Loss = 4.9818e-01, PNorm = 34.0259, GNorm = 0.4078, lr_0 = 1.0000e-04
+Loss = 5.3440e-01, PNorm = 34.0263, GNorm = 0.9189, lr_0 = 1.0000e-04
+Epoch 8 time: 0.3238358497619629 seconds
+Epoch 9
+Epoch 9 time: 0.3254849910736084 seconds
+Model 0 time: 3.2791426181793213 seconds
+Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 60.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3328874111175537 seconds
+Epoch 1
+Epoch 1 time: 0.33225250244140625 seconds
+Epoch 2
+Epoch 2 time: 0.33099961280822754 seconds
+Epoch 3
+Epoch 3 time: 0.3289072513580322 seconds
+Epoch 4
+Epoch 4 time: 0.3298182487487793 seconds
+Epoch 5
+Epoch 5 time: 0.33017539978027344 seconds
+Epoch 6
+Epoch 6 time: 0.33405566215515137 seconds
+Epoch 7
+Epoch 7 time: 0.32638120651245117 seconds
+Epoch 8
+Loss = 5.1945e-01, PNorm = 34.0267, GNorm = 0.4331, lr_0 = 1.0000e-04
+Epoch 8 time: 0.3326711654663086 seconds
+Epoch 9
+Epoch 9 time: 0.3341703414916992 seconds
+Model 0 time: 3.3259899616241455 seconds
+Model fitting time: 3.3261263370513916 seconds
+evaluating model performance finished.
+Training set size = 63
+Pool set size = 1046
+Start an new iteration of active learning: 61.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.3453950881958008 seconds
+Epoch 1
+Epoch 1 time: 0.327970027923584 seconds
+Epoch 2
+Epoch 2 time: 0.33121395111083984 seconds
+Epoch 3
+Epoch 3 time: 0.33504652976989746 seconds
+Epoch 4
+Epoch 4 time: 0.5409107208251953 seconds
+Epoch 5
+Epoch 5 time: 0.6902587413787842 seconds
+Epoch 6
+Epoch 6 time: 0.3348543643951416 seconds
+Epoch 7
+Loss = 5.3642e-01, PNorm = 34.0259, GNorm = 0.7472, lr_0 = 1.0000e-04
+Epoch 7 time: 0.3363780975341797 seconds
+Epoch 8
