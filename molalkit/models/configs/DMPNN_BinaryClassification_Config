@@ -1,7 +1,7 @@
 {
     "data_format": "chemprop",
     "loss_function": "binary_cross_entropy",
-    "epochs": 1,
+    "epochs": 50,
     "depth": 3,
     "hidden_size": 300,
     "ffn_num_layers": 2,

@@ -174,7 +174,7 @@ class XWithIndexDataset(Dataset):
 class MCDropoutForgetter(BaseForgetter):
     def __init__(
         self,
-        device: str = "cuda",
+        device: str = "cpu",
         mc_samples: int = 20,
         score_method: str = "bald",     # bald|entropy|variance|variation_ratio
         batch_size_eval: int = 256,
