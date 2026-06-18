@@ -1,39 +1,0 @@
-Anaconda3 2024.02
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-  0%|          | 0/2217 [00:00<?, ?it/s] 11%|█▏        | 254/2217 [00:00<00:00, 2533.94it/s] 25%|██▌       | 561/2217 [00:00<00:00, 2841.63it/s] 39%|███▉      | 860/2217 [00:00<00:00, 2908.12it/s] 53%|█████▎    | 1167/2217 [00:00<00:00, 2970.15it/s] 66%|██████▋   | 1471/2217 [00:00<00:00, 2992.73it/s] 80%|████████  | 1783/2217 [00:00<00:00, 3033.53it/s] 94%|█████████▍| 2087/2217 [00:00<00:00, 2910.76it/s]100%|██████████| 2217/2217 [00:00<00:00, 2878.61it/s]
-Total scaffolds = 1,965 | 
-split 0 scaffolds = 857 | 
-split 1 scaffolds = 1,108 | 
-0it [00:00, ?it/s]2217it [00:00, 353028.55it/s]
-  0%|          | 0/2217 [00:00<?, ?it/s][Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
-  0%|          | 8/2217 [00:00<00:40, 54.92it/s]/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-  0%|          | 8/2217 [00:18<00:40, 54.92it/s]  1%|          | 16/2217 [00:19<51:14,  1.40s/it]  1%|          | 24/2217 [00:19<28:06,  1.30it/s][Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:   19.2s
- 24%|██▍       | 528/2217 [00:19<00:31, 54.16it/s] 93%|█████████▎| 2064/2217 [00:19<00:00, 279.45it/s]100%|██████████| 2217/2217 [00:19<00:00, 114.07it/s]
-[Parallel(n_jobs=8)]: Done 2104 tasks      | elapsed:   19.5s
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-[Parallel(n_jobs=8)]: Done 2217 out of 2217 | elapsed:   31.3s finished
-  0%|          | 0/2217 [00:00<?, ?it/s] 17%|█▋        | 367/2217 [00:00<00:00, 3668.67it/s] 38%|███▊      | 851/2217 [00:00<00:00, 4355.40it/s] 65%|██████▌   | 1447/2217 [00:00<00:00, 5087.07it/s] 88%|████████▊ | 1956/2217 [00:00<00:00, 5006.31it/s]100%|██████████| 2217/2217 [00:00<00:00, 4807.05it/s]
-Start a new active learning run.
-Traceback (most recent call last):
-  File "/work/dn123/MolALKit/hpc_jobs/../molalkit_run", line 7, in <module>
-    sys.exit(molalkit_run())
-  File "/work/dn123/MolALKit/molalkit/al/run.py", line 22, in molalkit_run
-    model_selector=args.model_selector,
-  File "/work/dn123/MolALKit/molalkit/args.py", line 384, in model_selector
-    if model_config_selector == 'DMPNN+Morgan_BinaryClassification_Config' or model_config_selector == 'DMPNN_BinaryClassification_Config':
-NameError: name 'model_config_selector' is not defined

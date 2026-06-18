@@ -13,9 +13,9 @@
 
 # IMPORTANT: Set this equal to your total number of combinations minus 1
 # e.g., if you have 48 combinations, your array range is 0-47
-#SBATCH --array=0-47
+#SBATCH --array=0-95
 
-#SBATCH --job-name=Molalkit_Grid
+#SBATCH --job-name=Molalkit_Grid_MLP
 
 # Environment Setup
 module load Anaconda3
@@ -35,7 +35,7 @@ print(f'ADD_B={b_size[0]}; FORGET_B={b_size[1]}; START={start}; INTERVAL={interv
 ")
 
 # Setting folder layout
-BASE_DIR="../updated_test_data/MDR1_MDCK_classification2/DMPNN"
+BASE_DIR="../updated_test_data/MDR1_MDCK_classification2/David_MLP"
 PARAM_PATH="b_add${ADD_B}_fg${FORGET_B}/start${START}_int${INTERVAL}/ep${EPOCHS}/${UNC}_unc"
 SAVE_DIR="${BASE_DIR}/${PARAM_PATH}/seed${SEED}"
 
@@ -50,7 +50,7 @@ python ../molalkit_run \
     --data_public MDR1_MDCK_classification2 \
     --metrics roc_auc mcc accuracy precision recall f1_score \
     --learning_type explorative \
-    --model_config_selector DMPNN_BinaryClassification_Config \
+    --model_config_selector David_MLP_Morgan_Config \
     --split_type scaffold_order \
     --split_sizes 0.5 0.5 \
     --seed "$SEED" \
@@ -61,6 +61,7 @@ python ../molalkit_run \
     --forget_size "$FORGET_B" \
     --mc_forget_version "$UNC" \
     --write_traj_stride 10 \
-    --save_cpt_stride 20
+    --save_cpt_stride 20 \
+    --evaluate_stride 5
 
 echo "Task $SLURM_ARRAY_TASK_ID completed successfully."

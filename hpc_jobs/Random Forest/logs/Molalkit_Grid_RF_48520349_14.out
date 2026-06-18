@@ -1,0 +1,6 @@
+==========================================================
+SLURM ARRAY TASK ID: 14
+Running parameters: Add Batch=, Forget Batch=, Start=, Interval=, Epochs=, Uncertainty=, Seed=
+Target Save Directory: ../../updated_test_data/MDR1_MDCK_classification2/RF/b_add_fg/start_int/ep0//seed
+==========================================================
+Task 14 completed successfully.
