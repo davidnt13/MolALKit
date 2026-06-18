@@ -375,10 +375,16 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
     """the percent of the full training set to start forgetting data."""
     mc_forget_version: Literal['min', 'max'] = None
     """min uncertainty forgetting or max uncertainty"""
+    cp_model_epochs: int = 30
+    """the number of epochs for the Chemprop model."""
 
     @property
     def model_selector(self):
         if not hasattr(self, '_model_selector'):
+            if self.model_config_selector_dict.get('model') == 'DMPNN+Morgan_BinaryClassification_Config' or self.model_config_selector_dict.get('model') == 'DMPNN_BinaryClassification_Config':
+                model_epochs = self.cp_model_epochs
+            else:
+                model_epochs = self.model_config_selector_dict.get('epochs') or 30
             self._model_selector = get_model(
                 data_format=self.model_config_selector_dict['data_format'],
                 dataset_type=self.dataset_type,
@@ -393,7 +399,7 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
                 no_features_scaling=self.model_config_selector_dict.get('no_features_scaling') or False,
                 features_only=self.model_config_selector_dict.get('features_only') or False,
                 features_size=self.data_train_selector.features_size(),
-                epochs=self.model_config_selector_dict.get('epochs') or 30,
+                epochs=model_epochs,
                 depth=self.model_config_selector_dict.get('depth') or 3,
                 hidden_size=self.model_config_selector_dict.get('hidden_size') or 300,
                 ffn_num_layers=self.model_config_selector_dict.get('ffn_num_layers') or 2,

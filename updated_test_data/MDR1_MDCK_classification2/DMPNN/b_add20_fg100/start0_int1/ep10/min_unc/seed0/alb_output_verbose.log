@@ -1,0 +1,34 @@
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
