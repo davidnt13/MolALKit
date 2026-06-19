@@ -1,0 +1,6 @@
+==========================================================
+SLURM ARRAY TASK ID: 8
+Running parameters: Add Batch=20, Forget Batch=100, Start=0, Interval=5, Uncertainty=min_oob_uncertainty, Seed=2
+Target Save Directory: ../../updated_test_data/MDR1_MDCK_classification2/RF/b_add20_fg100/start0_int5/ep0/min_oob_uncertainty/seed2
+==========================================================
+Task 8 completed successfully.

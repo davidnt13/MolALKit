@@ -1,0 +1,748 @@
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.5609e-01, PNorm = 34.0109, GNorm = 1.9887, lr_0 = 1.0000e-03
+Epoch 0 time: 0.27469301223754883 seconds
+Epoch 1
+Loss = 5.5314e-01, PNorm = 34.0149, GNorm = 1.7521, lr_0 = 9.5316e-04
+Epoch 1 time: 0.10132813453674316 seconds
+Epoch 2
+Loss = 5.5473e-01, PNorm = 34.0205, GNorm = 2.1395, lr_0 = 9.0852e-04
+Epoch 2 time: 0.10127997398376465 seconds
+Epoch 3
+Loss = 6.2258e-01, PNorm = 34.0270, GNorm = 2.2713, lr_0 = 8.6596e-04
+Epoch 3 time: 0.10242724418640137 seconds
+Epoch 4
+Loss = 4.8236e-01, PNorm = 34.0340, GNorm = 2.1218, lr_0 = 8.2540e-04
+Epoch 4 time: 0.10144233703613281 seconds
+Epoch 5
+Loss = 3.4928e-01, PNorm = 34.0412, GNorm = 1.7988, lr_0 = 7.8674e-04
+Epoch 5 time: 0.10320115089416504 seconds
+Epoch 6
+Loss = 2.6581e-01, PNorm = 34.0489, GNorm = 1.4557, lr_0 = 7.4989e-04
+Epoch 6 time: 0.10205817222595215 seconds
+Epoch 7
+Loss = 1.9267e-01, PNorm = 34.0566, GNorm = 1.4498, lr_0 = 7.1477e-04
+Epoch 7 time: 0.1024942398071289 seconds
+Epoch 8
+Loss = 1.7908e-01, PNorm = 34.0646, GNorm = 1.3329, lr_0 = 6.8129e-04
+Epoch 8 time: 0.10386919975280762 seconds
+Epoch 9
+Loss = 1.0838e-01, PNorm = 34.0724, GNorm = 1.0278, lr_0 = 6.4938e-04
+Epoch 9 time: 0.10348939895629883 seconds
+Epoch 10
+Loss = 1.0401e-01, PNorm = 34.0801, GNorm = 1.1656, lr_0 = 6.1897e-04
+Epoch 10 time: 0.10386323928833008 seconds
+Epoch 11
+Loss = 4.2794e-02, PNorm = 34.0875, GNorm = 0.5527, lr_0 = 5.8997e-04
+Epoch 11 time: 0.10225939750671387 seconds
+Epoch 12
+Loss = 2.4363e-02, PNorm = 34.0944, GNorm = 0.4752, lr_0 = 5.6234e-04
+Epoch 12 time: 0.10376715660095215 seconds
+Epoch 13
+Loss = 1.2565e-02, PNorm = 34.1007, GNorm = 0.1624, lr_0 = 5.3600e-04
+Epoch 13 time: 0.10344076156616211 seconds
+Epoch 14
+Loss = 1.4440e-02, PNorm = 34.1066, GNorm = 0.2530, lr_0 = 5.1090e-04
+Epoch 14 time: 0.1043851375579834 seconds
+Epoch 15
+Loss = 1.6344e-02, PNorm = 34.1121, GNorm = 0.3349, lr_0 = 4.8697e-04
+Epoch 15 time: 0.10197210311889648 seconds
+Epoch 16
+Loss = 1.6211e-02, PNorm = 34.1172, GNorm = 0.2661, lr_0 = 4.6416e-04
+Epoch 16 time: 0.10675501823425293 seconds
+Epoch 17
+Loss = 8.4123e-03, PNorm = 34.1218, GNorm = 0.2274, lr_0 = 4.4242e-04
+Epoch 17 time: 0.10213160514831543 seconds
+Epoch 18
+Loss = 3.6257e-03, PNorm = 34.1259, GNorm = 0.0905, lr_0 = 4.2170e-04
+Epoch 18 time: 0.10150384902954102 seconds
+Epoch 19
+Loss = 2.9422e-03, PNorm = 34.1296, GNorm = 0.0891, lr_0 = 4.0195e-04
+Epoch 19 time: 0.10294938087463379 seconds
+Epoch 20
+Loss = 8.2271e-04, PNorm = 34.1330, GNorm = 0.0270, lr_0 = 3.8312e-04
+Epoch 20 time: 0.10005331039428711 seconds
+Epoch 21
+Loss = 2.2709e-03, PNorm = 34.1359, GNorm = 0.0712, lr_0 = 3.6517e-04
+Epoch 21 time: 0.10202240943908691 seconds
+Epoch 22
+Loss = 3.8427e-03, PNorm = 34.1387, GNorm = 0.1435, lr_0 = 3.4807e-04
+Epoch 22 time: 0.1023867130279541 seconds
+Epoch 23
+Loss = 5.8051e-04, PNorm = 34.1411, GNorm = 0.0267, lr_0 = 3.3177e-04
+Epoch 23 time: 0.10295677185058594 seconds
+Epoch 24
+Epoch 24 time: 0.10168266296386719 seconds
+Epoch 25
+Epoch 25 time: 0.10439157485961914 seconds
+Epoch 26
+Epoch 26 time: 0.10470032691955566 seconds
+Epoch 27
+Epoch 27 time: 0.1009070873260498 seconds
+Epoch 28
+Epoch 28 time: 0.10032343864440918 seconds
+Epoch 29
+Epoch 29 time: 0.10365128517150879 seconds
+Epoch 30
+Epoch 30 time: 0.10312485694885254 seconds
+Epoch 31
+Epoch 31 time: 0.10177803039550781 seconds
+Epoch 32
+Epoch 32 time: 0.10202908515930176 seconds
+Epoch 33
+Epoch 33 time: 0.10257697105407715 seconds
+Epoch 34
+Epoch 34 time: 0.10316753387451172 seconds
+Epoch 35
+Epoch 35 time: 0.10226798057556152 seconds
+Epoch 36
+Epoch 36 time: 0.10181498527526855 seconds
+Epoch 37
+Epoch 37 time: 0.10232782363891602 seconds
+Epoch 38
+Epoch 38 time: 0.10228323936462402 seconds
+Epoch 39
+Epoch 39 time: 0.1019744873046875 seconds
+Epoch 40
+Epoch 40 time: 0.1066133975982666 seconds
+Epoch 41
+Epoch 41 time: 0.10487198829650879 seconds
+Epoch 42
+Epoch 42 time: 0.10643362998962402 seconds
+Epoch 43
+Epoch 43 time: 0.10301923751831055 seconds
+Epoch 44
+Epoch 44 time: 0.10742473602294922 seconds
+Epoch 45
+Epoch 45 time: 0.10842633247375488 seconds
+Epoch 46
+Epoch 46 time: 0.10421872138977051 seconds
+Epoch 47
+Epoch 47 time: 0.10298395156860352 seconds
+Epoch 48
+Epoch 48 time: 0.10239839553833008 seconds
+Epoch 49
+Epoch 49 time: 0.10335206985473633 seconds
+Model 0 time: 7.804209232330322 seconds
+Model fitting time: 7.8044328689575195 seconds
+evaluating model performance finished.
+Training set size = 22
+Pool set size = 1087
+save checkpoint file ../../updated_test_data/MDR1_MDCK_classification2/DMPNN/b_add20_fg100/start0_int1/ep10/max_unc/seed0/al.pkl
+Start an new iteration of active learning: 1.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 6.8514e-01, PNorm = 34.0108, GNorm = 0.7106, lr_0 = 1.0000e-03
+Epoch 0 time: 0.2443222999572754 seconds
+Epoch 1
+Loss = 7.1389e-01, PNorm = 34.0131, GNorm = 0.7148, lr_0 = 9.5316e-04
+Epoch 1 time: 0.2475571632385254 seconds
+Epoch 2
+Epoch 2 time: 0.24664878845214844 seconds
+Epoch 3
+Epoch 3 time: 0.2501180171966553 seconds
+Epoch 4
+Epoch 4 time: 0.24897336959838867 seconds
+Epoch 5
+Epoch 5 time: 0.2458186149597168 seconds
+Epoch 6
+Epoch 6 time: 0.24199938774108887 seconds
+Epoch 7
+Epoch 7 time: 0.24590206146240234 seconds
+Epoch 8
+Epoch 8 time: 0.250030517578125 seconds
+Epoch 9
+Epoch 9 time: 0.24620914459228516 seconds
+Epoch 10
+Epoch 10 time: 0.24938368797302246 seconds
+Epoch 11
+Epoch 11 time: 0.24576377868652344 seconds
+Epoch 12
+Epoch 12 time: 0.24483895301818848 seconds
+Epoch 13
+Epoch 13 time: 0.2429511547088623 seconds
+Epoch 14
+Epoch 14 time: 0.24598979949951172 seconds
+Epoch 15
+Epoch 15 time: 0.2652015686035156 seconds
+Epoch 16
+Epoch 16 time: 0.25102829933166504 seconds
+Epoch 17
+Epoch 17 time: 0.24797272682189941 seconds
+Epoch 18
+Epoch 18 time: 0.24705100059509277 seconds
+Epoch 19
+Epoch 19 time: 0.24918913841247559 seconds
+Epoch 20
+Epoch 20 time: 0.24571490287780762 seconds
+Epoch 21
+Epoch 21 time: 0.25177645683288574 seconds
+Epoch 22
+Loss = 4.7815e-01, PNorm = 34.1238, GNorm = 1.0793, lr_0 = 3.4807e-04
+Epoch 22 time: 0.2518298625946045 seconds
+Epoch 23
+Loss = 4.8398e-01, PNorm = 34.1277, GNorm = 1.4950, lr_0 = 3.3177e-04
+Epoch 23 time: 0.2492969036102295 seconds
+Epoch 24
+Epoch 24 time: 0.24950146675109863 seconds
+Epoch 25
+Epoch 25 time: 0.2453594207763672 seconds
+Epoch 26
+Epoch 26 time: 0.2459092140197754 seconds
+Epoch 27
+Epoch 27 time: 0.24804210662841797 seconds
+Epoch 28
+Epoch 28 time: 0.2569427490234375 seconds
+Epoch 29
+Epoch 29 time: 0.2485487461090088 seconds
+Epoch 30
+Epoch 30 time: 0.24686980247497559 seconds
+Epoch 31
+Epoch 31 time: 0.2513093948364258 seconds
+Epoch 32
+Epoch 32 time: 0.25098109245300293 seconds
+Epoch 33
+Epoch 33 time: 0.2563292980194092 seconds
+Epoch 34
+Epoch 34 time: 0.2545902729034424 seconds
+Epoch 35
+Epoch 35 time: 0.2450883388519287 seconds
+Epoch 36
+Epoch 36 time: 0.2498166561126709 seconds
+Epoch 37
+Epoch 37 time: 0.2498641014099121 seconds
+Epoch 38
+Epoch 38 time: 0.24576687812805176 seconds
+Epoch 39
+Epoch 39 time: 0.24586892127990723 seconds
+Epoch 40
+Epoch 40 time: 0.2473747730255127 seconds
+Epoch 41
+Epoch 41 time: 0.25050783157348633 seconds
+Epoch 42
+Epoch 42 time: 0.25127625465393066 seconds
+Epoch 43
+Epoch 43 time: 0.24326729774475098 seconds
+Epoch 44
+Epoch 44 time: 0.24744057655334473 seconds
+Epoch 45
+Loss = 3.7019e-01, PNorm = 34.1796, GNorm = 1.5775, lr_0 = 1.1548e-04
+Epoch 45 time: 0.2503979206085205 seconds
+Epoch 46
+Loss = 3.7298e-01, PNorm = 34.1807, GNorm = 1.9441, lr_0 = 1.1007e-04
+Epoch 46 time: 0.2504587173461914 seconds
+Epoch 47
+Epoch 47 time: 0.2511312961578369 seconds
+Epoch 48
+Epoch 48 time: 0.24912333488464355 seconds
+Epoch 49
+Epoch 49 time: 0.24907851219177246 seconds
+Model 0 time: 12.477556943893433 seconds
+Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 2.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Loss = 7.0970e-01, PNorm = 34.0118, GNorm = 1.1573, lr_0 = 1.0000e-03
+Epoch 0 time: 0.39849162101745605 seconds
+Epoch 1
+Epoch 1 time: 0.3923325538635254 seconds
+Epoch 2
+Epoch 2 time: 0.39421629905700684 seconds
+Epoch 3
+Epoch 3 time: 0.3927147388458252 seconds
+Epoch 4
+Epoch 4 time: 0.38603925704956055 seconds
+Epoch 5
+Epoch 5 time: 0.39869046211242676 seconds
+Epoch 6
+Epoch 6 time: 0.40107083320617676 seconds
+Epoch 7
+Epoch 7 time: 0.38927698135375977 seconds
+Epoch 8
+Epoch 8 time: 0.3963644504547119 seconds
+Epoch 9
+Epoch 9 time: 0.3933887481689453 seconds
+Epoch 10
+Epoch 10 time: 0.39296746253967285 seconds
+Epoch 11
+Loss = 6.1483e-01, PNorm = 34.0542, GNorm = 0.3329, lr_0 = 5.8997e-04
+Epoch 11 time: 0.401287317276001 seconds
+Epoch 12
+Loss = 6.0537e-01, PNorm = 34.0588, GNorm = 0.4874, lr_0 = 5.6234e-04
+Epoch 12 time: 0.3984191417694092 seconds
+Epoch 13
+Epoch 13 time: 0.39498209953308105 seconds
+Epoch 14
+Epoch 14 time: 0.38991212844848633 seconds
+Epoch 15
+Epoch 15 time: 0.4030463695526123 seconds
+Epoch 16
+Epoch 16 time: 0.39158105850219727 seconds
+Epoch 17
+Epoch 17 time: 0.39600133895874023 seconds
+Epoch 18
+Epoch 18 time: 0.39720988273620605 seconds
+Epoch 19
+Epoch 19 time: 0.39087343215942383 seconds
+Epoch 20
+Epoch 20 time: 0.40039801597595215 seconds
+Epoch 21
+Epoch 21 time: 0.3881657123565674 seconds
+Epoch 22
+Epoch 22 time: 0.3975491523742676 seconds
+Epoch 23
+Loss = 5.5824e-01, PNorm = 34.1061, GNorm = 0.5097, lr_0 = 3.3177e-04
+Epoch 23 time: 0.39867520332336426 seconds
+Epoch 24
+Epoch 24 time: 0.38977479934692383 seconds
+Epoch 25
+Epoch 25 time: 0.4012782573699951 seconds
+Epoch 26
+Epoch 26 time: 0.39871835708618164 seconds
+Epoch 27
+Epoch 27 time: 0.4500703811645508 seconds
+Epoch 28
+Epoch 28 time: 0.38936710357666016 seconds
+Epoch 29
+Epoch 29 time: 0.3936927318572998 seconds
+Epoch 30
+Epoch 30 time: 0.40304017066955566 seconds
+Epoch 31
+Epoch 31 time: 0.3916969299316406 seconds
+Epoch 32
+Epoch 32 time: 0.3978540897369385 seconds
+Epoch 33
+Epoch 33 time: 0.39905452728271484 seconds
+Epoch 34
+Epoch 34 time: 0.39435696601867676 seconds
+Epoch 35
+Loss = 5.3493e-01, PNorm = 34.1464, GNorm = 1.1230, lr_0 = 1.8657e-04
+Epoch 35 time: 0.3938872814178467 seconds
+Epoch 36
+Epoch 36 time: 0.3904685974121094 seconds
+Epoch 37
+Epoch 37 time: 0.4005610942840576 seconds
+Epoch 38
+Epoch 38 time: 0.39778709411621094 seconds
+Epoch 39
+Epoch 39 time: 0.40733885765075684 seconds
+Epoch 40
+Epoch 40 time: 0.4069209098815918 seconds
+Epoch 41
+Epoch 41 time: 0.39667320251464844 seconds
+Epoch 42
+Epoch 42 time: 0.39872121810913086 seconds
+Epoch 43
+Epoch 43 time: 0.3997969627380371 seconds
+Epoch 44
+Epoch 44 time: 0.3970918655395508 seconds
+Epoch 45
+Epoch 45 time: 0.3985259532928467 seconds
+Epoch 46
+Epoch 46 time: 0.40010666847229004 seconds
+Epoch 47
+Loss = 4.4954e-01, PNorm = 34.1709, GNorm = 0.5097, lr_0 = 1.0491e-04
+Epoch 47 time: 0.4055345058441162 seconds
+Epoch 48
+Epoch 48 time: 0.3929147720336914 seconds
+Epoch 49
+Epoch 49 time: 0.4097785949707031 seconds
+Model 0 time: 19.932575464248657 seconds
+Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 3.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.5391790866851807 seconds
+Epoch 1
+Epoch 1 time: 0.5400166511535645 seconds
+Epoch 2
+Epoch 2 time: 0.8436970710754395 seconds
+Epoch 3
+Epoch 3 time: 1.0645570755004883 seconds
+Epoch 4
+Epoch 4 time: 0.5409741401672363 seconds
+Epoch 5
+Epoch 5 time: 0.5354793071746826 seconds
+Epoch 6
+Epoch 6 time: 0.5357160568237305 seconds
+Epoch 7
+Epoch 7 time: 0.5675389766693115 seconds
+Epoch 8
+Loss = 5.1483e-01, PNorm = 34.0470, GNorm = 0.5340, lr_0 = 4.6416e-04
+Epoch 8 time: 0.539541482925415 seconds
+Epoch 9
+Epoch 9 time: 0.5309443473815918 seconds
+Epoch 10
+Epoch 10 time: 0.541085958480835 seconds
+Epoch 11
+Epoch 11 time: 0.5355935096740723 seconds
+Epoch 12
+Epoch 12 time: 0.5335631370544434 seconds
+Epoch 13
+Epoch 13 time: 0.5489711761474609 seconds
+Epoch 14
+Epoch 14 time: 0.5356173515319824 seconds
+Epoch 15
+Epoch 15 time: 0.5331153869628906 seconds
+Epoch 16
+Loss = 6.1819e-01, PNorm = 34.0589, GNorm = 0.2330, lr_0 = 2.1544e-04
+Epoch 16 time: 0.5516796112060547 seconds
+Epoch 17
+Epoch 17 time: 0.5370674133300781 seconds
+Epoch 18
+Epoch 18 time: 0.5383486747741699 seconds
+Epoch 19
+Epoch 19 time: 0.5461323261260986 seconds
+Epoch 20
+Epoch 20 time: 0.534266471862793 seconds
+Epoch 21
+Epoch 21 time: 0.5369415283203125 seconds
+Epoch 22
+Epoch 22 time: 0.5399169921875 seconds
+Epoch 23
+Epoch 23 time: 0.5470824241638184 seconds
+Epoch 24
+Loss = 6.1928e-01, PNorm = 34.0658, GNorm = 0.2649, lr_0 = 1.0000e-04
+Epoch 24 time: 0.5457675457000732 seconds
+Epoch 25
+Epoch 25 time: 0.5495927333831787 seconds
+Epoch 26
+Epoch 26 time: 0.5571343898773193 seconds
+Epoch 27
+Epoch 27 time: 0.5319855213165283 seconds
+Epoch 28
+Epoch 28 time: 0.5348234176635742 seconds
+Epoch 29
+Epoch 29 time: 0.5382547378540039 seconds
+Epoch 30
+Epoch 30 time: 0.5456252098083496 seconds
+Epoch 31
+Epoch 31 time: 0.5444672107696533 seconds
+Epoch 32
+Loss = 5.7686e-01, PNorm = 34.0706, GNorm = 0.2159, lr_0 = 1.0000e-04
+Loss = 6.8588e-01, PNorm = 34.0709, GNorm = 0.8688, lr_0 = 1.0000e-04
+Epoch 32 time: 0.5408303737640381 seconds
+Epoch 33
+Epoch 33 time: 0.5341784954071045 seconds
+Epoch 34
+Epoch 34 time: 0.5393950939178467 seconds
+Epoch 35
+Epoch 35 time: 0.544762372970581 seconds
+Epoch 36
+Epoch 36 time: 0.539801836013794 seconds
+Epoch 37
+Epoch 37 time: 0.548499584197998 seconds
+Epoch 38
+Epoch 38 time: 0.8321418762207031 seconds
+Epoch 39
+Epoch 39 time: 0.5239455699920654 seconds
+Epoch 40
+Loss = 5.8788e-01, PNorm = 34.0755, GNorm = 0.3590, lr_0 = 1.0000e-04
+Loss = 6.6417e-01, PNorm = 34.0759, GNorm = 0.6568, lr_0 = 1.0000e-04
+Epoch 40 time: 0.5483620166778564 seconds
+Epoch 41
+Epoch 41 time: 1.0755467414855957 seconds
+Epoch 42
+Epoch 42 time: 0.550217866897583 seconds
+Epoch 43
+Epoch 43 time: 0.5436539649963379 seconds
+Epoch 44
+Epoch 44 time: 0.5366251468658447 seconds
+Epoch 45
+Epoch 45 time: 0.5445377826690674 seconds
+Epoch 46
+Epoch 46 time: 0.5322129726409912 seconds
+Epoch 47
+Epoch 47 time: 0.5404548645019531 seconds
+Epoch 48
+Loss = 6.0590e-01, PNorm = 34.0826, GNorm = 0.2754, lr_0 = 1.0000e-04
+Loss = 5.3546e-01, PNorm = 34.0832, GNorm = 0.5292, lr_0 = 1.0000e-04
+Epoch 48 time: 0.5385451316833496 seconds
+Epoch 49
+Epoch 49 time: 0.5445148944854736 seconds
+Model 0 time: 28.742642164230347 seconds
+Training set size = 82
+Pool set size = 1027
+Start an new iteration of active learning: 4.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.6481049060821533 seconds
+Epoch 1
+Epoch 1 time: 0.6589779853820801 seconds
+Epoch 2
+Epoch 2 time: 0.6488032341003418 seconds
+Epoch 3
+Epoch 3 time: 0.6541905403137207 seconds
+Epoch 4
+Epoch 4 time: 0.6530771255493164 seconds
+Epoch 5
+Epoch 5 time: 0.6430134773254395 seconds
+Epoch 6
+Loss = 4.8714e-01, PNorm = 34.0418, GNorm = 0.5694, lr_0 = 5.6234e-04
+Epoch 6 time: 0.6455564498901367 seconds
+Epoch 7
+Epoch 7 time: 0.6388802528381348 seconds
+Epoch 8
+Epoch 8 time: 0.6476161479949951 seconds
+Epoch 9
+Epoch 9 time: 0.6494507789611816 seconds
+Epoch 10
+Epoch 10 time: 0.6476132869720459 seconds
+Epoch 11
+Epoch 11 time: 0.6553864479064941 seconds
+Epoch 12
+Loss = 5.4897e-01, PNorm = 34.0577, GNorm = 0.2382, lr_0 = 3.1623e-04
+Epoch 12 time: 0.6602327823638916 seconds
+Epoch 13
+Epoch 13 time: 0.6611626148223877 seconds
+Epoch 14
+Epoch 14 time: 1.210371971130371 seconds
+Epoch 15
+Epoch 15 time: 0.660987138748169 seconds
+Epoch 16
+Epoch 16 time: 0.6724400520324707 seconds
+Epoch 17
+Epoch 17 time: 0.8893275260925293 seconds
+Epoch 18
+Loss = 5.6723e-01, PNorm = 34.0664, GNorm = 0.2343, lr_0 = 1.7783e-04
+Epoch 18 time: 0.65395188331604 seconds
+Epoch 19
+Epoch 19 time: 0.6540780067443848 seconds
+Epoch 20
+Epoch 20 time: 0.6542985439300537 seconds
+Epoch 21
+Epoch 21 time: 0.6497385501861572 seconds
+Epoch 22
+Epoch 22 time: 0.6558501720428467 seconds
+Epoch 23
+Epoch 23 time: 0.6560242176055908 seconds
+Epoch 24
+Loss = 5.5861e-01, PNorm = 34.0722, GNorm = 0.1983, lr_0 = 1.0000e-04
+Epoch 24 time: 0.6647465229034424 seconds
+Epoch 25
+Epoch 25 time: 0.6537113189697266 seconds
+Epoch 26
+Epoch 26 time: 0.6519832611083984 seconds
+Epoch 27
+Epoch 27 time: 0.6531362533569336 seconds
+Epoch 28
+Epoch 28 time: 0.6498053073883057 seconds
+Epoch 29
+Epoch 29 time: 0.6584775447845459 seconds
+Epoch 30
+Loss = 5.2303e-01, PNorm = 34.0773, GNorm = 0.2422, lr_0 = 1.0000e-04
+Loss = 6.2203e-01, PNorm = 34.0777, GNorm = 0.4742, lr_0 = 1.0000e-04
+Epoch 30 time: 0.6488640308380127 seconds
+Epoch 31
+Epoch 31 time: 0.6515586376190186 seconds
+Epoch 32
+Epoch 32 time: 0.6418812274932861 seconds
+Epoch 33
+Epoch 33 time: 0.6479005813598633 seconds
+Epoch 34
+Epoch 34 time: 0.6458513736724854 seconds
+Epoch 35
+Epoch 35 time: 0.6473264694213867 seconds
+Epoch 36
+Loss = 5.6629e-01, PNorm = 34.0824, GNorm = 0.2125, lr_0 = 1.0000e-04
+Loss = 5.5287e-01, PNorm = 34.0829, GNorm = 0.2550, lr_0 = 1.0000e-04
+Epoch 36 time: 0.6546568870544434 seconds
+Epoch 37
+Epoch 37 time: 1.1889588832855225 seconds
+Epoch 38
+Epoch 38 time: 0.656994104385376 seconds
+Epoch 39
+Epoch 39 time: 0.6538512706756592 seconds
+Epoch 40
+Epoch 40 time: 0.6502506732940674 seconds
+Epoch 41
+Epoch 41 time: 0.6531283855438232 seconds
+Epoch 42
+Loss = 5.8040e-01, PNorm = 34.0889, GNorm = 0.4021, lr_0 = 1.0000e-04
+Epoch 42 time: 0.6573984622955322 seconds
+Epoch 43
+Epoch 43 time: 0.6470441818237305 seconds
+Epoch 44
+Epoch 44 time: 0.6542673110961914 seconds
+Epoch 45
+Epoch 45 time: 0.6450214385986328 seconds
+Epoch 46
+Epoch 46 time: 0.6502945423126221 seconds
+Epoch 47
+Epoch 47 time: 0.654977560043335 seconds
+Epoch 48
+Loss = 5.4227e-01, PNorm = 34.0958, GNorm = 0.3065, lr_0 = 1.0000e-04
+Epoch 48 time: 0.6537964344024658 seconds
+Epoch 49
+Epoch 49 time: 0.6544201374053955 seconds
+Model 0 time: 33.9995002746582 seconds
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+Epoch 0
+Epoch 0 time: 0.7964799404144287 seconds
+Epoch 1
+Epoch 1 time: 0.7843873500823975 seconds
+Epoch 2
+Epoch 2 time: 0.8001246452331543 seconds
+Epoch 3
+Epoch 3 time: 0.7890090942382812 seconds
+Epoch 4
+Loss = 6.7169e-01, PNorm = 34.0403, GNorm = 0.9447, lr_0 = 7.6810e-04
+Loss = 3.7675e-01, PNorm = 34.0433, GNorm = 2.4001, lr_0 = 7.4989e-04
+Epoch 4 time: 0.8080527782440186 seconds
+Epoch 5
+Epoch 5 time: 0.7920162677764893 seconds
+Epoch 6
+Epoch 6 time: 0.7981827259063721 seconds
+Epoch 7
+Epoch 7 time: 0.8035192489624023 seconds
+Epoch 8
+Epoch 8 time: 1.0914149284362793 seconds
+Epoch 9
+Loss = 6.2315e-01, PNorm = 34.0664, GNorm = 1.0852, lr_0 = 5.3600e-04
+Loss = 3.7085e-01, PNorm = 34.0672, GNorm = 1.4919, lr_0 = 5.2330e-04

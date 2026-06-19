@@ -30,7 +30,7 @@ LINE=$(sed -n "$((SLURM_ARRAY_TASK_ID + 1))p" job_array_map.txt)
 eval $(python -c "
 import json
 line = '''$LINE'''.split('\t')[1]
-b_size, start, interval, ep, unc, seed = json.loads(line)
+b_size, start, interval, unc, seed = json.loads(line)
 print(f'ADD_B={b_size[0]}; FORGET_B={b_size[1]}; START={start}; INTERVAL={interval}; UNC=\"{unc}\"; SEED={seed}')
 ")
 
@@ -41,7 +41,7 @@ SAVE_DIR="${BASE_DIR}/${PARAM_PATH}/seed${SEED}"
 
 echo "=========================================================="
 echo "SLURM ARRAY TASK ID: $SLURM_ARRAY_TASK_ID"
-echo "Running parameters: Add Batch=$ADD_B, Forget Batch=$FORGET_B, Start=$START, Interval=$INTERVAL, Epochs=$EPOCHS, Uncertainty=$UNC, Seed=$SEED"
+echo "Running parameters: Add Batch=$ADD_B, Forget Batch=$FORGET_B, Start=$START, Interval=$INTERVAL, Uncertainty=$UNC, Seed=$SEED"
 echo "Target Save Directory: $SAVE_DIR"
 echo "=========================================================="
 

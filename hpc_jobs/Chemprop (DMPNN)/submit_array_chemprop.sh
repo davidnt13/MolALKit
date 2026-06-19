@@ -13,7 +13,7 @@
 
 # IMPORTANT: Set this equal to your total number of combinations minus 1
 # e.g., if you have 48 combinations, your array range is 0-47
-#SBATCH --array=0-95
+#SBATCH --array=1-95%24
 
 #SBATCH --job-name=Molalkit_Grid_Chemprop
 

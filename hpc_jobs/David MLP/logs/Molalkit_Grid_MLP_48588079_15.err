@@ -1,0 +1,52 @@
+Anaconda3 2024.02
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s]  9%|▉         | 207/2217 [00:00<00:00, 2068.02it/s] 21%|██        | 457/2217 [00:00<00:00, 2317.32it/s] 32%|███▏      | 707/2217 [00:00<00:00, 2398.41it/s] 43%|████▎     | 956/2217 [00:00<00:00, 2431.13it/s] 55%|█████▍    | 1209/2217 [00:00<00:00, 2465.52it/s] 66%|██████▌   | 1459/2217 [00:00<00:00, 2476.72it/s] 77%|███████▋  | 1717/2217 [00:00<00:00, 2509.84it/s] 89%|████████▉ | 1968/2217 [00:00<00:00, 2455.37it/s]100%|█████████▉| 2214/2217 [00:00<00:00, 2265.85it/s]100%|██████████| 2217/2217 [00:00<00:00, 2362.94it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.7s
+[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.3s
+[Parallel(n_jobs=1)]: Done 1249 tasks      | elapsed:    2.0s
+[Parallel(n_jobs=1)]: Done 1799 tasks      | elapsed:    2.8s
+[Parallel(n_jobs=1)]: Done 2217 out of 2217 | elapsed:    3.5s finished
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Model fitting time: 1.6024134159088135 seconds
+evaluating model performance finished.
+Training set size = 22
+Pool set size = 1087
+save checkpoint file ../updated_test_data/MDR1_MDCK_classification2/David_MLP/b_add20_fg100/start0_int5/ep10/max_unc/seed0/al.pkl
+Start an new iteration of active learning: 1.
+Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 2.
+Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 3.
+Training set size = 82
+Pool set size = 1027
+Start an new iteration of active learning: 4.
+Traceback (most recent call last):
+  File "/work/dn123/MolALKit/hpc_jobs/David MLP/../../molalkit_run", line 7, in <module>
+    sys.exit(molalkit_run())
+  File "/work/dn123/MolALKit/molalkit/al/run.py", line 44, in molalkit_run
+    active_learner.run(max_iter=args.max_iter)
+  File "/work/dn123/MolALKit/molalkit/al/learner.py", line 261, in run
+    terminated_tag, alr = self.run_active_learning(max_iter=max_iter)
+  File "/work/dn123/MolALKit/molalkit/al/learner.py", line 293, in run_active_learning
+    self.forget_samples(alr) 
+  File "/work/dn123/MolALKit/molalkit/al/learner.py", line 402, in forget_samples
+    forget_idx, acquisition = self.forgetter(model=self.model_selector,
+  File "/work/dn123/MolALKit/molalkit/al/forgetter.py", line 476, in __call__
+    assert hasattr(model, "models"), "Expected MolALKit MPNN with .models"
+AssertionError: Expected MolALKit MPNN with .models

@@ -1,0 +1,1488 @@
+Anaconda3 2024.02
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s]  9%|▊         | 191/2217 [00:00<00:01, 1903.96it/s] 19%|█▉        | 432/2217 [00:00<00:00, 2193.68it/s] 30%|███       | 674/2217 [00:00<00:00, 2295.48it/s] 41%|████▏     | 920/2217 [00:00<00:00, 2357.03it/s] 53%|█████▎    | 1165/2217 [00:00<00:00, 2387.02it/s] 64%|██████▎   | 1410/2217 [00:00<00:00, 2406.77it/s] 75%|███████▍  | 1656/2217 [00:00<00:00, 2422.57it/s] 86%|████████▌ | 1899/2217 [00:00<00:00, 2411.73it/s] 97%|█████████▋| 2141/2217 [00:00<00:00, 2270.70it/s]100%|██████████| 2217/2217 [00:00<00:00, 2292.04it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+0it [00:00, ?it/s]2217it [00:00, 152366.45it/s]
+  0%|          | 0/2217 [00:00<?, ?it/s][Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+  0%|          | 8/2217 [00:00<00:36, 61.13it/s]  0%|          | 8/2217 [00:18<00:36, 61.13it/s]/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  1%|          | 16/2217 [00:25<1:07:44,  1.85s/it]  1%|          | 24/2217 [00:25<37:51,  1.04s/it]  [Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:   25.8s
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  6%|▋         | 144/2217 [00:25<03:21, 10.31it/s] 24%|██▍       | 528/2217 [00:25<00:32, 52.35it/s] 70%|███████   | 1552/2217 [00:26<00:03, 207.27it/s]/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+100%|██████████| 2217/2217 [00:26<00:00, 84.51it/s] 
+[Parallel(n_jobs=8)]: Done 2104 tasks      | elapsed:   26.5s
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[Parallel(n_jobs=8)]: Done 2217 out of 2217 | elapsed:   32.9s finished
+  0%|          | 0/2217 [00:00<?, ?it/s] 12%|█▏        | 272/2217 [00:00<00:00, 2716.85it/s] 29%|██▊       | 634/2217 [00:00<00:00, 3244.50it/s] 50%|████▉     | 1100/2217 [00:00<00:00, 3890.18it/s] 71%|███████   | 1573/2217 [00:00<00:00, 4218.28it/s] 91%|█████████ | 2017/2217 [00:00<00:00, 4297.72it/s]100%|██████████| 2217/2217 [00:00<00:00, 3995.43it/s]
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/cuda/__init__.py:184: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:119.)
+  return torch._C._cuda_getDeviceCount() > 0
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/50 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.5609e-01, PNorm = 34.0109, GNorm = 1.9887, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  4.04it/s][A
+                                             [AEpoch 0 time: 0.27469301223754883 seconds
+  2%|▏         | 1/50 [00:00<00:13,  3.64it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.5314e-01, PNorm = 34.0149, GNorm = 1.7521, lr_0 = 9.5316e-04
+
+                                     [AEpoch 1 time: 0.10132813453674316 seconds
+  4%|▍         | 2/50 [00:00<00:08,  5.78it/s]Epoch 2
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.5473e-01, PNorm = 34.0205, GNorm = 2.1395, lr_0 = 9.0852e-04
+
+                                     [AEpoch 2 time: 0.10127997398376465 seconds
+  6%|▌         | 3/50 [00:00<00:06,  7.12it/s]Epoch 3
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.2258e-01, PNorm = 34.0270, GNorm = 2.2713, lr_0 = 8.6596e-04
+
+                                     [AEpoch 3 time: 0.10242724418640137 seconds
+  8%|▊         | 4/50 [00:00<00:05,  7.96it/s]Epoch 4
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.8236e-01, PNorm = 34.0340, GNorm = 2.1218, lr_0 = 8.2540e-04
+
+                                     [AEpoch 4 time: 0.10144233703613281 seconds
+ 10%|█         | 5/50 [00:00<00:05,  8.54it/s]Epoch 5
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.4928e-01, PNorm = 34.0412, GNorm = 1.7988, lr_0 = 7.8674e-04
+
+                                     [AEpoch 5 time: 0.10320115089416504 seconds
+ 12%|█▏        | 6/50 [00:00<00:04,  8.89it/s]Epoch 6
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 2.6581e-01, PNorm = 34.0489, GNorm = 1.4557, lr_0 = 7.4989e-04
+
+                                     [AEpoch 6 time: 0.10205817222595215 seconds
+ 14%|█▍        | 7/50 [00:00<00:04,  9.15it/s]Epoch 7
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.9267e-01, PNorm = 34.0566, GNorm = 1.4498, lr_0 = 7.1477e-04
+
+                                     [AEpoch 7 time: 0.1024942398071289 seconds
+ 16%|█▌        | 8/50 [00:00<00:04,  9.32it/s]Epoch 8
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.7908e-01, PNorm = 34.0646, GNorm = 1.3329, lr_0 = 6.8129e-04
+
+                                     [AEpoch 8 time: 0.10386919975280762 seconds
+ 18%|█▊        | 9/50 [00:01<00:04,  9.40it/s]Epoch 9
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.0838e-01, PNorm = 34.0724, GNorm = 1.0278, lr_0 = 6.4938e-04
+
+                                     [AEpoch 9 time: 0.10348939895629883 seconds
+ 20%|██        | 10/50 [00:01<00:04,  9.47it/s]Epoch 10
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.0401e-01, PNorm = 34.0801, GNorm = 1.1656, lr_0 = 6.1897e-04
+
+                                     [AEpoch 10 time: 0.10386323928833008 seconds
+ 22%|██▏       | 11/50 [00:01<00:04,  9.50it/s]Epoch 11
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.2794e-02, PNorm = 34.0875, GNorm = 0.5527, lr_0 = 5.8997e-04
+
+                                     [AEpoch 11 time: 0.10225939750671387 seconds
+ 24%|██▍       | 12/50 [00:01<00:03,  9.57it/s]Epoch 12
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 2.4363e-02, PNorm = 34.0944, GNorm = 0.4752, lr_0 = 5.6234e-04
+
+                                     [AEpoch 12 time: 0.10376715660095215 seconds
+ 26%|██▌       | 13/50 [00:01<00:03,  9.58it/s]Epoch 13
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.2565e-02, PNorm = 34.1007, GNorm = 0.1624, lr_0 = 5.3600e-04
+
+                                     [AEpoch 13 time: 0.10344076156616211 seconds
+ 28%|██▊       | 14/50 [00:01<00:03,  9.59it/s]Epoch 14
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.4440e-02, PNorm = 34.1066, GNorm = 0.2530, lr_0 = 5.1090e-04
+
+                                     [AEpoch 14 time: 0.1043851375579834 seconds
+ 30%|███       | 15/50 [00:01<00:03,  9.57it/s]Epoch 15
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.6344e-02, PNorm = 34.1121, GNorm = 0.3349, lr_0 = 4.8697e-04
+
+                                     [AEpoch 15 time: 0.10197210311889648 seconds
+ 32%|███▏      | 16/50 [00:01<00:03,  9.63it/s]Epoch 16
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.6211e-02, PNorm = 34.1172, GNorm = 0.2661, lr_0 = 4.6416e-04
+
+                                     [AEpoch 16 time: 0.10675501823425293 seconds
+ 34%|███▍      | 17/50 [00:01<00:03,  9.54it/s]Epoch 17
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 8.4123e-03, PNorm = 34.1218, GNorm = 0.2274, lr_0 = 4.4242e-04
+
+                                     [AEpoch 17 time: 0.10213160514831543 seconds
+ 36%|███▌      | 18/50 [00:02<00:03,  9.60it/s]Epoch 18
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.6257e-03, PNorm = 34.1259, GNorm = 0.0905, lr_0 = 4.2170e-04
+
+                                     [AEpoch 18 time: 0.10150384902954102 seconds
+ 38%|███▊      | 19/50 [00:02<00:03,  9.66it/s]Epoch 19
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 2.9422e-03, PNorm = 34.1296, GNorm = 0.0891, lr_0 = 4.0195e-04
+
+                                     [AEpoch 19 time: 0.10294938087463379 seconds
+ 40%|████      | 20/50 [00:02<00:03,  9.67it/s]Epoch 20
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 8.2271e-04, PNorm = 34.1330, GNorm = 0.0270, lr_0 = 3.8312e-04
+
+                                     [AEpoch 20 time: 0.10005331039428711 seconds
+ 42%|████▏     | 21/50 [00:02<00:02,  9.75it/s]Epoch 21
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 2.2709e-03, PNorm = 34.1359, GNorm = 0.0712, lr_0 = 3.6517e-04
+
+                                     [AEpoch 21 time: 0.10202240943908691 seconds
+ 44%|████▍     | 22/50 [00:02<00:02,  9.75it/s]Epoch 22
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.8427e-03, PNorm = 34.1387, GNorm = 0.1435, lr_0 = 3.4807e-04
+
+                                     [AEpoch 22 time: 0.1023867130279541 seconds
+ 46%|████▌     | 23/50 [00:02<00:02,  9.74it/s]Epoch 23
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.8051e-04, PNorm = 34.1411, GNorm = 0.0267, lr_0 = 3.3177e-04
+
+                                     [AEpoch 23 time: 0.10295677185058594 seconds
+ 48%|████▊     | 24/50 [00:02<00:02,  9.72it/s]Epoch 24
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 24 time: 0.10168266296386719 seconds
+ 50%|█████     | 25/50 [00:02<00:02,  9.74it/s]Epoch 25
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 25 time: 0.10439157485961914 seconds
+ 52%|█████▏    | 26/50 [00:02<00:02,  9.68it/s]Epoch 26
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 26 time: 0.10470032691955566 seconds
+ 54%|█████▍    | 27/50 [00:02<00:02,  9.62it/s]Epoch 27
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 27 time: 0.1009070873260498 seconds
+ 56%|█████▌    | 28/50 [00:03<00:02,  9.69it/s]Epoch 28
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 28 time: 0.10032343864440918 seconds
+ 58%|█████▊    | 29/50 [00:03<00:02,  9.75it/s]Epoch 29
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 29 time: 0.10365128517150879 seconds
+ 60%|██████    | 30/50 [00:03<00:02,  9.71it/s]Epoch 30
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 30 time: 0.10312485694885254 seconds
+ 62%|██████▏   | 31/50 [00:03<00:01,  9.68it/s]Epoch 31
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 31 time: 0.10177803039550781 seconds
+ 64%|██████▍   | 32/50 [00:03<00:01,  9.71it/s]Epoch 32
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 32 time: 0.10202908515930176 seconds
+ 66%|██████▌   | 33/50 [00:03<00:01,  9.72it/s]Epoch 33
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 33 time: 0.10257697105407715 seconds
+ 68%|██████▊   | 34/50 [00:03<00:01,  9.71it/s]Epoch 34
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 34 time: 0.10316753387451172 seconds
+ 70%|███████   | 35/50 [00:03<00:01,  9.69it/s]Epoch 35
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 35 time: 0.10226798057556152 seconds
+ 72%|███████▏  | 36/50 [00:03<00:01,  9.70it/s]Epoch 36
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 36 time: 0.10181498527526855 seconds
+ 74%|███████▍  | 37/50 [00:03<00:01,  9.72it/s]Epoch 37
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 37 time: 0.10232782363891602 seconds
+ 76%|███████▌  | 38/50 [00:04<00:01,  9.72it/s]Epoch 38
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 38 time: 0.10228323936462402 seconds
+ 78%|███████▊  | 39/50 [00:04<00:01,  9.72it/s]Epoch 39
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 39 time: 0.1019744873046875 seconds
+ 80%|████████  | 40/50 [00:04<00:01,  9.73it/s]Epoch 40
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 40 time: 0.1066133975982666 seconds
+ 82%|████████▏ | 41/50 [00:04<00:00,  9.60it/s]Epoch 41
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 41 time: 0.10487198829650879 seconds
+ 84%|████████▍ | 42/50 [00:04<00:00,  9.56it/s]Epoch 42
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 42 time: 0.10643362998962402 seconds
+ 86%|████████▌ | 43/50 [00:04<00:00,  9.50it/s]Epoch 43
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 43 time: 0.10301923751831055 seconds
+ 88%|████████▊ | 44/50 [00:04<00:00,  9.54it/s]Epoch 44
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 44 time: 0.10742473602294922 seconds
+ 90%|█████████ | 45/50 [00:04<00:00,  9.46it/s]Epoch 45
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 45 time: 0.10842633247375488 seconds
+ 92%|█████████▏| 46/50 [00:04<00:00,  9.37it/s]Epoch 46
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 46 time: 0.10421872138977051 seconds
+ 94%|█████████▍| 47/50 [00:05<00:00,  9.42it/s]Epoch 47
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 47 time: 0.10298395156860352 seconds
+ 96%|█████████▌| 48/50 [00:05<00:00,  9.49it/s]Epoch 48
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 48 time: 0.10239839553833008 seconds
+ 98%|█████████▊| 49/50 [00:05<00:00,  9.55it/s]Epoch 49
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 49 time: 0.10335206985473633 seconds
+100%|██████████| 50/50 [00:05<00:00,  9.57it/s]100%|██████████| 50/50 [00:05<00:00,  9.34it/s]
+Model 0 time: 7.804209232330322 seconds
+Model fitting time: 7.8044328689575195 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:15,  1.42it/s]  9%|▊         | 2/23 [00:01<00:10,  1.97it/s] 13%|█▎        | 3/23 [00:01<00:07,  2.64it/s] 17%|█▋        | 4/23 [00:01<00:08,  2.32it/s] 22%|██▏       | 5/23 [00:02<00:06,  2.81it/s] 26%|██▌       | 6/23 [00:02<00:05,  3.24it/s] 30%|███       | 7/23 [00:02<00:04,  3.58it/s] 35%|███▍      | 8/23 [00:02<00:03,  3.81it/s] 39%|███▉      | 9/23 [00:02<00:03,  3.99it/s] 43%|████▎     | 10/23 [00:03<00:03,  4.05it/s] 48%|████▊     | 11/23 [00:03<00:02,  4.19it/s] 52%|█████▏    | 12/23 [00:03<00:02,  4.25it/s] 57%|█████▋    | 13/23 [00:03<00:02,  4.26it/s] 61%|██████    | 14/23 [00:04<00:02,  4.34it/s] 65%|██████▌   | 15/23 [00:04<00:01,  4.28it/s] 70%|██████▉   | 16/23 [00:04<00:01,  4.18it/s] 74%|███████▍  | 17/23 [00:04<00:01,  4.12it/s] 78%|███████▊  | 18/23 [00:05<00:01,  4.11it/s] 83%|████████▎ | 19/23 [00:05<00:01,  3.98it/s] 87%|████████▋ | 20/23 [00:05<00:00,  4.06it/s] 91%|█████████▏| 21/23 [00:05<00:00,  4.54it/s]100%|██████████| 23/23 [00:05<00:00,  6.82it/s]                                               evaluating model performance finished.
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:17,  1.28it/s]  9%|▊         | 2/23 [00:01<00:10,  1.91it/s] 13%|█▎        | 3/23 [00:01<00:07,  2.61it/s] 17%|█▋        | 4/23 [00:01<00:07,  2.43it/s] 22%|██▏       | 5/23 [00:02<00:06,  2.93it/s] 26%|██▌       | 6/23 [00:02<00:05,  3.34it/s] 30%|███       | 7/23 [00:02<00:04,  3.67it/s] 35%|███▍      | 8/23 [00:02<00:03,  3.98it/s] 39%|███▉      | 9/23 [00:02<00:03,  4.13it/s] 43%|████▎     | 10/23 [00:03<00:03,  4.33it/s] 48%|████▊     | 11/23 [00:03<00:02,  4.29it/s] 52%|█████▏    | 12/23 [00:03<00:02,  4.56it/s] 57%|█████▋    | 13/23 [00:03<00:02,  4.44it/s] 61%|██████    | 14/23 [00:03<00:02,  4.40it/s] 65%|██████▌   | 15/23 [00:04<00:01,  4.49it/s] 70%|██████▉   | 16/23 [00:04<00:01,  4.58it/s] 74%|███████▍  | 17/23 [00:04<00:01,  4.65it/s] 78%|███████▊  | 18/23 [00:04<00:01,  4.73it/s] 83%|████████▎ | 19/23 [00:05<00:00,  4.77it/s] 87%|████████▋ | 20/23 [00:05<00:00,  4.71it/s] 91%|█████████▏| 21/23 [00:05<00:00,  5.60it/s]                                               Training set size = 22
+Pool set size = 1087
+save checkpoint file ../../updated_test_data/MDR1_MDCK_classification2/DMPNN/b_add20_fg100/start0_int1/ep10/max_unc/seed0/al.pkl
+Start an new iteration of active learning: 1.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/50 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.8514e-01, PNorm = 34.0108, GNorm = 0.7106, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  4.63it/s][A
+                                             [AEpoch 0 time: 0.2443222999572754 seconds
+  2%|▏         | 1/50 [00:00<00:11,  4.09it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 7.1389e-01, PNorm = 34.0131, GNorm = 0.7148, lr_0 = 9.5316e-04
+
+100%|██████████| 1/1 [00:00<00:00,  4.60it/s][A
+                                             [AEpoch 1 time: 0.2475571632385254 seconds
+  4%|▍         | 2/50 [00:00<00:11,  4.05it/s]Epoch 2
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.61it/s][A
+                                             [AEpoch 2 time: 0.24664878845214844 seconds
+  6%|▌         | 3/50 [00:00<00:11,  4.05it/s]Epoch 3
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.57it/s][A
+                                             [AEpoch 3 time: 0.2501180171966553 seconds
+  8%|▊         | 4/50 [00:00<00:11,  4.03it/s]Epoch 4
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.58it/s][A
+                                             [AEpoch 4 time: 0.24897336959838867 seconds
+ 10%|█         | 5/50 [00:01<00:11,  4.02it/s]Epoch 5
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.64it/s][A
+                                             [AEpoch 5 time: 0.2458186149597168 seconds
+ 12%|█▏        | 6/50 [00:01<00:10,  4.03it/s]Epoch 6
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.75it/s][A
+                                             [AEpoch 6 time: 0.24199938774108887 seconds
+ 14%|█▍        | 7/50 [00:01<00:10,  4.06it/s]Epoch 7
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.65it/s][A
+                                             [AEpoch 7 time: 0.24590206146240234 seconds
+ 16%|█▌        | 8/50 [00:01<00:10,  4.06it/s]Epoch 8
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.57it/s][A
+                                             [AEpoch 8 time: 0.250030517578125 seconds
+ 18%|█▊        | 9/50 [00:02<00:10,  4.04it/s]Epoch 9
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.65it/s][A
+                                             [AEpoch 9 time: 0.24620914459228516 seconds
+ 20%|██        | 10/50 [00:02<00:09,  4.04it/s]Epoch 10
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.56it/s][A
+                                             [AEpoch 10 time: 0.24938368797302246 seconds
+ 22%|██▏       | 11/50 [00:02<00:09,  4.03it/s]Epoch 11
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.65it/s][A
+                                             [AEpoch 11 time: 0.24576377868652344 seconds
+ 24%|██▍       | 12/50 [00:02<00:09,  4.04it/s]Epoch 12
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.65it/s][A
+                                             [AEpoch 12 time: 0.24483895301818848 seconds
+ 26%|██▌       | 13/50 [00:03<00:09,  4.05it/s]Epoch 13
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.70it/s][A
+                                             [AEpoch 13 time: 0.2429511547088623 seconds
+ 28%|██▊       | 14/50 [00:03<00:08,  4.07it/s]Epoch 14
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.64it/s][A
+                                             [AEpoch 14 time: 0.24598979949951172 seconds
+ 30%|███       | 15/50 [00:03<00:08,  4.06it/s]Epoch 15
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.26it/s][A
+                                             [AEpoch 15 time: 0.2652015686035156 seconds
+ 32%|███▏      | 16/50 [00:03<00:08,  3.97it/s]Epoch 16
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.56it/s][A
+                                             [AEpoch 16 time: 0.25102829933166504 seconds
+ 34%|███▍      | 17/50 [00:04<00:08,  3.97it/s]Epoch 17
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.61it/s][A
+                                             [AEpoch 17 time: 0.24797272682189941 seconds
+ 36%|███▌      | 18/50 [00:04<00:08,  3.98it/s]Epoch 18
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.62it/s][A
+                                             [AEpoch 18 time: 0.24705100059509277 seconds
+ 38%|███▊      | 19/50 [00:04<00:07,  4.00it/s]Epoch 19
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.59it/s][A
+                                             [AEpoch 19 time: 0.24918913841247559 seconds
+ 40%|████      | 20/50 [00:04<00:07,  4.00it/s]Epoch 20
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.64it/s][A
+                                             [AEpoch 20 time: 0.24571490287780762 seconds
+ 42%|████▏     | 21/50 [00:05<00:07,  4.02it/s]Epoch 21
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.53it/s][A
+                                             [AEpoch 21 time: 0.25177645683288574 seconds
+ 44%|████▍     | 22/50 [00:05<00:06,  4.00it/s]Epoch 22
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.7815e-01, PNorm = 34.1238, GNorm = 1.0793, lr_0 = 3.4807e-04
+
+100%|██████████| 1/1 [00:00<00:00,  4.53it/s][A
+                                             [AEpoch 22 time: 0.2518298625946045 seconds
+ 46%|████▌     | 23/50 [00:05<00:06,  3.99it/s]Epoch 23
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.8398e-01, PNorm = 34.1277, GNorm = 1.4950, lr_0 = 3.3177e-04
+
+100%|██████████| 1/1 [00:00<00:00,  4.56it/s][A
+                                             [AEpoch 23 time: 0.2492969036102295 seconds
+ 48%|████▊     | 24/50 [00:05<00:06,  4.00it/s]Epoch 24
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.59it/s][A
+                                             [AEpoch 24 time: 0.24950146675109863 seconds
+ 50%|█████     | 25/50 [00:06<00:06,  4.00it/s]Epoch 25
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.66it/s][A
+                                             [AEpoch 25 time: 0.2453594207763672 seconds
+ 52%|█████▏    | 26/50 [00:06<00:05,  4.02it/s]Epoch 26
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.65it/s][A
+                                             [AEpoch 26 time: 0.2459092140197754 seconds
+ 54%|█████▍    | 27/50 [00:06<00:05,  4.03it/s]Epoch 27
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.63it/s][A
+                                             [AEpoch 27 time: 0.24804210662841797 seconds
+ 56%|█████▌    | 28/50 [00:06<00:05,  4.03it/s]Epoch 28
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.46it/s][A
+                                             [AEpoch 28 time: 0.2569427490234375 seconds
+ 58%|█████▊    | 29/50 [00:07<00:05,  3.98it/s]Epoch 29
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.63it/s][A
+                                             [AEpoch 29 time: 0.2485487461090088 seconds
+ 60%|██████    | 30/50 [00:07<00:05,  3.99it/s]Epoch 30
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.62it/s][A
+                                             [AEpoch 30 time: 0.24686980247497559 seconds
+ 62%|██████▏   | 31/50 [00:07<00:04,  4.01it/s]Epoch 31
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.54it/s][A
+                                             [AEpoch 31 time: 0.2513093948364258 seconds
+ 64%|██████▍   | 32/50 [00:07<00:04,  4.00it/s]Epoch 32
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.55it/s][A
+                                             [AEpoch 32 time: 0.25098109245300293 seconds
+ 66%|██████▌   | 33/50 [00:08<00:04,  3.99it/s]Epoch 33
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.46it/s][A
+                                             [AEpoch 33 time: 0.2563292980194092 seconds
+ 68%|██████▊   | 34/50 [00:08<00:04,  3.96it/s]Epoch 34
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.50it/s][A
+                                             [AEpoch 34 time: 0.2545902729034424 seconds
+ 70%|███████   | 35/50 [00:08<00:03,  3.95it/s]Epoch 35
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.67it/s][A
+                                             [AEpoch 35 time: 0.2450883388519287 seconds
+ 72%|███████▏  | 36/50 [00:08<00:03,  3.98it/s]Epoch 36
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.57it/s][A
+                                             [AEpoch 36 time: 0.2498166561126709 seconds
+ 74%|███████▍  | 37/50 [00:09<00:03,  3.99it/s]Epoch 37
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.56it/s][A
+                                             [AEpoch 37 time: 0.2498641014099121 seconds
+ 76%|███████▌  | 38/50 [00:09<00:03,  3.99it/s]Epoch 38
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.66it/s][A
+                                             [AEpoch 38 time: 0.24576687812805176 seconds
+ 78%|███████▊  | 39/50 [00:09<00:02,  4.01it/s]Epoch 39
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.67it/s][A
+                                             [AEpoch 39 time: 0.24586892127990723 seconds
+ 80%|████████  | 40/50 [00:09<00:02,  4.02it/s]Epoch 40
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.64it/s][A
+                                             [AEpoch 40 time: 0.2473747730255127 seconds
+ 82%|████████▏ | 41/50 [00:10<00:02,  4.03it/s]Epoch 41
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.57it/s][A
+                                             [AEpoch 41 time: 0.25050783157348633 seconds
+ 84%|████████▍ | 42/50 [00:10<00:01,  4.01it/s]Epoch 42
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.58it/s][A
+                                             [AEpoch 42 time: 0.25127625465393066 seconds
+ 86%|████████▌ | 43/50 [00:10<00:01,  4.00it/s]Epoch 43
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.68it/s][A
+                                             [AEpoch 43 time: 0.24326729774475098 seconds
+ 88%|████████▊ | 44/50 [00:10<00:01,  4.03it/s]Epoch 44
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.62it/s][A
+                                             [AEpoch 44 time: 0.24744057655334473 seconds
+ 90%|█████████ | 45/50 [00:11<00:01,  4.03it/s]Epoch 45
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.7019e-01, PNorm = 34.1796, GNorm = 1.5775, lr_0 = 1.1548e-04
+
+100%|██████████| 1/1 [00:00<00:00,  4.55it/s][A
+                                             [AEpoch 45 time: 0.2503979206085205 seconds
+ 92%|█████████▏| 46/50 [00:11<00:00,  4.02it/s]Epoch 46
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.7298e-01, PNorm = 34.1807, GNorm = 1.9441, lr_0 = 1.1007e-04
+
+100%|██████████| 1/1 [00:00<00:00,  4.56it/s][A
+                                             [AEpoch 46 time: 0.2504587173461914 seconds
+ 94%|█████████▍| 47/50 [00:11<00:00,  4.01it/s]Epoch 47
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.55it/s][A
+                                             [AEpoch 47 time: 0.2511312961578369 seconds
+ 96%|█████████▌| 48/50 [00:11<00:00,  4.00it/s]Epoch 48
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.60it/s][A
+                                             [AEpoch 48 time: 0.24912333488464355 seconds
+ 98%|█████████▊| 49/50 [00:12<00:00,  4.00it/s]Epoch 49
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.61it/s][A
+                                             [AEpoch 49 time: 0.24907851219177246 seconds
+100%|██████████| 50/50 [00:12<00:00,  4.00it/s]100%|██████████| 50/50 [00:12<00:00,  4.01it/s]
+Model 0 time: 12.477556943893433 seconds
+  0%|          | 0/22 [00:00<?, ?it/s]  5%|▍         | 1/22 [00:00<00:12,  1.64it/s]  9%|▉         | 2/22 [00:00<00:06,  2.99it/s] 14%|█▎        | 3/22 [00:01<00:05,  3.38it/s] 18%|█▊        | 4/22 [00:01<00:04,  3.74it/s] 23%|██▎       | 5/22 [00:01<00:04,  3.89it/s] 27%|██▋       | 6/22 [00:01<00:03,  4.12it/s] 32%|███▏      | 7/22 [00:01<00:03,  4.29it/s] 36%|███▋      | 8/22 [00:02<00:03,  4.40it/s] 41%|████      | 9/22 [00:02<00:02,  4.51it/s] 45%|████▌     | 10/22 [00:02<00:02,  4.56it/s] 50%|█████     | 11/22 [00:02<00:02,  4.56it/s] 55%|█████▍    | 12/22 [00:02<00:02,  4.54it/s] 59%|█████▉    | 13/22 [00:03<00:02,  4.50it/s] 64%|██████▎   | 14/22 [00:03<00:01,  4.49it/s] 68%|██████▊   | 15/22 [00:03<00:01,  3.79it/s] 73%|███████▎  | 16/22 [00:04<00:01,  3.15it/s] 77%|███████▋  | 17/22 [00:04<00:01,  3.52it/s] 82%|████████▏ | 18/22 [00:04<00:01,  3.01it/s] 86%|████████▋ | 19/22 [00:05<00:00,  3.42it/s] 91%|█████████ | 20/22 [00:05<00:00,  3.82it/s]100%|██████████| 22/22 [00:05<00:00,  5.80it/s]                                               Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 2.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/50 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 7.0970e-01, PNorm = 34.0118, GNorm = 1.1573, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  2.73it/s][A
+                                             [AEpoch 0 time: 0.39849162101745605 seconds
+  2%|▏         | 1/50 [00:00<00:19,  2.51it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.79it/s][A
+                                             [AEpoch 1 time: 0.3923325538635254 seconds
+  4%|▍         | 2/50 [00:00<00:18,  2.53it/s]Epoch 2
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.78it/s][A
+                                             [AEpoch 2 time: 0.39421629905700684 seconds
+  6%|▌         | 3/50 [00:01<00:18,  2.53it/s]Epoch 3
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.81it/s][A
+                                             [AEpoch 3 time: 0.3927147388458252 seconds
+  8%|▊         | 4/50 [00:01<00:18,  2.54it/s]Epoch 4
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.85it/s][A
+                                             [AEpoch 4 time: 0.38603925704956055 seconds
+ 10%|█         | 5/50 [00:01<00:17,  2.55it/s]Epoch 5
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 5 time: 0.39869046211242676 seconds
+ 12%|█▏        | 6/50 [00:02<00:17,  2.54it/s]Epoch 6
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.73it/s][A
+                                             [AEpoch 6 time: 0.40107083320617676 seconds
+ 14%|█▍        | 7/50 [00:02<00:17,  2.52it/s]Epoch 7
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.82it/s][A
+                                             [AEpoch 7 time: 0.38927698135375977 seconds
+ 16%|█▌        | 8/50 [00:03<00:16,  2.53it/s]Epoch 8
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.76it/s][A
+                                             [AEpoch 8 time: 0.3963644504547119 seconds
+ 18%|█▊        | 9/50 [00:03<00:16,  2.53it/s]Epoch 9
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.81it/s][A
+                                             [AEpoch 9 time: 0.3933887481689453 seconds
+ 20%|██        | 10/50 [00:03<00:15,  2.53it/s]Epoch 10
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.78it/s][A
+                                             [AEpoch 10 time: 0.39296746253967285 seconds
+ 22%|██▏       | 11/50 [00:04<00:15,  2.53it/s]Epoch 11
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.1483e-01, PNorm = 34.0542, GNorm = 0.3329, lr_0 = 5.8997e-04
+
+100%|██████████| 1/1 [00:00<00:00,  2.74it/s][A
+                                             [AEpoch 11 time: 0.401287317276001 seconds
+ 24%|██▍       | 12/50 [00:04<00:15,  2.52it/s]Epoch 12
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.0537e-01, PNorm = 34.0588, GNorm = 0.4874, lr_0 = 5.6234e-04
+
+100%|██████████| 1/1 [00:00<00:00,  2.76it/s][A
+                                             [AEpoch 12 time: 0.3984191417694092 seconds
+ 26%|██▌       | 13/50 [00:05<00:14,  2.52it/s]Epoch 13
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.78it/s][A
+                                             [AEpoch 13 time: 0.39498209953308105 seconds
+ 28%|██▊       | 14/50 [00:05<00:14,  2.52it/s]Epoch 14
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.82it/s][A
+                                             [AEpoch 14 time: 0.38991212844848633 seconds
+ 30%|███       | 15/50 [00:05<00:13,  2.53it/s]Epoch 15
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.71it/s][A
+                                             [AEpoch 15 time: 0.4030463695526123 seconds
+ 32%|███▏      | 16/50 [00:06<00:13,  2.51it/s]Epoch 16
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.81it/s][A
+                                             [AEpoch 16 time: 0.39158105850219727 seconds
+ 34%|███▍      | 17/50 [00:06<00:13,  2.52it/s]Epoch 17
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.79it/s][A
+                                             [AEpoch 17 time: 0.39600133895874023 seconds
+ 36%|███▌      | 18/50 [00:07<00:12,  2.52it/s]Epoch 18
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.76it/s][A
+                                             [AEpoch 18 time: 0.39720988273620605 seconds
+ 38%|███▊      | 19/50 [00:07<00:12,  2.52it/s]Epoch 19
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.80it/s][A
+                                             [AEpoch 19 time: 0.39087343215942383 seconds
+ 40%|████      | 20/50 [00:07<00:11,  2.53it/s]Epoch 20
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.73it/s][A
+                                             [AEpoch 20 time: 0.40039801597595215 seconds
+ 42%|████▏     | 21/50 [00:08<00:11,  2.52it/s]Epoch 21
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.83it/s][A
+                                             [AEpoch 21 time: 0.3881657123565674 seconds
+ 44%|████▍     | 22/50 [00:08<00:11,  2.53it/s]Epoch 22
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.77it/s][A
+                                             [AEpoch 22 time: 0.3975491523742676 seconds
+ 46%|████▌     | 23/50 [00:09<00:10,  2.53it/s]Epoch 23
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.5824e-01, PNorm = 34.1061, GNorm = 0.5097, lr_0 = 3.3177e-04
+
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 23 time: 0.39867520332336426 seconds
+ 48%|████▊     | 24/50 [00:09<00:10,  2.52it/s]Epoch 24
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.81it/s][A
+                                             [AEpoch 24 time: 0.38977479934692383 seconds
+ 50%|█████     | 25/50 [00:09<00:09,  2.53it/s]Epoch 25
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 25 time: 0.4012782573699951 seconds
+ 52%|█████▏    | 26/50 [00:10<00:09,  2.52it/s]Epoch 26
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 26 time: 0.39871835708618164 seconds
+ 54%|█████▍    | 27/50 [00:10<00:09,  2.51it/s]Epoch 27
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.42it/s][A
+                                             [AEpoch 27 time: 0.4500703811645508 seconds
+ 56%|█████▌    | 28/50 [00:11<00:09,  2.42it/s]Epoch 28
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.82it/s][A
+                                             [AEpoch 28 time: 0.38936710357666016 seconds
+ 58%|█████▊    | 29/50 [00:11<00:08,  2.46it/s]Epoch 29
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.78it/s][A
+                                             [AEpoch 29 time: 0.3936927318572998 seconds
+ 60%|██████    | 30/50 [00:11<00:08,  2.48it/s]Epoch 30
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.72it/s][A
+                                             [AEpoch 30 time: 0.40304017066955566 seconds
+ 62%|██████▏   | 31/50 [00:12<00:07,  2.48it/s]Epoch 31
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.80it/s][A
+                                             [AEpoch 31 time: 0.3916969299316406 seconds
+ 64%|██████▍   | 32/50 [00:12<00:07,  2.50it/s]Epoch 32
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 32 time: 0.3978540897369385 seconds
+ 66%|██████▌   | 33/50 [00:13<00:06,  2.50it/s]Epoch 33
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 33 time: 0.39905452728271484 seconds
+ 68%|██████▊   | 34/50 [00:13<00:06,  2.50it/s]Epoch 34
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.78it/s][A
+                                             [AEpoch 34 time: 0.39435696601867676 seconds
+ 70%|███████   | 35/50 [00:13<00:05,  2.51it/s]Epoch 35
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.3493e-01, PNorm = 34.1464, GNorm = 1.1230, lr_0 = 1.8657e-04
+
+100%|██████████| 1/1 [00:00<00:00,  2.77it/s][A
+                                             [AEpoch 35 time: 0.3938872814178467 seconds
+ 72%|███████▏  | 36/50 [00:14<00:05,  2.52it/s]Epoch 36
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.81it/s][A
+                                             [AEpoch 36 time: 0.3904685974121094 seconds
+ 74%|███████▍  | 37/50 [00:14<00:05,  2.53it/s]Epoch 37
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.73it/s][A
+                                             [AEpoch 37 time: 0.4005610942840576 seconds
+ 76%|███████▌  | 38/50 [00:15<00:04,  2.52it/s]Epoch 38
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.77it/s][A
+                                             [AEpoch 38 time: 0.39778709411621094 seconds
+ 78%|███████▊  | 39/50 [00:15<00:04,  2.52it/s]Epoch 39
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.69it/s][A
+                                             [AEpoch 39 time: 0.40733885765075684 seconds
+ 80%|████████  | 40/50 [00:15<00:04,  2.50it/s]Epoch 40
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.70it/s][A
+                                             [AEpoch 40 time: 0.4069209098815918 seconds
+ 82%|████████▏ | 41/50 [00:16<00:03,  2.48it/s]Epoch 41
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.76it/s][A
+                                             [AEpoch 41 time: 0.39667320251464844 seconds
+ 84%|████████▍ | 42/50 [00:16<00:03,  2.49it/s]Epoch 42
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 42 time: 0.39872121810913086 seconds
+ 86%|████████▌ | 43/50 [00:17<00:02,  2.50it/s]Epoch 43
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 43 time: 0.3997969627380371 seconds
+ 88%|████████▊ | 44/50 [00:17<00:02,  2.50it/s]Epoch 44
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 44 time: 0.3970918655395508 seconds
+ 90%|█████████ | 45/50 [00:17<00:01,  2.50it/s]Epoch 45
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.76it/s][A
+                                             [AEpoch 45 time: 0.3985259532928467 seconds
+ 92%|█████████▏| 46/50 [00:18<00:01,  2.50it/s]Epoch 46
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.75it/s][A
+                                             [AEpoch 46 time: 0.40010666847229004 seconds
+ 94%|█████████▍| 47/50 [00:18<00:01,  2.50it/s]Epoch 47
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.4954e-01, PNorm = 34.1709, GNorm = 0.5097, lr_0 = 1.0491e-04
+
+100%|██████████| 1/1 [00:00<00:00,  2.73it/s][A
+                                             [AEpoch 47 time: 0.4055345058441162 seconds
+ 96%|█████████▌| 48/50 [00:19<00:00,  2.49it/s]Epoch 48
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.79it/s][A
+                                             [AEpoch 48 time: 0.3929147720336914 seconds
+ 98%|█████████▊| 49/50 [00:19<00:00,  2.50it/s]Epoch 49
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  2.68it/s][A
+                                             [AEpoch 49 time: 0.4097785949707031 seconds
+100%|██████████| 50/50 [00:19<00:00,  2.48it/s]100%|██████████| 50/50 [00:19<00:00,  2.51it/s]
+Model 0 time: 19.932575464248657 seconds
+  0%|          | 0/22 [00:00<?, ?it/s]  5%|▍         | 1/22 [00:00<00:19,  1.07it/s]  9%|▉         | 2/22 [00:01<00:10,  1.93it/s] 14%|█▎        | 3/22 [00:01<00:09,  2.02it/s] 18%|█▊        | 4/22 [00:01<00:06,  2.58it/s] 23%|██▎       | 5/22 [00:02<00:05,  3.09it/s] 27%|██▋       | 6/22 [00:02<00:04,  3.47it/s] 32%|███▏      | 7/22 [00:02<00:03,  3.81it/s] 36%|███▋      | 8/22 [00:02<00:03,  4.12it/s] 41%|████      | 9/22 [00:02<00:03,  4.30it/s] 45%|████▌     | 10/22 [00:03<00:02,  4.41it/s] 50%|█████     | 11/22 [00:03<00:02,  4.46it/s] 55%|█████▍    | 12/22 [00:03<00:02,  4.52it/s] 59%|█████▉    | 13/22 [00:03<00:01,  4.57it/s] 64%|██████▎   | 14/22 [00:03<00:01,  4.65it/s] 68%|██████▊   | 15/22 [00:04<00:01,  4.64it/s] 73%|███████▎  | 16/22 [00:04<00:01,  4.77it/s] 77%|███████▋  | 17/22 [00:04<00:01,  4.82it/s] 82%|████████▏ | 18/22 [00:04<00:00,  4.85it/s] 86%|████████▋ | 19/22 [00:04<00:00,  4.86it/s] 91%|█████████ | 20/22 [00:05<00:00,  5.43it/s]100%|██████████| 22/22 [00:05<00:00,  8.13it/s]                                               Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 3.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/50 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.23it/s][A
+                                             [AEpoch 0 time: 0.5391790866851807 seconds
+  2%|▏         | 1/50 [00:00<00:26,  1.85it/s]Epoch 1
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.25it/s][A
+                                             [AEpoch 1 time: 0.5400166511535645 seconds
+  4%|▍         | 2/50 [00:01<00:25,  1.85it/s]Epoch 2
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.35it/s][A
+                                             [AEpoch 2 time: 0.8436970710754395 seconds
+  6%|▌         | 3/50 [00:01<00:31,  1.47it/s]Epoch 3
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.03it/s][A
+                                             [AEpoch 3 time: 1.0645570755004883 seconds
+  8%|▊         | 4/50 [00:02<00:38,  1.20it/s]Epoch 4
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.25it/s][A
+                                             [AEpoch 4 time: 0.5409741401672363 seconds
+ 10%|█         | 5/50 [00:03<00:32,  1.38it/s]Epoch 5
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.25it/s][A
+                                             [AEpoch 5 time: 0.5354793071746826 seconds
+ 12%|█▏        | 6/50 [00:04<00:29,  1.51it/s]Epoch 6
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.26it/s][A
+                                             [AEpoch 6 time: 0.5357160568237305 seconds
+ 14%|█▍        | 7/50 [00:04<00:26,  1.61it/s]Epoch 7
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.13it/s][A
+                                             [AEpoch 7 time: 0.5675389766693115 seconds
+ 16%|█▌        | 8/50 [00:05<00:25,  1.66it/s]Epoch 8
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.1483e-01, PNorm = 34.0470, GNorm = 0.5340, lr_0 = 4.6416e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.28it/s][A
+                                             [AEpoch 8 time: 0.539541482925415 seconds
+ 18%|█▊        | 9/50 [00:05<00:23,  1.71it/s]Epoch 9
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.29it/s][A
+                                             [AEpoch 9 time: 0.5309443473815918 seconds
+ 20%|██        | 10/50 [00:06<00:22,  1.76it/s]Epoch 10
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 10 time: 0.541085958480835 seconds
+ 22%|██▏       | 11/50 [00:06<00:21,  1.79it/s]Epoch 11
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.28it/s][A
+                                             [AEpoch 11 time: 0.5355935096740723 seconds
+ 24%|██▍       | 12/50 [00:07<00:20,  1.81it/s]Epoch 12
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.25it/s][A
+                                             [AEpoch 12 time: 0.5335631370544434 seconds
+ 26%|██▌       | 13/50 [00:07<00:20,  1.83it/s]Epoch 13
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 13 time: 0.5489711761474609 seconds
+ 28%|██▊       | 14/50 [00:08<00:19,  1.83it/s]Epoch 14
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.26it/s][A
+                                             [AEpoch 14 time: 0.5356173515319824 seconds
+ 30%|███       | 15/50 [00:08<00:19,  1.84it/s]Epoch 15
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.28it/s][A
+                                             [AEpoch 15 time: 0.5331153869628906 seconds
+ 32%|███▏      | 16/50 [00:09<00:18,  1.85it/s]Epoch 16
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 6.1819e-01, PNorm = 34.0589, GNorm = 0.2330, lr_0 = 2.1544e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.18it/s][A
+                                             [AEpoch 16 time: 0.5516796112060547 seconds
+ 34%|███▍      | 17/50 [00:10<00:17,  1.84it/s]Epoch 17
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.23it/s][A
+                                             [AEpoch 17 time: 0.5370674133300781 seconds
+ 36%|███▌      | 18/50 [00:10<00:17,  1.84it/s]Epoch 18
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.27it/s][A
+                                             [AEpoch 18 time: 0.5383486747741699 seconds
+ 38%|███▊      | 19/50 [00:11<00:16,  1.85it/s]Epoch 19
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 19 time: 0.5461323261260986 seconds
+ 40%|████      | 20/50 [00:11<00:16,  1.84it/s]Epoch 20
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.25it/s][A
+                                             [AEpoch 20 time: 0.534266471862793 seconds
+ 42%|████▏     | 21/50 [00:12<00:15,  1.85it/s]Epoch 21
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.26it/s][A
+                                             [AEpoch 21 time: 0.5369415283203125 seconds
+ 44%|████▍     | 22/50 [00:12<00:15,  1.85it/s]Epoch 22
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.22it/s][A
+                                             [AEpoch 22 time: 0.5399169921875 seconds
+ 46%|████▌     | 23/50 [00:13<00:14,  1.85it/s]Epoch 23
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.21it/s][A
+                                             [AEpoch 23 time: 0.5470824241638184 seconds
+ 48%|████▊     | 24/50 [00:13<00:14,  1.84it/s]Epoch 24
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 6.1928e-01, PNorm = 34.0658, GNorm = 0.2649, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.20it/s][A
+                                             [AEpoch 24 time: 0.5457675457000732 seconds
+ 50%|█████     | 25/50 [00:14<00:13,  1.84it/s]Epoch 25
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.22it/s][A
+                                             [AEpoch 25 time: 0.5495927333831787 seconds
+ 52%|█████▏    | 26/50 [00:14<00:13,  1.83it/s]Epoch 26
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.15it/s][A
+                                             [AEpoch 26 time: 0.5571343898773193 seconds
+ 54%|█████▍    | 27/50 [00:15<00:12,  1.82it/s]Epoch 27
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.26it/s][A
+                                             [AEpoch 27 time: 0.5319855213165283 seconds
+ 56%|█████▌    | 28/50 [00:15<00:11,  1.84it/s]Epoch 28
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.27it/s][A
+                                             [AEpoch 28 time: 0.5348234176635742 seconds
+ 58%|█████▊    | 29/50 [00:16<00:11,  1.85it/s]Epoch 29
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 29 time: 0.5382547378540039 seconds
+ 60%|██████    | 30/50 [00:17<00:10,  1.85it/s]Epoch 30
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.22it/s][A
+                                             [AEpoch 30 time: 0.5456252098083496 seconds
+ 62%|██████▏   | 31/50 [00:17<00:10,  1.84it/s]Epoch 31
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.23it/s][A
+                                             [AEpoch 31 time: 0.5444672107696533 seconds
+ 64%|██████▍   | 32/50 [00:18<00:09,  1.84it/s]Epoch 32
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.7686e-01, PNorm = 34.0706, GNorm = 0.2159, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.27it/s][ALoss = 6.8588e-01, PNorm = 34.0709, GNorm = 0.8688, lr_0 = 1.0000e-04
+
+                                             [AEpoch 32 time: 0.5408303737640381 seconds
+ 66%|██████▌   | 33/50 [00:18<00:09,  1.84it/s]Epoch 33
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.25it/s][A
+                                             [AEpoch 33 time: 0.5341784954071045 seconds
+ 68%|██████▊   | 34/50 [00:19<00:08,  1.85it/s]Epoch 34
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.26it/s][A
+                                             [AEpoch 34 time: 0.5393950939178467 seconds
+ 70%|███████   | 35/50 [00:19<00:08,  1.85it/s]Epoch 35
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.20it/s][A
+                                             [AEpoch 35 time: 0.544762372970581 seconds
+ 72%|███████▏  | 36/50 [00:20<00:07,  1.85it/s]Epoch 36
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 36 time: 0.539801836013794 seconds
+ 74%|███████▍  | 37/50 [00:20<00:07,  1.85it/s]Epoch 37
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 37 time: 0.548499584197998 seconds
+ 76%|███████▌  | 38/50 [00:21<00:06,  1.84it/s]Epoch 38
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.36it/s][A
+                                             [AEpoch 38 time: 0.8321418762207031 seconds
+ 78%|███████▊  | 39/50 [00:22<00:06,  1.59it/s]Epoch 39
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.30it/s][A
+                                             [AEpoch 39 time: 0.5239455699920654 seconds
+ 80%|████████  | 40/50 [00:22<00:05,  1.67it/s]Epoch 40
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.8788e-01, PNorm = 34.0755, GNorm = 0.3590, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.22it/s][ALoss = 6.6417e-01, PNorm = 34.0759, GNorm = 0.6568, lr_0 = 1.0000e-04
+
+                                             [AEpoch 40 time: 0.5483620166778564 seconds
+ 82%|████████▏ | 41/50 [00:23<00:05,  1.71it/s]Epoch 41
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.03it/s][A
+                                             [AEpoch 41 time: 1.0755467414855957 seconds
+ 84%|████████▍ | 42/50 [00:24<00:05,  1.37it/s]Epoch 42
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.22it/s][A
+                                             [AEpoch 42 time: 0.550217866897583 seconds
+ 86%|████████▌ | 43/50 [00:24<00:04,  1.48it/s]Epoch 43
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.26it/s][A
+                                             [AEpoch 43 time: 0.5436539649963379 seconds
+ 88%|████████▊ | 44/50 [00:25<00:03,  1.57it/s]Epoch 44
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.29it/s][A
+                                             [AEpoch 44 time: 0.5366251468658447 seconds
+ 90%|█████████ | 45/50 [00:26<00:03,  1.65it/s]Epoch 45
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.22it/s][A
+                                             [AEpoch 45 time: 0.5445377826690674 seconds
+ 92%|█████████▏| 46/50 [00:26<00:02,  1.70it/s]Epoch 46
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.28it/s][A
+                                             [AEpoch 46 time: 0.5322129726409912 seconds
+ 94%|█████████▍| 47/50 [00:27<00:01,  1.75it/s]Epoch 47
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][A
+                                             [AEpoch 47 time: 0.5404548645019531 seconds
+ 96%|█████████▌| 48/50 [00:27<00:01,  1.78it/s]Epoch 48
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 6.0590e-01, PNorm = 34.0826, GNorm = 0.2754, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.24it/s][ALoss = 5.3546e-01, PNorm = 34.0832, GNorm = 0.5292, lr_0 = 1.0000e-04
+
+                                             [AEpoch 48 time: 0.5385451316833496 seconds
+ 98%|█████████▊| 49/50 [00:28<00:00,  1.80it/s]Epoch 49
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.23it/s][A
+                                             [AEpoch 49 time: 0.5445148944854736 seconds
+100%|██████████| 50/50 [00:28<00:00,  1.81it/s]100%|██████████| 50/50 [00:28<00:00,  1.74it/s]
+Model 0 time: 28.742642164230347 seconds
+  0%|          | 0/21 [00:00<?, ?it/s]  5%|▍         | 1/21 [00:00<00:12,  1.60it/s] 10%|▉         | 2/21 [00:00<00:07,  2.54it/s] 14%|█▍        | 3/21 [00:01<00:05,  3.20it/s] 19%|█▉        | 4/21 [00:01<00:04,  3.62it/s] 24%|██▍       | 5/21 [00:01<00:04,  4.00it/s] 29%|██▊       | 6/21 [00:01<00:03,  4.18it/s] 33%|███▎      | 7/21 [00:01<00:03,  4.44it/s] 38%|███▊      | 8/21 [00:02<00:02,  4.53it/s] 43%|████▎     | 9/21 [00:02<00:02,  4.76it/s] 48%|████▊     | 10/21 [00:02<00:02,  4.52it/s] 52%|█████▏    | 11/21 [00:02<00:02,  4.59it/s] 57%|█████▋    | 12/21 [00:03<00:02,  4.33it/s] 62%|██████▏   | 13/21 [00:03<00:02,  3.17it/s] 67%|██████▋   | 14/21 [00:03<00:01,  3.52it/s] 71%|███████▏  | 15/21 [00:04<00:02,  2.99it/s] 76%|███████▌  | 16/21 [00:04<00:01,  3.38it/s] 81%|████████  | 17/21 [00:04<00:01,  3.73it/s] 86%|████████▌ | 18/21 [00:04<00:00,  4.09it/s] 90%|█████████ | 19/21 [00:05<00:00,  4.25it/s]100%|██████████| 21/21 [00:05<00:00,  6.36it/s]                                               Training set size = 82
+Pool set size = 1027
+Start an new iteration of active learning: 4.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/50 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.08it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.64it/s][A
+                                             [AEpoch 0 time: 0.6481049060821533 seconds
+  2%|▏         | 1/50 [00:00<00:31,  1.54it/s]Epoch 1
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.06it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.57it/s][A
+                                             [AEpoch 1 time: 0.6589779853820801 seconds
+  4%|▍         | 2/50 [00:01<00:31,  1.53it/s]Epoch 2
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.62it/s][A
+                                             [AEpoch 2 time: 0.6488032341003418 seconds
+  6%|▌         | 3/50 [00:01<00:30,  1.53it/s]Epoch 3
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.06it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.60it/s][A
+                                             [AEpoch 3 time: 0.6541905403137207 seconds
+  8%|▊         | 4/50 [00:02<00:30,  1.53it/s]Epoch 4
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.02it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.62it/s][A
+                                             [AEpoch 4 time: 0.6530771255493164 seconds
+ 10%|█         | 5/50 [00:03<00:29,  1.53it/s]Epoch 5
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.08it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.67it/s][A
+                                             [AEpoch 5 time: 0.6430134773254395 seconds
+ 12%|█▏        | 6/50 [00:03<00:28,  1.54it/s]Epoch 6
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 4.8714e-01, PNorm = 34.0418, GNorm = 0.5694, lr_0 = 5.6234e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.09it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.64it/s][A
+                                             [AEpoch 6 time: 0.6455564498901367 seconds
+ 14%|█▍        | 7/50 [00:04<00:27,  1.54it/s]Epoch 7
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.70it/s][A
+                                             [AEpoch 7 time: 0.6388802528381348 seconds
+ 16%|█▌        | 8/50 [00:05<00:27,  1.55it/s]Epoch 8
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.02it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.67it/s][A
+                                             [AEpoch 8 time: 0.6476161479949951 seconds
+ 18%|█▊        | 9/50 [00:05<00:26,  1.55it/s]Epoch 9
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.65it/s][A
+                                             [AEpoch 9 time: 0.6494507789611816 seconds
+ 20%|██        | 10/50 [00:06<00:25,  1.54it/s]Epoch 10
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.08it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.64it/s][A
+                                             [AEpoch 10 time: 0.6476132869720459 seconds
+ 22%|██▏       | 11/50 [00:07<00:25,  1.54it/s]Epoch 11
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.06it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.57it/s][A
+                                             [AEpoch 11 time: 0.6553864479064941 seconds
+ 24%|██▍       | 12/50 [00:07<00:24,  1.54it/s]Epoch 12
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.4897e-01, PNorm = 34.0577, GNorm = 0.2382, lr_0 = 3.1623e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.02it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.56it/s][A
+                                             [AEpoch 12 time: 0.6602327823638916 seconds
+ 26%|██▌       | 13/50 [00:08<00:24,  1.53it/s]Epoch 13
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.00it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.57it/s][A
+                                             [AEpoch 13 time: 0.6611626148223877 seconds
+ 28%|██▊       | 14/50 [00:09<00:23,  1.52it/s]Epoch 14
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.26it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.83it/s][A
+                                             [AEpoch 14 time: 1.210371971130371 seconds
+ 30%|███       | 15/50 [00:10<00:28,  1.21it/s]Epoch 15
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.55it/s][A
+                                             [AEpoch 15 time: 0.660987138748169 seconds
+ 32%|███▏      | 16/50 [00:10<00:26,  1.29it/s]Epoch 16
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.01it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.50it/s][A
+                                             [AEpoch 16 time: 0.6724400520324707 seconds
+ 34%|███▍      | 17/50 [00:11<00:24,  1.34it/s]Epoch 17
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.37it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.67it/s][A
+                                             [AEpoch 17 time: 0.8893275260925293 seconds
+ 36%|███▌      | 18/50 [00:12<00:25,  1.27it/s]Epoch 18
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.6723e-01, PNorm = 34.0664, GNorm = 0.2343, lr_0 = 1.7783e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.03it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.62it/s][A
+                                             [AEpoch 18 time: 0.65395188331604 seconds
+ 38%|███▊      | 19/50 [00:13<00:23,  1.34it/s]Epoch 19
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.60it/s][A
+                                             [AEpoch 19 time: 0.6540780067443848 seconds
+ 40%|████      | 20/50 [00:13<00:21,  1.39it/s]Epoch 20
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.03it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.61it/s][A
+                                             [AEpoch 20 time: 0.6542985439300537 seconds
+ 42%|████▏     | 21/50 [00:14<00:20,  1.43it/s]Epoch 21
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.63it/s][A
+                                             [AEpoch 21 time: 0.6497385501861572 seconds
+ 44%|████▍     | 22/50 [00:15<00:19,  1.46it/s]Epoch 22
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.99it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.61it/s][A
+                                             [AEpoch 22 time: 0.6558501720428467 seconds
+ 46%|████▌     | 23/50 [00:15<00:18,  1.48it/s]Epoch 23
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.01it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.62it/s][A
+                                             [AEpoch 23 time: 0.6560242176055908 seconds
+ 48%|████▊     | 24/50 [00:16<00:17,  1.49it/s]Epoch 24
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.5861e-01, PNorm = 34.0722, GNorm = 0.1983, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.01it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.54it/s][A
+                                             [AEpoch 24 time: 0.6647465229034424 seconds
+ 50%|█████     | 25/50 [00:17<00:16,  1.49it/s]Epoch 25
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.05it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.60it/s][A
+                                             [AEpoch 25 time: 0.6537113189697266 seconds
+ 52%|█████▏    | 26/50 [00:17<00:15,  1.50it/s]Epoch 26
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.60it/s][A
+                                             [AEpoch 26 time: 0.6519832611083984 seconds
+ 54%|█████▍    | 27/50 [00:18<00:15,  1.51it/s]Epoch 27
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.59it/s][A
+                                             [AEpoch 27 time: 0.6531362533569336 seconds
+ 56%|█████▌    | 28/50 [00:19<00:14,  1.52it/s]Epoch 28
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.08it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.62it/s][A
+                                             [AEpoch 28 time: 0.6498053073883057 seconds
+ 58%|█████▊    | 29/50 [00:19<00:13,  1.52it/s]Epoch 29
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.01it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.58it/s][A
+                                             [AEpoch 29 time: 0.6584775447845459 seconds
+ 60%|██████    | 30/50 [00:20<00:13,  1.52it/s]Epoch 30
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.2303e-01, PNorm = 34.0773, GNorm = 0.2422, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][ALoss = 6.2203e-01, PNorm = 34.0777, GNorm = 0.4742, lr_0 = 1.0000e-04
+
+100%|██████████| 2/2 [00:00<00:00,  3.65it/s][A
+                                             [AEpoch 30 time: 0.6488640308380127 seconds
+ 62%|██████▏   | 31/50 [00:21<00:12,  1.53it/s]Epoch 31
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.62it/s][A
+                                             [AEpoch 31 time: 0.6515586376190186 seconds
+ 64%|██████▍   | 32/50 [00:21<00:11,  1.53it/s]Epoch 32
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.09it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.68it/s][A
+                                             [AEpoch 32 time: 0.6418812274932861 seconds
+ 66%|██████▌   | 33/50 [00:22<00:11,  1.54it/s]Epoch 33
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.65it/s][A
+                                             [AEpoch 33 time: 0.6479005813598633 seconds
+ 68%|██████▊   | 34/50 [00:23<00:10,  1.54it/s]Epoch 34
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.66it/s][A
+                                             [AEpoch 34 time: 0.6458513736724854 seconds
+ 70%|███████   | 35/50 [00:23<00:09,  1.54it/s]Epoch 35
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.05it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.65it/s][A
+                                             [AEpoch 35 time: 0.6473264694213867 seconds
+ 72%|███████▏  | 36/50 [00:24<00:09,  1.54it/s]Epoch 36
+
+  0%|          | 0/2 [00:00<?, ?it/s][ALoss = 5.6629e-01, PNorm = 34.0824, GNorm = 0.2125, lr_0 = 1.0000e-04
+
+ 50%|█████     | 1/2 [00:00<00:00,  2.06it/s][ALoss = 5.5287e-01, PNorm = 34.0829, GNorm = 0.2550, lr_0 = 1.0000e-04
+
+100%|██████████| 2/2 [00:00<00:00,  3.61it/s][A
+                                             [AEpoch 36 time: 0.6546568870544434 seconds
+ 74%|███████▍  | 37/50 [00:24<00:08,  1.54it/s]Epoch 37
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.31it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.85it/s][A
+                                             [AEpoch 37 time: 1.1889588832855225 seconds
+ 76%|███████▌  | 38/50 [00:26<00:09,  1.23it/s]Epoch 38
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.58it/s][A
+                                             [AEpoch 38 time: 0.656994104385376 seconds
+ 78%|███████▊  | 39/50 [00:26<00:08,  1.31it/s]Epoch 39
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.03it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.59it/s][A
+                                             [AEpoch 39 time: 0.6538512706756592 seconds
+ 80%|████████  | 40/50 [00:27<00:07,  1.37it/s]Epoch 40
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.63it/s][A
+                                             [AEpoch 40 time: 0.6502506732940674 seconds
+ 82%|████████▏ | 41/50 [00:28<00:06,  1.41it/s]Epoch 41
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.60it/s][A
+                                             [AEpoch 41 time: 0.6531283855438232 seconds
+ 84%|████████▍ | 42/50 [00:28<00:05,  1.45it/s]Epoch 42
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.05it/s][ALoss = 5.8040e-01, PNorm = 34.0889, GNorm = 0.4021, lr_0 = 1.0000e-04
+
+100%|██████████| 2/2 [00:00<00:00,  3.59it/s][A
+                                             [AEpoch 42 time: 0.6573984622955322 seconds
+ 86%|████████▌ | 43/50 [00:29<00:04,  1.47it/s]Epoch 43
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.08it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.65it/s][A
+                                             [AEpoch 43 time: 0.6470441818237305 seconds
+ 88%|████████▊ | 44/50 [00:30<00:04,  1.49it/s]Epoch 44
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.02it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.61it/s][A
+                                             [AEpoch 44 time: 0.6542673110961914 seconds
+ 90%|█████████ | 45/50 [00:30<00:03,  1.50it/s]Epoch 45
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.05it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.66it/s][A
+                                             [AEpoch 45 time: 0.6450214385986328 seconds
+ 92%|█████████▏| 46/50 [00:31<00:02,  1.51it/s]Epoch 46
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.63it/s][A
+                                             [AEpoch 46 time: 0.6502945423126221 seconds
+ 94%|█████████▍| 47/50 [00:32<00:01,  1.52it/s]Epoch 47
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.03it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.61it/s][A
+                                             [AEpoch 47 time: 0.654977560043335 seconds
+ 96%|█████████▌| 48/50 [00:32<00:01,  1.52it/s]Epoch 48
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.06it/s][ALoss = 5.4227e-01, PNorm = 34.0958, GNorm = 0.3065, lr_0 = 1.0000e-04
+
+100%|██████████| 2/2 [00:00<00:00,  3.60it/s][A
+                                             [AEpoch 48 time: 0.6537964344024658 seconds
+ 98%|█████████▊| 49/50 [00:33<00:00,  1.52it/s]Epoch 49
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.04it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.59it/s][A
+                                             [AEpoch 49 time: 0.6544201374053955 seconds
+100%|██████████| 50/50 [00:33<00:00,  1.53it/s]100%|██████████| 50/50 [00:33<00:00,  1.47it/s]
+Model 0 time: 33.9995002746582 seconds
+  0%|          | 0/21 [00:00<?, ?it/s]  5%|▍         | 1/21 [00:00<00:12,  1.59it/s] 10%|▉         | 2/21 [00:00<00:06,  2.78it/s] 14%|█▍        | 3/21 [00:01<00:05,  3.16it/s] 19%|█▉        | 4/21 [00:01<00:04,  3.59it/s] 24%|██▍       | 5/21 [00:01<00:04,  3.97it/s] 29%|██▊       | 6/21 [00:01<00:03,  4.14it/s] 33%|███▎      | 7/21 [00:01<00:03,  4.34it/s] 38%|███▊      | 8/21 [00:02<00:02,  4.66it/s] 43%|████▎     | 9/21 [00:02<00:04,  2.93it/s] 48%|████▊     | 10/21 [00:02<00:03,  3.60it/s] 52%|█████▏    | 11/21 [00:03<00:02,  3.59it/s] 57%|█████▋    | 12/21 [00:03<00:02,  3.85it/s] 62%|██████▏   | 13/21 [00:03<00:01,  4.10it/s] 67%|██████▋   | 14/21 [00:03<00:01,  4.45it/s] 71%|███████▏  | 15/21 [00:03<00:01,  4.70it/s] 76%|███████▌  | 16/21 [00:04<00:01,  4.56it/s] 81%|████████  | 17/21 [00:04<00:00,  4.72it/s] 86%|████████▌ | 18/21 [00:04<00:00,  4.76it/s] 90%|█████████ | 19/21 [00:04<00:00,  5.16it/s]100%|██████████| 21/21 [00:04<00:00,  7.64it/s]

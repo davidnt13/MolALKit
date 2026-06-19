@@ -1,0 +1,5 @@
+==========================================================
+SLURM ARRAY TASK ID: 19
+Running parameters: Add Batch=20, Forget Batch=100, Start=0, Interval=5, Epochs=50, Uncertainty=min, Seed=1
+Target Save Directory: ../../updated_test_data/MDR1_MDCK_classification2/DMPNN/b_add20_fg100/start0_int5/ep50/min_unc/seed1
+==========================================================

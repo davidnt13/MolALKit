@@ -13,7 +13,7 @@
 
 # IMPORTANT: Set this equal to your total number of combinations minus 1
 # e.g., if you have 48 combinations, your array range is 0-47
-#SBATCH --array=0-95
+#SBATCH --array=0-95%16
 
 #SBATCH --job-name=Molalkit_Grid_MLP
 
@@ -46,7 +46,7 @@ echo "Target Save Directory: $SAVE_DIR"
 echo "=========================================================="
 
 # Running Code
-python ../molalkit_run \
+python ../../molalkit_run \
     --data_public MDR1_MDCK_classification2 \
     --metrics roc_auc mcc accuracy precision recall f1_score \
     --learning_type explorative \

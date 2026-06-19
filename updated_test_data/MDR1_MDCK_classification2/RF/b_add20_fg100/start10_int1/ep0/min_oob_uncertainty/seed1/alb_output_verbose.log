@@ -1,0 +1,5105 @@
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: MinOOBUncertaintyForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Model fitting time: 0.15650129318237305 seconds
+evaluating model performance finished.
+Training set size = 22
+Pool set size = 1087
+Start an new iteration of active learning: 1.
+Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 2.
+Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 3.
+Training set size = 82
+Pool set size = 1027
+Start an new iteration of active learning: 4.
+forget_idx length: 1
+Training set size = 101
+Pool set size = 1008
+Start an new iteration of active learning: 5.
+evaluating model performance.
+Model fitting time: 0.18465495109558105 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 120
+Pool set size = 989
+Start an new iteration of active learning: 6.
+forget_idx length: 1
+Training set size = 139
+Pool set size = 970
+Start an new iteration of active learning: 7.
+forget_idx length: 1
+Training set size = 158
+Pool set size = 951
+Start an new iteration of active learning: 8.
+forget_idx length: 1
+Training set size = 177
+Pool set size = 932
+Start an new iteration of active learning: 9.
+forget_idx length: 1
+Training set size = 196
+Pool set size = 913
+Start an new iteration of active learning: 10.
+evaluating model performance.
+Model fitting time: 0.21198320388793945 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 215
+Pool set size = 894
+Start an new iteration of active learning: 11.
+forget_idx length: 1
+Training set size = 234
+Pool set size = 875
+Start an new iteration of active learning: 12.
+forget_idx length: 1
+Training set size = 253
+Pool set size = 856
+Start an new iteration of active learning: 13.
+forget_idx length: 1
+Training set size = 272
+Pool set size = 837
+Start an new iteration of active learning: 14.
+forget_idx length: 1
+Training set size = 291
+Pool set size = 818
+Start an new iteration of active learning: 15.
+evaluating model performance.
+Model fitting time: 0.24914097785949707 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 310
+Pool set size = 799
+Start an new iteration of active learning: 16.
+forget_idx length: 1
+Training set size = 329
+Pool set size = 780
+Start an new iteration of active learning: 17.
+forget_idx length: 1
+Training set size = 348
+Pool set size = 761
+Start an new iteration of active learning: 18.
+forget_idx length: 1
+Training set size = 367
+Pool set size = 742
+Start an new iteration of active learning: 19.
+forget_idx length: 1
+Training set size = 386
+Pool set size = 723
+Start an new iteration of active learning: 20.
+evaluating model performance.
+Model fitting time: 0.2828483581542969 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 405
+Pool set size = 704
+Start an new iteration of active learning: 21.
+forget_idx length: 1
+Training set size = 424
+Pool set size = 685
+Start an new iteration of active learning: 22.
+forget_idx length: 1
+Training set size = 443
+Pool set size = 666
+Start an new iteration of active learning: 23.
+forget_idx length: 1
+Training set size = 462
+Pool set size = 647
+Start an new iteration of active learning: 24.
+forget_idx length: 1
+Training set size = 481
+Pool set size = 628
+Start an new iteration of active learning: 25.
+evaluating model performance.
+Model fitting time: 0.319399356842041 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 500
+Pool set size = 609
+Start an new iteration of active learning: 26.
+forget_idx length: 1
+Training set size = 519
+Pool set size = 590
+Start an new iteration of active learning: 27.
+forget_idx length: 1
+Training set size = 538
+Pool set size = 571
+Start an new iteration of active learning: 28.
+forget_idx length: 1
+Training set size = 557
+Pool set size = 552
+Start an new iteration of active learning: 29.
+forget_idx length: 1
+Training set size = 576
+Pool set size = 533
+Start an new iteration of active learning: 30.
+evaluating model performance.
+Model fitting time: 0.36092424392700195 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 595
+Pool set size = 514
+Start an new iteration of active learning: 31.
+forget_idx length: 1
+Training set size = 614
+Pool set size = 495
+Start an new iteration of active learning: 32.
+forget_idx length: 1
+Training set size = 633
+Pool set size = 476
+Start an new iteration of active learning: 33.
+forget_idx length: 1
+Training set size = 652
+Pool set size = 457
+Start an new iteration of active learning: 34.
+forget_idx length: 1
+Training set size = 671
+Pool set size = 438
+Start an new iteration of active learning: 35.
+evaluating model performance.
+Model fitting time: 0.40712690353393555 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 690
+Pool set size = 419
+Start an new iteration of active learning: 36.
+forget_idx length: 1
+Training set size = 709
+Pool set size = 400
+Start an new iteration of active learning: 37.
+forget_idx length: 1
+Training set size = 728
+Pool set size = 381
+Start an new iteration of active learning: 38.
+forget_idx length: 1
+Training set size = 747
+Pool set size = 362
+Start an new iteration of active learning: 39.
+forget_idx length: 1
+Training set size = 766
+Pool set size = 343
+Start an new iteration of active learning: 40.
+evaluating model performance.
+Model fitting time: 0.45128941535949707 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 785
+Pool set size = 324
+Start an new iteration of active learning: 41.
+forget_idx length: 1
+Training set size = 804
+Pool set size = 305
+Start an new iteration of active learning: 42.
+forget_idx length: 1
+Training set size = 823
+Pool set size = 286
+Start an new iteration of active learning: 43.
+forget_idx length: 1
+Training set size = 842
+Pool set size = 267
+Start an new iteration of active learning: 44.
+forget_idx length: 1
+Training set size = 861
+Pool set size = 248
+Start an new iteration of active learning: 45.
+evaluating model performance.
+Model fitting time: 0.48570990562438965 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 880
+Pool set size = 229
+Start an new iteration of active learning: 46.
+forget_idx length: 1
+Training set size = 899
+Pool set size = 210
+Start an new iteration of active learning: 47.
+forget_idx length: 1
+Training set size = 918
+Pool set size = 191
+Start an new iteration of active learning: 48.
+forget_idx length: 1
+Training set size = 937
+Pool set size = 172
+Start an new iteration of active learning: 49.
+forget_idx length: 1
+Training set size = 956
+Pool set size = 153
+Start an new iteration of active learning: 50.
+evaluating model performance.
+Model fitting time: 0.5089066028594971 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 975
+Pool set size = 134
+Start an new iteration of active learning: 51.
+forget_idx length: 1
+Training set size = 994
+Pool set size = 115
+Start an new iteration of active learning: 52.
+forget_idx length: 1
+Training set size = 1013
+Pool set size = 96
+Start an new iteration of active learning: 53.
+forget_idx length: 1
+Training set size = 1032
+Pool set size = 77
+Start an new iteration of active learning: 54.
+forget_idx length: 1
+Training set size = 1051
+Pool set size = 58
+Start an new iteration of active learning: 55.
+evaluating model performance.
+Model fitting time: 0.5443766117095947 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1070
+Pool set size = 39
+Start an new iteration of active learning: 56.
+forget_idx length: 1
+Training set size = 1089
+Pool set size = 20
+Start an new iteration of active learning: 57.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 58.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 59.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 60.
+evaluating model performance.
+Model fitting time: 0.5682134628295898 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 61.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 62.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 63.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 64.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 65.
+evaluating model performance.
+Model fitting time: 0.5694410800933838 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 66.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 67.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 68.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 69.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 70.
+evaluating model performance.
+Model fitting time: 0.5798180103302002 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 71.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 72.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 73.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 74.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 75.
+evaluating model performance.
+Model fitting time: 0.5696063041687012 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 76.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 77.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 78.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 79.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 80.
+evaluating model performance.
+Model fitting time: 0.577427864074707 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 81.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 82.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 83.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 84.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 85.
+evaluating model performance.
+Model fitting time: 0.577777624130249 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 86.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 87.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 88.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 89.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 90.
+evaluating model performance.
+Model fitting time: 0.5700314044952393 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 91.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 92.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 93.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 94.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 95.
+evaluating model performance.
+Model fitting time: 0.5760085582733154 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 96.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 97.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 98.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 99.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 100.
+evaluating model performance.
+Model fitting time: 0.5730762481689453 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 101.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 102.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 103.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 104.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 105.
+evaluating model performance.
+Model fitting time: 0.5715391635894775 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 106.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 107.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 108.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 109.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 110.
+evaluating model performance.
+Model fitting time: 0.5674989223480225 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 111.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 112.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 113.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 114.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 115.
+evaluating model performance.
+Model fitting time: 0.5709829330444336 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 116.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 117.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 118.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 119.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 120.
+evaluating model performance.
+Model fitting time: 0.5778031349182129 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 121.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 122.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 123.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 124.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 125.
+evaluating model performance.
+Model fitting time: 0.5728249549865723 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 126.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 127.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 128.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 129.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 130.
+evaluating model performance.
+Model fitting time: 0.5807046890258789 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 131.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 132.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 133.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 134.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 135.
+evaluating model performance.
+Model fitting time: 0.5670902729034424 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 136.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 137.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 138.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 139.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 140.
+evaluating model performance.
+Model fitting time: 0.5647354125976562 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 141.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 142.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 143.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 144.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 145.
+evaluating model performance.
+Model fitting time: 0.5685019493103027 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 146.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 147.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 148.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 149.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 150.
+evaluating model performance.
+Model fitting time: 0.5718996524810791 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 151.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 152.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 153.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 154.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 155.
+evaluating model performance.
+Model fitting time: 0.577815055847168 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 156.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 157.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 158.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 159.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 160.
+evaluating model performance.
+Model fitting time: 0.5672919750213623 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 161.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 162.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 163.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 164.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 165.
+evaluating model performance.
+Model fitting time: 0.57574462890625 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 166.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 167.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 168.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 169.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 170.
+evaluating model performance.
+Model fitting time: 0.5678608417510986 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 171.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 172.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 173.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 174.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 175.
+evaluating model performance.
+Model fitting time: 0.5745999813079834 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 176.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 177.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 178.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 179.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 180.
+evaluating model performance.
+Model fitting time: 0.5780272483825684 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 181.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 182.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 183.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 184.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 185.
+evaluating model performance.
+Model fitting time: 0.570061206817627 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 186.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 187.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 188.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 189.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 190.
+evaluating model performance.
+Model fitting time: 0.5750339031219482 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 191.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 192.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 193.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 194.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 195.
+evaluating model performance.
+Model fitting time: 0.5730528831481934 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 196.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 197.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 198.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 199.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 200.
+evaluating model performance.
+Model fitting time: 0.5719120502471924 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 201.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 202.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 203.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 204.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 205.
+evaluating model performance.
+Model fitting time: 0.567305326461792 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 206.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 207.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 208.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 209.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 210.
+evaluating model performance.
+Model fitting time: 0.5791964530944824 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 211.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 212.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 213.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 214.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 215.
+evaluating model performance.
+Model fitting time: 0.5711729526519775 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 216.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 217.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 218.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 219.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 220.
+evaluating model performance.
+Model fitting time: 0.5738532543182373 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 221.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 222.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 223.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 224.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 225.
+evaluating model performance.
+Model fitting time: 0.575493335723877 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 226.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 227.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 228.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 229.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 230.
+evaluating model performance.
+Model fitting time: 0.5752143859863281 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 231.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 232.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 233.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 234.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 235.
+evaluating model performance.
+Model fitting time: 0.5740780830383301 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 236.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 237.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 238.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 239.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 240.
+evaluating model performance.
+Model fitting time: 0.5851016044616699 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 241.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 242.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 243.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 244.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 245.
+evaluating model performance.
+Model fitting time: 0.5823404788970947 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 246.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 247.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 248.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 249.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 250.
+evaluating model performance.
+Model fitting time: 0.5820877552032471 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 251.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 252.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 253.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 254.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 255.
+evaluating model performance.
+Model fitting time: 0.5715248584747314 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 256.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 257.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 258.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 259.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 260.
+evaluating model performance.
+Model fitting time: 0.5787026882171631 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 261.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 262.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 263.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 264.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 265.
+evaluating model performance.
+Model fitting time: 0.5702943801879883 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 266.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 267.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 268.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 269.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 270.
+evaluating model performance.
+Model fitting time: 0.5672512054443359 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 271.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 272.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 273.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 274.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 275.
+evaluating model performance.
+Model fitting time: 0.5647201538085938 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 276.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 277.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 278.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 279.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 280.
+evaluating model performance.
+Model fitting time: 0.5720429420471191 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 281.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 282.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 283.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 284.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 285.
+evaluating model performance.
+Model fitting time: 0.5750772953033447 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 286.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 287.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 288.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 289.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 290.
+evaluating model performance.
+Model fitting time: 0.5729324817657471 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 291.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 292.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 293.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 294.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 295.
+evaluating model performance.
+Model fitting time: 0.5693802833557129 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 296.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 297.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 298.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 299.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 300.
+evaluating model performance.
+Model fitting time: 0.5696215629577637 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 301.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 302.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 303.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 304.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 305.
+evaluating model performance.
+Model fitting time: 0.5658822059631348 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 306.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 307.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 308.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 309.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 310.
+evaluating model performance.
+Model fitting time: 0.5707106590270996 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 311.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 312.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 313.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 314.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 315.
+evaluating model performance.
+Model fitting time: 0.5698676109313965 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 316.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 317.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 318.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 319.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 320.
+evaluating model performance.
+Model fitting time: 0.5653076171875 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 321.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 322.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 323.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 324.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 325.
+evaluating model performance.
+Model fitting time: 0.58040452003479 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 326.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 327.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 328.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 329.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 330.
+evaluating model performance.
+Model fitting time: 0.5685434341430664 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 331.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 332.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 333.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 334.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 335.
+evaluating model performance.
+Model fitting time: 0.5686583518981934 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 336.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 337.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 338.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 339.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 340.
+evaluating model performance.
+Model fitting time: 0.5730934143066406 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 341.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 342.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 343.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 344.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 345.
+evaluating model performance.
+Model fitting time: 0.5725326538085938 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 346.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 347.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 348.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 349.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 350.
+evaluating model performance.
+Model fitting time: 0.5748100280761719 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 351.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 352.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 353.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 354.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 355.
+evaluating model performance.
+Model fitting time: 0.5733306407928467 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 356.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 357.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 358.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 359.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 360.
+evaluating model performance.
+Model fitting time: 0.5694749355316162 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 361.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 362.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 363.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 364.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 365.
+evaluating model performance.
+Model fitting time: 0.565037727355957 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 366.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 367.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 368.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 369.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 370.
+evaluating model performance.
+Model fitting time: 0.563899040222168 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 371.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 372.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 373.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 374.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 375.
+evaluating model performance.
+Model fitting time: 0.569988489151001 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 376.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 377.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 378.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 379.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 380.
+evaluating model performance.
+Model fitting time: 0.565603494644165 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 381.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 382.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 383.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 384.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 385.
+evaluating model performance.
+Model fitting time: 0.5633060932159424 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 386.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 387.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 388.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 389.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 390.
+evaluating model performance.
+Model fitting time: 0.567878007888794 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 391.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 392.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 393.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 394.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 395.
+evaluating model performance.
+Model fitting time: 0.5699052810668945 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 396.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 397.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 398.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 399.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 400.
+evaluating model performance.
+Model fitting time: 0.5632266998291016 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 401.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 402.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 403.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 404.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 405.
+evaluating model performance.
+Model fitting time: 0.5689306259155273 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 406.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 407.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 408.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 409.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 410.
+evaluating model performance.
+Model fitting time: 0.5684332847595215 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 411.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 412.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 413.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 414.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 415.
+evaluating model performance.
+Model fitting time: 0.565021276473999 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 416.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 417.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 418.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 419.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 420.
+evaluating model performance.
+Model fitting time: 0.5653316974639893 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 421.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 422.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 423.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 424.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 425.
+evaluating model performance.
+Model fitting time: 0.5673739910125732 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 426.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 427.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 428.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 429.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 430.
+evaluating model performance.
+Model fitting time: 0.5756657123565674 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 431.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 432.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 433.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 434.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 435.
+evaluating model performance.
+Model fitting time: 0.5661911964416504 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 436.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 437.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 438.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 439.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 440.
+evaluating model performance.
+Model fitting time: 0.567185640335083 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 441.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 442.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 443.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 444.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 445.
+evaluating model performance.
+Model fitting time: 0.5743916034698486 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 446.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 447.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 448.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 449.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 450.
+evaluating model performance.
+Model fitting time: 0.5669605731964111 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 451.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 452.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 453.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 454.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 455.
+evaluating model performance.
+Model fitting time: 0.5619027614593506 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 456.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 457.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 458.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 459.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 460.
+evaluating model performance.
+Model fitting time: 0.5657532215118408 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 461.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 462.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 463.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 464.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 465.
+evaluating model performance.
+Model fitting time: 0.5680887699127197 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 466.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 467.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 468.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 469.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 470.
+evaluating model performance.
+Model fitting time: 0.5712201595306396 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 471.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 472.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 473.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 474.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 475.
+evaluating model performance.
+Model fitting time: 0.5668604373931885 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 476.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 477.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 478.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 479.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 480.
+evaluating model performance.
+Model fitting time: 0.5670015811920166 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 481.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 482.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 483.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 484.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 485.
+evaluating model performance.
+Model fitting time: 0.5620527267456055 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 486.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 487.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 488.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 489.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 490.
+evaluating model performance.
+Model fitting time: 0.5710713863372803 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 491.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 492.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 493.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 494.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 495.
+evaluating model performance.
+Model fitting time: 0.5766186714172363 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 496.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 497.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 498.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 499.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 500.
+evaluating model performance.
+Model fitting time: 0.5713348388671875 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 501.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 502.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 503.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 504.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 505.
+evaluating model performance.
+Model fitting time: 0.5737400054931641 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 506.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 507.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 508.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 509.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 510.
+evaluating model performance.
+Model fitting time: 0.5713098049163818 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 511.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 512.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 513.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 514.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 515.
+evaluating model performance.
+Model fitting time: 0.5646321773529053 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 516.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 517.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 518.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 519.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 520.
+evaluating model performance.
+Model fitting time: 0.5725419521331787 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 521.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 522.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 523.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 524.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 525.
+evaluating model performance.
+Model fitting time: 0.5631072521209717 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 526.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 527.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 528.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 529.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 530.
+evaluating model performance.
+Model fitting time: 0.5714459419250488 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 531.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 532.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 533.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 534.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 535.
+evaluating model performance.
+Model fitting time: 0.567188024520874 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 536.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 537.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 538.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 539.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 540.
+evaluating model performance.
+Model fitting time: 0.5708391666412354 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 541.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 542.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 543.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 544.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 545.
+evaluating model performance.
+Model fitting time: 0.5674498081207275 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 546.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 547.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 548.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 549.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 550.
+evaluating model performance.
+Model fitting time: 0.5687813758850098 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 551.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 552.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 553.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 554.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 555.
+evaluating model performance.
+Model fitting time: 0.5685148239135742 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 556.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 557.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 558.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 559.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 560.
+evaluating model performance.
+Model fitting time: 0.5728759765625 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 561.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 562.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 563.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 564.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 565.
+evaluating model performance.
+Model fitting time: 0.575507640838623 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 566.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 567.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 568.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 569.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 570.
+evaluating model performance.
+Model fitting time: 0.5723679065704346 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 571.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 572.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 573.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 574.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 575.
+evaluating model performance.
+Model fitting time: 0.5592405796051025 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 576.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 577.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 578.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 579.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 580.
+evaluating model performance.
+Model fitting time: 0.5779423713684082 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 581.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 582.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 583.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 584.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 585.
+evaluating model performance.
+Model fitting time: 0.5693395137786865 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 586.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 587.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 588.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 589.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 590.
+evaluating model performance.
+Model fitting time: 0.5586776733398438 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 591.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 592.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 593.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 594.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 595.
+evaluating model performance.
+Model fitting time: 0.5754303932189941 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 596.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 597.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 598.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 599.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 600.
+evaluating model performance.
+Model fitting time: 0.5649266242980957 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 601.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 602.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 603.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 604.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 605.
+evaluating model performance.
+Model fitting time: 0.5634100437164307 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 606.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 607.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 608.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 609.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 610.
+evaluating model performance.
+Model fitting time: 0.5656294822692871 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 611.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 612.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 613.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 614.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 615.
+evaluating model performance.
+Model fitting time: 0.5651161670684814 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 616.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 617.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 618.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 619.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 620.
+evaluating model performance.
+Model fitting time: 0.561363935470581 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 621.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 622.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 623.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 624.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 625.
+evaluating model performance.
+Model fitting time: 0.5647380352020264 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 626.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 627.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 628.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 629.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 630.
+evaluating model performance.
+Model fitting time: 0.5713622570037842 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 631.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 632.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 633.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 634.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 635.
+evaluating model performance.
+Model fitting time: 0.5698676109313965 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 636.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 637.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 638.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 639.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 640.
+evaluating model performance.
+Model fitting time: 0.572119951248169 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 641.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 642.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 643.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 644.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 645.
+evaluating model performance.
+Model fitting time: 0.5693306922912598 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 646.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 647.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 648.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 649.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 650.
+evaluating model performance.
+Model fitting time: 0.5659570693969727 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 651.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 652.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 653.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 654.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 655.
+evaluating model performance.
+Model fitting time: 0.5739705562591553 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 656.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 657.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 658.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 659.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 660.
+evaluating model performance.
+Model fitting time: 0.564284086227417 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 661.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 662.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 663.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 664.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 665.
+evaluating model performance.
+Model fitting time: 0.5768985748291016 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 666.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 667.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 668.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 669.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 670.
+evaluating model performance.
+Model fitting time: 0.5812568664550781 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 671.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 672.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 673.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 674.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 675.
+evaluating model performance.
+Model fitting time: 0.565216064453125 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 676.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 677.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 678.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 679.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 680.
+evaluating model performance.
+Model fitting time: 0.5781357288360596 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 681.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 682.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 683.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 684.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 685.
+evaluating model performance.
+Model fitting time: 0.5705976486206055 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 686.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 687.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 688.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 689.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 690.
+evaluating model performance.
+Model fitting time: 0.5692305564880371 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 691.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 692.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 693.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 694.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 695.
+evaluating model performance.
+Model fitting time: 0.5703363418579102 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 696.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 697.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 698.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 699.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 700.
+evaluating model performance.
+Model fitting time: 0.5718574523925781 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 701.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 702.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 703.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 704.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 705.
+evaluating model performance.
+Model fitting time: 0.5664219856262207 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 706.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 707.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 708.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 709.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 710.
+evaluating model performance.
+Model fitting time: 0.5686335563659668 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 711.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 712.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 713.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 714.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 715.
+evaluating model performance.
+Model fitting time: 0.5705907344818115 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 716.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 717.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 718.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 719.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 720.
+evaluating model performance.
+Model fitting time: 0.567075252532959 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 721.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 722.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 723.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 724.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 725.
+evaluating model performance.
+Model fitting time: 0.5677814483642578 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 726.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 727.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 728.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 729.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 730.
+evaluating model performance.
+Model fitting time: 0.5693976879119873 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 731.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 732.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 733.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 734.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 735.
+evaluating model performance.
+Model fitting time: 0.5714223384857178 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 736.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 737.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 738.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 739.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 740.
+evaluating model performance.
+Model fitting time: 0.5766808986663818 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 741.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 742.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 743.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 744.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 745.
+evaluating model performance.
+Model fitting time: 0.5664143562316895 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 746.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 747.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 748.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 749.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 750.
+evaluating model performance.
+Model fitting time: 0.5683135986328125 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 751.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 752.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 753.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 754.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 755.
+evaluating model performance.
+Model fitting time: 0.5748872756958008 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 756.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 757.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 758.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 759.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 760.
+evaluating model performance.
+Model fitting time: 0.5599236488342285 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 761.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 762.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 763.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 764.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 765.
+evaluating model performance.
+Model fitting time: 0.5741932392120361 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 766.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 767.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 768.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 769.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 770.
+evaluating model performance.
+Model fitting time: 0.5661771297454834 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 771.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 772.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 773.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 774.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 775.
+evaluating model performance.
+Model fitting time: 0.5678768157958984 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 776.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 777.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 778.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 779.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 780.
+evaluating model performance.
+Model fitting time: 0.5653822422027588 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 781.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 782.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 783.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 784.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 785.
+evaluating model performance.
+Model fitting time: 0.5728824138641357 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 786.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 787.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 788.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 789.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 790.
+evaluating model performance.
+Model fitting time: 0.5634565353393555 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 791.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 792.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 793.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 794.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 795.
+evaluating model performance.
+Model fitting time: 0.5658845901489258 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 796.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 797.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 798.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 799.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 800.
+evaluating model performance.
+Model fitting time: 0.5768992900848389 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 801.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 802.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 803.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 804.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 805.
+evaluating model performance.
+Model fitting time: 0.5734522342681885 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 806.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 807.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 808.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 809.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 810.
+evaluating model performance.
+Model fitting time: 0.5645537376403809 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 811.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 812.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 813.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 814.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 815.
+evaluating model performance.
+Model fitting time: 0.5765557289123535 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 816.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 817.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 818.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 819.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 820.
+evaluating model performance.
+Model fitting time: 0.5631875991821289 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 821.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 822.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 823.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 824.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 825.
+evaluating model performance.
+Model fitting time: 0.569887638092041 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 826.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 827.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 828.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 829.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 830.
+evaluating model performance.
+Model fitting time: 0.569709062576294 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 831.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 832.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 833.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 834.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 835.
+evaluating model performance.
+Model fitting time: 0.5741217136383057 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 836.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 837.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 838.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 839.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 840.
+evaluating model performance.
+Model fitting time: 0.5672619342803955 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 841.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 842.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 843.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 844.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 845.
+evaluating model performance.
+Model fitting time: 0.5758752822875977 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 846.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 847.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 848.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 849.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 850.
+evaluating model performance.
+Model fitting time: 0.5654301643371582 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 851.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 852.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 853.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 854.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 855.
+evaluating model performance.
+Model fitting time: 0.57586669921875 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 856.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 857.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 858.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 859.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 860.
+evaluating model performance.
+Model fitting time: 0.5676748752593994 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 861.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 862.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 863.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 864.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 865.
+evaluating model performance.
+Model fitting time: 0.5691523551940918 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 866.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 867.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 868.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 869.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 870.
+evaluating model performance.
+Model fitting time: 0.568993330001831 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 871.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 872.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 873.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 874.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 875.
+evaluating model performance.
+Model fitting time: 0.5702528953552246 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 876.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 877.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 878.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 879.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 880.
+evaluating model performance.
+Model fitting time: 0.5557267665863037 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 881.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 882.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 883.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 884.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 885.
+evaluating model performance.
+Model fitting time: 0.561337947845459 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 886.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 887.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 888.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 889.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 890.
+evaluating model performance.
+Model fitting time: 0.5590424537658691 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 891.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 892.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 893.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 894.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 895.
+evaluating model performance.
+Model fitting time: 0.5702078342437744 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 896.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 897.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 898.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 899.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 900.
+evaluating model performance.
+Model fitting time: 0.5651359558105469 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 901.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 902.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 903.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 904.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 905.
+evaluating model performance.
+Model fitting time: 0.5680234432220459 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 906.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 907.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 908.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 909.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 910.
+evaluating model performance.
+Model fitting time: 0.5620954036712646 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 911.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 912.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 913.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 914.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 915.
+evaluating model performance.
+Model fitting time: 0.5623912811279297 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 916.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 917.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 918.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 919.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 920.
+evaluating model performance.
+Model fitting time: 0.5582187175750732 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 921.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 922.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 923.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 924.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 925.
+evaluating model performance.
+Model fitting time: 0.5642592906951904 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 926.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 927.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 928.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 929.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 930.
+evaluating model performance.
+Model fitting time: 0.5662415027618408 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 931.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 932.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 933.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 934.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 935.
+evaluating model performance.
+Model fitting time: 0.5603528022766113 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 936.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 937.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 938.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 939.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 940.
+evaluating model performance.
+Model fitting time: 0.5620872974395752 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 941.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 942.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 943.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 944.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 945.
+evaluating model performance.
+Model fitting time: 0.5654528141021729 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 946.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 947.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 948.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 949.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 950.
+evaluating model performance.
+Model fitting time: 0.5669410228729248 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 951.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 952.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 953.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 954.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 955.
+evaluating model performance.
+Model fitting time: 0.5744819641113281 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 956.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 957.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 958.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 959.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 960.
+evaluating model performance.
+Model fitting time: 0.557373046875 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 961.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 962.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 963.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 964.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 965.
+evaluating model performance.
+Model fitting time: 0.5700180530548096 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 966.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 967.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 968.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 969.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 970.
+evaluating model performance.
+Model fitting time: 0.556736946105957 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 971.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 972.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 973.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 974.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 975.
+evaluating model performance.
+Model fitting time: 0.5684947967529297 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 976.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 977.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 978.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 979.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 980.
+evaluating model performance.
+Model fitting time: 0.5646681785583496 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 981.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 982.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 983.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 984.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 985.
+evaluating model performance.
+Model fitting time: 0.560105562210083 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 986.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 987.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 988.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 989.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 990.
+evaluating model performance.
+Model fitting time: 0.5632739067077637 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 991.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 992.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 993.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 994.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 995.
+evaluating model performance.
+Model fitting time: 0.5800702571868896 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 996.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 997.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 998.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 999.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1000.
+evaluating model performance.
+Model fitting time: 0.566124439239502 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1001.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1002.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1003.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1004.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1005.
+evaluating model performance.
+Model fitting time: 0.5721869468688965 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1006.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1007.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1008.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1009.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1010.
+evaluating model performance.
+Model fitting time: 0.5706901550292969 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1011.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1012.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1013.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1014.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1015.
+evaluating model performance.
+Model fitting time: 0.5748789310455322 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1016.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1017.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1018.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1019.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1020.
+evaluating model performance.
+Model fitting time: 0.5735394954681396 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1021.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1022.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1023.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1024.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1025.
+evaluating model performance.
+Model fitting time: 0.5701413154602051 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1026.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1027.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1028.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1029.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1030.
+evaluating model performance.
+Model fitting time: 0.5745649337768555 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1031.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1032.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1033.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1034.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1035.
+evaluating model performance.
+Model fitting time: 0.5635826587677002 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1036.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1037.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1038.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1039.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1040.
+evaluating model performance.
+Model fitting time: 0.5760865211486816 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1041.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1042.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1043.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1044.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1045.
+evaluating model performance.
+Model fitting time: 0.5700700283050537 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1046.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1047.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1048.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1049.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1050.
+evaluating model performance.
+Model fitting time: 0.5652980804443359 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1051.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1052.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1053.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1054.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1055.
+evaluating model performance.
+Model fitting time: 0.5813918113708496 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1056.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1057.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1058.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1059.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1060.
+evaluating model performance.
+Model fitting time: 0.5642163753509521 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1061.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1062.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1063.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1064.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1065.
+evaluating model performance.
+Model fitting time: 0.5728638172149658 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1066.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1067.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1068.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1069.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1070.
+evaluating model performance.
+Model fitting time: 0.5664570331573486 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1071.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1072.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1073.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1074.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1075.
+evaluating model performance.
+Model fitting time: 0.5771780014038086 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1076.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1077.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1078.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1079.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1080.
+evaluating model performance.
+Model fitting time: 0.5598013401031494 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1081.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1082.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1083.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1084.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1085.
+evaluating model performance.
+Model fitting time: 0.5679590702056885 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1086.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1087.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1088.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1089.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1090.
+evaluating model performance.
+Model fitting time: 0.5737671852111816 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1091.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1092.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1093.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1094.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1095.
+evaluating model performance.
+Model fitting time: 0.5558681488037109 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1096.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1097.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1098.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1099.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1100.
+evaluating model performance.
+Model fitting time: 0.5794403553009033 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1101.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1102.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1103.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1104.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1105.
+evaluating model performance.
+Model fitting time: 0.5473983287811279 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1106.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+Start an new iteration of active learning: 1107.
+forget_idx length: 1
+Training set size = 1108
+Pool set size = 1
+total time: 1294 s

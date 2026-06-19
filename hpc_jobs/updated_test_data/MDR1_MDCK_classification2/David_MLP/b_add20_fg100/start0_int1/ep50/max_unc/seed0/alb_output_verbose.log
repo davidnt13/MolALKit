@@ -1,0 +1,27 @@
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Model fitting time: 1.4957082271575928 seconds
+evaluating model performance finished.
+Training set size = 22
+Pool set size = 1087
+save checkpoint file ../updated_test_data/MDR1_MDCK_classification2/David_MLP/b_add20_fg100/start0_int1/ep50/max_unc/seed0/al.pkl
+Start an new iteration of active learning: 1.
+Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 2.
+Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 3.
+Training set size = 82
+Pool set size = 1027
+Start an new iteration of active learning: 4.

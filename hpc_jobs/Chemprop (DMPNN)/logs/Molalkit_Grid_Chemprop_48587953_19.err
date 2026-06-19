@@ -1,0 +1,10 @@
+Anaconda3 2024.02
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s] 11%|█         | 236/2217 [00:00<00:00, 2353.80it/s] 23%|██▎       | 518/2217 [00:00<00:00, 2623.74it/s] 36%|███▌      | 788/2217 [00:00<00:00, 2657.52it/s] 48%|████▊     | 1064/2217 [00:00<00:00, 2694.93it/s] 61%|██████    | 1348/2217 [00:00<00:00, 2744.68it/s] 73%|███████▎  | 1623/2217 [00:00<00:00, 2736.25it/s] 86%|████████▌ | 1900/2217 [00:00<00:00, 2744.96it/s] 98%|█████████▊| 2175/2217 [00:00<00:00, 2555.16it/s]100%|██████████| 2217/2217 [00:00<00:00, 2605.09it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+0it [00:00, ?it/s]2217it [00:00, 315876.49it/s]
+  0%|          | 0/2217 [00:00<?, ?it/s][Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+  0%|          | 8/2217 [00:00<00:40, 54.37it/s]  0%|          | 8/2217 [00:19<00:40, 54.37it/s]

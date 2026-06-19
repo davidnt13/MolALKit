@@ -1,0 +1,6 @@
+==========================================================
+SLURM ARRAY TASK ID: 92
+Running parameters: Add Batch=50, Forget Batch=200, Start=10, Interval=5, Epochs=50, Uncertainty=min, Seed=2
+Target Save Directory: ../updated_test_data/MDR1_MDCK_classification2/David_MLP/b_add50_fg200/start10_int5/ep50/min_unc/seed2
+==========================================================
+Task 92 completed successfully.
