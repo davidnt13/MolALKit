@@ -1,0 +1,6 @@
+entropy max
+entropy min
+variance max
+variance min
+variation_ratio max
+variation_ratio min

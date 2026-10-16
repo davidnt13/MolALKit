@@ -377,11 +377,26 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
     """min uncertainty forgetting or max uncertainty"""
     cp_model_epochs: int = 30
     """the number of epochs for the Chemprop model."""
+    shadow_cold_every: int = 0
+    """diagnostic: every N iterations, also train cold (from-scratch) shadow models on the same training set and save their
+    predictions next to the live model's (0 = off). Does not affect the AL trajectory."""
+    shadow_cold_epochs: int = 30
+    """epochs for the cold shadow models."""
+    shadow_cold_batch_size: int = 50
+    """chemprop batch size for the cold shadow models."""
+    forget_batch_size: int = 1
+    """the number of molecules to forget per active learning iteration."""
+    forget_score_method: Literal['bald', 'entropy', 'variance', 'variation_ratio'] = 'bald'
+    """the uncertainty scoring method used by ChempropDropoutForgetter/MCDropoutForgetter."""
+    forget_mc_samples: int = 20
+    """the number of MC-dropout forward passes used by ChempropDropoutForgetter/MCDropoutForgetter."""
+    forget_dropout_prob: float = 0.1
+    """the dropout probability used during MC-dropout sampling by ChempropDropoutForgetter/MCDropoutForgetter."""
 
     @property
     def model_selector(self):
         if not hasattr(self, '_model_selector'):
-            if self.model_config_selector_dict.get('model') == 'DMPNN+Morgan_BinaryClassification_Config' or self.model_config_selector_dict.get('model') == 'DMPNN_BinaryClassification_Config':
+            if self.model_config_selector_dict.get('data_format') == 'chemprop':
                 model_epochs = self.cp_model_epochs
             else:
                 model_epochs = self.model_config_selector_dict.get('epochs') or 30
@@ -419,6 +434,8 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
                 mpn_path=self.model_config_selector_dict.get('mpn_path'),
                 freeze_mpn=self.model_config_selector_dict.get('freeze_mpn') or False,
                 continuous_fit=self.model_config_selector_dict.get('continuous_fit') or False,
+                restart_every=self.model_config_selector_dict.get('restart_every') or 0,
+                restart_epochs=self.model_config_selector_dict.get('restart_epochs'),
                 kernel=self.kernel_selector,
                 uncertainty_type=self.model_config_selector_dict.get('uncertainty_type'),
                 alpha=self.model_config_selector_dict.get('alpha'),
@@ -469,6 +486,8 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
                 mpn_path=model_config.get('mpn_path'),
                 freeze_mpn=model_config.get('freeze_mpn') or False,
                 continuous_fit=model_config.get('continuous_fit') or False,
+                restart_every=model_config.get('restart_every') or 0,
+                restart_epochs=model_config.get('restart_epochs'),
                 kernel=self.kernel_evaluators[i],
                 uncertainty_type=model_config.get('uncertainty_type'),
                 alpha=model_config.get('alpha'),
@@ -690,9 +709,11 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
             elif self.forget_protocol == 'min_loo_error':
                 forgeter = MinLOOErrorForgetter(seed=0)
             elif self.forget_protocol == 'MCDropoutForgetter':
-                forgeter = MCDropoutForgetter(target=self.mc_forget_version)
+                forgeter = MCDropoutForgetter(target=self.mc_forget_version, score_method=self.forget_score_method,
+                                              mc_samples=self.forget_mc_samples)
             elif self.forget_protocol == 'ChempropDropoutForgetter':
-                forgeter = ChempropDropoutForgetter(target=self.mc_forget_version)
+                forgeter = ChempropDropoutForgetter(target=self.mc_forget_version, score_method=self.forget_score_method,
+                                                    mc_samples=self.forget_mc_samples, dropout_prob=self.forget_dropout_prob)
             else:
                 return None
             # set forget_size and forget_cutoff in forgetter.
@@ -708,7 +729,7 @@ class ActiveLearningArgs(DatasetArgs, ModelArgs):
                 assert self.forget_protocol in ['max_oob_uncertainty', 'min_oob_uncertainty',
                                                 'min_oob_error', 'min_loo_error']
             forgeter.forget_cutoff = self.forget_cutoff
-            forgeter.batch_size = 1
+            forgeter.batch_size = self.forget_batch_size
             self._forgetter = forgeter
         return self._forgetter
 

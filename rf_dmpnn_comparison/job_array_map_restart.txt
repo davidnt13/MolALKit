@@ -1,0 +1,6 @@
+restart10 max 0
+restart10 max 1
+restart10 max 2
+restart10 min 0
+restart10 min 1
+restart10 min 2

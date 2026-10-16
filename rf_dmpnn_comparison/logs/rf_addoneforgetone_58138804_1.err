@@ -1,0 +1,4038 @@
+/var/spool/slurmd/job58138804/slurm_script: line 13: module: command not found
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s] 23%|██▎       | 500/2217 [00:00<00:00, 4995.12it/s] 47%|████▋     | 1051/2217 [00:00<00:00, 5290.96it/s] 73%|███████▎  | 1614/2217 [00:00<00:00, 5443.93it/s] 97%|█████████▋| 2159/2217 [00:00<00:00, 5251.87it/s]100%|██████████| 2217/2217 [00:00<00:00, 5219.94it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.0s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.3s
+[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    0.5s
+[Parallel(n_jobs=1)]: Done 1249 tasks      | elapsed:    0.8s
+[Parallel(n_jobs=1)]: Done 1799 tasks      | elapsed:    1.2s
+[Parallel(n_jobs=1)]: Done 2217 out of 2217 | elapsed:    1.5s finished
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=1)
+Forgetter: MinOOBUncertaintyForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Model fitting time: 0.06754350662231445 seconds
+evaluating model performance finished.
+Training set size = 3
+Pool set size = 1106
+Start an new iteration of active learning: 1.
+evaluating model performance.
+Model fitting time: 0.06586360931396484 seconds
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+evaluating model performance finished.
+Training set size = 4
+Pool set size = 1105
+Start an new iteration of active learning: 2.
+evaluating model performance.
+Model fitting time: 0.06738710403442383 seconds
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1731: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+evaluating model performance finished.
+Training set size = 5
+Pool set size = 1104
+Start an new iteration of active learning: 3.
+evaluating model performance.
+Model fitting time: 0.0650491714477539 seconds
+evaluating model performance finished.
+Training set size = 6
+Pool set size = 1103
+Start an new iteration of active learning: 4.
+evaluating model performance.
+Model fitting time: 0.06752634048461914 seconds
+evaluating model performance finished.
+Training set size = 7
+Pool set size = 1102
+Start an new iteration of active learning: 5.
+evaluating model performance.
+Model fitting time: 0.06581521034240723 seconds
+evaluating model performance finished.
+Training set size = 8
+Pool set size = 1101
+Start an new iteration of active learning: 6.
+evaluating model performance.
+Model fitting time: 0.06593823432922363 seconds
+evaluating model performance finished.
+Training set size = 9
+Pool set size = 1100
+Start an new iteration of active learning: 7.
+evaluating model performance.
+Model fitting time: 0.0662698745727539 seconds
+evaluating model performance finished.
+Training set size = 10
+Pool set size = 1099
+Start an new iteration of active learning: 8.
+evaluating model performance.
+Model fitting time: 0.06629657745361328 seconds
+evaluating model performance finished.
+Training set size = 11
+Pool set size = 1098
+Start an new iteration of active learning: 9.
+evaluating model performance.
+Model fitting time: 0.06578516960144043 seconds
+evaluating model performance finished.
+Training set size = 12
+Pool set size = 1097
+Start an new iteration of active learning: 10.
+evaluating model performance.
+Model fitting time: 0.0663449764251709 seconds
+evaluating model performance finished.
+Training set size = 13
+Pool set size = 1096
+Start an new iteration of active learning: 11.
+evaluating model performance.
+Model fitting time: 0.06694817543029785 seconds
+evaluating model performance finished.
+Training set size = 14
+Pool set size = 1095
+Start an new iteration of active learning: 12.
+evaluating model performance.
+Model fitting time: 0.06893324851989746 seconds
+evaluating model performance finished.
+Training set size = 15
+Pool set size = 1094
+Start an new iteration of active learning: 13.
+evaluating model performance.
+Model fitting time: 0.06567811965942383 seconds
+evaluating model performance finished.
+Training set size = 16
+Pool set size = 1093
+Start an new iteration of active learning: 14.
+evaluating model performance.
+Model fitting time: 0.0656580924987793 seconds
+evaluating model performance finished.
+Training set size = 17
+Pool set size = 1092
+Start an new iteration of active learning: 15.
+evaluating model performance.
+Model fitting time: 0.0680689811706543 seconds
+evaluating model performance finished.
+Training set size = 18
+Pool set size = 1091
+Start an new iteration of active learning: 16.
+evaluating model performance.
+Model fitting time: 0.06800079345703125 seconds
+evaluating model performance finished.
+Training set size = 19
+Pool set size = 1090
+Start an new iteration of active learning: 17.
+evaluating model performance.
+Model fitting time: 0.0663766860961914 seconds
+evaluating model performance finished.
+Training set size = 20
+Pool set size = 1089
+Start an new iteration of active learning: 18.
+evaluating model performance.
+Model fitting time: 0.06647229194641113 seconds
+evaluating model performance finished.
+Training set size = 21
+Pool set size = 1088
+Start an new iteration of active learning: 19.
+evaluating model performance.
+Model fitting time: 0.06749463081359863 seconds
+evaluating model performance finished.
+Training set size = 22
+Pool set size = 1087
+Start an new iteration of active learning: 20.
+evaluating model performance.
+Model fitting time: 0.06673502922058105 seconds
+evaluating model performance finished.
+Training set size = 23
+Pool set size = 1086
+Start an new iteration of active learning: 21.
+evaluating model performance.
+Model fitting time: 0.07013392448425293 seconds
+evaluating model performance finished.
+Training set size = 24
+Pool set size = 1085
+Start an new iteration of active learning: 22.
+evaluating model performance.
+Model fitting time: 0.06912732124328613 seconds
+evaluating model performance finished.
+Training set size = 25
+Pool set size = 1084
+Start an new iteration of active learning: 23.
+evaluating model performance.
+Model fitting time: 0.06850218772888184 seconds
+evaluating model performance finished.
+Training set size = 26
+Pool set size = 1083
+Start an new iteration of active learning: 24.
+evaluating model performance.
+Model fitting time: 0.06798148155212402 seconds
+evaluating model performance finished.
+Training set size = 27
+Pool set size = 1082
+Start an new iteration of active learning: 25.
+evaluating model performance.
+Model fitting time: 0.06878042221069336 seconds
+evaluating model performance finished.
+Training set size = 28
+Pool set size = 1081
+Start an new iteration of active learning: 26.
+evaluating model performance.
+Model fitting time: 0.0687875747680664 seconds
+evaluating model performance finished.
+Training set size = 29
+Pool set size = 1080
+Start an new iteration of active learning: 27.
+evaluating model performance.
+Model fitting time: 0.0680685043334961 seconds
+evaluating model performance finished.
+Training set size = 30
+Pool set size = 1079
+Start an new iteration of active learning: 28.
+evaluating model performance.
+Model fitting time: 0.06857824325561523 seconds
+evaluating model performance finished.
+Training set size = 31
+Pool set size = 1078
+Start an new iteration of active learning: 29.
+evaluating model performance.
+Model fitting time: 0.0726015567779541 seconds
+evaluating model performance finished.
+Training set size = 32
+Pool set size = 1077
+Start an new iteration of active learning: 30.
+evaluating model performance.
+Model fitting time: 0.06835079193115234 seconds
+evaluating model performance finished.
+Training set size = 33
+Pool set size = 1076
+Start an new iteration of active learning: 31.
+evaluating model performance.
+Model fitting time: 0.068939208984375 seconds
+evaluating model performance finished.
+Training set size = 34
+Pool set size = 1075
+Start an new iteration of active learning: 32.
+evaluating model performance.
+Model fitting time: 0.06830978393554688 seconds
+evaluating model performance finished.
+Training set size = 35
+Pool set size = 1074
+Start an new iteration of active learning: 33.
+evaluating model performance.
+Model fitting time: 0.06941556930541992 seconds
+evaluating model performance finished.
+Training set size = 36
+Pool set size = 1073
+Start an new iteration of active learning: 34.
+evaluating model performance.
+Model fitting time: 0.0694429874420166 seconds
+evaluating model performance finished.
+Training set size = 37
+Pool set size = 1072
+Start an new iteration of active learning: 35.
+evaluating model performance.
+Model fitting time: 0.06983280181884766 seconds
+evaluating model performance finished.
+Training set size = 38
+Pool set size = 1071
+Start an new iteration of active learning: 36.
+evaluating model performance.
+Model fitting time: 0.07082366943359375 seconds
+evaluating model performance finished.
+Training set size = 39
+Pool set size = 1070
+Start an new iteration of active learning: 37.
+evaluating model performance.
+Model fitting time: 0.07190966606140137 seconds
+evaluating model performance finished.
+Training set size = 40
+Pool set size = 1069
+Start an new iteration of active learning: 38.
+evaluating model performance.
+Model fitting time: 0.07243037223815918 seconds
+evaluating model performance finished.
+Training set size = 41
+Pool set size = 1068
+Start an new iteration of active learning: 39.
+evaluating model performance.
+Model fitting time: 0.07067728042602539 seconds
+evaluating model performance finished.
+Training set size = 42
+Pool set size = 1067
+Start an new iteration of active learning: 40.
+evaluating model performance.
+Model fitting time: 0.07130193710327148 seconds
+evaluating model performance finished.
+Training set size = 43
+Pool set size = 1066
+Start an new iteration of active learning: 41.
+evaluating model performance.
+Model fitting time: 0.07028508186340332 seconds
+evaluating model performance finished.
+Training set size = 44
+Pool set size = 1065
+Start an new iteration of active learning: 42.
+evaluating model performance.
+Model fitting time: 0.07099318504333496 seconds
+evaluating model performance finished.
+Training set size = 45
+Pool set size = 1064
+Start an new iteration of active learning: 43.
+evaluating model performance.
+Model fitting time: 0.07138609886169434 seconds
+evaluating model performance finished.
+Training set size = 46
+Pool set size = 1063
+Start an new iteration of active learning: 44.
+evaluating model performance.
+Model fitting time: 0.0700688362121582 seconds
+evaluating model performance finished.
+Training set size = 47
+Pool set size = 1062
+Start an new iteration of active learning: 45.
+evaluating model performance.
+Model fitting time: 0.07257080078125 seconds
+evaluating model performance finished.
+Training set size = 48
+Pool set size = 1061
+Start an new iteration of active learning: 46.
+evaluating model performance.
+Model fitting time: 0.07021164894104004 seconds
+evaluating model performance finished.
+Training set size = 49
+Pool set size = 1060
+Start an new iteration of active learning: 47.
+evaluating model performance.
+Model fitting time: 0.07187771797180176 seconds
+evaluating model performance finished.
+Training set size = 50
+Pool set size = 1059
+Start an new iteration of active learning: 48.
+evaluating model performance.
+Model fitting time: 0.07102513313293457 seconds
+evaluating model performance finished.
+Training set size = 51
+Pool set size = 1058
+Start an new iteration of active learning: 49.
+evaluating model performance.
+Model fitting time: 0.07244706153869629 seconds
+evaluating model performance finished.
+Training set size = 52
+Pool set size = 1057
+Start an new iteration of active learning: 50.
+evaluating model performance.
+Model fitting time: 0.07132148742675781 seconds
+evaluating model performance finished.
+Training set size = 53
+Pool set size = 1056
+Start an new iteration of active learning: 51.
+evaluating model performance.
+Model fitting time: 0.07207965850830078 seconds
+evaluating model performance finished.
+Training set size = 54
+Pool set size = 1055
+Start an new iteration of active learning: 52.
+evaluating model performance.
+Model fitting time: 0.0713346004486084 seconds
+evaluating model performance finished.
+Training set size = 55
+Pool set size = 1054
+Start an new iteration of active learning: 53.
+evaluating model performance.
+Model fitting time: 0.07556271553039551 seconds
+evaluating model performance finished.
+Training set size = 56
+Pool set size = 1053
+Start an new iteration of active learning: 54.
+evaluating model performance.
+Model fitting time: 0.07286524772644043 seconds
+evaluating model performance finished.
+Training set size = 57
+Pool set size = 1052
+Start an new iteration of active learning: 55.
+evaluating model performance.
+Model fitting time: 0.07182717323303223 seconds
+evaluating model performance finished.
+Training set size = 58
+Pool set size = 1051
+Start an new iteration of active learning: 56.
+evaluating model performance.
+Model fitting time: 0.07685637474060059 seconds
+evaluating model performance finished.
+Training set size = 59
+Pool set size = 1050
+Start an new iteration of active learning: 57.
+evaluating model performance.
+Model fitting time: 0.07197690010070801 seconds
+evaluating model performance finished.
+Training set size = 60
+Pool set size = 1049
+Start an new iteration of active learning: 58.
+evaluating model performance.
+Model fitting time: 0.0740654468536377 seconds
+evaluating model performance finished.
+Training set size = 61
+Pool set size = 1048
+Start an new iteration of active learning: 59.
+evaluating model performance.
+Model fitting time: 0.07406878471374512 seconds
+evaluating model performance finished.
+Training set size = 62
+Pool set size = 1047
+Start an new iteration of active learning: 60.
+evaluating model performance.
+Model fitting time: 0.07329106330871582 seconds
+evaluating model performance finished.
+Training set size = 63
+Pool set size = 1046
+Start an new iteration of active learning: 61.
+evaluating model performance.
+Model fitting time: 0.07428574562072754 seconds
+evaluating model performance finished.
+Training set size = 64
+Pool set size = 1045
+Start an new iteration of active learning: 62.
+evaluating model performance.
+Model fitting time: 0.07471084594726562 seconds
+evaluating model performance finished.
+Training set size = 65
+Pool set size = 1044
+Start an new iteration of active learning: 63.
+evaluating model performance.
+Model fitting time: 0.07423090934753418 seconds
+evaluating model performance finished.
+Training set size = 66
+Pool set size = 1043
+Start an new iteration of active learning: 64.
+evaluating model performance.
+Model fitting time: 0.07418632507324219 seconds
+evaluating model performance finished.
+Training set size = 67
+Pool set size = 1042
+Start an new iteration of active learning: 65.
+evaluating model performance.
+Model fitting time: 0.07379484176635742 seconds
+evaluating model performance finished.
+Training set size = 68
+Pool set size = 1041
+Start an new iteration of active learning: 66.
+evaluating model performance.
+Model fitting time: 0.07461166381835938 seconds
+evaluating model performance finished.
+Training set size = 69
+Pool set size = 1040
+Start an new iteration of active learning: 67.
+evaluating model performance.
+Model fitting time: 0.07476019859313965 seconds
+evaluating model performance finished.
+Training set size = 70
+Pool set size = 1039
+Start an new iteration of active learning: 68.
+evaluating model performance.
+Model fitting time: 0.07454824447631836 seconds
+evaluating model performance finished.
+Training set size = 71
+Pool set size = 1038
+Start an new iteration of active learning: 69.
+evaluating model performance.
+Model fitting time: 0.07453274726867676 seconds
+evaluating model performance finished.
+Training set size = 72
+Pool set size = 1037
+Start an new iteration of active learning: 70.
+evaluating model performance.
+Model fitting time: 0.07483482360839844 seconds
+evaluating model performance finished.
+Training set size = 73
+Pool set size = 1036
+Start an new iteration of active learning: 71.
+evaluating model performance.
+Model fitting time: 0.0747828483581543 seconds
+evaluating model performance finished.
+Training set size = 74
+Pool set size = 1035
+Start an new iteration of active learning: 72.
+evaluating model performance.
+Model fitting time: 0.07469892501831055 seconds
+evaluating model performance finished.
+Training set size = 75
+Pool set size = 1034
+Start an new iteration of active learning: 73.
+evaluating model performance.
+Model fitting time: 0.07716035842895508 seconds
+evaluating model performance finished.
+Training set size = 76
+Pool set size = 1033
+Start an new iteration of active learning: 74.
+evaluating model performance.
+Model fitting time: 0.07609987258911133 seconds
+evaluating model performance finished.
+Training set size = 77
+Pool set size = 1032
+Start an new iteration of active learning: 75.
+evaluating model performance.
+Model fitting time: 0.07596254348754883 seconds
+evaluating model performance finished.
+Training set size = 78
+Pool set size = 1031
+Start an new iteration of active learning: 76.
+evaluating model performance.
+Model fitting time: 0.07645606994628906 seconds
+evaluating model performance finished.
+Training set size = 79
+Pool set size = 1030
+Start an new iteration of active learning: 77.
+evaluating model performance.
+Model fitting time: 0.07640314102172852 seconds
+evaluating model performance finished.
+Training set size = 80
+Pool set size = 1029
+Start an new iteration of active learning: 78.
+evaluating model performance.
+Model fitting time: 0.07763457298278809 seconds
+evaluating model performance finished.
+Training set size = 81
+Pool set size = 1028
+Start an new iteration of active learning: 79.
+evaluating model performance.
+Model fitting time: 0.08000564575195312 seconds
+evaluating model performance finished.
+Training set size = 82
+Pool set size = 1027
+Start an new iteration of active learning: 80.
+evaluating model performance.
+Model fitting time: 0.0780324935913086 seconds
+evaluating model performance finished.
+Training set size = 83
+Pool set size = 1026
+Start an new iteration of active learning: 81.
+evaluating model performance.
+Model fitting time: 0.08087897300720215 seconds
+evaluating model performance finished.
+Training set size = 84
+Pool set size = 1025
+Start an new iteration of active learning: 82.
+evaluating model performance.
+Model fitting time: 0.08605146408081055 seconds
+evaluating model performance finished.
+Training set size = 85
+Pool set size = 1024
+Start an new iteration of active learning: 83.
+evaluating model performance.
+Model fitting time: 0.08452725410461426 seconds
+evaluating model performance finished.
+Training set size = 86
+Pool set size = 1023
+Start an new iteration of active learning: 84.
+evaluating model performance.
+Model fitting time: 0.07698988914489746 seconds
+evaluating model performance finished.
+Training set size = 87
+Pool set size = 1022
+Start an new iteration of active learning: 85.
+evaluating model performance.
+Model fitting time: 0.07735395431518555 seconds
+evaluating model performance finished.
+Training set size = 88
+Pool set size = 1021
+Start an new iteration of active learning: 86.
+evaluating model performance.
+Model fitting time: 0.07773828506469727 seconds
+evaluating model performance finished.
+Training set size = 89
+Pool set size = 1020
+Start an new iteration of active learning: 87.
+evaluating model performance.
+Model fitting time: 0.08063793182373047 seconds
+evaluating model performance finished.
+Training set size = 90
+Pool set size = 1019
+Start an new iteration of active learning: 88.
+evaluating model performance.
+Model fitting time: 0.0778648853302002 seconds
+evaluating model performance finished.
+Training set size = 91
+Pool set size = 1018
+Start an new iteration of active learning: 89.
+evaluating model performance.
+Model fitting time: 0.07710552215576172 seconds
+evaluating model performance finished.
+Training set size = 92
+Pool set size = 1017
+Start an new iteration of active learning: 90.
+evaluating model performance.
+Model fitting time: 0.07754850387573242 seconds
+evaluating model performance finished.
+Training set size = 93
+Pool set size = 1016
+Start an new iteration of active learning: 91.
+evaluating model performance.
+Model fitting time: 0.07833695411682129 seconds
+evaluating model performance finished.
+Training set size = 94
+Pool set size = 1015
+Start an new iteration of active learning: 92.
+evaluating model performance.
+Model fitting time: 0.07896041870117188 seconds
+evaluating model performance finished.
+Training set size = 95
+Pool set size = 1014
+Start an new iteration of active learning: 93.
+evaluating model performance.
+Model fitting time: 0.0780024528503418 seconds
+evaluating model performance finished.
+Training set size = 96
+Pool set size = 1013
+Start an new iteration of active learning: 94.
+evaluating model performance.
+Model fitting time: 0.07836675643920898 seconds
+evaluating model performance finished.
+Training set size = 97
+Pool set size = 1012
+Start an new iteration of active learning: 95.
+evaluating model performance.
+Model fitting time: 0.07748532295227051 seconds
+evaluating model performance finished.
+Training set size = 98
+Pool set size = 1011
+Start an new iteration of active learning: 96.
+evaluating model performance.
+Model fitting time: 0.07828140258789062 seconds
+evaluating model performance finished.
+Training set size = 99
+Pool set size = 1010
+Start an new iteration of active learning: 97.
+evaluating model performance.
+Model fitting time: 0.07901597023010254 seconds
+evaluating model performance finished.
+Training set size = 100
+Pool set size = 1009
+Start an new iteration of active learning: 98.
+evaluating model performance.
+Model fitting time: 0.07808971405029297 seconds
+evaluating model performance finished.
+Training set size = 101
+Pool set size = 1008
+Start an new iteration of active learning: 99.
+evaluating model performance.
+Model fitting time: 0.0783698558807373 seconds
+evaluating model performance finished.
+Training set size = 102
+Pool set size = 1007
+Start an new iteration of active learning: 100.
+evaluating model performance.
+Model fitting time: 0.08088350296020508 seconds
+evaluating model performance finished.
+Training set size = 103
+Pool set size = 1006
+Start an new iteration of active learning: 101.
+evaluating model performance.
+Model fitting time: 0.08030056953430176 seconds
+evaluating model performance finished.
+Training set size = 104
+Pool set size = 1005
+Start an new iteration of active learning: 102.
+evaluating model performance.
+Model fitting time: 0.07979726791381836 seconds
+evaluating model performance finished.
+Training set size = 105
+Pool set size = 1004
+Start an new iteration of active learning: 103.
+evaluating model performance.
+Model fitting time: 0.07939314842224121 seconds
+evaluating model performance finished.
+Training set size = 106
+Pool set size = 1003
+Start an new iteration of active learning: 104.
+evaluating model performance.
+Model fitting time: 0.07975506782531738 seconds
+evaluating model performance finished.
+Training set size = 107
+Pool set size = 1002
+Start an new iteration of active learning: 105.
+evaluating model performance.
+Model fitting time: 0.08020901679992676 seconds
+evaluating model performance finished.
+Training set size = 108
+Pool set size = 1001
+Start an new iteration of active learning: 106.
+evaluating model performance.
+Model fitting time: 0.07984375953674316 seconds
+evaluating model performance finished.
+Training set size = 109
+Pool set size = 1000
+Start an new iteration of active learning: 107.
+evaluating model performance.
+Model fitting time: 0.08101749420166016 seconds
+evaluating model performance finished.
+Training set size = 110
+Pool set size = 999
+Start an new iteration of active learning: 108.
+evaluating model performance.
+Model fitting time: 0.08289289474487305 seconds
+evaluating model performance finished.
+Training set size = 111
+Pool set size = 998
+Start an new iteration of active learning: 109.
+evaluating model performance.
+Model fitting time: 0.08178925514221191 seconds
+evaluating model performance finished.
+Training set size = 112
+Pool set size = 997
+Start an new iteration of active learning: 110.
+evaluating model performance.
+Model fitting time: 0.08044266700744629 seconds
+evaluating model performance finished.
+Training set size = 113
+Pool set size = 996
+Start an new iteration of active learning: 111.
+evaluating model performance.
+Model fitting time: 0.08114218711853027 seconds
+evaluating model performance finished.
+Training set size = 114
+Pool set size = 995
+Start an new iteration of active learning: 112.
+evaluating model performance.
+Model fitting time: 0.0804588794708252 seconds
+evaluating model performance finished.
+Training set size = 115
+Pool set size = 994
+Start an new iteration of active learning: 113.
+evaluating model performance.
+Model fitting time: 0.08424615859985352 seconds
+evaluating model performance finished.
+Training set size = 116
+Pool set size = 993
+Start an new iteration of active learning: 114.
+evaluating model performance.
+Model fitting time: 0.08214092254638672 seconds
+evaluating model performance finished.
+Training set size = 117
+Pool set size = 992
+Start an new iteration of active learning: 115.
+evaluating model performance.
+Model fitting time: 0.08263492584228516 seconds
+evaluating model performance finished.
+Training set size = 118
+Pool set size = 991
+Start an new iteration of active learning: 116.
+evaluating model performance.
+Model fitting time: 0.08308744430541992 seconds
+evaluating model performance finished.
+Training set size = 119
+Pool set size = 990
+Start an new iteration of active learning: 117.
+evaluating model performance.
+Model fitting time: 0.08446979522705078 seconds
+evaluating model performance finished.
+Training set size = 120
+Pool set size = 989
+Start an new iteration of active learning: 118.
+evaluating model performance.
+Model fitting time: 0.08402490615844727 seconds
+evaluating model performance finished.
+Training set size = 121
+Pool set size = 988
+Start an new iteration of active learning: 119.
+evaluating model performance.
+Model fitting time: 0.08307337760925293 seconds
+evaluating model performance finished.
+Training set size = 122
+Pool set size = 987
+Start an new iteration of active learning: 120.
+evaluating model performance.
+Model fitting time: 0.08317112922668457 seconds
+evaluating model performance finished.
+Training set size = 123
+Pool set size = 986
+Start an new iteration of active learning: 121.
+evaluating model performance.
+Model fitting time: 0.08295559883117676 seconds
+evaluating model performance finished.
+Training set size = 124
+Pool set size = 985
+Start an new iteration of active learning: 122.
+evaluating model performance.
+Model fitting time: 0.08249282836914062 seconds
+evaluating model performance finished.
+Training set size = 125
+Pool set size = 984
+Start an new iteration of active learning: 123.
+evaluating model performance.
+Model fitting time: 0.08402776718139648 seconds
+evaluating model performance finished.
+Training set size = 126
+Pool set size = 983
+Start an new iteration of active learning: 124.
+evaluating model performance.
+Model fitting time: 0.08319735527038574 seconds
+evaluating model performance finished.
+Training set size = 127
+Pool set size = 982
+Start an new iteration of active learning: 125.
+evaluating model performance.
+Model fitting time: 0.08353281021118164 seconds
+evaluating model performance finished.
+Training set size = 128
+Pool set size = 981
+Start an new iteration of active learning: 126.
+evaluating model performance.
+Model fitting time: 0.0843970775604248 seconds
+evaluating model performance finished.
+Training set size = 129
+Pool set size = 980
+Start an new iteration of active learning: 127.
+evaluating model performance.
+Model fitting time: 0.08867859840393066 seconds
+evaluating model performance finished.
+Training set size = 130
+Pool set size = 979
+Start an new iteration of active learning: 128.
+evaluating model performance.
+Model fitting time: 0.08456277847290039 seconds
+evaluating model performance finished.
+Training set size = 131
+Pool set size = 978
+Start an new iteration of active learning: 129.
+evaluating model performance.
+Model fitting time: 0.08683109283447266 seconds
+evaluating model performance finished.
+Training set size = 132
+Pool set size = 977
+Start an new iteration of active learning: 130.
+evaluating model performance.
+Model fitting time: 0.08631396293640137 seconds
+evaluating model performance finished.
+Training set size = 133
+Pool set size = 976
+Start an new iteration of active learning: 131.
+evaluating model performance.
+Model fitting time: 0.08635544776916504 seconds
+evaluating model performance finished.
+Training set size = 134
+Pool set size = 975
+Start an new iteration of active learning: 132.
+evaluating model performance.
+Model fitting time: 0.08583235740661621 seconds
+evaluating model performance finished.
+Training set size = 135
+Pool set size = 974
+Start an new iteration of active learning: 133.
+evaluating model performance.
+Model fitting time: 0.08753180503845215 seconds
+evaluating model performance finished.
+Training set size = 136
+Pool set size = 973
+Start an new iteration of active learning: 134.
+evaluating model performance.
+Model fitting time: 0.08946061134338379 seconds
+evaluating model performance finished.
+Training set size = 137
+Pool set size = 972
+Start an new iteration of active learning: 135.
+evaluating model performance.
+Model fitting time: 0.08629822731018066 seconds
+evaluating model performance finished.
+Training set size = 138
+Pool set size = 971
+Start an new iteration of active learning: 136.
+evaluating model performance.
+Model fitting time: 0.08812928199768066 seconds
+evaluating model performance finished.
+Training set size = 139
+Pool set size = 970
+Start an new iteration of active learning: 137.
+evaluating model performance.
+Model fitting time: 0.0879509449005127 seconds
+evaluating model performance finished.
+Training set size = 140
+Pool set size = 969
+Start an new iteration of active learning: 138.
+evaluating model performance.
+Model fitting time: 0.08776330947875977 seconds
+evaluating model performance finished.
+Training set size = 141
+Pool set size = 968
+Start an new iteration of active learning: 139.
+evaluating model performance.
+Model fitting time: 0.08742666244506836 seconds
+evaluating model performance finished.
+Training set size = 142
+Pool set size = 967
+Start an new iteration of active learning: 140.
+evaluating model performance.
+Model fitting time: 0.09050774574279785 seconds
+evaluating model performance finished.
+Training set size = 143
+Pool set size = 966
+Start an new iteration of active learning: 141.
+evaluating model performance.
+Model fitting time: 0.08981180191040039 seconds
+evaluating model performance finished.
+Training set size = 144
+Pool set size = 965
+Start an new iteration of active learning: 142.
+evaluating model performance.
+Model fitting time: 0.08704090118408203 seconds
+evaluating model performance finished.
+Training set size = 145
+Pool set size = 964
+Start an new iteration of active learning: 143.
+evaluating model performance.
+Model fitting time: 0.08927607536315918 seconds
+evaluating model performance finished.
+Training set size = 146
+Pool set size = 963
+Start an new iteration of active learning: 144.
+evaluating model performance.
+Model fitting time: 0.08900070190429688 seconds
+evaluating model performance finished.
+Training set size = 147
+Pool set size = 962
+Start an new iteration of active learning: 145.
+evaluating model performance.
+Model fitting time: 0.08864927291870117 seconds
+evaluating model performance finished.
+Training set size = 148
+Pool set size = 961
+Start an new iteration of active learning: 146.
+evaluating model performance.
+Model fitting time: 0.08982300758361816 seconds
+evaluating model performance finished.
+Training set size = 149
+Pool set size = 960
+Start an new iteration of active learning: 147.
+evaluating model performance.
+Model fitting time: 0.09425854682922363 seconds
+evaluating model performance finished.
+Training set size = 150
+Pool set size = 959
+Start an new iteration of active learning: 148.
+evaluating model performance.
+Model fitting time: 0.08938384056091309 seconds
+evaluating model performance finished.
+Training set size = 151
+Pool set size = 958
+Start an new iteration of active learning: 149.
+evaluating model performance.
+Model fitting time: 0.09023618698120117 seconds
+evaluating model performance finished.
+Training set size = 152
+Pool set size = 957
+Start an new iteration of active learning: 150.
+evaluating model performance.
+Model fitting time: 0.09011507034301758 seconds
+evaluating model performance finished.
+Training set size = 153
+Pool set size = 956
+Start an new iteration of active learning: 151.
+evaluating model performance.
+Model fitting time: 0.08997106552124023 seconds
+evaluating model performance finished.
+Training set size = 154
+Pool set size = 955
+Start an new iteration of active learning: 152.
+evaluating model performance.
+Model fitting time: 0.09094953536987305 seconds
+evaluating model performance finished.
+Training set size = 155
+Pool set size = 954
+Start an new iteration of active learning: 153.
+evaluating model performance.
+Model fitting time: 0.090301513671875 seconds
+evaluating model performance finished.
+Training set size = 156
+Pool set size = 953
+Start an new iteration of active learning: 154.
+evaluating model performance.
+Model fitting time: 0.0943450927734375 seconds
+evaluating model performance finished.
+Training set size = 157
+Pool set size = 952
+Start an new iteration of active learning: 155.
+evaluating model performance.
+Model fitting time: 0.0905160903930664 seconds
+evaluating model performance finished.
+Training set size = 158
+Pool set size = 951
+Start an new iteration of active learning: 156.
+evaluating model performance.
+Model fitting time: 0.09122991561889648 seconds
+evaluating model performance finished.
+Training set size = 159
+Pool set size = 950
+Start an new iteration of active learning: 157.
+evaluating model performance.
+Model fitting time: 0.09144043922424316 seconds
+evaluating model performance finished.
+Training set size = 160
+Pool set size = 949
+Start an new iteration of active learning: 158.
+evaluating model performance.
+Model fitting time: 0.0922703742980957 seconds
+evaluating model performance finished.
+Training set size = 161
+Pool set size = 948
+Start an new iteration of active learning: 159.
+evaluating model performance.
+Model fitting time: 0.09060478210449219 seconds
+evaluating model performance finished.
+Training set size = 162
+Pool set size = 947
+Start an new iteration of active learning: 160.
+evaluating model performance.
+Model fitting time: 0.09127283096313477 seconds
+evaluating model performance finished.
+Training set size = 163
+Pool set size = 946
+Start an new iteration of active learning: 161.
+evaluating model performance.
+Model fitting time: 0.09493732452392578 seconds
+evaluating model performance finished.
+Training set size = 164
+Pool set size = 945
+Start an new iteration of active learning: 162.
+evaluating model performance.
+Model fitting time: 0.09479951858520508 seconds
+evaluating model performance finished.
+Training set size = 165
+Pool set size = 944
+Start an new iteration of active learning: 163.
+evaluating model performance.
+Model fitting time: 0.09156322479248047 seconds
+evaluating model performance finished.
+Training set size = 166
+Pool set size = 943
+Start an new iteration of active learning: 164.
+evaluating model performance.
+Model fitting time: 0.09369421005249023 seconds
+evaluating model performance finished.
+Training set size = 167
+Pool set size = 942
+Start an new iteration of active learning: 165.
+evaluating model performance.
+Model fitting time: 0.09581565856933594 seconds
+evaluating model performance finished.
+Training set size = 168
+Pool set size = 941
+Start an new iteration of active learning: 166.
+evaluating model performance.
+Model fitting time: 0.09345698356628418 seconds
+evaluating model performance finished.
+Training set size = 169
+Pool set size = 940
+Start an new iteration of active learning: 167.
+evaluating model performance.
+Model fitting time: 0.0920259952545166 seconds
+evaluating model performance finished.
+Training set size = 170
+Pool set size = 939
+Start an new iteration of active learning: 168.
+evaluating model performance.
+Model fitting time: 0.09557437896728516 seconds
+evaluating model performance finished.
+Training set size = 171
+Pool set size = 938
+Start an new iteration of active learning: 169.
+evaluating model performance.
+Model fitting time: 0.09574770927429199 seconds
+evaluating model performance finished.
+Training set size = 172
+Pool set size = 937
+Start an new iteration of active learning: 170.
+evaluating model performance.
+Model fitting time: 0.09190893173217773 seconds
+evaluating model performance finished.
+Training set size = 173
+Pool set size = 936
+Start an new iteration of active learning: 171.
+evaluating model performance.
+Model fitting time: 0.09592366218566895 seconds
+evaluating model performance finished.
+Training set size = 174
+Pool set size = 935
+Start an new iteration of active learning: 172.
+evaluating model performance.
+Model fitting time: 0.0950920581817627 seconds
+evaluating model performance finished.
+Training set size = 175
+Pool set size = 934
+Start an new iteration of active learning: 173.
+evaluating model performance.
+Model fitting time: 0.09326934814453125 seconds
+evaluating model performance finished.
+Training set size = 176
+Pool set size = 933
+Start an new iteration of active learning: 174.
+evaluating model performance.
+Model fitting time: 0.09414267539978027 seconds
+evaluating model performance finished.
+Training set size = 177
+Pool set size = 932
+Start an new iteration of active learning: 175.
+evaluating model performance.
+Model fitting time: 0.09438443183898926 seconds
+evaluating model performance finished.
+Training set size = 178
+Pool set size = 931
+Start an new iteration of active learning: 176.
+evaluating model performance.
+Model fitting time: 0.10108304023742676 seconds
+evaluating model performance finished.
+Training set size = 179
+Pool set size = 930
+Start an new iteration of active learning: 177.
+evaluating model performance.
+Model fitting time: 0.09431314468383789 seconds
+evaluating model performance finished.
+Training set size = 180
+Pool set size = 929
+Start an new iteration of active learning: 178.
+evaluating model performance.
+Model fitting time: 0.0940251350402832 seconds
+evaluating model performance finished.
+Training set size = 181
+Pool set size = 928
+Start an new iteration of active learning: 179.
+evaluating model performance.
+Model fitting time: 0.09533309936523438 seconds
+evaluating model performance finished.
+Training set size = 182
+Pool set size = 927
+Start an new iteration of active learning: 180.
+evaluating model performance.
+Model fitting time: 0.09696292877197266 seconds
+evaluating model performance finished.
+Training set size = 183
+Pool set size = 926
+Start an new iteration of active learning: 181.
+evaluating model performance.
+Model fitting time: 0.09620547294616699 seconds
+evaluating model performance finished.
+Training set size = 184
+Pool set size = 925
+Start an new iteration of active learning: 182.
+evaluating model performance.
+Model fitting time: 0.09514546394348145 seconds
+evaluating model performance finished.
+Training set size = 185
+Pool set size = 924
+Start an new iteration of active learning: 183.
+evaluating model performance.
+Model fitting time: 0.09493350982666016 seconds
+evaluating model performance finished.
+Training set size = 186
+Pool set size = 923
+Start an new iteration of active learning: 184.
+evaluating model performance.
+Model fitting time: 0.09872007369995117 seconds
+evaluating model performance finished.
+Training set size = 187
+Pool set size = 922
+Start an new iteration of active learning: 185.
+evaluating model performance.
+Model fitting time: 0.09954023361206055 seconds
+evaluating model performance finished.
+Training set size = 188
+Pool set size = 921
+Start an new iteration of active learning: 186.
+evaluating model performance.
+Model fitting time: 0.09810352325439453 seconds
+evaluating model performance finished.
+Training set size = 189
+Pool set size = 920
+Start an new iteration of active learning: 187.
+evaluating model performance.
+Model fitting time: 0.11122584342956543 seconds
+evaluating model performance finished.
+Training set size = 190
+Pool set size = 919
+Start an new iteration of active learning: 188.
+evaluating model performance.
+Model fitting time: 0.11268091201782227 seconds
+evaluating model performance finished.
+Training set size = 191
+Pool set size = 918
+Start an new iteration of active learning: 189.
+evaluating model performance.
+Model fitting time: 0.09706616401672363 seconds
+evaluating model performance finished.
+Training set size = 192
+Pool set size = 917
+Start an new iteration of active learning: 190.
+evaluating model performance.
+Model fitting time: 0.09738755226135254 seconds
+evaluating model performance finished.
+Training set size = 193
+Pool set size = 916
+Start an new iteration of active learning: 191.
+evaluating model performance.
+Model fitting time: 0.09627127647399902 seconds
+evaluating model performance finished.
+Training set size = 194
+Pool set size = 915
+Start an new iteration of active learning: 192.
+evaluating model performance.
+Model fitting time: 0.10159039497375488 seconds
+evaluating model performance finished.
+Training set size = 195
+Pool set size = 914
+Start an new iteration of active learning: 193.
+evaluating model performance.
+Model fitting time: 0.09899711608886719 seconds
+evaluating model performance finished.
+Training set size = 196
+Pool set size = 913
+Start an new iteration of active learning: 194.
+evaluating model performance.
+Model fitting time: 0.09796643257141113 seconds
+evaluating model performance finished.
+Training set size = 197
+Pool set size = 912
+Start an new iteration of active learning: 195.
+evaluating model performance.
+Model fitting time: 0.09625053405761719 seconds
+evaluating model performance finished.
+Training set size = 198
+Pool set size = 911
+Start an new iteration of active learning: 196.
+evaluating model performance.
+Model fitting time: 0.0980827808380127 seconds
+evaluating model performance finished.
+Training set size = 199
+Pool set size = 910
+Start an new iteration of active learning: 197.
+evaluating model performance.
+Model fitting time: 0.09949469566345215 seconds
+evaluating model performance finished.
+Training set size = 200
+Pool set size = 909
+Start an new iteration of active learning: 198.
+evaluating model performance.
+Model fitting time: 0.09948348999023438 seconds
+evaluating model performance finished.
+Training set size = 201
+Pool set size = 908
+Start an new iteration of active learning: 199.
+evaluating model performance.
+Model fitting time: 0.10260462760925293 seconds
+evaluating model performance finished.
+Training set size = 202
+Pool set size = 907
+Start an new iteration of active learning: 200.
+evaluating model performance.
+Model fitting time: 0.0982828140258789 seconds
+evaluating model performance finished.
+Training set size = 203
+Pool set size = 906
+Start an new iteration of active learning: 201.
+evaluating model performance.
+Model fitting time: 0.09767484664916992 seconds
+evaluating model performance finished.
+Training set size = 204
+Pool set size = 905
+Start an new iteration of active learning: 202.
+evaluating model performance.
+Model fitting time: 0.09977340698242188 seconds
+evaluating model performance finished.
+Training set size = 205
+Pool set size = 904
+Start an new iteration of active learning: 203.
+evaluating model performance.
+Model fitting time: 0.09900784492492676 seconds
+evaluating model performance finished.
+Training set size = 206
+Pool set size = 903
+Start an new iteration of active learning: 204.
+evaluating model performance.
+Model fitting time: 0.09901976585388184 seconds
+evaluating model performance finished.
+Training set size = 207
+Pool set size = 902
+Start an new iteration of active learning: 205.
+evaluating model performance.
+Model fitting time: 0.09969544410705566 seconds
+evaluating model performance finished.
+Training set size = 208
+Pool set size = 901
+Start an new iteration of active learning: 206.
+evaluating model performance.
+Model fitting time: 0.09889578819274902 seconds
+evaluating model performance finished.
+Training set size = 209
+Pool set size = 900
+Start an new iteration of active learning: 207.
+evaluating model performance.
+Model fitting time: 0.09890484809875488 seconds
+evaluating model performance finished.
+Training set size = 210
+Pool set size = 899
+Start an new iteration of active learning: 208.
+evaluating model performance.
+Model fitting time: 0.09902024269104004 seconds
+evaluating model performance finished.
+Training set size = 211
+Pool set size = 898
+Start an new iteration of active learning: 209.
+evaluating model performance.
+Model fitting time: 0.0990142822265625 seconds
+evaluating model performance finished.
+Training set size = 212
+Pool set size = 897
+Start an new iteration of active learning: 210.
+evaluating model performance.
+Model fitting time: 0.0986943244934082 seconds
+evaluating model performance finished.
+Training set size = 213
+Pool set size = 896
+Start an new iteration of active learning: 211.
+evaluating model performance.
+Model fitting time: 0.10027766227722168 seconds
+evaluating model performance finished.
+Training set size = 214
+Pool set size = 895
+Start an new iteration of active learning: 212.
+evaluating model performance.
+Model fitting time: 0.10247111320495605 seconds
+evaluating model performance finished.
+Training set size = 215
+Pool set size = 894
+Start an new iteration of active learning: 213.
+evaluating model performance.
+Model fitting time: 0.09970331192016602 seconds
+evaluating model performance finished.
+Training set size = 216
+Pool set size = 893
+Start an new iteration of active learning: 214.
+evaluating model performance.
+Model fitting time: 0.10031557083129883 seconds
+evaluating model performance finished.
+Training set size = 217
+Pool set size = 892
+Start an new iteration of active learning: 215.
+evaluating model performance.
+Model fitting time: 0.10089325904846191 seconds
+evaluating model performance finished.
+Training set size = 218
+Pool set size = 891
+Start an new iteration of active learning: 216.
+evaluating model performance.
+Model fitting time: 0.10051846504211426 seconds
+evaluating model performance finished.
+Training set size = 219
+Pool set size = 890
+Start an new iteration of active learning: 217.
+evaluating model performance.
+Model fitting time: 0.10784053802490234 seconds
+evaluating model performance finished.
+Training set size = 220
+Pool set size = 889
+Start an new iteration of active learning: 218.
+evaluating model performance.
+Model fitting time: 0.10111808776855469 seconds
+evaluating model performance finished.
+Training set size = 221
+Pool set size = 888
+Start an new iteration of active learning: 219.
+evaluating model performance.
+Model fitting time: 0.10340404510498047 seconds
+evaluating model performance finished.
+Training set size = 222
+Pool set size = 887
+Start an new iteration of active learning: 220.
+evaluating model performance.
+Model fitting time: 0.10262322425842285 seconds
+evaluating model performance finished.
+Training set size = 223
+Pool set size = 886
+Start an new iteration of active learning: 221.
+evaluating model performance.
+Model fitting time: 0.10419940948486328 seconds
+evaluating model performance finished.
+Training set size = 224
+Pool set size = 885
+Start an new iteration of active learning: 222.
+evaluating model performance.
+Model fitting time: 0.10765600204467773 seconds
+evaluating model performance finished.
+Training set size = 225
+Pool set size = 884
+Start an new iteration of active learning: 223.
+evaluating model performance.
+Model fitting time: 0.10307121276855469 seconds
+evaluating model performance finished.
+Training set size = 226
+Pool set size = 883
+Start an new iteration of active learning: 224.
+evaluating model performance.
+Model fitting time: 0.10606217384338379 seconds
+evaluating model performance finished.
+Training set size = 227
+Pool set size = 882
+Start an new iteration of active learning: 225.
+evaluating model performance.
+Model fitting time: 0.10399770736694336 seconds
+evaluating model performance finished.
+Training set size = 228
+Pool set size = 881
+Start an new iteration of active learning: 226.
+evaluating model performance.
+Model fitting time: 0.10380244255065918 seconds
+evaluating model performance finished.
+Training set size = 229
+Pool set size = 880
+Start an new iteration of active learning: 227.
+evaluating model performance.
+Model fitting time: 0.10315728187561035 seconds
+evaluating model performance finished.
+Training set size = 230
+Pool set size = 879
+Start an new iteration of active learning: 228.
+evaluating model performance.
+Model fitting time: 0.10279488563537598 seconds
+evaluating model performance finished.
+Training set size = 231
+Pool set size = 878
+Start an new iteration of active learning: 229.
+evaluating model performance.
+Model fitting time: 0.10781192779541016 seconds
+evaluating model performance finished.
+Training set size = 232
+Pool set size = 877
+Start an new iteration of active learning: 230.
+evaluating model performance.
+Model fitting time: 0.11073803901672363 seconds
+evaluating model performance finished.
+Training set size = 233
+Pool set size = 876
+Start an new iteration of active learning: 231.
+evaluating model performance.
+Model fitting time: 0.10374140739440918 seconds
+evaluating model performance finished.
+Training set size = 234
+Pool set size = 875
+Start an new iteration of active learning: 232.
+evaluating model performance.
+Model fitting time: 0.10647821426391602 seconds
+evaluating model performance finished.
+Training set size = 235
+Pool set size = 874
+Start an new iteration of active learning: 233.
+evaluating model performance.
+Model fitting time: 0.10709810256958008 seconds
+evaluating model performance finished.
+Training set size = 236
+Pool set size = 873
+Start an new iteration of active learning: 234.
+evaluating model performance.
+Model fitting time: 0.10665607452392578 seconds
+evaluating model performance finished.
+Training set size = 237
+Pool set size = 872
+Start an new iteration of active learning: 235.
+evaluating model performance.
+Model fitting time: 0.10601282119750977 seconds
+evaluating model performance finished.
+Training set size = 238
+Pool set size = 871
+Start an new iteration of active learning: 236.
+evaluating model performance.
+Model fitting time: 0.11136484146118164 seconds
+evaluating model performance finished.
+Training set size = 239
+Pool set size = 870
+Start an new iteration of active learning: 237.
+evaluating model performance.
+Model fitting time: 0.10632491111755371 seconds
+evaluating model performance finished.
+Training set size = 240
+Pool set size = 869
+Start an new iteration of active learning: 238.
+evaluating model performance.
+Model fitting time: 0.10721278190612793 seconds
+evaluating model performance finished.
+Training set size = 241
+Pool set size = 868
+Start an new iteration of active learning: 239.
+evaluating model performance.
+Model fitting time: 0.10753035545349121 seconds
+evaluating model performance finished.
+Training set size = 242
+Pool set size = 867
+Start an new iteration of active learning: 240.
+evaluating model performance.
+Model fitting time: 0.10817217826843262 seconds
+evaluating model performance finished.
+Training set size = 243
+Pool set size = 866
+Start an new iteration of active learning: 241.
+evaluating model performance.
+Model fitting time: 0.10652709007263184 seconds
+evaluating model performance finished.
+Training set size = 244
+Pool set size = 865
+Start an new iteration of active learning: 242.
+evaluating model performance.
+Model fitting time: 0.10741853713989258 seconds
+evaluating model performance finished.
+Training set size = 245
+Pool set size = 864
+Start an new iteration of active learning: 243.
+evaluating model performance.
+Model fitting time: 0.12002897262573242 seconds
+evaluating model performance finished.
+Training set size = 246
+Pool set size = 863
+Start an new iteration of active learning: 244.
+evaluating model performance.
+Model fitting time: 0.10715746879577637 seconds
+evaluating model performance finished.
+Training set size = 247
+Pool set size = 862
+Start an new iteration of active learning: 245.
+evaluating model performance.
+Model fitting time: 0.11100316047668457 seconds
+evaluating model performance finished.
+Training set size = 248
+Pool set size = 861
+Start an new iteration of active learning: 246.
+evaluating model performance.
+Model fitting time: 0.1111452579498291 seconds
+evaluating model performance finished.
+Training set size = 249
+Pool set size = 860
+Start an new iteration of active learning: 247.
+evaluating model performance.
+Model fitting time: 0.1083226203918457 seconds
+evaluating model performance finished.
+Training set size = 250
+Pool set size = 859
+Start an new iteration of active learning: 248.
+evaluating model performance.
+Model fitting time: 0.10830211639404297 seconds
+evaluating model performance finished.
+Training set size = 251
+Pool set size = 858
+Start an new iteration of active learning: 249.
+evaluating model performance.
+Model fitting time: 0.11773085594177246 seconds
+evaluating model performance finished.
+Training set size = 252
+Pool set size = 857
+Start an new iteration of active learning: 250.
+evaluating model performance.
+Model fitting time: 0.10964822769165039 seconds
+evaluating model performance finished.
+Training set size = 253
+Pool set size = 856
+Start an new iteration of active learning: 251.
+evaluating model performance.
+Model fitting time: 0.11398577690124512 seconds
+evaluating model performance finished.
+Training set size = 254
+Pool set size = 855
+Start an new iteration of active learning: 252.
+evaluating model performance.
+Model fitting time: 0.11166119575500488 seconds
+evaluating model performance finished.
+Training set size = 255
+Pool set size = 854
+Start an new iteration of active learning: 253.
+evaluating model performance.
+Model fitting time: 0.10997247695922852 seconds
+evaluating model performance finished.
+Training set size = 256
+Pool set size = 853
+Start an new iteration of active learning: 254.
+evaluating model performance.
+Model fitting time: 0.11058998107910156 seconds
+evaluating model performance finished.
+Training set size = 257
+Pool set size = 852
+Start an new iteration of active learning: 255.
+evaluating model performance.
+Model fitting time: 0.11679863929748535 seconds
+evaluating model performance finished.
+Training set size = 258
+Pool set size = 851
+Start an new iteration of active learning: 256.
+evaluating model performance.
+Model fitting time: 0.11239743232727051 seconds
+evaluating model performance finished.
+Training set size = 259
+Pool set size = 850
+Start an new iteration of active learning: 257.
+evaluating model performance.
+Model fitting time: 0.11483287811279297 seconds
+evaluating model performance finished.
+Training set size = 260
+Pool set size = 849
+Start an new iteration of active learning: 258.
+evaluating model performance.
+Model fitting time: 0.11366796493530273 seconds
+evaluating model performance finished.
+Training set size = 261
+Pool set size = 848
+Start an new iteration of active learning: 259.
+evaluating model performance.
+Model fitting time: 0.11260151863098145 seconds
+evaluating model performance finished.
+Training set size = 262
+Pool set size = 847
+Start an new iteration of active learning: 260.
+evaluating model performance.
+Model fitting time: 0.11218047142028809 seconds
+evaluating model performance finished.
+Training set size = 263
+Pool set size = 846
+Start an new iteration of active learning: 261.
+evaluating model performance.
+Model fitting time: 0.12021899223327637 seconds
+evaluating model performance finished.
+Training set size = 264
+Pool set size = 845
+Start an new iteration of active learning: 262.
+evaluating model performance.
+Model fitting time: 0.11340117454528809 seconds
+evaluating model performance finished.
+Training set size = 265
+Pool set size = 844
+Start an new iteration of active learning: 263.
+evaluating model performance.
+Model fitting time: 0.11653447151184082 seconds
+evaluating model performance finished.
+Training set size = 266
+Pool set size = 843
+Start an new iteration of active learning: 264.
+evaluating model performance.
+Model fitting time: 0.11540699005126953 seconds
+evaluating model performance finished.
+Training set size = 267
+Pool set size = 842
+Start an new iteration of active learning: 265.
+evaluating model performance.
+Model fitting time: 0.11418986320495605 seconds
+evaluating model performance finished.
+Training set size = 268
+Pool set size = 841
+Start an new iteration of active learning: 266.
+evaluating model performance.
+Model fitting time: 0.11472249031066895 seconds
+evaluating model performance finished.
+Training set size = 269
+Pool set size = 840
+Start an new iteration of active learning: 267.
+evaluating model performance.
+Model fitting time: 0.12099552154541016 seconds
+evaluating model performance finished.
+Training set size = 270
+Pool set size = 839
+Start an new iteration of active learning: 268.
+evaluating model performance.
+Model fitting time: 0.11443352699279785 seconds
+evaluating model performance finished.
+Training set size = 271
+Pool set size = 838
+Start an new iteration of active learning: 269.
+evaluating model performance.
+Model fitting time: 0.11930298805236816 seconds
+evaluating model performance finished.
+Training set size = 272
+Pool set size = 837
+Start an new iteration of active learning: 270.
+evaluating model performance.
+Model fitting time: 0.11682295799255371 seconds
+evaluating model performance finished.
+Training set size = 273
+Pool set size = 836
+Start an new iteration of active learning: 271.
+evaluating model performance.
+Model fitting time: 0.11500287055969238 seconds
+evaluating model performance finished.
+Training set size = 274
+Pool set size = 835
+Start an new iteration of active learning: 272.
+evaluating model performance.
+Model fitting time: 0.11455488204956055 seconds
+evaluating model performance finished.
+Training set size = 275
+Pool set size = 834
+Start an new iteration of active learning: 273.
+evaluating model performance.
+Model fitting time: 0.12299966812133789 seconds
+evaluating model performance finished.
+Training set size = 276
+Pool set size = 833
+Start an new iteration of active learning: 274.
+evaluating model performance.
+Model fitting time: 0.11628293991088867 seconds
+evaluating model performance finished.
+Training set size = 277
+Pool set size = 832
+Start an new iteration of active learning: 275.
+evaluating model performance.
+Model fitting time: 0.11541485786437988 seconds
+evaluating model performance finished.
+Training set size = 278
+Pool set size = 831
+Start an new iteration of active learning: 276.
+evaluating model performance.
+Model fitting time: 0.1149747371673584 seconds
+evaluating model performance finished.
+Training set size = 279
+Pool set size = 830
+Start an new iteration of active learning: 277.
+evaluating model performance.
+Model fitting time: 0.11769366264343262 seconds
+evaluating model performance finished.
+Training set size = 280
+Pool set size = 829
+Start an new iteration of active learning: 278.
+evaluating model performance.
+Model fitting time: 0.11935210227966309 seconds
+evaluating model performance finished.
+Training set size = 281
+Pool set size = 828
+Start an new iteration of active learning: 279.
+evaluating model performance.
+Model fitting time: 0.11722111701965332 seconds
+evaluating model performance finished.
+Training set size = 282
+Pool set size = 827
+Start an new iteration of active learning: 280.
+evaluating model performance.
+Model fitting time: 0.1200110912322998 seconds
+evaluating model performance finished.
+Training set size = 283
+Pool set size = 826
+Start an new iteration of active learning: 281.
+evaluating model performance.
+Model fitting time: 0.12718892097473145 seconds
+evaluating model performance finished.
+Training set size = 284
+Pool set size = 825
+Start an new iteration of active learning: 282.
+evaluating model performance.
+Model fitting time: 0.13144659996032715 seconds
+evaluating model performance finished.
+Training set size = 285
+Pool set size = 824
+Start an new iteration of active learning: 283.
+evaluating model performance.
+Model fitting time: 0.14709067344665527 seconds
+evaluating model performance finished.
+Training set size = 286
+Pool set size = 823
+Start an new iteration of active learning: 284.
+evaluating model performance.
+Model fitting time: 0.1169118881225586 seconds
+evaluating model performance finished.
+Training set size = 287
+Pool set size = 822
+Start an new iteration of active learning: 285.
+evaluating model performance.
+Model fitting time: 0.11779356002807617 seconds
+evaluating model performance finished.
+Training set size = 288
+Pool set size = 821
+Start an new iteration of active learning: 286.
+evaluating model performance.
+Model fitting time: 0.13072490692138672 seconds
+evaluating model performance finished.
+Training set size = 289
+Pool set size = 820
+Start an new iteration of active learning: 287.
+evaluating model performance.
+Model fitting time: 0.11748552322387695 seconds
+evaluating model performance finished.
+Training set size = 290
+Pool set size = 819
+Start an new iteration of active learning: 288.
+evaluating model performance.
+Model fitting time: 0.11640381813049316 seconds
+evaluating model performance finished.
+Training set size = 291
+Pool set size = 818
+Start an new iteration of active learning: 289.
+evaluating model performance.
+Model fitting time: 0.11740541458129883 seconds
+evaluating model performance finished.
+Training set size = 292
+Pool set size = 817
+Start an new iteration of active learning: 290.
+evaluating model performance.
+Model fitting time: 0.11926674842834473 seconds
+evaluating model performance finished.
+Training set size = 293
+Pool set size = 816
+Start an new iteration of active learning: 291.
+evaluating model performance.
+Model fitting time: 0.12201690673828125 seconds
+evaluating model performance finished.
+Training set size = 294
+Pool set size = 815
+Start an new iteration of active learning: 292.
+evaluating model performance.
+Model fitting time: 0.12311673164367676 seconds
+evaluating model performance finished.
+Training set size = 295
+Pool set size = 814
+Start an new iteration of active learning: 293.
+evaluating model performance.
+Model fitting time: 0.11781644821166992 seconds
+evaluating model performance finished.
+Training set size = 296
+Pool set size = 813
+Start an new iteration of active learning: 294.
+evaluating model performance.
+Model fitting time: 0.11762499809265137 seconds
+evaluating model performance finished.
+Training set size = 297
+Pool set size = 812
+Start an new iteration of active learning: 295.
+evaluating model performance.
+Model fitting time: 0.11827325820922852 seconds
+evaluating model performance finished.
+Training set size = 298
+Pool set size = 811
+Start an new iteration of active learning: 296.
+evaluating model performance.
+Model fitting time: 0.12072587013244629 seconds
+evaluating model performance finished.
+Training set size = 299
+Pool set size = 810
+Start an new iteration of active learning: 297.
+evaluating model performance.
+Model fitting time: 0.11873936653137207 seconds
+evaluating model performance finished.
+Training set size = 300
+Pool set size = 809
+Start an new iteration of active learning: 298.
+evaluating model performance.
+Model fitting time: 0.11945986747741699 seconds
+evaluating model performance finished.
+Training set size = 301
+Pool set size = 808
+Start an new iteration of active learning: 299.
+evaluating model performance.
+Model fitting time: 0.11889290809631348 seconds
+evaluating model performance finished.
+Training set size = 302
+Pool set size = 807
+Start an new iteration of active learning: 300.
+evaluating model performance.
+Model fitting time: 0.12009596824645996 seconds
+evaluating model performance finished.
+Training set size = 303
+Pool set size = 806
+Start an new iteration of active learning: 301.
+evaluating model performance.
+Model fitting time: 0.1200249195098877 seconds
+evaluating model performance finished.
+Training set size = 304
+Pool set size = 805
+Start an new iteration of active learning: 302.
+evaluating model performance.
+Model fitting time: 0.11958670616149902 seconds
+evaluating model performance finished.
+Training set size = 305
+Pool set size = 804
+Start an new iteration of active learning: 303.
+evaluating model performance.
+Model fitting time: 0.11931920051574707 seconds
+evaluating model performance finished.
+Training set size = 306
+Pool set size = 803
+Start an new iteration of active learning: 304.
+evaluating model performance.
+Model fitting time: 0.12066411972045898 seconds
+evaluating model performance finished.
+Training set size = 307
+Pool set size = 802
+Start an new iteration of active learning: 305.
+evaluating model performance.
+Model fitting time: 0.12039971351623535 seconds
+evaluating model performance finished.
+Training set size = 308
+Pool set size = 801
+Start an new iteration of active learning: 306.
+evaluating model performance.
+Model fitting time: 0.12017655372619629 seconds
+evaluating model performance finished.
+Training set size = 309
+Pool set size = 800
+Start an new iteration of active learning: 307.
+evaluating model performance.
+Model fitting time: 0.12347865104675293 seconds
+evaluating model performance finished.
+Training set size = 310
+Pool set size = 799
+Start an new iteration of active learning: 308.
+evaluating model performance.
+Model fitting time: 0.1283261775970459 seconds
+evaluating model performance finished.
+Training set size = 311
+Pool set size = 798
+Start an new iteration of active learning: 309.
+evaluating model performance.
+Model fitting time: 0.12509632110595703 seconds
+evaluating model performance finished.
+Training set size = 312
+Pool set size = 797
+Start an new iteration of active learning: 310.
+evaluating model performance.
+Model fitting time: 0.12405729293823242 seconds
+evaluating model performance finished.
+Training set size = 313
+Pool set size = 796
+Start an new iteration of active learning: 311.
+evaluating model performance.
+Model fitting time: 0.12497639656066895 seconds
+evaluating model performance finished.
+Training set size = 314
+Pool set size = 795
+Start an new iteration of active learning: 312.
+evaluating model performance.
+Model fitting time: 0.13092446327209473 seconds
+evaluating model performance finished.
+Training set size = 315
+Pool set size = 794
+Start an new iteration of active learning: 313.
+evaluating model performance.
+Model fitting time: 0.12538719177246094 seconds
+evaluating model performance finished.
+Training set size = 316
+Pool set size = 793
+Start an new iteration of active learning: 314.
+evaluating model performance.
+Model fitting time: 0.12420105934143066 seconds
+evaluating model performance finished.
+Training set size = 317
+Pool set size = 792
+Start an new iteration of active learning: 315.
+evaluating model performance.
+Model fitting time: 0.12406420707702637 seconds
+evaluating model performance finished.
+Training set size = 318
+Pool set size = 791
+Start an new iteration of active learning: 316.
+evaluating model performance.
+Model fitting time: 0.12464118003845215 seconds
+evaluating model performance finished.
+Training set size = 319
+Pool set size = 790
+Start an new iteration of active learning: 317.
+evaluating model performance.
+Model fitting time: 0.12314510345458984 seconds
+evaluating model performance finished.
+Training set size = 320
+Pool set size = 789
+Start an new iteration of active learning: 318.
+evaluating model performance.
+Model fitting time: 0.13523244857788086 seconds
+evaluating model performance finished.
+Training set size = 321
+Pool set size = 788
+Start an new iteration of active learning: 319.
+evaluating model performance.
+Model fitting time: 0.12364697456359863 seconds
+evaluating model performance finished.
+Training set size = 322
+Pool set size = 787
+Start an new iteration of active learning: 320.
+evaluating model performance.
+Model fitting time: 0.1269373893737793 seconds
+evaluating model performance finished.
+Training set size = 323
+Pool set size = 786
+Start an new iteration of active learning: 321.
+evaluating model performance.
+Model fitting time: 0.12479829788208008 seconds
+evaluating model performance finished.
+Training set size = 324
+Pool set size = 785
+Start an new iteration of active learning: 322.
+evaluating model performance.
+Model fitting time: 0.12599444389343262 seconds
+evaluating model performance finished.
+Training set size = 325
+Pool set size = 784
+Start an new iteration of active learning: 323.
+evaluating model performance.
+Model fitting time: 0.13487505912780762 seconds
+evaluating model performance finished.
+Training set size = 326
+Pool set size = 783
+Start an new iteration of active learning: 324.
+evaluating model performance.
+Model fitting time: 0.12496161460876465 seconds
+evaluating model performance finished.
+Training set size = 327
+Pool set size = 782
+Start an new iteration of active learning: 325.
+evaluating model performance.
+Model fitting time: 0.13036870956420898 seconds
+evaluating model performance finished.
+Training set size = 328
+Pool set size = 781
+Start an new iteration of active learning: 326.
+evaluating model performance.
+Model fitting time: 0.1276075839996338 seconds
+evaluating model performance finished.
+Training set size = 329
+Pool set size = 780
+Start an new iteration of active learning: 327.
+evaluating model performance.
+Model fitting time: 0.1260983943939209 seconds
+evaluating model performance finished.
+Training set size = 330
+Pool set size = 779
+Start an new iteration of active learning: 328.
+evaluating model performance.
+Model fitting time: 0.1309680938720703 seconds
+evaluating model performance finished.
+Training set size = 331
+Pool set size = 778
+Start an new iteration of active learning: 329.
+evaluating model performance.
+Model fitting time: 0.13028669357299805 seconds
+evaluating model performance finished.
+Training set size = 332
+Pool set size = 777
+Start an new iteration of active learning: 330.
+evaluating model performance.
+Model fitting time: 0.12963056564331055 seconds
+evaluating model performance finished.
+Training set size = 333
+Pool set size = 776
+Start an new iteration of active learning: 331.
+evaluating model performance.
+Model fitting time: 0.1288466453552246 seconds
+evaluating model performance finished.
+Training set size = 334
+Pool set size = 775
+Start an new iteration of active learning: 332.
+evaluating model performance.
+Model fitting time: 0.1277768611907959 seconds
+evaluating model performance finished.
+Training set size = 335
+Pool set size = 774
+Start an new iteration of active learning: 333.
+evaluating model performance.
+Model fitting time: 0.12886834144592285 seconds
+evaluating model performance finished.
+Training set size = 336
+Pool set size = 773
+Start an new iteration of active learning: 334.
+evaluating model performance.
+Model fitting time: 0.146254301071167 seconds
+evaluating model performance finished.
+Training set size = 337
+Pool set size = 772
+Start an new iteration of active learning: 335.
+evaluating model performance.
+Model fitting time: 0.12923645973205566 seconds
+evaluating model performance finished.
+Training set size = 338
+Pool set size = 771
+Start an new iteration of active learning: 336.
+evaluating model performance.
+Model fitting time: 0.13317060470581055 seconds
+evaluating model performance finished.
+Training set size = 339
+Pool set size = 770
+Start an new iteration of active learning: 337.
+evaluating model performance.
+Model fitting time: 0.1311185359954834 seconds
+evaluating model performance finished.
+Training set size = 340
+Pool set size = 769
+Start an new iteration of active learning: 338.
+evaluating model performance.
+Model fitting time: 0.12972283363342285 seconds
+evaluating model performance finished.
+Training set size = 341
+Pool set size = 768
+Start an new iteration of active learning: 339.
+evaluating model performance.
+Model fitting time: 0.1356189250946045 seconds
+evaluating model performance finished.
+Training set size = 342
+Pool set size = 767
+Start an new iteration of active learning: 340.
+evaluating model performance.
+Model fitting time: 0.13004255294799805 seconds
+evaluating model performance finished.
+Training set size = 343
+Pool set size = 766
+Start an new iteration of active learning: 341.
+evaluating model performance.
+Model fitting time: 0.13394689559936523 seconds
+evaluating model performance finished.
+Training set size = 344
+Pool set size = 765
+Start an new iteration of active learning: 342.
+evaluating model performance.
+Model fitting time: 0.13394713401794434 seconds
+evaluating model performance finished.
+Training set size = 345
+Pool set size = 764
+Start an new iteration of active learning: 343.
+evaluating model performance.
+Model fitting time: 0.13271665573120117 seconds
+evaluating model performance finished.
+Training set size = 346
+Pool set size = 763
+Start an new iteration of active learning: 344.
+evaluating model performance.
+Model fitting time: 0.13247919082641602 seconds
+evaluating model performance finished.
+Training set size = 347
+Pool set size = 762
+Start an new iteration of active learning: 345.
+evaluating model performance.
+Model fitting time: 0.13721275329589844 seconds
+evaluating model performance finished.
+Training set size = 348
+Pool set size = 761
+Start an new iteration of active learning: 346.
+evaluating model performance.
+Model fitting time: 0.1351919174194336 seconds
+evaluating model performance finished.
+Training set size = 349
+Pool set size = 760
+Start an new iteration of active learning: 347.
+evaluating model performance.
+Model fitting time: 0.1353740692138672 seconds
+evaluating model performance finished.
+Training set size = 350
+Pool set size = 759
+Start an new iteration of active learning: 348.
+evaluating model performance.
+Model fitting time: 0.13065552711486816 seconds
+evaluating model performance finished.
+Training set size = 351
+Pool set size = 758
+Start an new iteration of active learning: 349.
+evaluating model performance.
+Model fitting time: 0.13530802726745605 seconds
+evaluating model performance finished.
+Training set size = 352
+Pool set size = 757
+Start an new iteration of active learning: 350.
+evaluating model performance.
+Model fitting time: 0.15053892135620117 seconds
+evaluating model performance finished.
+Training set size = 353
+Pool set size = 756
+Start an new iteration of active learning: 351.
+evaluating model performance.
+Model fitting time: 0.13381147384643555 seconds
+evaluating model performance finished.
+Training set size = 354
+Pool set size = 755
+Start an new iteration of active learning: 352.
+evaluating model performance.
+Model fitting time: 0.13245368003845215 seconds
+evaluating model performance finished.
+Training set size = 355
+Pool set size = 754
+Start an new iteration of active learning: 353.
+evaluating model performance.
+Model fitting time: 0.13375282287597656 seconds
+evaluating model performance finished.
+Training set size = 356
+Pool set size = 753
+Start an new iteration of active learning: 354.
+evaluating model performance.
+Model fitting time: 0.13033032417297363 seconds
+evaluating model performance finished.
+Training set size = 357
+Pool set size = 752
+Start an new iteration of active learning: 355.
+evaluating model performance.
+Model fitting time: 0.1435222625732422 seconds
+evaluating model performance finished.
+Training set size = 358
+Pool set size = 751
+Start an new iteration of active learning: 356.
+evaluating model performance.
+Model fitting time: 0.13239336013793945 seconds
+evaluating model performance finished.
+Training set size = 359
+Pool set size = 750
+Start an new iteration of active learning: 357.
+evaluating model performance.
+Model fitting time: 0.13279032707214355 seconds
+evaluating model performance finished.
+Training set size = 360
+Pool set size = 749
+Start an new iteration of active learning: 358.
+evaluating model performance.
+Model fitting time: 0.13797712326049805 seconds
+evaluating model performance finished.
+Training set size = 361
+Pool set size = 748
+Start an new iteration of active learning: 359.
+evaluating model performance.
+Model fitting time: 0.13695287704467773 seconds
+evaluating model performance finished.
+Training set size = 362
+Pool set size = 747
+Start an new iteration of active learning: 360.
+evaluating model performance.
+Model fitting time: 0.13579154014587402 seconds
+evaluating model performance finished.
+Training set size = 363
+Pool set size = 746
+Start an new iteration of active learning: 361.
+evaluating model performance.
+Model fitting time: 0.14826083183288574 seconds
+evaluating model performance finished.
+Training set size = 364
+Pool set size = 745
+Start an new iteration of active learning: 362.
+evaluating model performance.
+Model fitting time: 0.13680100440979004 seconds
+evaluating model performance finished.
+Training set size = 365
+Pool set size = 744
+Start an new iteration of active learning: 363.
+evaluating model performance.
+Model fitting time: 0.17371273040771484 seconds
+evaluating model performance finished.
+Training set size = 366
+Pool set size = 743
+Start an new iteration of active learning: 364.
+evaluating model performance.
+Model fitting time: 0.17119622230529785 seconds
+evaluating model performance finished.
+Training set size = 367
+Pool set size = 742
+Start an new iteration of active learning: 365.
+evaluating model performance.
+Model fitting time: 0.13696813583374023 seconds
+evaluating model performance finished.
+Training set size = 368
+Pool set size = 741
+Start an new iteration of active learning: 366.
+evaluating model performance.
+Model fitting time: 0.14357972145080566 seconds
+evaluating model performance finished.
+Training set size = 369
+Pool set size = 740
+Start an new iteration of active learning: 367.
+evaluating model performance.
+Model fitting time: 0.142777681350708 seconds
+evaluating model performance finished.
+Training set size = 370
+Pool set size = 739
+Start an new iteration of active learning: 368.
+evaluating model performance.
+Model fitting time: 0.13379526138305664 seconds
+evaluating model performance finished.
+Training set size = 371
+Pool set size = 738
+Start an new iteration of active learning: 369.
+evaluating model performance.
+Model fitting time: 0.13564229011535645 seconds
+evaluating model performance finished.
+Training set size = 372
+Pool set size = 737
+Start an new iteration of active learning: 370.
+evaluating model performance.
+Model fitting time: 0.13636040687561035 seconds
+evaluating model performance finished.
+Training set size = 373
+Pool set size = 736
+Start an new iteration of active learning: 371.
+evaluating model performance.
+Model fitting time: 0.1426990032196045 seconds
+evaluating model performance finished.
+Training set size = 374
+Pool set size = 735
+Start an new iteration of active learning: 372.
+evaluating model performance.
+Model fitting time: 0.14070773124694824 seconds
+evaluating model performance finished.
+Training set size = 375
+Pool set size = 734
+Start an new iteration of active learning: 373.
+evaluating model performance.
+Model fitting time: 0.136488676071167 seconds
+evaluating model performance finished.
+Training set size = 376
+Pool set size = 733
+Start an new iteration of active learning: 374.
+evaluating model performance.
+Model fitting time: 0.13427376747131348 seconds
+evaluating model performance finished.
+Training set size = 377
+Pool set size = 732
+Start an new iteration of active learning: 375.
+evaluating model performance.
+Model fitting time: 0.13637399673461914 seconds
+evaluating model performance finished.
+Training set size = 378
+Pool set size = 731
+Start an new iteration of active learning: 376.
+evaluating model performance.
+Model fitting time: 0.13533663749694824 seconds
+evaluating model performance finished.
+Training set size = 379
+Pool set size = 730
+Start an new iteration of active learning: 377.
+evaluating model performance.
+Model fitting time: 0.13637399673461914 seconds
+evaluating model performance finished.
+Training set size = 380
+Pool set size = 729
+Start an new iteration of active learning: 378.
+evaluating model performance.
+Model fitting time: 0.1349179744720459 seconds
+evaluating model performance finished.
+Training set size = 381
+Pool set size = 728
+Start an new iteration of active learning: 379.
+evaluating model performance.
+Model fitting time: 0.1367940902709961 seconds
+evaluating model performance finished.
+Training set size = 382
+Pool set size = 727
+Start an new iteration of active learning: 380.
+evaluating model performance.
+Model fitting time: 0.13509631156921387 seconds
+evaluating model performance finished.
+Training set size = 383
+Pool set size = 726
+Start an new iteration of active learning: 381.
+evaluating model performance.
+Model fitting time: 0.1367950439453125 seconds
+evaluating model performance finished.
+Training set size = 384
+Pool set size = 725
+Start an new iteration of active learning: 382.
+evaluating model performance.
+Model fitting time: 0.13620376586914062 seconds
+evaluating model performance finished.
+Training set size = 385
+Pool set size = 724
+Start an new iteration of active learning: 383.
+evaluating model performance.
+Model fitting time: 0.1375560760498047 seconds
+evaluating model performance finished.
+Training set size = 386
+Pool set size = 723
+Start an new iteration of active learning: 384.
+evaluating model performance.
+Model fitting time: 0.13573265075683594 seconds
+evaluating model performance finished.
+Training set size = 387
+Pool set size = 722
+Start an new iteration of active learning: 385.
+evaluating model performance.
+Model fitting time: 0.13711214065551758 seconds
+evaluating model performance finished.
+Training set size = 388
+Pool set size = 721
+Start an new iteration of active learning: 386.
+evaluating model performance.
+Model fitting time: 0.14100217819213867 seconds
+evaluating model performance finished.
+Training set size = 389
+Pool set size = 720
+Start an new iteration of active learning: 387.
+evaluating model performance.
+Model fitting time: 0.13928627967834473 seconds
+evaluating model performance finished.
+Training set size = 390
+Pool set size = 719
+Start an new iteration of active learning: 388.
+evaluating model performance.
+Model fitting time: 0.14084815979003906 seconds
+evaluating model performance finished.
+Training set size = 391
+Pool set size = 718
+Start an new iteration of active learning: 389.
+evaluating model performance.
+Model fitting time: 0.1470656394958496 seconds
+evaluating model performance finished.
+Training set size = 392
+Pool set size = 717
+Start an new iteration of active learning: 390.
+evaluating model performance.
+Model fitting time: 0.13838768005371094 seconds
+evaluating model performance finished.
+Training set size = 393
+Pool set size = 716
+Start an new iteration of active learning: 391.
+evaluating model performance.
+Model fitting time: 0.14820575714111328 seconds
+evaluating model performance finished.
+Training set size = 394
+Pool set size = 715
+Start an new iteration of active learning: 392.
+evaluating model performance.
+Model fitting time: 0.13900375366210938 seconds
+evaluating model performance finished.
+Training set size = 395
+Pool set size = 714
+Start an new iteration of active learning: 393.
+evaluating model performance.
+Model fitting time: 0.14158344268798828 seconds
+evaluating model performance finished.
+Training set size = 396
+Pool set size = 713
+Start an new iteration of active learning: 394.
+evaluating model performance.
+Model fitting time: 0.14004778861999512 seconds
+evaluating model performance finished.
+Training set size = 397
+Pool set size = 712
+Start an new iteration of active learning: 395.
+evaluating model performance.
+Model fitting time: 0.15278935432434082 seconds
+evaluating model performance finished.
+Training set size = 398
+Pool set size = 711
+Start an new iteration of active learning: 396.
+evaluating model performance.
+Model fitting time: 0.13969182968139648 seconds
+evaluating model performance finished.
+Training set size = 399
+Pool set size = 710
+Start an new iteration of active learning: 397.
+evaluating model performance.
+Model fitting time: 0.14865350723266602 seconds
+evaluating model performance finished.
+Training set size = 400
+Pool set size = 709
+Start an new iteration of active learning: 398.
+evaluating model performance.
+Model fitting time: 0.1434032917022705 seconds
+evaluating model performance finished.
+Training set size = 401
+Pool set size = 708
+Start an new iteration of active learning: 399.
+evaluating model performance.
+Model fitting time: 0.14197444915771484 seconds
+evaluating model performance finished.
+Training set size = 402
+Pool set size = 707
+Start an new iteration of active learning: 400.
+evaluating model performance.
+Model fitting time: 0.15345215797424316 seconds
+evaluating model performance finished.
+Training set size = 403
+Pool set size = 706
+Start an new iteration of active learning: 401.
+evaluating model performance.
+Model fitting time: 0.14208197593688965 seconds
+evaluating model performance finished.
+Training set size = 404
+Pool set size = 705
+Start an new iteration of active learning: 402.
+evaluating model performance.
+Model fitting time: 0.14717411994934082 seconds
+evaluating model performance finished.
+Training set size = 405
+Pool set size = 704
+Start an new iteration of active learning: 403.
+evaluating model performance.
+Model fitting time: 0.14467334747314453 seconds
+evaluating model performance finished.
+Training set size = 406
+Pool set size = 703
+Start an new iteration of active learning: 404.
+evaluating model performance.
+Model fitting time: 0.14235687255859375 seconds
+evaluating model performance finished.
+Training set size = 407
+Pool set size = 702
+Start an new iteration of active learning: 405.
+evaluating model performance.
+Model fitting time: 0.1589949131011963 seconds
+evaluating model performance finished.
+Training set size = 408
+Pool set size = 701
+Start an new iteration of active learning: 406.
+evaluating model performance.
+Model fitting time: 0.14083552360534668 seconds
+evaluating model performance finished.
+Training set size = 409
+Pool set size = 700
+Start an new iteration of active learning: 407.
+evaluating model performance.
+Model fitting time: 0.14756226539611816 seconds
+evaluating model performance finished.
+Training set size = 410
+Pool set size = 699
+Start an new iteration of active learning: 408.
+evaluating model performance.
+Model fitting time: 0.14304161071777344 seconds
+evaluating model performance finished.
+Training set size = 411
+Pool set size = 698
+Start an new iteration of active learning: 409.
+evaluating model performance.
+Model fitting time: 0.14304804801940918 seconds
+evaluating model performance finished.
+Training set size = 412
+Pool set size = 697
+Start an new iteration of active learning: 410.
+evaluating model performance.
+Model fitting time: 0.16347384452819824 seconds
+evaluating model performance finished.
+Training set size = 413
+Pool set size = 696
+Start an new iteration of active learning: 411.
+evaluating model performance.
+Model fitting time: 0.14433550834655762 seconds
+evaluating model performance finished.
+Training set size = 414
+Pool set size = 695
+Start an new iteration of active learning: 412.
+evaluating model performance.
+Model fitting time: 0.14448952674865723 seconds
+evaluating model performance finished.
+Training set size = 415
+Pool set size = 694
+Start an new iteration of active learning: 413.
+evaluating model performance.
+Model fitting time: 0.1440587043762207 seconds
+evaluating model performance finished.
+Training set size = 416
+Pool set size = 693
+Start an new iteration of active learning: 414.
+evaluating model performance.
+Model fitting time: 0.1448831558227539 seconds
+evaluating model performance finished.
+Training set size = 417
+Pool set size = 692
+Start an new iteration of active learning: 415.
+evaluating model performance.
+Model fitting time: 0.1650235652923584 seconds
+evaluating model performance finished.
+Training set size = 418
+Pool set size = 691
+Start an new iteration of active learning: 416.
+evaluating model performance.
+Model fitting time: 0.15437555313110352 seconds
+evaluating model performance finished.
+Training set size = 419
+Pool set size = 690
+Start an new iteration of active learning: 417.
+evaluating model performance.
+Model fitting time: 0.14827537536621094 seconds
+evaluating model performance finished.
+Training set size = 420
+Pool set size = 689
+Start an new iteration of active learning: 418.
+evaluating model performance.
+Model fitting time: 0.1453101634979248 seconds
+evaluating model performance finished.
+Training set size = 421
+Pool set size = 688
+Start an new iteration of active learning: 419.
+evaluating model performance.
+Model fitting time: 0.175703763961792 seconds
+evaluating model performance finished.
+Training set size = 422
+Pool set size = 687
+Start an new iteration of active learning: 420.
+evaluating model performance.
+Model fitting time: 0.14459776878356934 seconds
+evaluating model performance finished.
+Training set size = 423
+Pool set size = 686
+Start an new iteration of active learning: 421.
+evaluating model performance.
+Model fitting time: 0.1507570743560791 seconds
+evaluating model performance finished.
+Training set size = 424
+Pool set size = 685
+Start an new iteration of active learning: 422.
+evaluating model performance.
+Model fitting time: 0.14597630500793457 seconds
+evaluating model performance finished.
+Training set size = 425
+Pool set size = 684
+Start an new iteration of active learning: 423.
+evaluating model performance.
+Model fitting time: 0.15044093132019043 seconds
+evaluating model performance finished.
+Training set size = 426
+Pool set size = 683
+Start an new iteration of active learning: 424.
+evaluating model performance.
+Model fitting time: 0.16959071159362793 seconds
+evaluating model performance finished.
+Training set size = 427
+Pool set size = 682
+Start an new iteration of active learning: 425.
+evaluating model performance.
+Model fitting time: 0.15067768096923828 seconds
+evaluating model performance finished.
+Training set size = 428
+Pool set size = 681
+Start an new iteration of active learning: 426.
+evaluating model performance.
+Model fitting time: 0.14977550506591797 seconds
+evaluating model performance finished.
+Training set size = 429
+Pool set size = 680
+Start an new iteration of active learning: 427.
+evaluating model performance.
+Model fitting time: 0.14907622337341309 seconds
+evaluating model performance finished.
+Training set size = 430
+Pool set size = 679
+Start an new iteration of active learning: 428.
+evaluating model performance.
+Model fitting time: 0.1503291130065918 seconds
+evaluating model performance finished.
+Training set size = 431
+Pool set size = 678
+Start an new iteration of active learning: 429.
+evaluating model performance.
+Model fitting time: 0.1590290069580078 seconds
+evaluating model performance finished.
+Training set size = 432
+Pool set size = 677
+Start an new iteration of active learning: 430.
+evaluating model performance.
+Model fitting time: 0.15825486183166504 seconds
+evaluating model performance finished.
+Training set size = 433
+Pool set size = 676
+Start an new iteration of active learning: 431.
+evaluating model performance.
+Model fitting time: 0.15310883522033691 seconds
+evaluating model performance finished.
+Training set size = 434
+Pool set size = 675
+Start an new iteration of active learning: 432.
+evaluating model performance.
+Model fitting time: 0.14720916748046875 seconds
+evaluating model performance finished.
+Training set size = 435
+Pool set size = 674
+Start an new iteration of active learning: 433.
+evaluating model performance.
+Model fitting time: 0.16330599784851074 seconds
+evaluating model performance finished.
+Training set size = 436
+Pool set size = 673
+Start an new iteration of active learning: 434.
+evaluating model performance.
+Model fitting time: 0.14867067337036133 seconds
+evaluating model performance finished.
+Training set size = 437
+Pool set size = 672
+Start an new iteration of active learning: 435.
+evaluating model performance.
+Model fitting time: 0.14872956275939941 seconds
+evaluating model performance finished.
+Training set size = 438
+Pool set size = 671
+Start an new iteration of active learning: 436.
+evaluating model performance.
+Model fitting time: 0.1592409610748291 seconds
+evaluating model performance finished.
+Training set size = 439
+Pool set size = 670
+Start an new iteration of active learning: 437.
+evaluating model performance.
+Model fitting time: 0.15420961380004883 seconds
+evaluating model performance finished.
+Training set size = 440
+Pool set size = 669
+Start an new iteration of active learning: 438.
+evaluating model performance.
+Model fitting time: 0.15031647682189941 seconds
+evaluating model performance finished.
+Training set size = 441
+Pool set size = 668
+Start an new iteration of active learning: 439.
+evaluating model performance.
+Model fitting time: 0.16849040985107422 seconds
+evaluating model performance finished.
+Training set size = 442
+Pool set size = 667
+Start an new iteration of active learning: 440.
+evaluating model performance.
+Model fitting time: 0.15385770797729492 seconds
+evaluating model performance finished.
+Training set size = 443
+Pool set size = 666
+Start an new iteration of active learning: 441.
+evaluating model performance.
+Model fitting time: 0.20328998565673828 seconds
+evaluating model performance finished.
+Training set size = 444
+Pool set size = 665
+Start an new iteration of active learning: 442.
+evaluating model performance.
+Model fitting time: 0.16892027854919434 seconds
+evaluating model performance finished.
+Training set size = 445
+Pool set size = 664
+Start an new iteration of active learning: 443.
+evaluating model performance.
+Model fitting time: 0.15273022651672363 seconds
+evaluating model performance finished.
+Training set size = 446
+Pool set size = 663
+Start an new iteration of active learning: 444.
+evaluating model performance.
+Model fitting time: 0.17907404899597168 seconds
+evaluating model performance finished.
+Training set size = 447
+Pool set size = 662
+Start an new iteration of active learning: 445.
+evaluating model performance.
+Model fitting time: 0.15132546424865723 seconds
+evaluating model performance finished.
+Training set size = 448
+Pool set size = 661
+Start an new iteration of active learning: 446.
+evaluating model performance.
+Model fitting time: 0.14713740348815918 seconds
+evaluating model performance finished.
+Training set size = 449
+Pool set size = 660
+Start an new iteration of active learning: 447.
+evaluating model performance.
+Model fitting time: 0.15436816215515137 seconds
+evaluating model performance finished.
+Training set size = 450
+Pool set size = 659
+Start an new iteration of active learning: 448.
+evaluating model performance.
+Model fitting time: 0.16025376319885254 seconds
+evaluating model performance finished.
+Training set size = 451
+Pool set size = 658
+Start an new iteration of active learning: 449.
+evaluating model performance.
+Model fitting time: 0.15085697174072266 seconds
+evaluating model performance finished.
+Training set size = 452
+Pool set size = 657
+Start an new iteration of active learning: 450.
+evaluating model performance.
+Model fitting time: 0.15034127235412598 seconds
+evaluating model performance finished.
+Training set size = 453
+Pool set size = 656
+Start an new iteration of active learning: 451.
+evaluating model performance.
+Model fitting time: 0.15191054344177246 seconds
+evaluating model performance finished.
+Training set size = 454
+Pool set size = 655
+Start an new iteration of active learning: 452.
+evaluating model performance.
+Model fitting time: 0.14917635917663574 seconds
+evaluating model performance finished.
+Training set size = 455
+Pool set size = 654
+Start an new iteration of active learning: 453.
+evaluating model performance.
+Model fitting time: 0.1519479751586914 seconds
+evaluating model performance finished.
+Training set size = 456
+Pool set size = 653
+Start an new iteration of active learning: 454.
+evaluating model performance.
+Model fitting time: 0.15021705627441406 seconds
+evaluating model performance finished.
+Training set size = 457
+Pool set size = 652
+Start an new iteration of active learning: 455.
+evaluating model performance.
+Model fitting time: 0.15284276008605957 seconds
+evaluating model performance finished.
+Training set size = 458
+Pool set size = 651
+Start an new iteration of active learning: 456.
+evaluating model performance.
+Model fitting time: 0.15041184425354004 seconds
+evaluating model performance finished.
+Training set size = 459
+Pool set size = 650
+Start an new iteration of active learning: 457.
+evaluating model performance.
+Model fitting time: 0.15173959732055664 seconds
+evaluating model performance finished.
+Training set size = 460
+Pool set size = 649
+Start an new iteration of active learning: 458.
+evaluating model performance.
+Model fitting time: 0.151031494140625 seconds
+evaluating model performance finished.
+Training set size = 461
+Pool set size = 648
+Start an new iteration of active learning: 459.
+evaluating model performance.
+Model fitting time: 0.15272927284240723 seconds
+evaluating model performance finished.
+Training set size = 462
+Pool set size = 647
+Start an new iteration of active learning: 460.
+evaluating model performance.
+Model fitting time: 0.15227365493774414 seconds
+evaluating model performance finished.
+Training set size = 463
+Pool set size = 646
+Start an new iteration of active learning: 461.
+evaluating model performance.
+Model fitting time: 0.15315818786621094 seconds
+evaluating model performance finished.
+Training set size = 464
+Pool set size = 645
+Start an new iteration of active learning: 462.
+evaluating model performance.
+Model fitting time: 0.16655850410461426 seconds
+evaluating model performance finished.
+Training set size = 465
+Pool set size = 644
+Start an new iteration of active learning: 463.
+evaluating model performance.
+Model fitting time: 0.15538525581359863 seconds
+evaluating model performance finished.
+Training set size = 466
+Pool set size = 643
+Start an new iteration of active learning: 464.
+evaluating model performance.
+Model fitting time: 0.16498088836669922 seconds
+evaluating model performance finished.
+Training set size = 467
+Pool set size = 642
+Start an new iteration of active learning: 465.
+evaluating model performance.
+Model fitting time: 0.1611940860748291 seconds
+evaluating model performance finished.
+Training set size = 468
+Pool set size = 641
+Start an new iteration of active learning: 466.
+evaluating model performance.
+Model fitting time: 0.16114306449890137 seconds
+evaluating model performance finished.
+Training set size = 469
+Pool set size = 640
+Start an new iteration of active learning: 467.
+evaluating model performance.
+Model fitting time: 0.16885828971862793 seconds
+evaluating model performance finished.
+Training set size = 470
+Pool set size = 639
+Start an new iteration of active learning: 468.
+evaluating model performance.
+Model fitting time: 0.158583402633667 seconds
+evaluating model performance finished.
+Training set size = 471
+Pool set size = 638
+Start an new iteration of active learning: 469.
+evaluating model performance.
+Model fitting time: 0.15834259986877441 seconds
+evaluating model performance finished.
+Training set size = 472
+Pool set size = 637
+Start an new iteration of active learning: 470.
+evaluating model performance.
+Model fitting time: 0.1619434356689453 seconds
+evaluating model performance finished.
+Training set size = 473
+Pool set size = 636
+Start an new iteration of active learning: 471.
+evaluating model performance.
+Model fitting time: 0.1726999282836914 seconds
+evaluating model performance finished.
+Training set size = 474
+Pool set size = 635
+Start an new iteration of active learning: 472.
+evaluating model performance.
+Model fitting time: 0.17107033729553223 seconds
+evaluating model performance finished.
+Training set size = 475
+Pool set size = 634
+Start an new iteration of active learning: 473.
+evaluating model performance.
+Model fitting time: 0.16314244270324707 seconds
+evaluating model performance finished.
+Training set size = 476
+Pool set size = 633
+Start an new iteration of active learning: 474.
+evaluating model performance.
+Model fitting time: 0.15831279754638672 seconds
+evaluating model performance finished.
+Training set size = 477
+Pool set size = 632
+Start an new iteration of active learning: 475.
+evaluating model performance.
+Model fitting time: 0.18324661254882812 seconds
+evaluating model performance finished.
+Training set size = 478
+Pool set size = 631
+Start an new iteration of active learning: 476.
+evaluating model performance.
+Model fitting time: 0.16025710105895996 seconds
+evaluating model performance finished.
+Training set size = 479
+Pool set size = 630
+Start an new iteration of active learning: 477.
+evaluating model performance.
+Model fitting time: 0.16482186317443848 seconds
+evaluating model performance finished.
+Training set size = 480
+Pool set size = 629
+Start an new iteration of active learning: 478.
+evaluating model performance.
+Model fitting time: 0.1599726676940918 seconds
+evaluating model performance finished.
+Training set size = 481
+Pool set size = 628
+Start an new iteration of active learning: 479.
+evaluating model performance.
+Model fitting time: 0.16850042343139648 seconds
+evaluating model performance finished.
+Training set size = 482
+Pool set size = 627
+Start an new iteration of active learning: 480.
+evaluating model performance.
+Model fitting time: 0.161635160446167 seconds
+evaluating model performance finished.
+Training set size = 483
+Pool set size = 626
+Start an new iteration of active learning: 481.
+evaluating model performance.
+Model fitting time: 0.16921663284301758 seconds
+evaluating model performance finished.
+Training set size = 484
+Pool set size = 625
+Start an new iteration of active learning: 482.
+evaluating model performance.
+Model fitting time: 0.1591477394104004 seconds
+evaluating model performance finished.
+Training set size = 485
+Pool set size = 624
+Start an new iteration of active learning: 483.
+evaluating model performance.
+Model fitting time: 0.16050982475280762 seconds
+evaluating model performance finished.
+Training set size = 486
+Pool set size = 623
+Start an new iteration of active learning: 484.
+evaluating model performance.
+Model fitting time: 0.17580723762512207 seconds
+evaluating model performance finished.
+Training set size = 487
+Pool set size = 622
+Start an new iteration of active learning: 485.
+evaluating model performance.
+Model fitting time: 0.17404723167419434 seconds
+evaluating model performance finished.
+Training set size = 488
+Pool set size = 621
+Start an new iteration of active learning: 486.
+evaluating model performance.
+Model fitting time: 0.16570496559143066 seconds
+evaluating model performance finished.
+Training set size = 489
+Pool set size = 620
+Start an new iteration of active learning: 487.
+evaluating model performance.
+Model fitting time: 0.16432690620422363 seconds
+evaluating model performance finished.
+Training set size = 490
+Pool set size = 619
+Start an new iteration of active learning: 488.
+evaluating model performance.
+Model fitting time: 0.17806243896484375 seconds
+evaluating model performance finished.
+Training set size = 491
+Pool set size = 618
+Start an new iteration of active learning: 489.
+evaluating model performance.
+Model fitting time: 0.17323780059814453 seconds
+evaluating model performance finished.
+Training set size = 492
+Pool set size = 617
+Start an new iteration of active learning: 490.
+evaluating model performance.
+Model fitting time: 0.16459250450134277 seconds
+evaluating model performance finished.
+Training set size = 493
+Pool set size = 616
+Start an new iteration of active learning: 491.
+evaluating model performance.
+Model fitting time: 0.1633594036102295 seconds
+evaluating model performance finished.
+Training set size = 494
+Pool set size = 615
+Start an new iteration of active learning: 492.
+evaluating model performance.
+Model fitting time: 0.19067597389221191 seconds
+evaluating model performance finished.
+Training set size = 495
+Pool set size = 614
+Start an new iteration of active learning: 493.
+evaluating model performance.
+Model fitting time: 0.16992878913879395 seconds
+evaluating model performance finished.
+Training set size = 496
+Pool set size = 613
+Start an new iteration of active learning: 494.
+evaluating model performance.
+Model fitting time: 0.16819047927856445 seconds
+evaluating model performance finished.
+Training set size = 497
+Pool set size = 612
+Start an new iteration of active learning: 495.
+evaluating model performance.
+Model fitting time: 0.1633923053741455 seconds
+evaluating model performance finished.
+Training set size = 498
+Pool set size = 611
+Start an new iteration of active learning: 496.
+evaluating model performance.
+Model fitting time: 0.17782258987426758 seconds
+evaluating model performance finished.
+Training set size = 499
+Pool set size = 610
+Start an new iteration of active learning: 497.
+evaluating model performance.
+Model fitting time: 0.16351842880249023 seconds
+evaluating model performance finished.
+Training set size = 500
+Pool set size = 609
+Start an new iteration of active learning: 498.
+evaluating model performance.
+Model fitting time: 0.17018723487854004 seconds
+evaluating model performance finished.
+Training set size = 501
+Pool set size = 608
+Start an new iteration of active learning: 499.
+evaluating model performance.
+Model fitting time: 0.1649031639099121 seconds
+evaluating model performance finished.
+Training set size = 502
+Pool set size = 607
+Start an new iteration of active learning: 500.
+evaluating model performance.
+Model fitting time: 0.17135024070739746 seconds
+evaluating model performance finished.
+Training set size = 503
+Pool set size = 606
+Start an new iteration of active learning: 501.
+evaluating model performance.
+Model fitting time: 0.16939949989318848 seconds
+evaluating model performance finished.
+Training set size = 504
+Pool set size = 605
+Start an new iteration of active learning: 502.
+evaluating model performance.
+Model fitting time: 0.16152405738830566 seconds
+evaluating model performance finished.
+Training set size = 505
+Pool set size = 604
+Start an new iteration of active learning: 503.
+evaluating model performance.
+Model fitting time: 0.17838573455810547 seconds
+evaluating model performance finished.
+Training set size = 506
+Pool set size = 603
+Start an new iteration of active learning: 504.
+evaluating model performance.
+Model fitting time: 0.16805601119995117 seconds
+evaluating model performance finished.
+Training set size = 507
+Pool set size = 602
+Start an new iteration of active learning: 505.
+evaluating model performance.
+Model fitting time: 0.16780734062194824 seconds
+evaluating model performance finished.
+Training set size = 508
+Pool set size = 601
+Start an new iteration of active learning: 506.
+evaluating model performance.
+Model fitting time: 0.19182920455932617 seconds
+evaluating model performance finished.
+Training set size = 509
+Pool set size = 600
+Start an new iteration of active learning: 507.
+evaluating model performance.
+Model fitting time: 0.21648240089416504 seconds
+evaluating model performance finished.
+Training set size = 510
+Pool set size = 599
+Start an new iteration of active learning: 508.
+evaluating model performance.
+Model fitting time: 0.22557759284973145 seconds
+evaluating model performance finished.
+Training set size = 511
+Pool set size = 598
+Start an new iteration of active learning: 509.
+evaluating model performance.
+Model fitting time: 0.16959929466247559 seconds
+evaluating model performance finished.
+Training set size = 512
+Pool set size = 597
+Start an new iteration of active learning: 510.
+evaluating model performance.
+Model fitting time: 0.20624852180480957 seconds
+evaluating model performance finished.
+Training set size = 513
+Pool set size = 596
+Start an new iteration of active learning: 511.
+evaluating model performance.
+Model fitting time: 0.1705944538116455 seconds
+evaluating model performance finished.
+Training set size = 514
+Pool set size = 595
+Start an new iteration of active learning: 512.
+evaluating model performance.
+Model fitting time: 0.1686232089996338 seconds
+evaluating model performance finished.
+Training set size = 515
+Pool set size = 594
+Start an new iteration of active learning: 513.
+evaluating model performance.
+Model fitting time: 0.17433500289916992 seconds
+evaluating model performance finished.
+Training set size = 516
+Pool set size = 593
+Start an new iteration of active learning: 514.
+evaluating model performance.
+Model fitting time: 0.19045639038085938 seconds
+evaluating model performance finished.
+Training set size = 517
+Pool set size = 592
+Start an new iteration of active learning: 515.
+evaluating model performance.
+Model fitting time: 0.16849231719970703 seconds
+evaluating model performance finished.
+Training set size = 518
+Pool set size = 591
+Start an new iteration of active learning: 516.
+evaluating model performance.
+Model fitting time: 0.17148947715759277 seconds
+evaluating model performance finished.
+Training set size = 519
+Pool set size = 590
+Start an new iteration of active learning: 517.
+evaluating model performance.
+Model fitting time: 0.16926288604736328 seconds
+evaluating model performance finished.
+Training set size = 520
+Pool set size = 589
+Start an new iteration of active learning: 518.
+evaluating model performance.
+Model fitting time: 0.16847443580627441 seconds
+evaluating model performance finished.
+Training set size = 521
+Pool set size = 588
+Start an new iteration of active learning: 519.
+evaluating model performance.
+Model fitting time: 0.16836261749267578 seconds
+evaluating model performance finished.
+Training set size = 522
+Pool set size = 587
+Start an new iteration of active learning: 520.
+evaluating model performance.
+Model fitting time: 0.1680278778076172 seconds
+evaluating model performance finished.
+Training set size = 523
+Pool set size = 586
+Start an new iteration of active learning: 521.
+evaluating model performance.
+Model fitting time: 0.1677405834197998 seconds
+evaluating model performance finished.
+Training set size = 524
+Pool set size = 585
+Start an new iteration of active learning: 522.
+evaluating model performance.
+Model fitting time: 0.1688981056213379 seconds
+evaluating model performance finished.
+Training set size = 525
+Pool set size = 584
+Start an new iteration of active learning: 523.
+evaluating model performance.
+Model fitting time: 0.1683192253112793 seconds
+evaluating model performance finished.
+Training set size = 526
+Pool set size = 583
+Start an new iteration of active learning: 524.
+evaluating model performance.
+Model fitting time: 0.16861248016357422 seconds
+evaluating model performance finished.
+Training set size = 527
+Pool set size = 582
+Start an new iteration of active learning: 525.
+evaluating model performance.
+Model fitting time: 0.1690375804901123 seconds
+evaluating model performance finished.
+Training set size = 528
+Pool set size = 581
+Start an new iteration of active learning: 526.
+evaluating model performance.
+Model fitting time: 0.17109394073486328 seconds
+evaluating model performance finished.
+Training set size = 529
+Pool set size = 580
+Start an new iteration of active learning: 527.
+evaluating model performance.
+Model fitting time: 0.17703938484191895 seconds
+evaluating model performance finished.
+Training set size = 530
+Pool set size = 579
+Start an new iteration of active learning: 528.
+evaluating model performance.
+Model fitting time: 0.178847074508667 seconds
+evaluating model performance finished.
+Training set size = 531
+Pool set size = 578
+Start an new iteration of active learning: 529.
+evaluating model performance.
+Model fitting time: 0.18019437789916992 seconds
+evaluating model performance finished.
+Training set size = 532
+Pool set size = 577
+Start an new iteration of active learning: 530.
+evaluating model performance.
+Model fitting time: 0.1885528564453125 seconds
+evaluating model performance finished.
+Training set size = 533
+Pool set size = 576
+Start an new iteration of active learning: 531.
+evaluating model performance.
+Model fitting time: 0.18700170516967773 seconds
+evaluating model performance finished.
+Training set size = 534
+Pool set size = 575
+Start an new iteration of active learning: 532.
+evaluating model performance.
+Model fitting time: 0.17400217056274414 seconds
+evaluating model performance finished.
+Training set size = 535
+Pool set size = 574
+Start an new iteration of active learning: 533.
+evaluating model performance.
+Model fitting time: 0.1726834774017334 seconds
+evaluating model performance finished.
+Training set size = 536
+Pool set size = 573
+Start an new iteration of active learning: 534.
+evaluating model performance.
+Model fitting time: 0.1777195930480957 seconds
+evaluating model performance finished.
+Training set size = 537
+Pool set size = 572
+Start an new iteration of active learning: 535.
+evaluating model performance.
+Model fitting time: 0.1838369369506836 seconds
+evaluating model performance finished.
+Training set size = 538
+Pool set size = 571
+Start an new iteration of active learning: 536.
+evaluating model performance.
+Model fitting time: 0.18245816230773926 seconds
+evaluating model performance finished.
+Training set size = 539
+Pool set size = 570
+Start an new iteration of active learning: 537.
+evaluating model performance.
+Model fitting time: 0.17381525039672852 seconds
+evaluating model performance finished.
+Training set size = 540
+Pool set size = 569
+Start an new iteration of active learning: 538.
+evaluating model performance.
+Model fitting time: 0.17742609977722168 seconds
+evaluating model performance finished.
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 539.
+evaluating model performance.
+Model fitting time: 0.19569778442382812 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 540.
+evaluating model performance.
+Model fitting time: 0.1806931495666504 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 541.
+evaluating model performance.
+Model fitting time: 0.1825113296508789 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 542.
+evaluating model performance.
+Model fitting time: 0.18677854537963867 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 543.
+evaluating model performance.
+Model fitting time: 0.17238259315490723 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 544.
+evaluating model performance.
+Model fitting time: 0.18194055557250977 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 545.
+evaluating model performance.
+Model fitting time: 0.18448185920715332 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 546.
+evaluating model performance.
+Model fitting time: 0.1876537799835205 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 547.
+evaluating model performance.
+Model fitting time: 0.18385767936706543 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 548.
+evaluating model performance.
+Model fitting time: 0.17358732223510742 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 549.
+evaluating model performance.
+Model fitting time: 0.18592453002929688 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 550.
+evaluating model performance.
+Model fitting time: 0.1762681007385254 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 551.
+evaluating model performance.
+Model fitting time: 0.18582510948181152 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 552.
+evaluating model performance.
+Model fitting time: 0.1810767650604248 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 553.
+evaluating model performance.
+Model fitting time: 0.18474531173706055 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 554.
+evaluating model performance.
+Model fitting time: 0.17214488983154297 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 555.
+evaluating model performance.
+Model fitting time: 0.17911434173583984 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 556.
+evaluating model performance.
+Model fitting time: 0.1758124828338623 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 557.
+evaluating model performance.
+Model fitting time: 0.22160053253173828 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 558.
+evaluating model performance.
+Model fitting time: 0.1749279499053955 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 559.
+evaluating model performance.
+Model fitting time: 0.18816137313842773 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 560.
+evaluating model performance.
+Model fitting time: 0.17095208168029785 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 561.
+evaluating model performance.
+Model fitting time: 0.18378353118896484 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 562.
+evaluating model performance.
+Model fitting time: 0.17082929611206055 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 563.
+evaluating model performance.
+Model fitting time: 0.17209696769714355 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 564.
+evaluating model performance.
+Model fitting time: 0.17134785652160645 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 565.
+evaluating model performance.
+Model fitting time: 0.1719658374786377 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 566.
+evaluating model performance.
+Model fitting time: 0.1718442440032959 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 567.
+evaluating model performance.
+Model fitting time: 0.1701648235321045 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 568.
+evaluating model performance.
+Model fitting time: 0.17925405502319336 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 569.
+evaluating model performance.
+Model fitting time: 0.18209314346313477 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 570.
+evaluating model performance.
+Model fitting time: 0.1778395175933838 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 571.
+evaluating model performance.
+Model fitting time: 0.17586994171142578 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 572.
+evaluating model performance.
+Model fitting time: 0.17199397087097168 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 573.
+evaluating model performance.
+Model fitting time: 0.17287254333496094 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 574.
+evaluating model performance.
+Model fitting time: 0.17609739303588867 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 575.
+evaluating model performance.
+Model fitting time: 0.20241808891296387 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 576.
+evaluating model performance.
+Model fitting time: 0.18176054954528809 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 577.
+evaluating model performance.
+Model fitting time: 0.1763777732849121 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 578.
+evaluating model performance.
+Model fitting time: 0.17169785499572754 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 579.
+evaluating model performance.
+Model fitting time: 0.17434120178222656 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 580.
+evaluating model performance.
+Model fitting time: 0.20348453521728516 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 581.
+evaluating model performance.
+Model fitting time: 0.17654681205749512 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 582.
+evaluating model performance.
+Model fitting time: 0.17434906959533691 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 583.
+evaluating model performance.
+Model fitting time: 0.18381190299987793 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 584.
+evaluating model performance.
+Model fitting time: 0.17322301864624023 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 585.
+evaluating model performance.
+Model fitting time: 0.1834568977355957 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 586.
+evaluating model performance.
+Model fitting time: 0.1821436882019043 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 587.
+evaluating model performance.
+Model fitting time: 0.1828775405883789 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 588.
+evaluating model performance.
+Model fitting time: 0.18732047080993652 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 589.
+evaluating model performance.
+Model fitting time: 0.17391490936279297 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 590.
+evaluating model performance.
+Model fitting time: 0.17274928092956543 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 591.
+evaluating model performance.
+Model fitting time: 0.18658757209777832 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 592.
+evaluating model performance.
+Model fitting time: 0.1728954315185547 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 593.
+evaluating model performance.
+Model fitting time: 0.18253827095031738 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 594.
+evaluating model performance.
+Model fitting time: 0.23575139045715332 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 595.
+evaluating model performance.
+Model fitting time: 0.19800662994384766 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 596.
+evaluating model performance.
+Model fitting time: 0.17226910591125488 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 597.
+evaluating model performance.
+Model fitting time: 0.18300271034240723 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 598.
+evaluating model performance.
+Model fitting time: 0.17212867736816406 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 599.
+evaluating model performance.
+Model fitting time: 0.16990351676940918 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 600.
+evaluating model performance.
+Model fitting time: 0.17148375511169434 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 601.
+evaluating model performance.
+Model fitting time: 0.17277312278747559 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 602.
+evaluating model performance.
+Model fitting time: 0.1716306209564209 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 603.
+evaluating model performance.
+Model fitting time: 0.17194104194641113 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 604.
+evaluating model performance.
+Model fitting time: 0.16973519325256348 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 605.
+evaluating model performance.
+Model fitting time: 0.1731865406036377 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 606.
+evaluating model performance.
+Model fitting time: 0.17966842651367188 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 607.
+evaluating model performance.
+Model fitting time: 0.1958637237548828 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 608.
+evaluating model performance.
+Model fitting time: 0.1813342571258545 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 609.
+evaluating model performance.
+Model fitting time: 0.18168878555297852 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 610.
+evaluating model performance.
+Model fitting time: 0.18662476539611816 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 611.
+evaluating model performance.
+Model fitting time: 0.17567133903503418 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 612.
+evaluating model performance.
+Model fitting time: 0.17299222946166992 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 613.
+evaluating model performance.
+Model fitting time: 0.17377734184265137 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 614.
+evaluating model performance.
+Model fitting time: 0.20011615753173828 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 615.
+evaluating model performance.
+Model fitting time: 0.18077802658081055 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 616.
+evaluating model performance.
+Model fitting time: 0.1741788387298584 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 617.
+evaluating model performance.
+Model fitting time: 0.18071627616882324 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 618.
+evaluating model performance.
+Model fitting time: 0.17438840866088867 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 619.
+evaluating model performance.
+Model fitting time: 0.1960904598236084 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 620.
+evaluating model performance.
+Model fitting time: 0.1808643341064453 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 621.
+evaluating model performance.
+Model fitting time: 0.1878502368927002 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 622.
+evaluating model performance.
+Model fitting time: 0.18667197227478027 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 623.
+evaluating model performance.
+Model fitting time: 0.17809748649597168 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 624.
+evaluating model performance.
+Model fitting time: 0.17350268363952637 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 625.
+evaluating model performance.
+Model fitting time: 0.1770648956298828 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 626.
+evaluating model performance.
+Model fitting time: 0.1862173080444336 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 627.
+evaluating model performance.
+Model fitting time: 0.18471789360046387 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 628.
+evaluating model performance.
+Model fitting time: 0.1947944164276123 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 629.
+evaluating model performance.
+Model fitting time: 0.17379331588745117 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 630.
+evaluating model performance.
+Model fitting time: 0.18220782279968262 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 631.
+evaluating model performance.
+Model fitting time: 0.191511869430542 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 632.
+evaluating model performance.
+Model fitting time: 0.24096131324768066 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 633.
+evaluating model performance.
+Model fitting time: 0.1751692295074463 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 634.
+evaluating model performance.
+Model fitting time: 0.17412042617797852 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 635.
+evaluating model performance.
+Model fitting time: 0.16925287246704102 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 636.
+evaluating model performance.
+Model fitting time: 0.19706201553344727 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 637.
+evaluating model performance.
+Model fitting time: 0.16895174980163574 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 638.
+evaluating model performance.
+Model fitting time: 0.1708385944366455 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 639.
+evaluating model performance.
+Model fitting time: 0.17518186569213867 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 640.
+evaluating model performance.
+Model fitting time: 0.17011713981628418 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 641.
+evaluating model performance.
+Model fitting time: 0.17033791542053223 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 642.
+evaluating model performance.
+Model fitting time: 0.17000246047973633 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 643.
+evaluating model performance.
+Model fitting time: 0.17107486724853516 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 644.
+evaluating model performance.
+Model fitting time: 0.1804344654083252 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 645.
+evaluating model performance.
+Model fitting time: 0.18752098083496094 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 646.
+evaluating model performance.
+Model fitting time: 0.17852067947387695 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 647.
+evaluating model performance.
+Model fitting time: 0.19114303588867188 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 648.
+evaluating model performance.
+Model fitting time: 0.1914060115814209 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+Start an new iteration of active learning: 649.
+evaluating model performance.
+Model fitting time: 0.17299461364746094 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 541
+Pool set size = 568
+total time: 158 s
+<molalkit.al.learner.ActiveLearner object at 0x7f9874e0eda0>

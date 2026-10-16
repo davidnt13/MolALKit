@@ -7,7 +7,6 @@ from molalkit.models.random_forest.RandomForestClassifier import RFClassifier
 from molalkit.models.gaussian_process.GaussianProcessRegressor import GPRegressor
 from molalkit.al.selection_method import get_topn_idx
 
-TEMP_BATCH_SIZE = 1
 
 class BaseForgetter(ABC):
     def __init__(self, batch_size: int = 1, forget_size: int = 1, forget_cutoff: float = None):
@@ -61,8 +60,7 @@ class MinOOBUncertaintyForgetter(BaseRandomForgetter):
         # uncertainty calculation, normalized into 0 to 1
         y_oob_uncertainty = (0.25 - np.var(y_oob_proba, axis=1)) * 4
         # select the top-n points with least uncertainty
-        temp_batch_size = 1 #100 #BATCH SIZE IS 100 FOR NOW
-        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=TEMP_BATCH_SIZE, target='min') 
+        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=batch_size, target='min')
         acquisition = y_oob_uncertainty[np.array(forgotten_idx)].tolist()
         return forgotten_idx, acquisition
 
@@ -91,8 +89,7 @@ class MaxOOBUncertaintyForgetter(BaseRandomForgetter):
         # uncertainty calculation, normalized into 0 to 1
         y_oob_uncertainty = (0.25 - np.var(y_oob_proba, axis=1)) * 4
         # select the top-n points with least uncertainty
-        temp_batch_size = 1# 100 #BATCH SIZE IS 100 FOR NOW
-        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=TEMP_BATCH_SIZE)
+        forgotten_idx = get_topn_idx(y_oob_uncertainty, n=batch_size)
         acquisition = y_oob_uncertainty[np.array(forgotten_idx)].tolist()
         return forgotten_idx, acquisition
 
@@ -276,11 +273,21 @@ class MCDropoutForgetter(BaseForgetter):
 
     @staticmethod
     def _collate_x_idx(batch):
-        xs, idxs = zip(*batch)
+        # Check if the batch elements are DataPoint objects with attributes
+        # Adjust 'features' or 'id' based on the exact attributes of your DataPoint object
+        if hasattr(batch[0], 'features'):
+            xs = [item.features for item in batch]
+            # Fallback to a secondary attribute if 'id' or 'index' is stored differently
+            idxs = [getattr(item, 'id', idx) for idx, item in enumerate(batch)]
+        else:
+            # Fallback to old behavior if it's a standard tuple
+            xs, idxs = zip(*batch)
+            
         if isinstance(xs[0], torch.Tensor):
             x = torch.stack(xs, dim=0).float()
         else:
             x = torch.tensor(np.stack([np.asarray(t) for t in xs], axis=0), dtype=torch.float32)
+            
         idx = torch.tensor([int(i) for i in idxs], dtype=torch.long)
         return x, idx
 
@@ -310,9 +317,7 @@ class MCDropoutForgetter(BaseForgetter):
         all_ids = np.concatenate(all_ids, axis=0)
         all_scores = np.concatenate(all_scores, axis=0)
 
-        temp_batch_size = 1 #100 #BATCH SIZE IS 100 FOR NOW
-
-        picked = get_topn_idx(all_scores, n=TEMP_BATCH_SIZE, target=self.target)
+        picked = get_topn_idx(all_scores, n=batch_size, target=self.target)
         return all_ids[picked].tolist(), all_scores[picked].tolist()
 
 # Chemprop Dropout
@@ -336,6 +341,7 @@ class ChempropDropoutForgetter(BaseForgetter):
         batch_size_eval: int = 256,
         target: str = "min",
         num_workers: int = 0,
+        dropout_prob: float = 0.1,
     ):
         self.device = torch.device(device)
         self.mc_samples = int(mc_samples)
@@ -350,55 +356,38 @@ class ChempropDropoutForgetter(BaseForgetter):
 
         self.num_workers = int(num_workers)
 
+        # chemprop's predict() calls model.eval() internally, which silently
+        # undoes any dropout layers we activate beforehand. predict() has its
+        # own reactivation path (chemprop/nn_utils.py:activate_dropout), but
+        # only fires when dropout_prob > 0 is passed in. Without this, MC
+        # dropout was a no-op: every MC sample was identical and all
+        # uncertainty scores collapsed to ~0 from the dropout component.
+        assert dropout_prob > 0.0
+        self.dropout_prob = float(dropout_prob)
+
     @property
     def info(self) -> str:
         return "ChempropDropoutForgetter"
 
     # ---------------------------
-    # Dropout handling
-    # ---------------------------
-
-    @staticmethod
-    def _enable_dropout_only(m: nn.Module):
-        m.eval()  # freeze BN
-        for layer in m.modules():
-            if isinstance(layer, (nn.Dropout, nn.Dropout2d, nn.Dropout3d, nn.AlphaDropout)):
-                layer.train()
-
-    @staticmethod
-    def _unwrap_nn(model) -> nn.Module:
-        if isinstance(model, nn.Module):
-            return model
-        m = getattr(model, "model", None)
-        if isinstance(m, nn.Module):
-            return m
-        raise TypeError(...)
-
-    # ---------------------------
     # MC sampling (Chemprop version)
     # ---------------------------
-
-    # from chemprop.train.predict import predict
-
 
     @torch.no_grad()
     def _mc_probs(self, model: nn.Module, data_loader) -> np.ndarray:
         prev_mode = model.training
 
-        # Enable dropout only
-        model.eval()
-        for m in model.modules():
-            if isinstance(m, (nn.Dropout, nn.Dropout2d, nn.Dropout3d, nn.AlphaDropout)):
-                m.train()
-
         all_probs = []
 
         for _ in range(self.mc_samples):
-            # Let Chemprop handle batching internally
+            # Let Chemprop handle batching internally. chemprop's predict()
+            # calls model.eval() as its first line, so dropout must be
+            # reactivated *inside* that call via dropout_prob, not before it.
             preds = predict(
                 model=model,
                 data_loader=data_loader,
                 scaler=None,  # IMPORTANT: MolALKit already handles scaling
+                dropout_prob=self.dropout_prob,
             )
 
             preds = np.array(preds)
@@ -485,8 +474,13 @@ class ChempropDropoutForgetter(BaseForgetter):
         all_mc = []
 
         for net in models:
-            net = net.to(self.device)
-
+            # Don't move net to self.device: it's already on whatever device
+            # it was trained on (cpu or cuda). self.device defaults to "cpu"
+            # regardless of the model's actual device, so forcing net here
+            # broke GPU runs: the model's weights would end up on cpu while
+            # chemprop's predict() still builds its input batch on cuda
+            # (per the model's own stored TrainArgs.cuda flag), causing a
+            # "tensors on different devices" crash during MC-dropout scoring.
             mc = self._mc_probs(net, dl)  # (S, N, C)
             all_mc.append(mc)
 
@@ -497,6 +491,6 @@ class ChempropDropoutForgetter(BaseForgetter):
         scores = self._score(mc_probs)
 
         ids = np.arange(len(scores))
-        picked = get_topn_idx(scores, n=TEMP_BATCH_SIZE, target=self.target)
+        picked = get_topn_idx(scores, n=batch_size, target=self.target)
 
         return ids[picked].tolist(), scores[picked].tolist()

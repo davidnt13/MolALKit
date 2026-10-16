@@ -1,0 +1,12 @@
+warm10 max 0
+warm10 max 1
+warm10 max 2
+warm10 min 0
+warm10 min 1
+warm10 min 2
+warm10_bs200 max 0
+warm10_bs200 max 1
+warm10_bs200 max 2
+warm10_bs200 min 0
+warm10_bs200 min 1
+warm10_bs200 min 2

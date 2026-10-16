@@ -1,0 +1,4 @@
+variance max 1
+variance max 2
+entropy max 1
+entropy max 2

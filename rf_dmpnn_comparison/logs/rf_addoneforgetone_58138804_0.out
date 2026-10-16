@@ -1,0 +1,2 @@
+=== RF add-one/forget-one task 0: strategy=max_oob_uncertainty seed=0 -> /work/dn123/MolALKit/rf_dmpnn_comparison/results/RF_addone_forgetone/max_oob_uncertainty/seed0 ===
+RF add-one/forget-one task 0 finished status=1 in 365s

@@ -53,6 +53,8 @@ class MPNN:
                  freeze_mpn: bool = False,
                  seed: int = 0,
                  continuous_fit: bool = False,
+                 restart_every: int = 0,
+                 restart_epochs: int = None,
                  logger: Logger = None,
                  ):
         args = TrainArgs()
@@ -95,6 +97,9 @@ class MPNN:
         self.args = args
         self.features_scaler = None
         self.continuous_fit = continuous_fit
+        self.restart_every = restart_every
+        self.restart_epochs = restart_epochs
+        self._fit_count = 0
         self.logger = logger
 
     def fit_molalkit(self, train_data):
@@ -148,7 +153,17 @@ class MPNN:
             debug(
                 f'With class_balance, effective train size = {train_data_loader.iter_size:,}')
 
-        if self.continuous_fit and hasattr(self, 'models'):
+        # Periodic cold restart: with continuous_fit, every `restart_every`-th fit
+        # rebuilds the model from scratch (using `restart_epochs`), so data removed
+        # by the forgetter is exactly forgotten at those points.
+        cold_restart = (self.continuous_fit and self.restart_every > 0
+                        and self._fit_count % self.restart_every == 0)
+        self._fit_count += 1
+        n_epochs = args.epochs
+        if cold_restart and self.restart_epochs:
+            n_epochs = self.restart_epochs
+
+        if self.continuous_fit and hasattr(self, 'models') and not cold_restart:
             assert len(self.models) == args.ensemble_size
         else:
             self.models = []
@@ -187,7 +202,7 @@ class MPNN:
             scheduler = build_lr_scheduler(optimizer, args)
 
             n_iter = 0
-            for epoch in trange(args.epochs):
+            for epoch in trange(n_epochs):
                 epoch_start_time = time.time()
                 debug(f'Epoch {epoch}')
                 n_iter = train(

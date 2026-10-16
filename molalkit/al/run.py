@@ -41,6 +41,9 @@ def molalkit_run(arguments=None):
                                        save_cpt_stride=args.save_cpt_stride,
                                        seed=args.seed,
                                        logger=args.logger)
+    active_learner.shadow_cold_every = args.shadow_cold_every
+    active_learner.shadow_cold_epochs = args.shadow_cold_epochs
+    active_learner.shadow_cold_batch_size = args.shadow_cold_batch_size
     active_learner.run(max_iter=args.max_iter)
     end = time.time()
     args.logger.info('total time: %d s' % (end - start))

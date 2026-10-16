@@ -1,0 +1,30 @@
+/var/spool/slurmd/job58211542/slurm_script: line 12: module: command not found
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s] 11%|█         | 238/2217 [00:00<00:00, 2376.10it/s] 24%|██▎       | 521/2217 [00:00<00:00, 2637.21it/s] 35%|███▌      | 785/2217 [00:00<00:00, 2579.59it/s] 47%|████▋     | 1051/2217 [00:00<00:00, 2607.80it/s] 59%|█████▉    | 1312/2217 [00:00<00:00, 2599.14it/s] 72%|███████▏  | 1595/2217 [00:00<00:00, 2676.35it/s] 84%|████████▍ | 1863/2217 [00:00<00:00, 2662.45it/s] 96%|█████████▌| 2130/2217 [00:00<00:00, 2534.87it/s]100%|██████████| 2217/2217 [00:00<00:00, 2559.53it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+0it [00:00, ?it/s]2217it [00:00, 308908.78it/s]
+  0%|          | 0/2217 [00:00<?, ?it/s][Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  1%|          | 16/2217 [00:13<31:42,  1.16it/s]  1%|          | 24/2217 [00:14<18:45,  1.95it/s][Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:   14.0s
+ 17%|█▋        | 380/2217 [00:14<00:34, 52.78it/s] 70%|███████   | 1552/2217 [00:14<00:02, 286.11it/s]100%|██████████| 2217/2217 [00:14<00:00, 155.68it/s]
+[Parallel(n_jobs=8)]: Done 2104 tasks      | elapsed:   14.3s
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[Parallel(n_jobs=8)]: Done 2217 out of 2217 | elapsed:   16.8s finished
+  0%|          | 0/2217 [00:00<?, ?it/s][2026-10-09T10:24:02.007] error: *** JOB 58211542 ON dcc-dhvimdcore-gpu-ferc-s-p15-23 CANCELLED AT 2026-10-09T10:24:02 DUE to SIGNAL Terminated ***

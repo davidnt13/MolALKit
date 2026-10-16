@@ -108,6 +108,8 @@ def get_model(data_format: Literal['mgktools', 'chemprop', 'fingerprints'],
               mpn_path: str = None,
               freeze_mpn: bool = False,
               continuous_fit: bool = False,
+              restart_every: int = 0,
+              restart_epochs: int = None,
               kernel=None,
               uncertainty_type: Literal['value', 'uncertainty'] = None,
               alpha: Union[float, str] = 1e-8,
@@ -228,6 +230,8 @@ def get_model(data_format: Literal['mgktools', 'chemprop', 'fingerprints'],
                     n_jobs=n_jobs,
                     seed=seed,
                     continuous_fit=continuous_fit,
+                    restart_every=restart_every,
+                    restart_epochs=restart_epochs,
                     logger=logger or EmptyLogger())
     elif data_format == 'mgktools':
         if model == 'gaussian_process_regression':

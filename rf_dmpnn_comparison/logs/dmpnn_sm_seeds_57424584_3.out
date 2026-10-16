@@ -1,0 +1,2 @@
+=== DMPNN score_method seed-confirm task 3: score_method=entropy target=max seed=2 -> /work/dn123/MolALKit/rf_dmpnn_comparison/results/DMPNN_scoremethod/entropy_max/seed2 ===
+DMPNN score_method seed-confirm task 3 finished status=1 in 13061s

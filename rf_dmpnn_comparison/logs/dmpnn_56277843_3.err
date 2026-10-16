@@ -1,0 +1,571 @@
+Anaconda3 2024.02
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s] 21%|██        | 466/2217 [00:00<00:00, 4651.91it/s] 46%|████▌     | 1014/2217 [00:00<00:00, 5137.70it/s] 69%|██████▉   | 1531/2217 [00:00<00:00, 5151.85it/s] 92%|█████████▏| 2047/2217 [00:00<00:00, 5128.04it/s]100%|██████████| 2217/2217 [00:00<00:00, 5020.60it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+0it [00:00, ?it/s]2217it [00:00, 659253.60it/s]
+  0%|          | 0/2217 [00:00<?, ?it/s][Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  1%|          | 16/2217 [00:10<23:13,  1.58it/s]  1%|          | 24/2217 [00:10<13:43,  2.66it/s][Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:   10.3s
+100%|██████████| 2217/2217 [00:10<00:00, 215.19it/s]
+[Parallel(n_jobs=8)]: Done 2104 tasks      | elapsed:   10.3s
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[Parallel(n_jobs=8)]: Done 2217 out of 2217 | elapsed:   18.4s finished
+  0%|          | 0/2217 [00:00<?, ?it/s] 33%|███▎      | 730/2217 [00:00<00:00, 7296.75it/s] 80%|███████▉  | 1769/2217 [00:00<00:00, 9112.32it/s]100%|██████████| 2217/2217 [00:00<00:00, 8808.53it/s]
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Building model 0 from scratch
+Moving model to cuda
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/30 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.5514e-01, PNorm = 34.0121, GNorm = 1.9565, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  2.97it/s][A
+                                             [AEpoch 0 time: 0.35266733169555664 seconds
+  3%|▎         | 1/30 [00:00<00:10,  2.83it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.7398e-01, PNorm = 34.0174, GNorm = 1.9041, lr_0 = 9.2106e-04
+
+                                     [AEpoch 1 time: 0.0643167495727539 seconds
+Epoch 2
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.6278e-01, PNorm = 34.0240, GNorm = 1.9116, lr_0 = 8.4834e-04
+
+                                     [AEpoch 2 time: 0.06145977973937988 seconds
+ 10%|█         | 3/30 [00:00<00:03,  7.24it/s]Epoch 3
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.5904e-01, PNorm = 34.0308, GNorm = 1.9559, lr_0 = 7.8137e-04
+
+                                     [AEpoch 3 time: 0.06690645217895508 seconds
+Epoch 4
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.5167e-01, PNorm = 34.0378, GNorm = 1.5648, lr_0 = 7.1969e-04
+
+                                     [AEpoch 4 time: 0.06586647033691406 seconds
+ 17%|█▋        | 5/30 [00:00<00:02,  9.87it/s]Epoch 5
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.2991e-01, PNorm = 34.0447, GNorm = 2.0242, lr_0 = 6.6287e-04
+
+                                     [AEpoch 5 time: 0.06187558174133301 seconds
+Epoch 6
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.1871e-01, PNorm = 34.0515, GNorm = 1.9555, lr_0 = 6.1054e-04
+
+                                     [AEpoch 6 time: 0.06937122344970703 seconds
+ 23%|██▎       | 7/30 [00:00<00:01, 11.59it/s]Epoch 7
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 2.2771e-01, PNorm = 34.0580, GNorm = 1.4616, lr_0 = 5.6234e-04
+
+                                     [AEpoch 7 time: 0.07141757011413574 seconds
+Epoch 8
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.2727e-01, PNorm = 34.0642, GNorm = 1.1263, lr_0 = 5.1795e-04
+
+                                     [AEpoch 8 time: 0.06507062911987305 seconds
+ 30%|███       | 9/30 [00:00<00:01, 12.57it/s]Epoch 9
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.5711e-01, PNorm = 34.0701, GNorm = 1.2943, lr_0 = 4.7706e-04
+
+                                     [AEpoch 9 time: 0.06235790252685547 seconds
+Epoch 10
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 8.1343e-02, PNorm = 34.0755, GNorm = 0.7248, lr_0 = 4.3940e-04
+
+                                     [AEpoch 10 time: 0.06797289848327637 seconds
+ 37%|███▋      | 11/30 [00:01<00:01, 13.41it/s]Epoch 11
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 8.1028e-02, PNorm = 34.0807, GNorm = 0.7403, lr_0 = 4.0471e-04
+
+                                     [AEpoch 11 time: 0.06919169425964355 seconds
+Epoch 12
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.7477e-02, PNorm = 34.0854, GNorm = 0.9436, lr_0 = 3.7276e-04
+
+                                     [AEpoch 12 time: 0.06867814064025879 seconds
+ 43%|████▎     | 13/30 [00:01<00:01, 13.74it/s]Epoch 13
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.3718e-02, PNorm = 34.0897, GNorm = 1.2013, lr_0 = 3.4333e-04
+
+                                     [AEpoch 13 time: 0.06285238265991211 seconds
+Epoch 14
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.3120e-02, PNorm = 34.0937, GNorm = 0.3633, lr_0 = 3.1623e-04
+
+                                     [AEpoch 14 time: 0.07001566886901855 seconds
+ 50%|█████     | 15/30 [00:01<00:01, 14.13it/s]Epoch 15
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 2.2465e-02, PNorm = 34.0972, GNorm = 0.2626, lr_0 = 2.9126e-04
+
+                                     [AEpoch 15 time: 0.0634772777557373 seconds
+Epoch 16
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.5253e-02, PNorm = 34.1003, GNorm = 1.0242, lr_0 = 2.6827e-04
+
+                                     [AEpoch 16 time: 0.0652611255645752 seconds
+ 57%|█████▋    | 17/30 [00:01<00:00, 14.53it/s]Epoch 17
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.1945e-02, PNorm = 34.1031, GNorm = 0.1685, lr_0 = 2.4709e-04
+
+                                     [AEpoch 17 time: 0.06727862358093262 seconds
+Epoch 18
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 7.8836e-03, PNorm = 34.1055, GNorm = 0.1094, lr_0 = 2.2758e-04
+
+                                     [AEpoch 18 time: 0.07582283020019531 seconds
+ 63%|██████▎   | 19/30 [00:01<00:00, 14.34it/s]Epoch 19
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.7683e-02, PNorm = 34.1076, GNorm = 0.5732, lr_0 = 2.0962e-04
+
+                                     [AEpoch 19 time: 0.06484556198120117 seconds
+Epoch 20
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.8550e-02, PNorm = 34.1094, GNorm = 0.3996, lr_0 = 1.9307e-04
+
+                                     [AEpoch 20 time: 0.083587646484375 seconds
+ 70%|███████   | 21/30 [00:01<00:00, 14.05it/s]Epoch 21
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.5194e-03, PNorm = 34.1110, GNorm = 0.0940, lr_0 = 1.7783e-04
+
+                                     [AEpoch 21 time: 0.06545901298522949 seconds
+Epoch 22
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 1.5609e-02, PNorm = 34.1124, GNorm = 0.3795, lr_0 = 1.6379e-04
+
+                                     [AEpoch 22 time: 0.06497526168823242 seconds
+ 77%|███████▋  | 23/30 [00:01<00:00, 14.41it/s]Epoch 23
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 8.7951e-03, PNorm = 34.1137, GNorm = 0.2106, lr_0 = 1.5086e-04
+
+                                     [AEpoch 23 time: 0.06387734413146973 seconds
+Epoch 24
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 24 time: 0.06464886665344238 seconds
+ 83%|████████▎ | 25/30 [00:01<00:00, 14.73it/s]Epoch 25
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 25 time: 0.07169079780578613 seconds
+Epoch 26
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 26 time: 0.08782696723937988 seconds
+ 90%|█████████ | 27/30 [00:02<00:00, 13.97it/s]Epoch 27
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 27 time: 0.07143878936767578 seconds
+Epoch 28
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 28 time: 0.07011103630065918 seconds
+ 97%|█████████▋| 29/30 [00:02<00:00, 14.00it/s]Epoch 29
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 29 time: 0.06618738174438477 seconds
+100%|██████████| 30/30 [00:02<00:00, 12.86it/s]
+Model 0 time: 3.6750869750976562 seconds
+Model fitting time: 3.6752352714538574 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:04,  5.38it/s] 13%|█▎        | 3/23 [00:00<00:01, 11.40it/s] 22%|██▏       | 5/23 [00:00<00:02,  8.03it/s] 30%|███       | 7/23 [00:00<00:01,  8.29it/s] 39%|███▉      | 9/23 [00:00<00:01, 10.19it/s] 48%|████▊     | 11/23 [00:01<00:01, 11.63it/s] 57%|█████▋    | 13/23 [00:01<00:00, 13.00it/s] 65%|██████▌   | 15/23 [00:01<00:00, 14.17it/s] 74%|███████▍  | 17/23 [00:01<00:00, 14.53it/s] 83%|████████▎ | 19/23 [00:01<00:00, 14.69it/s] 91%|█████████▏| 21/23 [00:01<00:00, 15.06it/s]                                               evaluating model performance finished.
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:03,  5.55it/s] 13%|█▎        | 3/23 [00:00<00:01, 11.62it/s] 22%|██▏       | 5/23 [00:00<00:02,  6.17it/s] 30%|███       | 7/23 [00:00<00:01,  8.65it/s] 39%|███▉      | 9/23 [00:00<00:01, 10.88it/s] 48%|████▊     | 11/23 [00:01<00:00, 12.63it/s] 57%|█████▋    | 13/23 [00:01<00:00, 13.97it/s] 65%|██████▌   | 15/23 [00:01<00:00, 14.68it/s] 74%|███████▍  | 17/23 [00:01<00:00, 15.22it/s] 83%|████████▎ | 19/23 [00:01<00:00, 16.15it/s] 91%|█████████▏| 21/23 [00:01<00:00, 16.75it/s]                                               Training set size = 22
+Pool set size = 1087
+Start an new iteration of active learning: 1.
+evaluating model performance.
+Building model 0 from scratch
+Moving model to cuda
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/30 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 7.0939e-01, PNorm = 34.0118, GNorm = 0.9509, lr_0 = 1.0000e-03
+
+                                     [AEpoch 0 time: 0.09436273574829102 seconds
+Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 7.0770e-01, PNorm = 34.0147, GNorm = 0.8714, lr_0 = 9.2106e-04
+
+                                     [AEpoch 1 time: 0.08573651313781738 seconds
+  7%|▋         | 2/30 [00:00<00:02, 11.09it/s]Epoch 2
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 2 time: 0.08396697044372559 seconds
+Epoch 3
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 3 time: 0.09158849716186523 seconds
+ 13%|█▎        | 4/30 [00:00<00:02, 11.25it/s]Epoch 4
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 4 time: 0.09094500541687012 seconds
+Epoch 5
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 5 time: 0.08952522277832031 seconds
+ 20%|██        | 6/30 [00:00<00:02, 11.15it/s]Epoch 6
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 6 time: 0.09511280059814453 seconds
+Epoch 7
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 7 time: 0.09307146072387695 seconds
+ 27%|██▋       | 8/30 [00:00<00:02, 10.92it/s]Epoch 8
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 8 time: 0.09282541275024414 seconds
+Epoch 9
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 9 time: 0.09361934661865234 seconds
+ 33%|███▎      | 10/30 [00:00<00:01, 10.84it/s]Epoch 10
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 10 time: 0.09669137001037598 seconds
+Epoch 11
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 11 time: 0.0942072868347168 seconds
+ 40%|████      | 12/30 [00:01<00:01, 10.70it/s]Epoch 12
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 12 time: 0.09520554542541504 seconds
+Epoch 13
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 13 time: 0.09295344352722168 seconds
+ 47%|████▋     | 14/30 [00:01<00:01, 10.66it/s]Epoch 14
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 14 time: 0.09020447731018066 seconds
+Epoch 15
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 15 time: 0.0925743579864502 seconds
+ 53%|█████▎    | 16/30 [00:01<00:01, 10.74it/s]Epoch 16
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 16 time: 0.0970618724822998 seconds
+Epoch 17
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 17 time: 0.10670042037963867 seconds
+ 60%|██████    | 18/30 [00:01<00:01, 10.42it/s]Epoch 18
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 18 time: 0.09950804710388184 seconds
+Epoch 19
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 19 time: 0.09219574928283691 seconds
+ 67%|██████▋   | 20/30 [00:01<00:00, 10.41it/s]Epoch 20
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 20 time: 0.09317946434020996 seconds
+Epoch 21
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 21 time: 0.09264850616455078 seconds
+ 73%|███████▎  | 22/30 [00:02<00:00, 10.51it/s]Epoch 22
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.2621e-01, PNorm = 34.0842, GNorm = 1.1022, lr_0 = 1.6379e-04
+
+                                     [AEpoch 22 time: 0.0922088623046875 seconds
+Epoch 23
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.3464e-01, PNorm = 34.0860, GNorm = 1.3207, lr_0 = 1.5086e-04
+
+                                     [AEpoch 23 time: 0.08767080307006836 seconds
+ 80%|████████  | 24/30 [00:02<00:00, 10.68it/s]Epoch 24
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 24 time: 0.09418058395385742 seconds
+Epoch 25
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 25 time: 0.09888839721679688 seconds
+ 87%|████████▋ | 26/30 [00:02<00:00, 10.57it/s]Epoch 26
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 26 time: 0.09395790100097656 seconds
+Epoch 27
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 27 time: 0.0911257266998291 seconds
+ 93%|█████████▎| 28/30 [00:02<00:00, 10.62it/s]Epoch 28
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 28 time: 0.08966732025146484 seconds
+Epoch 29
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 29 time: 0.09142732620239258 seconds
+100%|██████████| 30/30 [00:02<00:00, 10.74it/s]100%|██████████| 30/30 [00:02<00:00, 10.70it/s]
+Model 0 time: 2.8123929500579834 seconds
+Model fitting time: 2.8125274181365967 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:03,  6.37it/s] 13%|█▎        | 3/23 [00:00<00:02,  6.70it/s] 17%|█▋        | 4/23 [00:00<00:03,  6.18it/s] 26%|██▌       | 6/23 [00:00<00:01,  9.26it/s] 39%|███▉      | 9/23 [00:00<00:01, 12.99it/s] 48%|████▊     | 11/23 [00:00<00:00, 14.29it/s] 57%|█████▋    | 13/23 [00:01<00:00, 15.47it/s] 65%|██████▌   | 15/23 [00:01<00:00, 16.59it/s] 74%|███████▍  | 17/23 [00:01<00:00, 16.80it/s] 83%|████████▎ | 19/23 [00:01<00:00, 16.60it/s] 91%|█████████▏| 21/23 [00:01<00:00, 16.61it/s]                                               evaluating model performance finished.
+  0%|          | 0/22 [00:00<?, ?it/s]  5%|▍         | 1/22 [00:00<00:03,  5.82it/s] 14%|█▎        | 3/22 [00:00<00:01, 11.34it/s] 23%|██▎       | 5/22 [00:00<00:02,  5.93it/s] 32%|███▏      | 7/22 [00:00<00:01,  8.30it/s] 41%|████      | 9/22 [00:00<00:01, 10.53it/s] 50%|█████     | 11/22 [00:01<00:00, 12.26it/s] 59%|█████▉    | 13/22 [00:01<00:00, 13.77it/s] 68%|██████▊   | 15/22 [00:01<00:00, 14.87it/s] 77%|███████▋  | 17/22 [00:01<00:00, 15.97it/s] 86%|████████▋ | 19/22 [00:01<00:00, 16.91it/s] 95%|█████████▌| 21/22 [00:01<00:00, 17.61it/s]                                               Building model 0 from scratch
+Moving model to cuda
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/30 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.8361e-01, PNorm = 34.0111, GNorm = 0.5629, lr_0 = 1.0000e-03
+
+                                     [AEpoch 0 time: 0.12080526351928711 seconds
+  3%|▎         | 1/30 [00:00<00:03,  8.27it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  9.74it/s][A
+                                             [AEpoch 1 time: 0.12631726264953613 seconds
+  7%|▋         | 2/30 [00:00<00:03,  8.04it/s]Epoch 2
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 2 time: 0.11797499656677246 seconds
+ 10%|█         | 3/30 [00:00<00:03,  8.22it/s]Epoch 3
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 3 time: 0.1186380386352539 seconds
+ 13%|█▎        | 4/30 [00:00<00:03,  8.29it/s]Epoch 4
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 4 time: 0.11570215225219727 seconds
+ 17%|█▋        | 5/30 [00:00<00:02,  8.40it/s]Epoch 5
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 5 time: 0.12195992469787598 seconds
+ 20%|██        | 6/30 [00:00<00:02,  8.32it/s]Epoch 6
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 6 time: 0.12171339988708496 seconds
+ 23%|██▎       | 7/30 [00:00<00:02,  8.27it/s]Epoch 7
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 7 time: 0.12267637252807617 seconds
+ 27%|██▋       | 8/30 [00:00<00:02,  8.22it/s]Epoch 8
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 8 time: 0.11515617370605469 seconds
+ 30%|███       | 9/30 [00:01<00:02,  8.35it/s]Epoch 9
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 9 time: 0.11853194236755371 seconds
+ 33%|███▎      | 10/30 [00:01<00:02,  8.36it/s]Epoch 10
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  3.51it/s][A
+                                             [AEpoch 10 time: 0.3093259334564209 seconds
+ 37%|███▋      | 11/30 [00:01<00:03,  5.62it/s]Epoch 11
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.1655e-01, PNorm = 34.0565, GNorm = 0.5375, lr_0 = 4.0471e-04
+
+100%|██████████| 1/1 [00:00<00:00, 10.00it/s][A
+                                             [AEpoch 11 time: 0.12171006202697754 seconds
+ 40%|████      | 12/30 [00:01<00:02,  6.22it/s]Epoch 12
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.1154e-01, PNorm = 34.0599, GNorm = 0.8611, lr_0 = 3.7276e-04
+
+100%|██████████| 1/1 [00:00<00:00,  2.20it/s][A
+                                             [AEpoch 12 time: 0.47889065742492676 seconds
+ 43%|████▎     | 13/30 [00:02<00:04,  3.89it/s]Epoch 13
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 13 time: 0.12189316749572754 seconds
+ 47%|████▋     | 14/30 [00:02<00:03,  4.62it/s]Epoch 14
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 14 time: 0.12096977233886719 seconds
+ 50%|█████     | 15/30 [00:02<00:02,  5.32it/s]Epoch 15
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 15 time: 0.11784648895263672 seconds
+ 53%|█████▎    | 16/30 [00:02<00:02,  5.99it/s]Epoch 16
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 16 time: 0.12143921852111816 seconds
+ 57%|█████▋    | 17/30 [00:02<00:01,  6.52it/s]Epoch 17
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  9.71it/s][A
+                                             [AEpoch 17 time: 0.1248331069946289 seconds
+ 60%|██████    | 18/30 [00:02<00:01,  6.89it/s]Epoch 18
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 18 time: 0.12218928337097168 seconds
+ 63%|██████▎   | 19/30 [00:02<00:01,  7.23it/s]Epoch 19
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  9.72it/s][A
+                                             [AEpoch 19 time: 0.13040876388549805 seconds
+ 67%|██████▋   | 20/30 [00:02<00:01,  7.34it/s]Epoch 20
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 20 time: 0.12471342086791992 seconds
+ 70%|███████   | 21/30 [00:03<00:01,  7.52it/s]Epoch 21
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 21 time: 0.12024736404418945 seconds
+ 73%|███████▎  | 22/30 [00:03<00:01,  7.73it/s]Epoch 22
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00, 10.00it/s][A
+                                             [AEpoch 22 time: 0.12268352508544922 seconds
+ 77%|███████▋  | 23/30 [00:03<00:00,  7.84it/s]Epoch 23
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.5727e-01, PNorm = 34.0875, GNorm = 0.7775, lr_0 = 1.5086e-04
+
+                                     [AEpoch 23 time: 0.1205742359161377 seconds
+ 80%|████████  | 24/30 [00:03<00:00,  7.96it/s]Epoch 24
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  9.46it/s][A
+                                             [AEpoch 24 time: 0.1315765380859375 seconds
+ 83%|████████▎ | 25/30 [00:03<00:00,  7.84it/s]Epoch 25
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 25 time: 0.12329673767089844 seconds
+ 87%|████████▋ | 26/30 [00:03<00:00,  7.91it/s]Epoch 26
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  9.76it/s][A
+                                             [AEpoch 26 time: 0.125993013381958 seconds
+ 90%|█████████ | 27/30 [00:03<00:00,  7.90it/s]Epoch 27
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 27 time: 0.1210784912109375 seconds
+ 93%|█████████▎| 28/30 [00:03<00:00,  8.00it/s]Epoch 28
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 28 time: 0.11995959281921387 seconds
+ 97%|█████████▋| 29/30 [00:04<00:00,  8.08it/s]Epoch 29
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [AEpoch 29 time: 0.12092137336730957 seconds
+100%|██████████| 30/30 [00:04<00:00,  8.13it/s]100%|██████████| 30/30 [00:04<00:00,  7.11it/s]
+Model 0 time: 4.223514556884766 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]                                     Traceback (most recent call last):
+  File "/work/dn123/MolALKit/molalkit_run", line 7, in <module>
+    sys.exit(molalkit_run())
+  File "/work/dn123/MolALKit/molalkit/al/run.py", line 44, in molalkit_run
+    active_learner.run(max_iter=args.max_iter)
+  File "/work/dn123/MolALKit/molalkit/al/learner.py", line 261, in run
+    terminated_tag, alr = self.run_active_learning(max_iter=max_iter)
+  File "/work/dn123/MolALKit/molalkit/al/learner.py", line 293, in run_active_learning
+    self.forget_samples(alr) 
+  File "/work/dn123/MolALKit/molalkit/al/learner.py", line 402, in forget_samples
+    forget_idx, acquisition = self.forgetter(model=self.model_selector,
+  File "/work/dn123/MolALKit/molalkit/al/forgetter.py", line 484, in __call__
+    mc = self._mc_probs(net, dl)  # (S, N, C)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/work/dn123/MolALKit/molalkit/al/forgetter.py", line 391, in _mc_probs
+    preds = predict(
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/train/predict.py", line 55, in predict
+    batch_preds = model(
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/models/model.py", line 196, in forward
+    output = self.ffn(self.encoder(batch, features_batch, atom_descriptors_batch,
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/models/mpn.py", line 283, in forward
+    encodings = [enc(ba) for enc, ba in zip(self.encoder, batch)]
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/models/mpn.py", line 283, in <listcomp>
+    encodings = [enc(ba) for enc, ba in zip(self.encoder, batch)]
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/models/mpn.py", line 98, in forward
+    input = self.W_i(f_bonds)  # num_bonds x hidden_size
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: Expected all tensors to be on the same device, but got mat2 is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA_mm)

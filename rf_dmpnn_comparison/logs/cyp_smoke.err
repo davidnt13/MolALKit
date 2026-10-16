@@ -1,0 +1,67 @@
+/var/spool/slurmd/job58211326/slurm_script: line 4: module: command not found
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/13130 [00:00<?, ?it/s]  2%|▏         | 301/13130 [00:00<00:04, 3004.42it/s]  5%|▍         | 602/13130 [00:00<00:04, 2994.97it/s]  7%|▋         | 902/13130 [00:00<00:04, 2943.92it/s]  9%|▉         | 1197/13130 [00:00<00:04, 2906.79it/s] 11%|█▏        | 1488/13130 [00:00<00:04, 2904.71it/s] 14%|█▎        | 1779/13130 [00:00<00:03, 2882.98it/s] 16%|█▌        | 2068/13130 [00:00<00:03, 2853.12it/s] 18%|█▊        | 2355/13130 [00:00<00:03, 2856.51it/s] 20%|██        | 2643/13130 [00:00<00:03, 2861.61it/s] 22%|██▏       | 2954/13130 [00:01<00:03, 2936.00it/s] 25%|██▍       | 3274/13130 [00:01<00:03, 3014.92it/s] 27%|██▋       | 3594/13130 [00:01<00:03, 3070.82it/s] 30%|██▉       | 3926/13130 [00:01<00:02, 3143.44it/s] 33%|███▎      | 4311/13130 [00:01<00:02, 3354.70it/s] 35%|███▌      | 4654/13130 [00:01<00:02, 3376.58it/s] 38%|███▊      | 4994/13130 [00:01<00:02, 3381.19it/s] 41%|████      | 5340/13130 [00:01<00:02, 3403.54it/s] 43%|████▎     | 5705/13130 [00:01<00:02, 3476.21it/s] 46%|████▌     | 6061/13130 [00:01<00:02, 3499.58it/s] 49%|████▉     | 6411/13130 [00:02<00:01, 3369.21it/s] 51%|█████▏    | 6749/13130 [00:02<00:02, 3096.20it/s] 54%|█████▍    | 7110/13130 [00:02<00:01, 3237.38it/s] 57%|█████▋    | 7439/13130 [00:02<00:01, 3101.49it/s] 59%|█████▉    | 7776/13130 [00:02<00:01, 3175.58it/s] 62%|██████▏   | 8103/13130 [00:02<00:01, 3200.94it/s] 64%|██████▍   | 8426/13130 [00:02<00:01, 3193.76it/s] 67%|██████▋   | 8748/13130 [00:02<00:01, 3155.52it/s] 69%|██████▉   | 9065/13130 [00:02<00:01, 3129.94it/s] 71%|███████▏  | 9379/13130 [00:03<00:01, 2982.25it/s] 74%|███████▎  | 9679/13130 [00:03<00:01, 2644.88it/s] 76%|███████▌  | 9986/13130 [00:03<00:01, 2756.93it/s] 79%|███████▊  | 10312/13130 [00:03<00:00, 2894.28it/s] 81%|████████  | 10618/13130 [00:03<00:00, 2939.06it/s] 83%|████████▎ | 10917/13130 [00:03<00:00, 2941.22it/s] 85%|████████▌ | 11226/13130 [00:03<00:00, 2981.87it/s] 88%|████████▊ | 11551/13130 [00:03<00:00, 3057.34it/s] 90%|█████████ | 11862/13130 [00:03<00:00, 3070.48it/s] 93%|█████████▎| 12171/13130 [00:03<00:00, 3041.94it/s] 95%|█████████▌| 12479/13130 [00:04<00:00, 3050.73it/s] 97%|█████████▋| 12785/13130 [00:04<00:00, 2872.57it/s]100%|█████████▉| 13075/13130 [00:04<00:00, 2668.94it/s]100%|██████████| 13130/13130 [00:04<00:00, 3032.55it/s]
+Total scaffolds = 7,778 | 
+split 0 scaffolds = 1,473 | 
+split 1 scaffolds = 6,305 | 
+[Parallel(n_jobs=1)]: Done  49 tasks      | elapsed:    0.1s
+[Parallel(n_jobs=1)]: Done 199 tasks      | elapsed:    0.2s
+[Parallel(n_jobs=1)]: Done 449 tasks      | elapsed:    0.5s
+[Parallel(n_jobs=1)]: Done 799 tasks      | elapsed:    1.0s
+[Parallel(n_jobs=1)]: Done 1249 tasks      | elapsed:    1.5s
+[Parallel(n_jobs=1)]: Done 1799 tasks      | elapsed:    2.2s
+[Parallel(n_jobs=1)]: Done 2449 tasks      | elapsed:    2.9s
+[Parallel(n_jobs=1)]: Done 3199 tasks      | elapsed:    3.8s
+[Parallel(n_jobs=1)]: Done 4049 tasks      | elapsed:    5.1s
+[Parallel(n_jobs=1)]: Done 4999 tasks      | elapsed:    6.5s
+[Parallel(n_jobs=1)]: Done 6049 tasks      | elapsed:    8.1s
+[Parallel(n_jobs=1)]: Done 7199 tasks      | elapsed:    9.9s
+[Parallel(n_jobs=1)]: Done 8449 tasks      | elapsed:   12.0s
+[Parallel(n_jobs=1)]: Done 9799 tasks      | elapsed:   13.8s
+[Parallel(n_jobs=1)]: Done 11249 tasks      | elapsed:   15.5s
+[Parallel(n_jobs=1)]: Done 12799 tasks      | elapsed:   17.3s
+[Parallel(n_jobs=1)]: Done 13130 out of 13130 | elapsed:   17.7s finished
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 6563
+Validation set size = 6565
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: RandomForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Model fitting time: 0.1295185089111328 seconds
+evaluating model performance finished.
+Training set size = 22
+Pool set size = 6543
+Start an new iteration of active learning: 1.
+evaluating model performance.
+Model fitting time: 0.13426780700683594 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 41
+Pool set size = 6524
+Start an new iteration of active learning: 2.
+evaluating model performance.
+Model fitting time: 0.1434473991394043 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 60
+Pool set size = 6505
+Start an new iteration of active learning: 3.
+evaluating model performance.
+Model fitting time: 0.15105247497558594 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 79
+Pool set size = 6486
+Start an new iteration of active learning: 4.
+evaluating model performance.
+Model fitting time: 0.15377545356750488 seconds
+evaluating model performance finished.
+forget_idx length: 1
+Training set size = 98
+Pool set size = 6467
+total time: 4 s
+<molalkit.al.learner.ActiveLearner object at 0x7fc487010220>

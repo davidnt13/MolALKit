@@ -1,0 +1,5 @@
+=== GPU visible to job ===
+cuda available: True
+device: NVIDIA RTX 5000 Ada Generation
+=== DMPNN task 4: strategy=max seed=1 -> /work/dn123/MolALKit/rf_dmpnn_comparison/results/DMPNN/max/seed1 ===
+DMPNN task 4 finished status=1 in 51s

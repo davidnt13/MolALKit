@@ -119,6 +119,11 @@ class ActiveLearningTrajectory:
 
 
 class ActiveLearner:
+    # diagnostic shadow-cold-model settings (set by molalkit_run; 0 = off)
+    shadow_cold_every = 0
+    shadow_cold_epochs = 30
+    shadow_cold_batch_size = 50
+
     def __init__(self, save_dir: str, selection_method: BaseSelectionMethod, forgetter: BaseForgetter,
                  model_selector, dataset_train_selector, dataset_pool_selector, dataset_val_selector,
                  metrics: List[Metric], top_k_id: List[int] = None,
@@ -347,6 +352,8 @@ class ActiveLearner:
                 for metric in self.metrics:
                     metric_value = eval_metric_func(self.dataset_val_selector.y.ravel(), y_pred, metric=metric)
                     alr.results[f'{metric}_selector'] = metric_value
+                if self.shadow_cold_every and self.current_iter % self.shadow_cold_every == 0:
+                    self._shadow_cold_compare(y_pred)
             # evaluate the percentage of top-k data selected in the training set
             if self.top_k_id is not None:
                 alr.results['top_k_score'] = self.get_top_k_score(self.dataset_train_selector, self.top_k_id)
@@ -362,6 +369,55 @@ class ActiveLearner:
                     metric_value = eval_metric_func(self.dataset_val_evaluators[i].y.ravel(), y_pred, metric=metric)
                     alr.results[f'{metric}_evaluator_{i}'] = metric_value
         self.info('evaluating model performance finished.')
+
+    def _shadow_cold_compare(self, y_warm):
+        """Diagnostic: train from-scratch models on the same training set as the live model and save predictions on the
+        validation set and on molecules forgotten so far (and no longer in the training set). Two cold models with
+        different torch seeds give the cold-vs-cold noise floor. The torch RNG state is restored so the AL trajectory
+        is unchanged by this diagnostic."""
+        import torch
+        rng_state = torch.get_rng_state()
+        cuda_state = torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None
+        t0 = time.time()
+        train_ids = {d.id for d in self.dataset_train_selector}
+        forgot = []
+        for r in self.active_learning_traj.results:
+            forgot.extend(r.id_forget)
+        forgot = sorted(set(forgot) - train_ids)
+        forgot_data = None
+        if forgot:
+            forgot_data = copy.copy(self.dataset_val_selector)
+            forgot_data.data = [self.uid2data_selector[u] for u in forgot]
+        out = dict(iter=self.current_iter, n_train=len(self.dataset_train_selector),
+                   y_val=self.dataset_val_selector.y.ravel(), warm_val=np.asarray(y_warm).ravel(),
+                   forgot_ids=np.array(forgot, dtype=int))
+        if forgot_data is not None:
+            out['y_forgot'] = forgot_data.y.ravel()
+            out['warm_forgot'] = np.asarray(self.model_selector.predict_value(forgot_data)).ravel()
+        warm_models = self.model_selector.models
+        self.model_selector.models = None  # avoid deep-copying the live networks
+        try:
+            for tag, seed_shift in (('a', 0), ('b', 1)):
+                cold = copy.deepcopy(self.model_selector)
+                cold.continuous_fit = False
+                cold.restart_every = 0
+                cold._fit_count = 0
+                cold.args.epochs = self.shadow_cold_epochs
+                cold.args.batch_size = self.shadow_cold_batch_size
+                cold.args.pytorch_seed = self.model_selector.args.pytorch_seed + seed_shift
+                cold.args.save_dir = os.path.join(self.save_dir, 'shadow_cold_%s' % tag)
+                cold.fit_molalkit(self.dataset_train_selector)
+                out['cold_%s_val' % tag] = np.asarray(cold.predict_value(self.dataset_val_selector)).ravel()
+                if forgot_data is not None:
+                    out['cold_%s_forgot' % tag] = np.asarray(cold.predict_value(forgot_data)).ravel()
+        finally:
+            self.model_selector.models = warm_models
+            torch.set_rng_state(rng_state)
+            if cuda_state is not None:
+                torch.cuda.set_rng_state_all(cuda_state)
+        os.makedirs(os.path.join(self.save_dir, 'shadow'), exist_ok=True)
+        np.savez(os.path.join(self.save_dir, 'shadow', 'iter_%d.npz' % self.current_iter), **out)
+        self.info('shadow cold comparison at iter %d took %.0f s' % (self.current_iter, time.time() - t0))
 
     def add_samples(self, alr: ActiveLearningResult):
         # train the model if it is not trained in the evaluation step, and the selection method is not random.

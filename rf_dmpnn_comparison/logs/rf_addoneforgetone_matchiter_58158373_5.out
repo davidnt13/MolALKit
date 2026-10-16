@@ -1,0 +1,2 @@
+=== RF add-one/forget-one (match-iter) task 5: strategy=min_oob_uncertainty seed=2 forget_size=626 -> /work/dn123/MolALKit/rf_dmpnn_comparison/results/RF_addone_forgetone_matchiter/min_oob_uncertainty/seed2 ===
+RF add-one/forget-one (match-iter) task 5 finished status=1 in 514s

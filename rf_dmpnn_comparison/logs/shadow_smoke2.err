@@ -1,0 +1,364 @@
+/var/spool/slurmd/job58171880/slurm_script: line 4: module: command not found
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  0%|          | 0/2217 [00:00<?, ?it/s] 12%|█▏        | 263/2217 [00:00<00:00, 2620.98it/s] 26%|██▌       | 575/2217 [00:00<00:00, 2913.51it/s] 40%|███▉      | 880/2217 [00:00<00:00, 2972.38it/s] 53%|█████▎    | 1182/2217 [00:00<00:00, 2988.33it/s] 67%|██████▋   | 1481/2217 [00:00<00:00, 2870.20it/s] 81%|████████  | 1786/2217 [00:00<00:00, 2928.81it/s] 94%|█████████▍| 2080/2217 [00:00<00:00, 2796.60it/s]100%|██████████| 2217/2217 [00:00<00:00, 2817.82it/s]
+Total scaffolds = 1,965 | 
+split 0 scaffolds = 857 | 
+split 1 scaffolds = 1,108 | 
+0it [00:00, ?it/s]2217it [00:00, 322538.05it/s]
+  0%|          | 0/2217 [00:00<?, ?it/s][Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+  1%|          | 16/2217 [00:12<28:25,  1.29it/s]  1%|          | 24/2217 [00:12<16:52,  2.17it/s][Parallel(n_jobs=8)]: Done  34 tasks      | elapsed:   12.6s
+100%|██████████| 2217/2217 [00:12<00:00, 174.88it/s]
+[Parallel(n_jobs=8)]: Done 2104 tasks      | elapsed:   12.7s
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/hyperopt/atpe.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[Parallel(n_jobs=8)]: Done 2217 out of 2217 | elapsed:   25.8s finished
+  0%|          | 0/2217 [00:00<?, ?it/s] 25%|██▍       | 546/2217 [00:00<00:00, 5453.60it/s] 50%|█████     | 1119/2217 [00:00<00:00, 5614.77it/s] 77%|███████▋  | 1701/2217 [00:00<00:00, 5704.70it/s]100%|██████████| 2217/2217 [00:00<00:00, 5499.59it/s]
+Start a new active learning run.
+Start active learning: 
+Training set size = 2
+Pool set size = 1107
+Validation set size = 1108
+selection method: ExplorativeSelectionMethod(batch_size=20)
+Forgetter: ChempropDropoutForgetter
+Start an new iteration of active learning: 0.
+evaluating model performance.
+Building model 0 from scratch
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/nn_utils.py:174: RuntimeWarning: divide by zero encountered in divide
+  self.exponential_gamma = (self.final_lr / self.max_lr) ** (1 / (self.total_steps - self.warmup_steps))
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.5609e-01, PNorm = 34.0109, GNorm = 1.9887, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  3.49it/s][A
+                                             [AEpoch 0 time: 0.3150143623352051 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  3.17it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.5314e-01, PNorm = 34.0149, GNorm = 1.7521, lr_0 = 1.0000e-04
+
+                                     [AEpoch 1 time: 0.09551882743835449 seconds
+100%|██████████| 2/2 [00:00<00:00,  4.86it/s]
+Model 0 time: 2.8323073387145996 seconds
+Model fitting time: 2.8324763774871826 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:09,  2.32it/s]  9%|▊         | 2/23 [00:00<00:08,  2.55it/s] 13%|█▎        | 3/23 [00:01<00:09,  2.18it/s] 17%|█▋        | 4/23 [00:01<00:06,  2.93it/s] 22%|██▏       | 5/23 [00:01<00:05,  3.60it/s] 26%|██▌       | 6/23 [00:01<00:04,  4.23it/s] 30%|███       | 7/23 [00:01<00:03,  4.69it/s] 35%|███▍      | 8/23 [00:02<00:02,  5.06it/s] 39%|███▉      | 9/23 [00:02<00:02,  5.31it/s] 43%|████▎     | 10/23 [00:02<00:02,  5.40it/s] 48%|████▊     | 11/23 [00:02<00:02,  5.60it/s] 52%|█████▏    | 12/23 [00:02<00:01,  5.79it/s] 57%|█████▋    | 13/23 [00:02<00:01,  5.79it/s] 61%|██████    | 14/23 [00:03<00:01,  5.82it/s] 65%|██████▌   | 15/23 [00:03<00:01,  5.82it/s] 70%|██████▉   | 16/23 [00:03<00:01,  5.73it/s] 74%|███████▍  | 17/23 [00:03<00:01,  5.53it/s] 78%|███████▊  | 18/23 [00:03<00:00,  5.44it/s] 83%|████████▎ | 19/23 [00:04<00:00,  5.48it/s] 87%|████████▋ | 20/23 [00:04<00:00,  5.37it/s] 96%|█████████▌| 22/23 [00:04<00:00,  7.37it/s]                                               evaluating model performance finished.
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:17,  1.24it/s]  9%|▊         | 2/23 [00:00<00:09,  2.28it/s] 13%|█▎        | 3/23 [00:01<00:08,  2.32it/s] 17%|█▋        | 4/23 [00:01<00:06,  3.02it/s] 22%|██▏       | 5/23 [00:01<00:04,  3.72it/s] 26%|██▌       | 6/23 [00:01<00:04,  4.23it/s] 30%|███       | 7/23 [00:02<00:03,  4.58it/s] 35%|███▍      | 8/23 [00:02<00:03,  5.00it/s] 39%|███▉      | 9/23 [00:02<00:02,  5.52it/s] 43%|████▎     | 10/23 [00:02<00:02,  5.55it/s] 48%|████▊     | 11/23 [00:02<00:02,  5.57it/s] 52%|█████▏    | 12/23 [00:02<00:01,  5.69it/s] 57%|█████▋    | 13/23 [00:03<00:01,  5.87it/s] 61%|██████    | 14/23 [00:03<00:01,  5.83it/s] 65%|██████▌   | 15/23 [00:03<00:01,  5.90it/s] 70%|██████▉   | 16/23 [00:03<00:01,  6.02it/s] 74%|███████▍  | 17/23 [00:03<00:00,  6.15it/s] 78%|███████▊  | 18/23 [00:03<00:00,  6.12it/s] 83%|████████▎ | 19/23 [00:04<00:00,  6.32it/s] 87%|████████▋ | 20/23 [00:04<00:00,  6.17it/s] 96%|█████████▌| 22/23 [00:04<00:00,  8.88it/s]                                               Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/nn_utils.py:174: RuntimeWarning: divide by zero encountered in divide
+  self.exponential_gamma = (self.final_lr / self.max_lr) ** (1 / (self.total_steps - self.warmup_steps))
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 6.7379e-01, PNorm = 34.0169, GNorm = 3.2327, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  6.65it/s][A
+                                             [AEpoch 0 time: 0.1790482997894287 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  5.58it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 5.1106e-01, PNorm = 34.0231, GNorm = 0.7748, lr_0 = 1.0000e-04
+
+100%|██████████| 1/1 [00:00<00:00,  6.31it/s][A
+                                             [AEpoch 1 time: 0.18758797645568848 seconds
+100%|██████████| 2/2 [00:00<00:00,  5.42it/s]100%|██████████| 2/2 [00:00<00:00,  5.44it/s]
+Model 0 time: 0.3741617202758789 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]                                     forget_idx length: 1
+Training set size = 21
+Pool set size = 1088
+Start an new iteration of active learning: 1.
+evaluating model performance.
+Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.3026e-01, PNorm = 34.0206, GNorm = 1.1268, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  7.18it/s][A
+                                             [AEpoch 0 time: 0.1689450740814209 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  5.91it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.1753e-01, PNorm = 34.0225, GNorm = 0.5568, lr_0 = 1.0000e-04
+
+100%|██████████| 1/1 [00:00<00:00,  7.16it/s][A
+                                             [AEpoch 1 time: 0.16961193084716797 seconds
+100%|██████████| 2/2 [00:00<00:00,  5.89it/s]100%|██████████| 2/2 [00:00<00:00,  5.89it/s]
+Model 0 time: 0.3433377742767334 seconds
+Model fitting time: 0.3446662425994873 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:16,  1.37it/s]  9%|▊         | 2/23 [00:00<00:08,  2.57it/s] 13%|█▎        | 3/23 [00:01<00:08,  2.50it/s] 17%|█▋        | 4/23 [00:01<00:05,  3.23it/s] 22%|██▏       | 5/23 [00:01<00:04,  3.88it/s] 26%|██▌       | 6/23 [00:01<00:03,  4.45it/s] 30%|███       | 7/23 [00:01<00:03,  4.77it/s] 35%|███▍      | 8/23 [00:02<00:02,  5.14it/s] 39%|███▉      | 9/23 [00:02<00:02,  5.38it/s] 43%|████▎     | 10/23 [00:02<00:02,  5.41it/s] 48%|████▊     | 11/23 [00:02<00:02,  5.64it/s] 52%|█████▏    | 12/23 [00:02<00:01,  5.77it/s] 57%|█████▋    | 13/23 [00:02<00:01,  5.74it/s] 61%|██████    | 14/23 [00:03<00:01,  5.82it/s] 65%|██████▌   | 15/23 [00:03<00:01,  5.67it/s] 70%|██████▉   | 16/23 [00:03<00:01,  5.54it/s] 74%|███████▍  | 17/23 [00:03<00:01,  5.40it/s] 78%|███████▊  | 18/23 [00:03<00:00,  5.31it/s] 83%|████████▎ | 19/23 [00:04<00:00,  5.24it/s] 87%|████████▋ | 20/23 [00:04<00:00,  5.12it/s] 96%|█████████▌| 22/23 [00:04<00:00,  7.09it/s]                                               evaluating model performance finished.
+  0%|          | 0/22 [00:00<?, ?it/s]  5%|▍         | 1/22 [00:00<00:14,  1.47it/s]  9%|▉         | 2/22 [00:01<00:10,  1.91it/s] 14%|█▎        | 3/22 [00:01<00:06,  2.78it/s] 18%|█▊        | 4/22 [00:01<00:05,  3.50it/s] 23%|██▎       | 5/22 [00:01<00:04,  4.16it/s] 27%|██▋       | 6/22 [00:01<00:03,  4.64it/s] 32%|███▏      | 7/22 [00:01<00:02,  5.06it/s] 36%|███▋      | 8/22 [00:02<00:02,  5.37it/s] 41%|████      | 9/22 [00:02<00:02,  5.57it/s] 45%|████▌     | 10/22 [00:02<00:02,  5.69it/s] 50%|█████     | 11/22 [00:02<00:01,  5.75it/s] 55%|█████▍    | 12/22 [00:02<00:01,  5.94it/s] 59%|█████▉    | 13/22 [00:02<00:01,  5.92it/s] 64%|██████▎   | 14/22 [00:03<00:01,  5.87it/s] 68%|██████▊   | 15/22 [00:03<00:01,  6.01it/s] 73%|███████▎  | 16/22 [00:03<00:00,  6.12it/s] 77%|███████▋  | 17/22 [00:03<00:00,  6.22it/s] 82%|████████▏ | 18/22 [00:03<00:00,  6.47it/s] 86%|████████▋ | 19/22 [00:03<00:00,  6.50it/s] 91%|█████████ | 20/22 [00:03<00:00,  6.93it/s]                                               Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/nn_utils.py:174: RuntimeWarning: divide by zero encountered in divide
+  self.exponential_gamma = (self.final_lr / self.max_lr) ** (1 / (self.total_steps - self.warmup_steps))
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 4.1107e-01, PNorm = 34.0265, GNorm = 1.8803, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  4.81it/s][A
+                                             [AEpoch 0 time: 0.23699140548706055 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  4.22it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.46it/s][A
+                                             [AEpoch 1 time: 0.25476574897766113 seconds
+100%|██████████| 2/2 [00:00<00:00,  4.04it/s]100%|██████████| 2/2 [00:00<00:00,  4.06it/s]
+Model 0 time: 0.4973564147949219 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]                                     forget_idx length: 1
+Training set size = 40
+Pool set size = 1069
+Start an new iteration of active learning: 2.
+evaluating model performance.
+Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/1 [00:00<?, ?it/s][ALoss = 3.0745e-01, PNorm = 34.0324, GNorm = 0.8754, lr_0 = 1.0000e-03
+
+100%|██████████| 1/1 [00:00<00:00,  4.82it/s][A
+                                             [AEpoch 0 time: 0.23967909812927246 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  4.17it/s]Epoch 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:00<00:00,  4.74it/s][A
+                                             [AEpoch 1 time: 0.24367523193359375 seconds
+100%|██████████| 2/2 [00:00<00:00,  4.12it/s]100%|██████████| 2/2 [00:00<00:00,  4.13it/s]
+Model 0 time: 0.4873802661895752 seconds
+Model fitting time: 0.4875321388244629 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:15,  1.39it/s]  9%|▊         | 2/23 [00:01<00:11,  1.85it/s] 13%|█▎        | 3/23 [00:01<00:07,  2.69it/s] 17%|█▋        | 4/23 [00:01<00:05,  3.53it/s] 22%|██▏       | 5/23 [00:01<00:04,  4.43it/s] 26%|██▌       | 6/23 [00:01<00:03,  4.69it/s] 30%|███       | 7/23 [00:01<00:02,  5.33it/s] 39%|███▉      | 9/23 [00:02<00:02,  5.79it/s] 43%|████▎     | 10/23 [00:02<00:02,  5.72it/s] 48%|████▊     | 11/23 [00:02<00:02,  5.82it/s] 52%|█████▏    | 12/23 [00:02<00:01,  6.04it/s] 57%|█████▋    | 13/23 [00:02<00:01,  6.10it/s] 61%|██████    | 14/23 [00:03<00:01,  6.02it/s] 65%|██████▌   | 15/23 [00:03<00:01,  5.99it/s] 70%|██████▉   | 16/23 [00:03<00:01,  5.77it/s] 74%|███████▍  | 17/23 [00:03<00:01,  5.68it/s] 78%|███████▊  | 18/23 [00:03<00:00,  5.63it/s] 83%|████████▎ | 19/23 [00:03<00:00,  6.07it/s] 87%|████████▋ | 20/23 [00:04<00:00,  6.36it/s] 91%|█████████▏| 21/23 [00:04<00:00,  6.62it/s]                                               evaluating model performance finished.
+  0%|          | 0/22 [00:00<?, ?it/s]  5%|▍         | 1/22 [00:00<00:16,  1.27it/s]  9%|▉         | 2/22 [00:01<00:11,  1.77it/s] 14%|█▎        | 3/22 [00:01<00:07,  2.63it/s] 18%|█▊        | 4/22 [00:01<00:05,  3.38it/s] 23%|██▎       | 5/22 [00:01<00:04,  4.09it/s] 27%|██▋       | 6/22 [00:01<00:03,  4.60it/s] 32%|███▏      | 7/22 [00:01<00:02,  5.09it/s] 36%|███▋      | 8/22 [00:02<00:02,  5.56it/s] 41%|████      | 9/22 [00:02<00:02,  5.71it/s] 45%|████▌     | 10/22 [00:02<00:02,  5.76it/s] 50%|█████     | 11/22 [00:02<00:01,  5.93it/s] 55%|█████▍    | 12/22 [00:02<00:01,  6.03it/s] 59%|█████▉    | 13/22 [00:02<00:01,  6.10it/s] 64%|██████▎   | 14/22 [00:03<00:01,  6.29it/s] 68%|██████▊   | 15/22 [00:03<00:01,  6.60it/s] 73%|███████▎  | 16/22 [00:03<00:00,  6.63it/s] 77%|███████▋  | 17/22 [00:03<00:00,  6.61it/s] 82%|████████▏ | 18/22 [00:03<00:00,  6.54it/s] 86%|████████▋ | 19/22 [00:03<00:00,  6.53it/s] 95%|█████████▌| 21/22 [00:03<00:00,  8.60it/s]                                               Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/nn_utils.py:174: RuntimeWarning: divide by zero encountered in divide
+  self.exponential_gamma = (self.final_lr / self.max_lr) ** (1 / (self.total_steps - self.warmup_steps))
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.92it/s][A
+                                             [AEpoch 0 time: 0.5879607200622559 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  1.70it/s]Epoch 1
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.01it/s][A
+                                             [AEpoch 1 time: 0.3151285648345947 seconds
+100%|██████████| 2/2 [00:00<00:00,  2.34it/s]100%|██████████| 2/2 [00:00<00:00,  2.21it/s]
+Model 0 time: 0.9089293479919434 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]                                       0%|          | 0/1 [00:00<?, ?it/s]                                     forget_idx length: 1
+Training set size = 59
+Pool set size = 1050
+Start an new iteration of active learning: 3.
+evaluating model performance.
+Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.21it/s][A
+                                             [AEpoch 0 time: 0.30200910568237305 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  3.31it/s]Epoch 1
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.23it/s][A
+                                             [AEpoch 1 time: 0.298797607421875 seconds
+100%|██████████| 2/2 [00:00<00:00,  3.33it/s]100%|██████████| 2/2 [00:00<00:00,  3.32it/s]
+Model 0 time: 0.6045148372650146 seconds
+Model fitting time: 0.6046717166900635 seconds
+  0%|          | 0/23 [00:00<?, ?it/s]  4%|▍         | 1/23 [00:00<00:09,  2.31it/s]  9%|▊         | 2/23 [00:00<00:05,  3.58it/s] 13%|█▎        | 3/23 [00:00<00:04,  4.39it/s] 17%|█▋        | 4/23 [00:00<00:03,  5.01it/s] 22%|██▏       | 5/23 [00:01<00:03,  5.41it/s] 26%|██▌       | 6/23 [00:01<00:02,  5.75it/s] 30%|███       | 7/23 [00:01<00:02,  5.91it/s] 35%|███▍      | 8/23 [00:01<00:02,  6.25it/s] 39%|███▉      | 9/23 [00:01<00:02,  6.05it/s] 43%|████▎     | 10/23 [00:01<00:02,  6.01it/s] 48%|████▊     | 11/23 [00:02<00:01,  6.01it/s] 52%|█████▏    | 12/23 [00:02<00:01,  6.04it/s] 57%|█████▋    | 13/23 [00:02<00:01,  6.45it/s] 61%|██████    | 14/23 [00:02<00:01,  6.23it/s] 65%|██████▌   | 15/23 [00:02<00:01,  5.97it/s] 70%|██████▉   | 16/23 [00:02<00:01,  5.78it/s] 74%|███████▍  | 17/23 [00:03<00:01,  5.57it/s] 78%|███████▊  | 18/23 [00:03<00:01,  4.29it/s] 83%|████████▎ | 19/23 [00:03<00:01,  3.52it/s] 87%|████████▋ | 20/23 [00:03<00:00,  4.15it/s] 91%|█████████▏| 21/23 [00:04<00:00,  3.77it/s]                                               evaluating model performance finished.
+  0%|          | 0/21 [00:00<?, ?it/s]  5%|▍         | 1/21 [00:00<00:10,  1.98it/s] 10%|▉         | 2/21 [00:00<00:05,  3.21it/s] 14%|█▍        | 3/21 [00:00<00:04,  4.14it/s] 19%|█▉        | 4/21 [00:01<00:03,  4.75it/s] 24%|██▍       | 5/21 [00:01<00:02,  5.43it/s] 29%|██▊       | 6/21 [00:01<00:02,  5.48it/s] 33%|███▎      | 7/21 [00:01<00:02,  5.66it/s] 38%|███▊      | 8/21 [00:01<00:02,  6.41it/s] 43%|████▎     | 9/21 [00:01<00:01,  6.30it/s] 48%|████▊     | 10/21 [00:01<00:01,  6.54it/s] 52%|█████▏    | 11/21 [00:02<00:01,  6.01it/s] 57%|█████▋    | 12/21 [00:02<00:01,  6.13it/s] 62%|██████▏   | 13/21 [00:02<00:01,  6.37it/s] 67%|██████▋   | 14/21 [00:02<00:01,  6.19it/s] 71%|███████▏  | 15/21 [00:02<00:00,  6.38it/s] 76%|███████▌  | 16/21 [00:02<00:00,  6.65it/s] 81%|████████  | 17/21 [00:03<00:00,  6.42it/s] 86%|████████▌ | 18/21 [00:03<00:00,  6.40it/s] 90%|█████████ | 19/21 [00:03<00:00,  4.67it/s] 95%|█████████▌| 20/21 [00:03<00:00,  4.25it/s]100%|██████████| 21/21 [00:04<00:00,  3.94it/s]                                               Loading model 0 that fitted at previous iteration
+MoleculeModel(
+  (sigmoid): Sigmoid()
+  (encoder): MPN(
+    (encoder): ModuleList(
+      (0): MPNEncoder(
+        (dropout_layer): Dropout(p=0.1, inplace=False)
+        (act_func): ReLU()
+        (W_i): Linear(in_features=147, out_features=300, bias=False)
+        (W_h): Linear(in_features=300, out_features=300, bias=False)
+        (W_o): Linear(in_features=433, out_features=300, bias=True)
+      )
+    )
+  )
+  (ffn): Sequential(
+    (0): Dropout(p=0.1, inplace=False)
+    (1): Linear(in_features=300, out_features=300, bias=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=300, out_features=1, bias=True)
+  )
+)
+Number of parameters = 355,201
+/hpc/group/rekerlab/dn123/conda/envs/molalkit/lib/python3.10/site-packages/chemprop/nn_utils.py:174: RuntimeWarning: divide by zero encountered in divide
+  self.exponential_gamma = (self.final_lr / self.max_lr) ** (1 / (self.total_steps - self.warmup_steps))
+  0%|          | 0/2 [00:00<?, ?it/s]Epoch 0
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  3.76it/s][A
+                                             [AEpoch 0 time: 0.36014389991760254 seconds
+ 50%|█████     | 1/2 [00:00<00:00,  2.77it/s]Epoch 1
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  3.81it/s][A
+                                             [AEpoch 1 time: 0.35882067680358887 seconds
+100%|██████████| 2/2 [00:00<00:00,  2.78it/s]100%|██████████| 2/2 [00:00<00:00,  2.78it/s]
+Model 0 time: 0.724520206451416 seconds
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  8.31it/s]                                               0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.18it/s]                                               0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  9.18it/s]                                             forget_idx length: 1
+Training set size = 78
+Pool set size = 1031
+total time: 42 s
+<molalkit.al.learner.ActiveLearner object at 0x7effbad980a0>

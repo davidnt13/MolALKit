@@ -1,0 +1,2 @@
+=== DMPNN forget_batch_size=20 task 0: strategy=max seed=0 -> /work/dn123/MolALKit/rf_dmpnn_comparison/results/DMPNN_forgetbatch20/max/seed0 ===
+DMPNN forget_batch_size=20 task 0 finished status=1 in 1389s

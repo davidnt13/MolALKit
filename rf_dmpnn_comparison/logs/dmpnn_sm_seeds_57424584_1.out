@@ -1,0 +1,2 @@
+=== DMPNN score_method seed-confirm task 1: score_method=variance target=max seed=2 -> /work/dn123/MolALKit/rf_dmpnn_comparison/results/DMPNN_scoremethod/variance_max/seed2 ===
+DMPNN score_method seed-confirm task 1 finished status=1 in 27663s
